@@ -1,0 +1,189 @@
+[
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "Hey Jude",
+    "mbid": "9c6dee44-524c-42a7-ab7e-6d1ad3847f31",
+    "audio_features": {},
+    "genres": [],
+    "credits": {
+      "main_artist": "Thomas Illig",
+      "featured_artists": [],
+      "writers": [],
+      "producers": []
+    },
+    "language": "eng",
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "Come Together",
+    "mbid": "09598cf2-539d-46e9-b375-676ec2abd076",
+    "audio_features": {
+      "tempo": 152.674636841,
+      "key": "G minor",
+      "mode": "minor",
+      "time_signature": 561,
+      "loudness": 0.94029968977,
+      "duration": 222.014694214
+    },
+    "genres": [],
+    "credits": {
+      "main_artist": "Babyskin Sleepingbag",
+      "featured_artists": [],
+      "writers": [],
+      "producers": []
+    },
+    "language": "eng",
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "Let It Be",
+    "mbid": "8f25200e-5fd4-4c3f-be4c-43f2a4eca96f",
+    "audio_features": {},
+    "genres": [],
+    "credits": {
+      "main_artist": "Sikus",
+      "featured_artists": [],
+      "writers": [],
+      "producers": []
+    },
+    "language": null,
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "Yesterday",
+    "mbid": "93604c96-f0e5-4486-8f46-b1348d363b97",
+    "audio_features": {},
+    "genres": [],
+    "credits": {
+      "main_artist": "The Beatles",
+      "featured_artists": [],
+      "writers": [],
+      "producers": []
+    },
+    "language": "eng",
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "A Day in the Life",
+    "mbid": "18673922-9f84-4c4c-928b-5b6d29cc893b",
+    "audio_features": {},
+    "genres": [],
+    "credits": {
+      "main_artist": "Mrt",
+      "featured_artists": [],
+      "writers": [],
+      "producers": []
+    },
+    "language": "eng",
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "Strawberry Fields Forever",
+    "mbid": "0a76c731-11e5-4ac2-bfb1-8b503013609c",
+    "audio_features": {},
+    "genres": [],
+    "credits": {
+      "main_artist": "The Beatles",
+      "featured_artists": [],
+      "writers": [],
+      "producers": []
+    },
+    "language": "eng",
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Rolling Stones",
+    "track": "Paint It Black",
+    "mbid": "f53cbc46-0b1e-4ffd-8981-5bbc4322d1a0",
+    "audio_features": {},
+    "genres": [],
+    "credits": {
+      "main_artist": "The Feelies",
+      "featured_artists": [],
+      "writers": [],
+      "producers": []
+    },
+    "language": "eng",
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Rolling Stones",
+    "track": "Gimme Shelter",
+    "mbid": "cad7dbcf-7769-47ce-8779-ce4de0a018f4",
+    "audio_features": {},
+    "genres": [],
+    "credits": {
+      "main_artist": "Head Like a Kite",
+      "featured_artists": [],
+      "writers": [],
+      "producers": []
+    },
+    "language": "eng",
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Rolling Stones",
+    "track": "Sympathy for the Devil",
+    "mbid": "58d2902e-1f54-4425-84f1-daa0d4f396d8",
+    "audio_features": {},
+    "genres": [],
+    "credits": {
+      "main_artist": "Complex Machine",
+      "featured_artists": [],
+      "writers": [],
+      "producers": []
+    },
+    "language": "eng",
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Rolling Stones",
+    "track": "Satisfaction",
+    "mbid": "2d8fc994-5154-4c2d-96fa-83d368cd83ce",
+    "audio_features": {},
+    "genres": [],
+    "credits": {
+      "main_artist": "Draaiorgel \"De Adriaen\"",
+      "featured_artists": [],
+      "writers": [],
+      "producers": []
+    },
+    "language": null,
+    "collection_status": "partial"
+  }
+]

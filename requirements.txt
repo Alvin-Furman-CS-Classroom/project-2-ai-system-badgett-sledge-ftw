@@ -1,3 +1,3 @@
 requests>=2.31.0
 python-dotenv>=1.0.0
-# Note: Last.fm API client uses requests (no additional dependencies needed)
+musicbrainzngs>=0.7.1
