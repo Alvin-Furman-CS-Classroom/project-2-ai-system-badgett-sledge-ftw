@@ -12,6 +12,8 @@ logger = logging.getLogger(__name__)
 
 BASE_URL = "https://acousticbrainz.org/api/v1"
 REQUEST_DELAY = 0.5  # seconds between requests
+MAX_RETRIES = 3
+RETRY_BACKOFF = 2.0
 
 
 def _get_nested(data: dict, *keys: str) -> Any:
@@ -44,127 +46,129 @@ def _get_recording_data(response: dict, mbid: str) -> Optional[dict]:
 def get_low_level_features(mbid: str) -> Optional[dict]:
     """
     Fetch low-level audio features for a recording.
-
-    Args:
-        mbid: MusicBrainz recording ID (UUID format)
-
-    Returns:
-        Dict with low-level features (tempo, key, mode, loudness, duration, etc.)
-        or None if data not available or request fails.
+    Retries on connection reset / network errors.
     """
-    time.sleep(REQUEST_DELAY)
+    for attempt in range(MAX_RETRIES):
+        time.sleep(REQUEST_DELAY)
+        try:
+            resp = requests.get(
+                f"{BASE_URL}/low-level",
+                params={"recording_ids": mbid},
+                timeout=30,
+            )
+            resp.raise_for_status()
+            data = resp.json()
 
-    try:
-        resp = requests.get(
-            f"{BASE_URL}/low-level",
-            params={"recording_ids": mbid},
-            timeout=30,
-        )
-        resp.raise_for_status()
-        data = resp.json()
+            if not data:
+                return None
 
-        if not data:
+            recording = _get_recording_data(data, mbid)
+            if recording is None:
+                return None
+
+            bpm = _get_nested(recording, "rhythm", "bpm")
+            key_key = _get_nested(recording, "tonal", "key_key")
+            key_scale = _get_nested(recording, "tonal", "key_scale")
+            loudness = _get_nested(recording, "lowlevel", "average_loudness")
+            if loudness is None:
+                loudness = _get_nested(recording, "metadata", "audio_properties", "replay_gain")
+            duration = _get_nested(recording, "metadata", "audio_properties", "length")
+            time_sig = _get_nested(recording, "rhythm", "beats_count")
+            if time_sig is None:
+                time_sig = _get_nested(recording, "rhythm", "time_signature")
+
+            key_str = None
+            if key_key:
+                scale = (key_scale or "major").lower()
+                key_str = f"{key_key} {scale}"
+
+            return {
+                "mbid": mbid,
+                "tempo": float(bpm) if bpm is not None else None,
+                "key": key_str,
+                "mode": (key_scale or "major").lower() if key_scale else None,
+                "time_signature": int(time_sig) if time_sig is not None else None,
+                "loudness": float(loudness) if loudness is not None else None,
+                "duration": float(duration) if duration is not None else None,
+                "tonal": _get_nested(recording, "tonal"),
+                "rhythm": _get_nested(recording, "rhythm"),
+                "lowlevel": _get_nested(recording, "lowlevel"),
+            }
+
+        except requests.RequestException as e:
+            err_str = str(e).lower()
+            if ("connection reset" in err_str or "errno 54" in err_str) and attempt < MAX_RETRIES - 1:
+                wait = RETRY_BACKOFF * (2**attempt)
+                logger.warning("AcousticBrainz low-level connection error for %s, retrying in %.1fs (attempt %d/%d)", mbid, wait, attempt + 1, MAX_RETRIES)
+                time.sleep(wait)
+            else:
+                logger.warning("AcousticBrainz low-level request failed for %s: %s", mbid, e)
+                return None
+        except (ValueError, KeyError) as e:
+            logger.warning("Failed to parse AcousticBrainz low-level response for %s: %s", mbid, e)
             return None
-
-        recording = _get_recording_data(data, mbid)
-        if recording is None:
-            return None
-
-        # Extract common low-level fields (paths from Essentia/AcousticBrainz)
-        bpm = _get_nested(recording, "rhythm", "bpm")
-        key_key = _get_nested(recording, "tonal", "key_key")
-        key_scale = _get_nested(recording, "tonal", "key_scale")
-        loudness = _get_nested(recording, "lowlevel", "average_loudness")
-        if loudness is None:
-            loudness = _get_nested(recording, "metadata", "audio_properties", "replay_gain")
-        duration = _get_nested(recording, "metadata", "audio_properties", "length")
-        time_sig = _get_nested(recording, "rhythm", "beats_count")
-        if time_sig is None:
-            time_sig = _get_nested(recording, "rhythm", "time_signature")
-
-        key_str = None
-        if key_key:
-            scale = (key_scale or "major").lower()
-            key_str = f"{key_key} {scale}"
-
-        return {
-            "mbid": mbid,
-            "tempo": float(bpm) if bpm is not None else None,
-            "key": key_str,
-            "mode": (key_scale or "major").lower() if key_scale else None,
-            "time_signature": int(time_sig) if time_sig is not None else None,
-            "loudness": float(loudness) if loudness is not None else None,
-            "duration": float(duration) if duration is not None else None,
-            "tonal": _get_nested(recording, "tonal"),
-            "rhythm": _get_nested(recording, "rhythm"),
-            "lowlevel": _get_nested(recording, "lowlevel"),
-        }
-
-    except requests.RequestException as e:
-        logger.warning("AcousticBrainz low-level request failed for %s: %s", mbid, e)
-        return None
-    except (ValueError, KeyError) as e:
-        logger.warning("Failed to parse AcousticBrainz low-level response for %s: %s", mbid, e)
-        return None
+    return None
 
 
 def get_high_level_features(mbid: str) -> Optional[dict]:
     """
     Fetch high-level audio features for a recording (genre, mood, etc.).
-
-    Args:
-        mbid: MusicBrainz recording ID (UUID format)
-
-    Returns:
-        Dict with high-level features (genres, mood, etc.) or None if not available.
+    Retries on connection reset / network errors.
     """
-    time.sleep(REQUEST_DELAY)
+    for attempt in range(MAX_RETRIES):
+        time.sleep(REQUEST_DELAY)
+        try:
+            resp = requests.get(
+                f"{BASE_URL}/high-level",
+                params={"recording_ids": mbid, "map_classes": "true"},
+                timeout=30,
+            )
+            resp.raise_for_status()
+            data = resp.json()
 
-    try:
-        resp = requests.get(
-            f"{BASE_URL}/high-level",
-            params={"recording_ids": mbid, "map_classes": "true"},
-            timeout=30,
-        )
-        resp.raise_for_status()
-        data = resp.json()
+            if not data:
+                return None
 
-        if not data:
+            recording = _get_recording_data(data, mbid)
+            if recording is None:
+                return None
+
+            genres = []
+            genre_fields = [
+                "genre_rosamerica",
+                "genre_electronic",
+                "genre_dortmund",
+                "genre_tzanetakis",
+            ]
+            for field in genre_fields:
+                genre_obj = recording.get(field)
+                if isinstance(genre_obj, dict):
+                    value = genre_obj.get("value")
+                    prob = genre_obj.get("probability", 0)
+                    if value and prob and float(prob) > 0.3:
+                        genres.append(str(value).lower())
+
+            genres = list(dict.fromkeys(genres))  # deduplicate, preserve order
+
+            return {
+                "mbid": mbid,
+                "genres": genres,
+                "high_level": recording,
+            }
+
+        except requests.RequestException as e:
+            err_str = str(e).lower()
+            if ("connection reset" in err_str or "errno 54" in err_str) and attempt < MAX_RETRIES - 1:
+                wait = RETRY_BACKOFF * (2**attempt)
+                logger.warning("AcousticBrainz high-level connection error for %s, retrying in %.1fs (attempt %d/%d)", mbid, wait, attempt + 1, MAX_RETRIES)
+                time.sleep(wait)
+            else:
+                logger.warning("AcousticBrainz high-level request failed for %s: %s", mbid, e)
+                return None
+        except (ValueError, KeyError) as e:
+            logger.warning("Failed to parse AcousticBrainz high-level response for %s: %s", mbid, e)
             return None
-
-        recording = _get_recording_data(data, mbid)
-        if recording is None:
-            return None
-
-        genres = []
-        genre_fields = [
-            "genre_rosamerica",
-            "genre_electronic",
-            "genre_dortmund",
-            "genre_tzanetakis",
-        ]
-        for field in genre_fields:
-            genre_obj = recording.get(field)
-            if isinstance(genre_obj, dict):
-                value = genre_obj.get("value")
-                prob = genre_obj.get("probability", 0)
-                if value and prob and float(prob) > 0.3:
-                    genres.append(str(value).lower())
-
-        genres = list(dict.fromkeys(genres))  # deduplicate, preserve order
-
-        return {
-            "mbid": mbid,
-            "genres": genres,
-            "high_level": recording,
-        }
-
-    except requests.RequestException as e:
-        logger.warning("AcousticBrainz high-level request failed for %s: %s", mbid, e)
-        return None
-    except (ValueError, KeyError) as e:
-        logger.warning("Failed to parse AcousticBrainz high-level response for %s: %s", mbid, e)
-        return None
+    return None
 
 
 def get_all_features(mbid: str) -> Optional[dict]:

@@ -5,41 +5,16 @@
     "tier": "popular",
     "artist": "The Beatles",
     "track": "Hey Jude",
-    "mbid": "9c6dee44-524c-42a7-ab7e-6d1ad3847f31",
-    "audio_features": {},
-    "genres": [],
-    "credits": {
-      "main_artist": "Thomas Illig",
-      "featured_artists": [],
-      "writers": [],
-      "producers": []
-    },
-    "language": "eng",
-    "collection_status": "partial"
-  },
-  {
-    "decade": "1960s",
-    "genre": "rock",
-    "tier": "popular",
-    "artist": "The Beatles",
-    "track": "Come Together",
-    "mbid": "09598cf2-539d-46e9-b375-676ec2abd076",
+    "mbid": "7b0b9016-59c5-4a83-9bcc-a6051453e422",
     "audio_features": {
-      "tempo": 152.674636841,
-      "key": "G minor",
-      "mode": "minor",
-      "time_signature": 561,
-      "loudness": 0.94029968977,
-      "duration": 222.014694214
+      "tempo": 147.793838501,
+      "key": "A# major",
+      "mode": "major",
+      "time_signature": 1082,
+      "loudness": 0.827745258808,
+      "duration": 439.706665039
     },
     "genres": [],
-    "credits": {
-      "main_artist": "Babyskin Sleepingbag",
-      "featured_artists": [],
-      "writers": [],
-      "producers": []
-    },
-    "language": "eng",
     "collection_status": "complete"
   },
   {
@@ -47,17 +22,21 @@
     "genre": "rock",
     "tier": "popular",
     "artist": "The Beatles",
-    "track": "Let It Be",
-    "mbid": "8f25200e-5fd4-4c3f-be4c-43f2a4eca96f",
+    "track": "Come Together",
+    "mbid": "a3a89127-a95d-48dc-8457-0573a68bf3a5",
     "audio_features": {},
     "genres": [],
-    "credits": {
-      "main_artist": "Sikus",
-      "featured_artists": [],
-      "writers": [],
-      "producers": []
-    },
-    "language": null,
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "Let It Be",
+    "mbid": "a8eb018d-4713-4c14-9309-f5fba53a9b92",
+    "audio_features": {},
+    "genres": [],
     "collection_status": "partial"
   },
   {
@@ -69,13 +48,6 @@
     "mbid": "93604c96-f0e5-4486-8f46-b1348d363b97",
     "audio_features": {},
     "genres": [],
-    "credits": {
-      "main_artist": "The Beatles",
-      "featured_artists": [],
-      "writers": [],
-      "producers": []
-    },
-    "language": "eng",
     "collection_status": "partial"
   },
   {
@@ -84,16 +56,9 @@
     "tier": "popular",
     "artist": "The Beatles",
     "track": "A Day in the Life",
-    "mbid": "18673922-9f84-4c4c-928b-5b6d29cc893b",
+    "mbid": "7be4ce18-19ab-4679-9cbc-2d62589418ac",
     "audio_features": {},
     "genres": [],
-    "credits": {
-      "main_artist": "Mrt",
-      "featured_artists": [],
-      "writers": [],
-      "producers": []
-    },
-    "language": "eng",
     "collection_status": "partial"
   },
   {
@@ -102,17 +67,10 @@
     "tier": "popular",
     "artist": "The Beatles",
     "track": "Strawberry Fields Forever",
-    "mbid": "0a76c731-11e5-4ac2-bfb1-8b503013609c",
+    "mbid": null,
     "audio_features": {},
     "genres": [],
-    "credits": {
-      "main_artist": "The Beatles",
-      "featured_artists": [],
-      "writers": [],
-      "producers": []
-    },
-    "language": "eng",
-    "collection_status": "partial"
+    "collection_status": "failed"
   },
   {
     "decade": "1960s",
@@ -120,17 +78,17 @@
     "tier": "popular",
     "artist": "The Rolling Stones",
     "track": "Paint It Black",
-    "mbid": "f53cbc46-0b1e-4ffd-8981-5bbc4322d1a0",
-    "audio_features": {},
-    "genres": [],
-    "credits": {
-      "main_artist": "The Feelies",
-      "featured_artists": [],
-      "writers": [],
-      "producers": []
+    "mbid": "11a499c8-48dd-4e45-a4ba-b517c716136a",
+    "audio_features": {
+      "tempo": 161.606765747,
+      "key": "E minor",
+      "mode": "minor",
+      "time_signature": 532,
+      "loudness": 0.902219057083,
+      "duration": 202.600006104
     },
-    "language": "eng",
-    "collection_status": "partial"
+    "genres": [],
+    "collection_status": "complete"
   },
   {
     "decade": "1960s",
@@ -138,17 +96,10 @@
     "tier": "popular",
     "artist": "The Rolling Stones",
     "track": "Gimme Shelter",
-    "mbid": "cad7dbcf-7769-47ce-8779-ce4de0a018f4",
+    "mbid": null,
     "audio_features": {},
     "genres": [],
-    "credits": {
-      "main_artist": "Head Like a Kite",
-      "featured_artists": [],
-      "writers": [],
-      "producers": []
-    },
-    "language": "eng",
-    "collection_status": "partial"
+    "collection_status": "failed"
   },
   {
     "decade": "1960s",
@@ -156,16 +107,9 @@
     "tier": "popular",
     "artist": "The Rolling Stones",
     "track": "Sympathy for the Devil",
-    "mbid": "58d2902e-1f54-4425-84f1-daa0d4f396d8",
+    "mbid": "30329662-85eb-4674-9e8c-591293add731",
     "audio_features": {},
     "genres": [],
-    "credits": {
-      "main_artist": "Complex Machine",
-      "featured_artists": [],
-      "writers": [],
-      "producers": []
-    },
-    "language": "eng",
     "collection_status": "partial"
   },
   {
@@ -174,16 +118,1146 @@
     "tier": "popular",
     "artist": "The Rolling Stones",
     "track": "Satisfaction",
-    "mbid": "2d8fc994-5154-4c2d-96fa-83d368cd83ce",
+    "mbid": "149631e7-8b1f-47ac-963d-931f6a9c2792",
     "audio_features": {},
     "genres": [],
-    "credits": {
-      "main_artist": "Draaiorgel \"De Adriaen\"",
-      "featured_artists": [],
-      "writers": [],
-      "producers": []
-    },
-    "language": null,
     "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Rolling Stones",
+    "track": "Jumpin' Jack Flash",
+    "mbid": "265c86aa-c163-47de-854c-d2308c91a8ee",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Who",
+    "track": "My Generation",
+    "mbid": "8d615d00-6c4c-4464-af2f-04b74f578a54",
+    "audio_features": {
+      "tempo": 95.2254486084,
+      "key": "G minor",
+      "mode": "minor",
+      "time_signature": 317,
+      "loudness": 0.941190540791,
+      "duration": 201.064483643
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Who",
+    "track": "Baba O'Riley",
+    "mbid": null,
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "failed"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Who",
+    "track": "Won't Get Fooled Again",
+    "mbid": "0e8bf369-4eda-41c0-9c90-22c5c85dc376",
+    "audio_features": {
+      "tempo": 135.109436035,
+      "key": "D major",
+      "mode": "major",
+      "time_signature": 1157,
+      "loudness": 0.876204788685,
+      "duration": 512.743041992
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Who",
+    "track": "Pinball Wizard",
+    "mbid": "374fec39-887e-4d88-ae3f-501e617f1a3b",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Doors",
+    "track": "Light My Fire",
+    "mbid": "397ec314-a948-4e2a-8c3b-c08ce2857d9e",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Doors",
+    "track": "Break On Through",
+    "mbid": "d31507cd-96c9-4991-84eb-e2f1236de553",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Doors",
+    "track": "Riders on the Storm",
+    "mbid": null,
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "failed"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Jimi Hendrix",
+    "track": "Purple Haze",
+    "mbid": null,
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "failed"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Jimi Hendrix",
+    "track": "All Along the Watchtower",
+    "mbid": "8fd797c2-c7e9-40dc-bbe3-5dd047fca7ff",
+    "audio_features": {
+      "tempo": 115.210441589,
+      "key": "D# major",
+      "mode": "major",
+      "time_signature": 685,
+      "loudness": 0.785868525505,
+      "duration": 340.350463867
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Jimi Hendrix",
+    "track": "Voodoo Child (Slight Return)",
+    "mbid": "9870f8ce-3902-4bb8-ad4d-f40c00e0be07",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Kinks",
+    "track": "Waterloo Sunset",
+    "mbid": "41fea617-427c-4dd9-b570-abec50596c75",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Kinks",
+    "track": "You Really Got Me",
+    "mbid": null,
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "failed"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Kinks",
+    "track": "Lola",
+    "mbid": null,
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "failed"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Kinks",
+    "track": "Sunny Afternoon",
+    "mbid": "4a4a6374-eaeb-4365-9e5d-9fcad850a95d",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Byrds",
+    "track": "Mr. Tambourine Man",
+    "mbid": "eb125944-a727-4df4-9ca5-2eefc501c78a",
+    "audio_features": {
+      "tempo": 120.690925598,
+      "key": "D major",
+      "mode": "major",
+      "time_signature": 298,
+      "loudness": 0.80736207962,
+      "duration": 150.746673584
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Byrds",
+    "track": "Turn! Turn! Turn!",
+    "mbid": "c376dfda-bcf6-4c10-84fd-b1561452d32d",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Byrds",
+    "track": "Eight Miles High",
+    "mbid": "a283463c-e516-43be-9edf-b544b023732c",
+    "audio_features": {
+      "tempo": 129.831283569,
+      "key": "F major",
+      "mode": "major",
+      "time_signature": 470,
+      "loudness": 0.933341443539,
+      "duration": 216.241638184
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Cream",
+    "track": "Sunshine of Your Love",
+    "mbid": "36fb203f-eddc-48fc-9b2f-dc0bce1c7886",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Cream",
+    "track": "White Room",
+    "mbid": "65ad4a8d-4858-4a73-aeaa-ec387e333759",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Cream",
+    "track": "Crossroads",
+    "mbid": "bf0f9157-83e9-496e-96f7-f4982ee6251d",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Yardbirds",
+    "track": "Heart Full of Soul",
+    "mbid": "e955f1ad-b63f-41aa-b31d-3b4ddbeaee99",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Yardbirds",
+    "track": "For Your Love",
+    "mbid": "a01db99b-deae-43fa-8b15-e9f53355de0b",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Jefferson Airplane",
+    "track": "Somebody to Love",
+    "mbid": "aa9fb372-52bb-4afc-b8fb-3aae20672d79",
+    "audio_features": {
+      "tempo": 132.320739746,
+      "key": "B major",
+      "mode": "major",
+      "time_signature": 393,
+      "loudness": 0.691514015198,
+      "duration": 178.182296753
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Jefferson Airplane",
+    "track": "White Rabbit",
+    "mbid": "534f911f-fa1d-4966-b090-63431fbeba28",
+    "audio_features": {
+      "tempo": 116.608169556,
+      "key": "D major",
+      "mode": "major",
+      "time_signature": 267,
+      "loudness": 0.897001445293,
+      "duration": 140.199188232
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Animals",
+    "track": "House of the Rising Sun",
+    "mbid": "38872c55-5e58-455d-bac8-b215ae64c859",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Animals",
+    "track": "We Gotta Get Out of This Place",
+    "mbid": null,
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "failed"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Band",
+    "track": "The Weight",
+    "mbid": "7c3da937-8567-4f89-83f5-210a856ac41e",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Band",
+    "track": "Up on Cripple Creek",
+    "mbid": null,
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "failed"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Creedence Clearwater Revival",
+    "track": "Fortunate Son",
+    "mbid": "9e74fbaf-8d5b-40fc-a2c2-955712df69c0",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Stooges",
+    "track": "Search and Destroy",
+    "mbid": "2bdbfb18-a529-4b4d-a868-6ebbdcd98e9e",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Love",
+    "track": "Alone Again Or",
+    "mbid": "07afbfa3-ee0a-4c37-93ce-ed1f1f1a41d4",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Love",
+    "track": "7 and 7 Is",
+    "mbid": "e6c6a1fe-ac71-4c35-8e68-cce75af847a3",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Sonics",
+    "track": "Strychnine",
+    "mbid": "fc15cd64-df7c-4762-bf8e-22d638e37da6",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Sonics",
+    "track": "Have Love Will Travel",
+    "mbid": "907a577e-f49b-48a8-9a2b-c25d7334700a",
+    "audio_features": {
+      "tempo": 130.071609497,
+      "key": "F major",
+      "mode": "major",
+      "time_signature": 339,
+      "loudness": 0.981673955917,
+      "duration": 156.760818481
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "13th Floor Elevators",
+    "track": "You're Gonna Miss Me",
+    "mbid": "64f75a90-fb82-4d3a-9d66-f76c450587e3",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Seeds",
+    "track": "Pushin' Too Hard",
+    "mbid": "54d668ba-6530-4d96-899a-5e3b998c0845",
+    "audio_features": {
+      "tempo": 143.591140747,
+      "key": "C# major",
+      "mode": "major",
+      "time_signature": 374,
+      "loudness": 0.929738938808,
+      "duration": 157.19909668
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Pretty Things",
+    "track": "Rosalyn",
+    "mbid": "7bea4c8a-158c-4dbd-a355-a10e817a82e4",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Shadows of Knight",
+    "track": "Gloria",
+    "mbid": "4411d95d-c6fa-4687-803b-d62df3e46bae",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Count Five",
+    "track": "Psychotic Reaction",
+    "mbid": "2cd42fc9-934f-437a-b266-bc68c1c93081",
+    "audio_features": {
+      "tempo": 165.090332031,
+      "key": "F# major",
+      "mode": "major",
+      "time_signature": 493,
+      "loudness": 0.890447497368,
+      "duration": 189.893325806
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Stooges",
+    "track": "Search and Destroy",
+    "mbid": "2bdbfb18-a529-4b4d-a868-6ebbdcd98e9e",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Love",
+    "track": "Alone Again Or",
+    "mbid": "07afbfa3-ee0a-4c37-93ce-ed1f1f1a41d4",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Love",
+    "track": "7 and 7 Is",
+    "mbid": "e6c6a1fe-ac71-4c35-8e68-cce75af847a3",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Sonics",
+    "track": "Strychnine",
+    "mbid": "fc15cd64-df7c-4762-bf8e-22d638e37da6",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Sonics",
+    "track": "Have Love Will Travel",
+    "mbid": "907a577e-f49b-48a8-9a2b-c25d7334700a",
+    "audio_features": {
+      "tempo": 130.071609497,
+      "key": "F major",
+      "mode": "major",
+      "time_signature": 339,
+      "loudness": 0.981673955917,
+      "duration": 156.760818481
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "13th Floor Elevators",
+    "track": "You're Gonna Miss Me",
+    "mbid": "64f75a90-fb82-4d3a-9d66-f76c450587e3",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Seeds",
+    "track": "Pushin' Too Hard",
+    "mbid": null,
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "failed"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Pretty Things",
+    "track": "Rosalyn",
+    "mbid": "7bea4c8a-158c-4dbd-a355-a10e817a82e4",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Shadows of Knight",
+    "track": "Gloria",
+    "mbid": "4411d95d-c6fa-4687-803b-d62df3e46bae",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Count Five",
+    "track": "Psychotic Reaction",
+    "mbid": "2cd42fc9-934f-437a-b266-bc68c1c93081",
+    "audio_features": {
+      "tempo": 165.090332031,
+      "key": "F# major",
+      "mode": "major",
+      "time_signature": 493,
+      "loudness": 0.890447497368,
+      "duration": 189.893325806
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Beach Boys",
+    "track": "Good Vibrations",
+    "mbid": "bac39a14-7b4d-486e-991e-9c42426c315c",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Beach Boys",
+    "track": "God Only Knows",
+    "mbid": null,
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "failed"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Beach Boys",
+    "track": "Wouldn't It Be Nice",
+    "mbid": "cb9965db-1373-493b-b0ce-07c4dcc24c89",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Beach Boys",
+    "track": "California Girls",
+    "mbid": "fb7121fe-6cef-42e4-bf43-8b883d558f23",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Supremes",
+    "track": "You Can't Hurry Love",
+    "mbid": "fda8e81b-a1e7-4201-82a9-6c2f19cbda6a",
+    "audio_features": {
+      "tempo": 97.048866272,
+      "key": "A# major",
+      "mode": "major",
+      "time_signature": 262,
+      "loudness": 0.938812196255,
+      "duration": 163.213058472
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Supremes",
+    "track": "Stop! In the Name of Love",
+    "mbid": "fc9df922-7647-45f8-8acb-d4cded12add1",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Supremes",
+    "track": "Baby Love",
+    "mbid": "f1662a57-81e6-44bc-8988-3e2e067f2cf7",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Supremes",
+    "track": "Where Did Our Love Go",
+    "mbid": "ed0194dd-7113-49ab-868a-7751a7fd5cf7",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Temptations",
+    "track": "My Girl",
+    "mbid": "8564c913-f3ad-4627-8734-91717b9bd2ac",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Temptations",
+    "track": "Ain't Too Proud to Beg",
+    "mbid": "22083c07-6648-4976-b895-0391aa284cf4",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Temptations",
+    "track": "Papa Was a Rollin' Stone",
+    "mbid": "8700db9b-8051-4980-a69b-a129e4f4077c",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Four Tops",
+    "track": "I Can't Help Myself",
+    "mbid": "d7897fd3-c476-4628-be72-60990c00efcd",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Four Tops",
+    "track": "Reach Out I'll Be There",
+    "mbid": "bd1a0dc8-7c66-487a-bdba-11ef6caa737a",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Dionne Warwick",
+    "track": "Walk On By",
+    "mbid": "7c433ecd-9943-4bbc-966c-3373bca7930e",
+    "audio_features": {
+      "tempo": 99.0452041626,
+      "key": "F major",
+      "mode": "major",
+      "time_signature": 275,
+      "loudness": 0.372110813856,
+      "duration": 167.262039185
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Dionne Warwick",
+    "track": "I Say a Little Prayer",
+    "mbid": "38ba2f98-037f-4838-88f4-e66496c28cbb",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Shirelles",
+    "track": "Will You Love Me Tomorrow",
+    "mbid": "76069f81-71c6-4f91-902f-61ffc4556b2c",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Crystals",
+    "track": "Then He Kissed Me",
+    "mbid": "ed951455-103f-446c-8d12-115f1b30360e",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Drifters",
+    "track": "Under the Boardwalk",
+    "mbid": "4afaeb44-4ca8-41ce-95c8-fac1e3c47384",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Mamas & The Papas",
+    "track": "California Dreamin'",
+    "mbid": null,
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "failed"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Mamas & The Papas",
+    "track": "Monday, Monday",
+    "mbid": "a6e700be-0f9b-4831-a6a7-6e7f9634f2ab",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Mamas & The Papas",
+    "track": "Dream a Little Dream of Me",
+    "mbid": "c8e468e7-ebf0-4a6e-8da8-c86c70e6841d",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Dusty Springfield",
+    "track": "Son of a Preacher Man",
+    "mbid": "7541e178-f5a7-4227-bb2b-840f8dbba875",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Dusty Springfield",
+    "track": "You Don't Have to Say You Love Me",
+    "mbid": "1e649f88-a420-4d5a-96bf-2d5862938158",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Petula Clark",
+    "track": "Downtown",
+    "mbid": "c54344e2-21f4-4acb-9994-d79786ea0f2d",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Nancy Sinatra",
+    "track": "These Boots Are Made for Walkin'",
+    "mbid": "e145d1b1-ed32-4dea-882b-e7ec00f4dda8",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Ronettes",
+    "track": "Be My Baby",
+    "mbid": "ee6917e1-68c8-4695-9bca-e4aa6cbc73c6",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Ronettes",
+    "track": "Walking in the Rain",
+    "mbid": "aa021601-6b0e-46ef-8cd0-ed737afc0581",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Shangri-Las",
+    "track": "Leader of the Pack",
+    "mbid": "6072bda3-4229-4fb2-b963-536a9ebd1953",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Shangri-Las",
+    "track": "Remember (Walking in the Sand)",
+    "mbid": "73e7bbf0-307f-4045-9135-8bf71fa2d98b",
+    "audio_features": {
+      "tempo": 99.0208892822,
+      "key": "D minor",
+      "mode": "minor",
+      "time_signature": 215,
+      "loudness": 0.913989603519,
+      "duration": 116.584487915
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Lesley Gore",
+    "track": "It's My Party",
+    "mbid": "09903090-7717-4b59-a19a-de933fde2f4d",
+    "audio_features": {
+      "tempo": 133.645339966,
+      "key": "A major",
+      "mode": "major",
+      "time_signature": 299,
+      "loudness": 0.963481843472,
+      "duration": 134.629302979
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Bobby Vinton",
+    "track": "Blue Velvet",
+    "mbid": "880e1e24-adaa-4299-9f61-fbcc88f75f52",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Bobby Vee",
+    "track": "Take Good Care of My Baby",
+    "mbid": "4bbab4ab-c994-4af4-af03-a65f1f3bb58e",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Sandy Denny",
+    "track": "Who Knows Where the Time Goes",
+    "mbid": "90d1a93b-66f7-4bd3-807d-c450d90cd5b8",
+    "audio_features": {
+      "tempo": 132.533950806,
+      "key": "D# major",
+      "mode": "major",
+      "time_signature": 735,
+      "loudness": 0.00724593736231,
+      "duration": 336.561645508
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Vashti Bunyan",
+    "track": "Diamond Day",
+    "mbid": "66061567-5efc-4d55-8898-83ee71075411",
+    "audio_features": {
+      "tempo": 151.878677368,
+      "key": "D major",
+      "mode": "major",
+      "time_signature": 264,
+      "loudness": 0.637190520763,
+      "duration": 107.102043152
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Nico",
+    "track": "These Days",
+    "mbid": "ab7cf97d-f83b-4e54-86d7-23e3ad89f7a1",
+    "audio_features": {
+      "tempo": 184.570770264,
+      "key": "A# major",
+      "mode": "major",
+      "time_signature": 636,
+      "loudness": 0.785626232624,
+      "duration": 212.666671753
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Linda Perhacs",
+    "track": "Chimacum Rain",
+    "mbid": "b2b91f9c-f9af-4938-bee4-69f69a815d46",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Judee Sill",
+    "track": "The Kiss",
+    "mbid": null,
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "failed"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Karen Dalton",
+    "track": "Something on Your Mind",
+    "mbid": "6684cfd8-5eaf-4dbe-91ac-e0937ecc1c96",
+    "audio_features": {
+      "tempo": 151.739654541,
+      "key": "D major",
+      "mode": "major",
+      "time_signature": 512,
+      "loudness": 0.959744632244,
+      "duration": 203.363265991
+    },
+    "genres": [],
+    "collection_status": "complete"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "popular",
+    "artist": "Miles Davis",
+    "track": "So What",
+    "mbid": "b1df41c8-68ff-4e22-b236-612f990b776f",
+    "audio_features": {},
+    "genres": [],
+    "collection_status": "partial"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "popular",
+    "artist": "Miles Davis",
+    "track": "Blue in Green",
+    "mbid": "8121ce09-135d-477d-aafb-0404f1f15b78",
+    "audio_features": {
+      "tempo": 111.986755371,
+      "key": "F major",
+      "mode": "major",
+      "time_signature": 656,
+      "loudness": 0.0461000911891,
+      "duration": 337.502044678
+    },
+    "genres": [],
+    "collection_status": "complete"
   }
 ]
