@@ -16,6 +16,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Constants
+MIN_GENRE_PROBABILITY = 0.3  # Minimum probability threshold for genre classification
+MIN_CONFIDENCE_PROBABILITY = 0.5  # Minimum probability threshold for high-level features
+
 # Filename pattern: mbid-0.json or mbid.json (MBID = UUID). Allow leading zeros before UUID.
 MBID_FROM_FNAME = re.compile(
     r"(?:[0-9a-f]+)?([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})",
@@ -61,7 +65,7 @@ def parse_highlevel_json(data: dict) -> List[str]:
         if isinstance(genre_obj, dict):
             value = genre_obj.get("value")
             prob = genre_obj.get("probability", 0)
-            if value and prob and float(prob) > 0.3:
+            if value and prob and float(prob) > MIN_GENRE_PROBABILITY:
                 genres.append(str(value).lower())
     return list(dict.fromkeys(genres))
 
@@ -82,8 +86,16 @@ def parse_metadata_from_dump(root: dict) -> dict:
     return out
 
 
-def _value_if_confident(obj: dict, min_prob: float = 0.5) -> Optional[str]:
-    """Return value if object has value and probability >= min_prob."""
+def _value_if_confident(obj: dict, min_prob: float = MIN_CONFIDENCE_PROBABILITY) -> Optional[str]:
+    """Return value if object has value and probability >= min_prob.
+    
+    Args:
+        obj: Dictionary containing 'value' and 'probability' keys
+        min_prob: Minimum probability threshold (defaults to MIN_CONFIDENCE_PROBABILITY)
+        
+    Returns:
+        Lowercased value string if confident, None otherwise
+    """
     if not isinstance(obj, dict):
         return None
     val = obj.get("value")

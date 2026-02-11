@@ -12,26 +12,37 @@ Run this to showcase:
 - Similarity metrics for Module 5 (Clustering)
 """
 
-import json
-from typing import Dict, List, Set, Tuple, Optional
-from collections import defaultdict, Counter
+# Standard library imports
 import sys
+from collections import Counter, defaultdict
 from pathlib import Path
+from typing import Dict, List, Optional, Set, Tuple
 
+# Local imports
 # Add src directory to path to import KnowledgeBase
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 from knowledge_base_wrapper import KnowledgeBase
 
 
-def print_section(title: str):
-    """Print a formatted section header."""
+def print_section(title: str) -> None:
+    """Print a formatted section header.
+    
+    Args:
+        title: The section title to display
+    """
     print("\n" + "=" * 70)
     print(f"  {title}")
     print("=" * 70)
 
 
-def print_song_info(kb: KnowledgeBase, mbid: str, title: str = "Song"):
-    """Print formatted song information."""
+def print_song_info(kb: KnowledgeBase, mbid: str, title: str = "Song") -> None:
+    """Print formatted song information.
+    
+    Args:
+        kb: KnowledgeBase instance to query
+        mbid: MusicBrainz ID of the song
+        title: Display title for the song
+    """
     song = kb.get_song(mbid)
     if not song:
         print(f"  {title}: Song not found")
@@ -271,35 +282,34 @@ def demo_5_clustering_features(kb: KnowledgeBase):
         # Calculate similarity metrics
         genre1 = kb.get_fact('has_genre', song1_mbid)
         genre2 = kb.get_fact('has_genre', song2_mbid)
-        
         loudness1 = kb.get_fact('has_loudness', song1_mbid)
         loudness2 = kb.get_fact('has_loudness', song2_mbid)
-        
         danceable1 = kb.get_fact('has_danceable', song1_mbid)
         danceable2 = kb.get_fact('has_danceable', song2_mbid)
-        
         mood1 = kb.get_fact('has_mood', song1_mbid)
         mood2 = kb.get_fact('has_mood', song2_mbid)
         
         print("\n    Similarity metrics:")
         
-        if genre1 and genre2:
-            if isinstance(genre1, list) and isinstance(genre2, list):
-                shared_genres = set(genre1) & set(genre2)
-                print(f"      • Shared genres: {len(shared_genres)} ({', '.join(shared_genres) if shared_genres else 'none'})")
+        # Genre similarity
+        if isinstance(genre1, list) and isinstance(genre2, list):
+            shared_genres = set(genre1) & set(genre2)
+            print(f"      • Shared genres: {len(shared_genres)} ({', '.join(shared_genres) if shared_genres else 'none'})")
         
+        # Loudness similarity
         if loudness1 is not None and loudness2 is not None:
             loudness_diff = abs(loudness1 - loudness2)
             print(f"      • Loudness difference: {loudness_diff:.1f} dB")
         
+        # Danceability similarity
         if danceable1 and danceable2:
             danceable_match = "Yes" if danceable1 == danceable2 else "No"
             print(f"      • Danceability match: {danceable_match}")
         
-        if mood1 and mood2:
-            if isinstance(mood1, list) and isinstance(mood2, list):
-                shared_moods = set(mood1) & set(mood2)
-                print(f"      • Shared moods: {len(shared_moods)} ({', '.join(shared_moods) if shared_moods else 'none'})")
+        # Mood similarity
+        if isinstance(mood1, list) and isinstance(mood2, list):
+            shared_moods = set(mood1) & set(mood2)
+            print(f"      • Shared moods: {len(shared_moods)} ({', '.join(shared_moods) if shared_moods else 'none'})")
         
         # Show clustering potential
         print("\n  Clustering capabilities:")
@@ -407,9 +417,16 @@ def main():
 
     print_section("HUMAN GENERATED QUERY EXAMPLE")
     mbid = kb.get_mbid_by_song("Fire Engine Dream")
-    print("\nFire Engine Dream by Sonic Youth MBID: " + mbid)
-    print("Genres: " + str(kb.get_fact('has_genre',mbid)))
-    print("Loudness: " + str(kb.get_fact('has_loudness', mbid)))
+    if mbid:
+        song = kb.get_song(mbid)
+        artist = song.get('artist', 'Unknown') if song else 'Unknown'
+        genres = kb.get_fact('has_genre', mbid)
+        loudness = kb.get_fact('has_loudness', mbid)
+        print(f"\nFire Engine Dream by {artist} MBID: {mbid}")
+        print(f"Genres: {genres}")
+        print(f"Loudness: {loudness}")
+    else:
+        print("\nSong 'Fire Engine Dream' not found in knowledge base")
     print("\n")
 
 

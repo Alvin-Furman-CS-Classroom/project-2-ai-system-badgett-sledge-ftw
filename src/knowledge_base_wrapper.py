@@ -20,6 +20,11 @@ class KnowledgeBase:
         
         Args:
             kb_path: Path to the knowledge_base.json file (relative to project root or absolute)
+            
+        Raises:
+            FileNotFoundError: If the knowledge base file doesn't exist
+            json.JSONDecodeError: If the file contains invalid JSON
+            IOError: If there's an error reading the file
         """
         # Handle both relative and absolute paths
         kb_file = Path(kb_path)
@@ -28,8 +33,16 @@ class KnowledgeBase:
             project_root = Path(__file__).parent.parent
             kb_file = project_root / kb_path
         
-        with open(kb_file, 'r', encoding='utf-8') as f:
-            self.data = json.load(f)
+        try:
+            with open(kb_file, 'r', encoding='utf-8') as f:
+                self.data = json.load(f)
+        except FileNotFoundError:
+            raise FileNotFoundError(f"Knowledge base file not found: {kb_file}")
+        except json.JSONDecodeError as e:
+            raise json.JSONDecodeError(f"Invalid JSON in knowledge base file {kb_file}: {e.msg}", e.doc, e.pos)
+        except IOError as e:
+            raise IOError(f"Error reading knowledge base file {kb_file}: {e}")
+        
         self.songs = self.data.get('songs', {})
         self.facts = self.data.get('facts', {})
         self.indexes = self.data.get('indexes', {})
@@ -185,6 +198,50 @@ class KnowledgeBase:
         fact_dict = self.facts.get(fact_type, {})
         return mbid in fact_dict
     
+    def _exact_match_search(self, track_lower: str, artist_lower: Optional[str]) -> Optional[str]:
+        """
+        Search for exact match of track and artist.
+        
+        Args:
+            track_lower: Lowercase track name
+            artist_lower: Lowercase artist name or None
+            
+        Returns:
+            MBID if exact match found, None otherwise
+        """
+        for mbid, song in self.songs.items():
+            song_track = song.get('track', '').strip().lower()
+            song_artist = song.get('artist', '').strip().lower()
+            
+            if song_track == track_lower:
+                if artist_lower is None:
+                    return mbid
+                if song_artist == artist_lower:
+                    return mbid
+        return None
+    
+    def _partial_match_search(self, track_lower: str, artist_lower: Optional[str]) -> Optional[str]:
+        """
+        Search for partial match of track name (contains or is contained by).
+        
+        Args:
+            track_lower: Lowercase track name
+            artist_lower: Lowercase artist name or None
+            
+        Returns:
+            MBID if partial match found, None otherwise
+        """
+        for mbid, song in self.songs.items():
+            song_track = song.get('track', '').strip().lower()
+            
+            if track_lower in song_track or song_track in track_lower:
+                if artist_lower is None:
+                    return mbid
+                song_artist = song.get('artist', '').strip().lower()
+                if artist_lower in song_artist or song_artist in artist_lower:
+                    return mbid
+        return None
+    
     def get_mbid_by_song(self, track_name: str, artist_name: Optional[str] = None) -> Optional[str]:
         """
         Find MBID by song name (and optionally artist name).
@@ -196,43 +253,28 @@ class KnowledgeBase:
         Returns:
             MBID string if found, None otherwise. If multiple matches and artist is not provided,
             returns the first match. If artist is provided, returns exact match or None.
+            
+        Raises:
+            TypeError: If track_name is not a string
+            ValueError: If track_name is empty after stripping
         """
+        if not isinstance(track_name, str):
+            raise TypeError(f"track_name must be a string, got {type(track_name)}")
+        if not track_name.strip():
+            raise ValueError("track_name cannot be empty")
+        if artist_name is not None and not isinstance(artist_name, str):
+            raise TypeError(f"artist_name must be a string or None, got {type(artist_name)}")
+        
         track_lower = track_name.strip().lower()
         artist_lower = artist_name.strip().lower() if artist_name else None
         
-        # If artist is provided, do exact match
-        if artist_lower:
-            for mbid, song in self.songs.items():
-                song_track = song.get('track', '').strip().lower()
-                song_artist = song.get('artist', '').strip().lower()
-                
-                if song_track == track_lower and song_artist == artist_lower:
-                    return mbid
+        # Try exact match first
+        result = self._exact_match_search(track_lower, artist_lower)
+        if result:
+            return result
         
-        # Otherwise, search for track name match (case-insensitive)
-        for mbid, song in self.songs.items():
-            song_track = song.get('track', '').strip().lower()
-            
-            if song_track == track_lower:
-                # If no artist specified, return first match
-                if not artist_lower:
-                    return mbid
-                # If artist specified but didn't match above, continue searching
-                continue
-        
-        # If no exact match, try partial match (track name contains search term)
-        for mbid, song in self.songs.items():
-            song_track = song.get('track', '').strip().lower()
-            
-            if track_lower in song_track or song_track in track_lower:
-                if not artist_lower:
-                    return mbid
-                # If artist specified, check if it matches too
-                song_artist = song.get('artist', '').strip().lower()
-                if artist_lower in song_artist or song_artist in artist_lower:
-                    return mbid
-        
-        return None
+        # Fall back to partial match
+        return self._partial_match_search(track_lower, artist_lower)
     
     def find_songs_by_name(self, track_name: str, artist_name: Optional[str] = None) -> List[str]:
         """
