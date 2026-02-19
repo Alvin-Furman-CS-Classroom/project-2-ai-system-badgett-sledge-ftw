@@ -53,7 +53,41 @@ Provide commands or scripts for running modules and demos.
 
 **Integration Tests** (`integration_tests/`): Create a new subfolder for each module beyond the first, demonstrating how modules work together.
 
-Provide commands to run tests and describe any test data needed.
+### Running Tests
+
+Install test dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+Run all unit tests:
+```bash
+pytest unit_tests/ -v
+```
+
+Run specific test file:
+```bash
+pytest unit_tests/knowledge_base_wrapper_test.py -v
+pytest unit_tests/data_acquisition/test_build_kb.py -v
+```
+
+Run tests with coverage:
+```bash
+pytest unit_tests/ --cov=src --cov-report=html
+```
+
+### Test Structure
+
+- `unit_tests/knowledge_base_wrapper_test.py`: Tests for KnowledgeBase class
+- `unit_tests/data_acquisition/test_build_kb.py`: Tests for knowledge base builder
+- `unit_tests/fixtures/test_knowledge_base.json`: Test fixture with sample knowledge base data
+
+### Test Coverage Goals
+
+- All public methods of KnowledgeBase class
+- Error handling and edge cases
+- Knowledge base construction and validation
+- Fact extraction and index building
 
 ## Checkpoint Log
 

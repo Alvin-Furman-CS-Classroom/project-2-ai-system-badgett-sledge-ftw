@@ -1,0 +1,102 @@
+{
+  "songs": {
+    "test-mbid-001": {
+      "mbid": "test-mbid-001",
+      "artist": "Test Artist",
+      "track": "Test Song",
+      "album": "Test Album"
+    },
+    "test-mbid-002": {
+      "mbid": "test-mbid-002",
+      "artist": "Rock Band",
+      "track": "Rock Song",
+      "album": "Rock Album"
+    },
+    "test-mbid-003": {
+      "mbid": "test-mbid-003",
+      "artist": "Pop Artist",
+      "track": "Pop Song",
+      "album": "Pop Album"
+    },
+    "test-mbid-004": {
+      "mbid": "test-mbid-004",
+      "artist": "Electronic Artist",
+      "track": "Electronic Song",
+      "album": "Electronic Album"
+    }
+  },
+  "facts": {
+    "has_genre": {
+      "test-mbid-001": ["rock", "alternative"],
+      "test-mbid-002": ["rock"],
+      "test-mbid-003": ["pop"],
+      "test-mbid-004": ["electronic"]
+    },
+    "has_loudness": {
+      "test-mbid-001": -8.5,
+      "test-mbid-002": -10.2,
+      "test-mbid-003": -5.8,
+      "test-mbid-004": -12.0
+    },
+    "has_danceable": {
+      "test-mbid-001": "not_danceable",
+      "test-mbid-002": "not_danceable",
+      "test-mbid-003": "danceable",
+      "test-mbid-004": "danceable"
+    },
+    "has_voice_instrumental": {
+      "test-mbid-001": "voice",
+      "test-mbid-002": "voice",
+      "test-mbid-003": "voice",
+      "test-mbid-004": "instrumental"
+    },
+    "has_timbre": {
+      "test-mbid-001": "bright",
+      "test-mbid-002": "dark",
+      "test-mbid-003": "bright",
+      "test-mbid-004": "bright"
+    },
+    "has_mood": {
+      "test-mbid-001": ["happy", "relaxed"],
+      "test-mbid-002": ["sad"],
+      "test-mbid-003": ["happy", "party"],
+      "test-mbid-004": ["relaxed"]
+    },
+    "has_duration": {
+      "test-mbid-001": 240.5,
+      "test-mbid-002": 180.0,
+      "test-mbid-003": 210.3,
+      "test-mbid-004": 300.0
+    },
+    "has_tempo": {},
+    "has_key": {},
+    "has_mode": {}
+  },
+  "indexes": {
+    "by_genre": {
+      "rock": ["test-mbid-001", "test-mbid-002"],
+      "alternative": ["test-mbid-001"],
+      "pop": ["test-mbid-003"],
+      "electronic": ["test-mbid-004"]
+    },
+    "by_danceable": {
+      "danceable": ["test-mbid-003", "test-mbid-004"],
+      "not_danceable": ["test-mbid-001", "test-mbid-002"]
+    },
+    "by_voice_instrumental": {
+      "voice": ["test-mbid-001", "test-mbid-002", "test-mbid-003"],
+      "instrumental": ["test-mbid-004"]
+    },
+    "by_timbre": {
+      "bright": ["test-mbid-001", "test-mbid-003", "test-mbid-004"],
+      "dark": ["test-mbid-002"]
+    },
+    "by_mood": {
+      "happy": ["test-mbid-001", "test-mbid-003"],
+      "relaxed": ["test-mbid-001", "test-mbid-004"],
+      "sad": ["test-mbid-002"],
+      "party": ["test-mbid-003"]
+    },
+    "by_tempo_range": {}
+  }
+}

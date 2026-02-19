@@ -1,0 +1,7002 @@
+[
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "Hey Jude"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "Come Together"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "Let It Be"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "Yesterday"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "A Day in the Life"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Beatles",
+    "track": "Strawberry Fields Forever"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Rolling Stones",
+    "track": "Paint It Black"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Rolling Stones",
+    "track": "Gimme Shelter"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Rolling Stones",
+    "track": "Sympathy for the Devil"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Rolling Stones",
+    "track": "Satisfaction"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Rolling Stones",
+    "track": "Jumpin' Jack Flash"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Who",
+    "track": "My Generation"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Who",
+    "track": "Baba O'Riley"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Who",
+    "track": "Won't Get Fooled Again"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Who",
+    "track": "Pinball Wizard"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Doors",
+    "track": "Light My Fire"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Doors",
+    "track": "Break On Through"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Doors",
+    "track": "Riders on the Storm"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Jimi Hendrix",
+    "track": "Purple Haze"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Jimi Hendrix",
+    "track": "All Along the Watchtower"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Jimi Hendrix",
+    "track": "Voodoo Child (Slight Return)"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Kinks",
+    "track": "Waterloo Sunset"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Kinks",
+    "track": "You Really Got Me"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Kinks",
+    "track": "Lola"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Kinks",
+    "track": "Sunny Afternoon"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Byrds",
+    "track": "Mr. Tambourine Man"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Byrds",
+    "track": "Turn! Turn! Turn!"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Byrds",
+    "track": "Eight Miles High"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Cream",
+    "track": "Sunshine of Your Love"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Cream",
+    "track": "White Room"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Cream",
+    "track": "Crossroads"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Yardbirds",
+    "track": "Heart Full of Soul"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Yardbirds",
+    "track": "For Your Love"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Jefferson Airplane",
+    "track": "Somebody to Love"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Jefferson Airplane",
+    "track": "White Rabbit"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Animals",
+    "track": "House of the Rising Sun"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Animals",
+    "track": "We Gotta Get Out of This Place"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Band",
+    "track": "The Weight"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Band",
+    "track": "Up on Cripple Creek"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Creedence Clearwater Revival",
+    "track": "Fortunate Son"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Creedence Clearwater Revival",
+    "track": "Proud Mary"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Creedence Clearwater Revival",
+    "track": "Bad Moon Rising"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Zombies",
+    "track": "Time of the Season"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Zombies",
+    "track": "She's Not There"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Buffalo Springfield",
+    "track": "For What It's Worth"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Traffic",
+    "track": "Dear Mr. Fantasy"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Velvet Underground",
+    "track": "Heroin"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Velvet Underground",
+    "track": "Sunday Morning"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Velvet Underground",
+    "track": "Sweet Jane"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Stooges",
+    "track": "I Wanna Be Your Dog"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Stooges",
+    "track": "Search and Destroy"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Love",
+    "track": "Alone Again Or"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Love",
+    "track": "7 and 7 Is"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Sonics",
+    "track": "Strychnine"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Sonics",
+    "track": "Have Love Will Travel"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "13th Floor Elevators",
+    "track": "You're Gonna Miss Me"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Seeds",
+    "track": "Pushin' Too Hard"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Pretty Things",
+    "track": "Rosalyn"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Shadows of Knight",
+    "track": "Gloria"
+  },
+  {
+    "decade": "1960s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Count Five",
+    "track": "Psychotic Reaction"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Beach Boys",
+    "track": "Good Vibrations"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Beach Boys",
+    "track": "God Only Knows"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Beach Boys",
+    "track": "Wouldn't It Be Nice"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Beach Boys",
+    "track": "California Girls"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Supremes",
+    "track": "You Can't Hurry Love"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Supremes",
+    "track": "Stop! In the Name of Love"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Supremes",
+    "track": "Baby Love"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Supremes",
+    "track": "Where Did Our Love Go"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Temptations",
+    "track": "My Girl"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Temptations",
+    "track": "Ain't Too Proud to Beg"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Temptations",
+    "track": "Papa Was a Rollin' Stone"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Four Tops",
+    "track": "I Can't Help Myself"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Four Tops",
+    "track": "Reach Out I'll Be There"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Dionne Warwick",
+    "track": "Walk On By"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Dionne Warwick",
+    "track": "I Say a Little Prayer"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Shirelles",
+    "track": "Will You Love Me Tomorrow"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Crystals",
+    "track": "Then He Kissed Me"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Drifters",
+    "track": "Under the Boardwalk"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Mamas & The Papas",
+    "track": "California Dreamin'"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Mamas & The Papas",
+    "track": "Monday, Monday"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Mamas & The Papas",
+    "track": "Dream a Little Dream of Me"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Dusty Springfield",
+    "track": "Son of a Preacher Man"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Dusty Springfield",
+    "track": "You Don't Have to Say You Love Me"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Petula Clark",
+    "track": "Downtown"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Nancy Sinatra",
+    "track": "These Boots Are Made for Walkin'"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Ronettes",
+    "track": "Be My Baby"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Ronettes",
+    "track": "Walking in the Rain"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Shangri-Las",
+    "track": "Leader of the Pack"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Shangri-Las",
+    "track": "Remember (Walking in the Sand)"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Lesley Gore",
+    "track": "It's My Party"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Bobby Vinton",
+    "track": "Blue Velvet"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Bobby Vee",
+    "track": "Take Good Care of My Baby"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Sandy Denny",
+    "track": "Who Knows Where the Time Goes"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Vashti Bunyan",
+    "track": "Diamond Day"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Nico",
+    "track": "These Days"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Linda Perhacs",
+    "track": "Chimacum Rain"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Judee Sill",
+    "track": "The Kiss"
+  },
+  {
+    "decade": "1960s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Karen Dalton",
+    "track": "Something on Your Mind"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "popular",
+    "artist": "Miles Davis",
+    "track": "So What"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "popular",
+    "artist": "Miles Davis",
+    "track": "Blue in Green"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "popular",
+    "artist": "Miles Davis",
+    "track": "All Blues"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "popular",
+    "artist": "John Coltrane",
+    "track": "Giant Steps"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "popular",
+    "artist": "John Coltrane",
+    "track": "A Love Supreme"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "popular",
+    "artist": "John Coltrane",
+    "track": "My Favorite Things"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "popular",
+    "artist": "Thelonious Monk",
+    "track": "Round Midnight"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "popular",
+    "artist": "Dave Brubeck",
+    "track": "Take Five"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "mid_tier",
+    "artist": "Charles Mingus",
+    "track": "Goodbye Pork Pie Hat"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "mid_tier",
+    "artist": "Herbie Hancock",
+    "track": "Watermelon Man"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "mid_tier",
+    "artist": "Cannonball Adderley",
+    "track": "Mercy, Mercy, Mercy"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "mid_tier",
+    "artist": "Bill Evans",
+    "track": "Waltz for Debby"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "mid_tier",
+    "artist": "Stan Getz",
+    "track": "The Girl from Ipanema"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "mid_tier",
+    "artist": "Art Blakey",
+    "track": "Moanin'"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "obscure",
+    "artist": "Sun Ra",
+    "track": "Space Is the Place"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "obscure",
+    "artist": "Ornette Coleman",
+    "track": "Lonely Woman"
+  },
+  {
+    "decade": "1960s",
+    "genre": "jazz",
+    "tier": "obscure",
+    "artist": "Cecil Taylor",
+    "track": "Unit Structures"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Aretha Franklin",
+    "track": "Respect"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Aretha Franklin",
+    "track": "Natural Woman"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Aretha Franklin",
+    "track": "Chain of Fools"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Aretha Franklin",
+    "track": "Think"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "James Brown",
+    "track": "I Got You (I Feel Good)"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "James Brown",
+    "track": "Papa's Got a Brand New Bag"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "James Brown",
+    "track": "It's a Man's Man's Man's World"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Otis Redding",
+    "track": "Sittin' on the Dock of the Bay"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Otis Redding",
+    "track": "Try a Little Tenderness"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Otis Redding",
+    "track": "I've Been Loving You Too Long"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Sam Cooke",
+    "track": "A Change Is Gonna Come"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Sam Cooke",
+    "track": "You Send Me"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Sam Cooke",
+    "track": "Cupid"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Ray Charles",
+    "track": "Georgia on My Mind"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Ray Charles",
+    "track": "Hit the Road Jack"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Wilson Pickett",
+    "track": "In the Midnight Hour"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Wilson Pickett",
+    "track": "Mustang Sally"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Marvin Gaye",
+    "track": "I Heard It Through the Grapevine"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Marvin Gaye",
+    "track": "Ain't That Peculiar"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Curtis Mayfield",
+    "track": "People Get Ready"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Curtis Mayfield",
+    "track": "Move On Up"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Al Green",
+    "track": "Let's Stay Together"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Al Green",
+    "track": "Tired of Being Alone"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Smokey Robinson",
+    "track": "The Tracks of My Tears"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Smokey Robinson",
+    "track": "Tears of a Clown"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Stevie Wonder",
+    "track": "Uptight (Everything's Alright)"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Stevie Wonder",
+    "track": "Signed, Sealed, Delivered I'm Yours"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "The Impressions",
+    "track": "People Get Ready"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "The Impressions",
+    "track": "We're a Winner"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "obscure",
+    "artist": "Betty Davis",
+    "track": "If I'm in Luck I Might Get Picked Up"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "obscure",
+    "artist": "Sharon Jones",
+    "track": "100 Days, 100 Nights"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "obscure",
+    "artist": "Laura Lee",
+    "track": "Women's Love Rights"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "obscure",
+    "artist": "Ann Peebles",
+    "track": "I Can't Stand the Rain"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "obscure",
+    "artist": "Bettye LaVette",
+    "track": "Let Me Down Easy"
+  },
+  {
+    "decade": "1960s",
+    "genre": "soul_rb",
+    "tier": "obscure",
+    "artist": "Carla Thomas",
+    "track": "B-A-B-Y"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Bob Dylan",
+    "track": "Like a Rolling Stone"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Bob Dylan",
+    "track": "Blowin' in the Wind"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Bob Dylan",
+    "track": "The Times They Are a-Changin'"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Bob Dylan",
+    "track": "Mr. Tambourine Man"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Bob Dylan",
+    "track": "Tangled Up in Blue"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Joan Baez",
+    "track": "Diamonds & Rust"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Joan Baez",
+    "track": "We Shall Overcome"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Simon & Garfunkel",
+    "track": "The Sound of Silence"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Simon & Garfunkel",
+    "track": "Bridge Over Troubled Water"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Simon & Garfunkel",
+    "track": "Mrs. Robinson"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Simon & Garfunkel",
+    "track": "The Boxer"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Peter, Paul and Mary",
+    "track": "Puff the Magic Dragon"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "popular",
+    "artist": "Peter, Paul and Mary",
+    "track": "If I Had a Hammer"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "mid_tier",
+    "artist": "Joni Mitchell",
+    "track": "Both Sides Now"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "mid_tier",
+    "artist": "Joni Mitchell",
+    "track": "Big Yellow Taxi"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "mid_tier",
+    "artist": "Joni Mitchell",
+    "track": "A Case of You"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "mid_tier",
+    "artist": "Neil Young",
+    "track": "Heart of Gold"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "mid_tier",
+    "artist": "Neil Young",
+    "track": "Old Man"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "mid_tier",
+    "artist": "Crosby, Stills & Nash",
+    "track": "Suite: Judy Blue Eyes"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "mid_tier",
+    "artist": "Crosby, Stills & Nash",
+    "track": "Woodstock"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "mid_tier",
+    "artist": "The Byrds",
+    "track": "Eight Miles High"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "mid_tier",
+    "artist": "Donovan",
+    "track": "Sunshine Superman"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "mid_tier",
+    "artist": "Donovan",
+    "track": "Mellow Yellow"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "mid_tier",
+    "artist": "Cat Stevens",
+    "track": "Wild World"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "mid_tier",
+    "artist": "Cat Stevens",
+    "track": "Father and Son"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "obscure",
+    "artist": "Nick Drake",
+    "track": "Pink Moon"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "obscure",
+    "artist": "Nick Drake",
+    "track": "River Man"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "obscure",
+    "artist": "Tim Buckley",
+    "track": "Song to the Siren"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "obscure",
+    "artist": "Tim Buckley",
+    "track": "Once I Was"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "obscure",
+    "artist": "Fred Neil",
+    "track": "Everybody's Talkin'"
+  },
+  {
+    "decade": "1960s",
+    "genre": "folk",
+    "tier": "obscure",
+    "artist": "Karen Dalton",
+    "track": "Something on Your Mind"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "popular",
+    "artist": "B.B. King",
+    "track": "The Thrill Is Gone"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "popular",
+    "artist": "B.B. King",
+    "track": "Every Day I Have the Blues"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "popular",
+    "artist": "Muddy Waters",
+    "track": "Mannish Boy"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "popular",
+    "artist": "Muddy Waters",
+    "track": "Hoochie Coochie Man"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "popular",
+    "artist": "Muddy Waters",
+    "track": "Got My Mojo Working"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "mid_tier",
+    "artist": "Howlin' Wolf",
+    "track": "Smokestack Lightnin'"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "mid_tier",
+    "artist": "Howlin' Wolf",
+    "track": "Spoonful"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "mid_tier",
+    "artist": "John Lee Hooker",
+    "track": "Boom Boom"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "mid_tier",
+    "artist": "John Lee Hooker",
+    "track": "One Bourbon, One Scotch, One Beer"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "mid_tier",
+    "artist": "Albert King",
+    "track": "Born Under a Bad Sign"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "mid_tier",
+    "artist": "Freddie King",
+    "track": "Hide Away"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "mid_tier",
+    "artist": "Buddy Guy",
+    "track": "Stone Crazy"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "obscure",
+    "artist": "Skip James",
+    "track": "Hard Time Killing Floor Blues"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "obscure",
+    "artist": "Mississippi John Hurt",
+    "track": "Avalon Blues"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "obscure",
+    "artist": "Son House",
+    "track": "Death Letter"
+  },
+  {
+    "decade": "1960s",
+    "genre": "blues",
+    "tier": "obscure",
+    "artist": "Robert Johnson",
+    "track": "Cross Road Blues"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Led Zeppelin",
+    "track": "Stairway to Heaven"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Led Zeppelin",
+    "track": "Whole Lotta Love"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Led Zeppelin",
+    "track": "Black Dog"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Led Zeppelin",
+    "track": "Kashmir"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Led Zeppelin",
+    "track": "Rock and Roll"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Pink Floyd",
+    "track": "Comfortably Numb"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Pink Floyd",
+    "track": "Wish You Were Here"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Pink Floyd",
+    "track": "Money"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Pink Floyd",
+    "track": "Another Brick in the Wall"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Eagles",
+    "track": "Hotel California"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Eagles",
+    "track": "Take It Easy"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Eagles",
+    "track": "Desperado"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Queen",
+    "track": "Bohemian Rhapsody"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Queen",
+    "track": "We Will Rock You"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Queen",
+    "track": "Don't Stop Me Now"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Queen",
+    "track": "Somebody to Love"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "AC/DC",
+    "track": "Highway to Hell"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "AC/DC",
+    "track": "Back in Black"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "AC/DC",
+    "track": "Thunderstruck"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Lynyrd Skynyrd",
+    "track": "Free Bird"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Lynyrd Skynyrd",
+    "track": "Sweet Home Alabama"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Black Sabbath",
+    "track": "Paranoid"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Black Sabbath",
+    "track": "Iron Man"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Black Sabbath",
+    "track": "War Pigs"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Deep Purple",
+    "track": "Smoke on the Water"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Deep Purple",
+    "track": "Highway Star"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Aerosmith",
+    "track": "Dream On"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Aerosmith",
+    "track": "Walk This Way"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Kiss",
+    "track": "Rock and Roll All Nite"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Kiss",
+    "track": "Detroit Rock City"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Rush",
+    "track": "Tom Sawyer"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Rush",
+    "track": "Limelight"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Yes",
+    "track": "Roundabout"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Yes",
+    "track": "Owner of a Lonely Heart"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Allman Brothers Band",
+    "track": "Ramblin' Man"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Allman Brothers Band",
+    "track": "Jessica"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "ZZ Top",
+    "track": "La Grange"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "ZZ Top",
+    "track": "Sharp Dressed Man"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Thin Lizzy",
+    "track": "The Boys Are Back in Town"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Boston",
+    "track": "More Than a Feeling"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Can",
+    "track": "Vitamin C"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Can",
+    "track": "Halleluhwah"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Neu!",
+    "track": "Hallogallo"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Neu!",
+    "track": "F\u00fcr immer"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Television",
+    "track": "Marquee Moon"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Television",
+    "track": "See No Evil"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Big Star",
+    "track": "September Gurls"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Big Star",
+    "track": "Thirteen"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Modern Lovers",
+    "track": "Roadrunner"
+  },
+  {
+    "decade": "1970s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Pere Ubu",
+    "track": "The Modern Dance"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "popular",
+    "artist": "The Ramones",
+    "track": "Blitzkrieg Bop"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "popular",
+    "artist": "The Ramones",
+    "track": "I Wanna Be Sedated"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "popular",
+    "artist": "The Ramones",
+    "track": "Rockaway Beach"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "popular",
+    "artist": "The Clash",
+    "track": "London Calling"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "popular",
+    "artist": "The Clash",
+    "track": "Should I Stay or Should I Go"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "popular",
+    "artist": "The Clash",
+    "track": "Rock the Casbah"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "popular",
+    "artist": "Sex Pistols",
+    "track": "Anarchy in the U.K."
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "popular",
+    "artist": "Sex Pistols",
+    "track": "God Save the Queen"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "mid_tier",
+    "artist": "The Stooges",
+    "track": "Search and Destroy"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "mid_tier",
+    "artist": "Dead Kennedys",
+    "track": "Holiday in Cambodia"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "mid_tier",
+    "artist": "X",
+    "track": "Los Angeles"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "mid_tier",
+    "artist": "The Damned",
+    "track": "New Rose"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "mid_tier",
+    "artist": "Buzzcocks",
+    "track": "Ever Fallen in Love"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "mid_tier",
+    "artist": "The Jam",
+    "track": "That's Entertainment"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "mid_tier",
+    "artist": "Richard Hell & The Voidoids",
+    "track": "Blank Generation"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "obscure",
+    "artist": "Wire",
+    "track": "Three Girl Rhumba"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "obscure",
+    "artist": "Wire",
+    "track": "12XU"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "obscure",
+    "artist": "Suicide",
+    "track": "Ghost Rider"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "obscure",
+    "artist": "Suicide",
+    "track": "Frankie Teardrop"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "obscure",
+    "artist": "Crass",
+    "track": "Do They Owe Us a Living?"
+  },
+  {
+    "decade": "1970s",
+    "genre": "punk",
+    "tier": "obscure",
+    "artist": "The Fall",
+    "track": "Totally Wired"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "popular",
+    "artist": "Bee Gees",
+    "track": "Stayin' Alive"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "popular",
+    "artist": "Bee Gees",
+    "track": "Night Fever"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "popular",
+    "artist": "Bee Gees",
+    "track": "How Deep Is Your Love"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "popular",
+    "artist": "Donna Summer",
+    "track": "I Feel Love"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "popular",
+    "artist": "Donna Summer",
+    "track": "Hot Stuff"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "popular",
+    "artist": "Chic",
+    "track": "Le Freak"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "popular",
+    "artist": "Chic",
+    "track": "Good Times"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "popular",
+    "artist": "KC and the Sunshine Band",
+    "track": "Get Down Tonight"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "popular",
+    "artist": "KC and the Sunshine Band",
+    "track": "That's the Way (I Like It)"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "popular",
+    "artist": "Village People",
+    "track": "Y.M.C.A."
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "mid_tier",
+    "artist": "Parliament",
+    "track": "Flash Light"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "mid_tier",
+    "artist": "Parliament",
+    "track": "Give Up the Funk"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "mid_tier",
+    "artist": "Funkadelic",
+    "track": "One Nation Under a Groove"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "mid_tier",
+    "artist": "Funkadelic",
+    "track": "Maggot Brain"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "mid_tier",
+    "artist": "Earth, Wind & Fire",
+    "track": "September"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "mid_tier",
+    "artist": "Earth, Wind & Fire",
+    "track": "Boogie Wonderland"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "mid_tier",
+    "artist": "Kool & the Gang",
+    "track": "Celebration"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "mid_tier",
+    "artist": "Kool & the Gang",
+    "track": "Jungle Boogie"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "mid_tier",
+    "artist": "The O'Jays",
+    "track": "Love Train"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "obscure",
+    "artist": "Cymande",
+    "track": "Bra"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "obscure",
+    "artist": "Cymande",
+    "track": "The Message"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "obscure",
+    "artist": "Mandrill",
+    "track": "Fencewalk"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "obscure",
+    "artist": "The Meters",
+    "track": "Cissy Strut"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "obscure",
+    "artist": "Betty Wright",
+    "track": "Clean Up Woman"
+  },
+  {
+    "decade": "1970s",
+    "genre": "disco_funk",
+    "tier": "obscure",
+    "artist": "Sharon Jones & The Dap-Kings",
+    "track": "100 Days, 100 Nights"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Marvin Gaye",
+    "track": "What's Going On"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Marvin Gaye",
+    "track": "Let's Get It On"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Stevie Wonder",
+    "track": "Superstition"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Stevie Wonder",
+    "track": "Isn't She Lovely"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Stevie Wonder",
+    "track": "Living for the City"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Al Green",
+    "track": "Love and Happiness"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "popular",
+    "artist": "Al Green",
+    "track": "Take Me to the River"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Curtis Mayfield",
+    "track": "Superfly"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Isaac Hayes",
+    "track": "Theme from Shaft"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Barry White",
+    "track": "Can't Get Enough of Your Love"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "The O'Jays",
+    "track": "Love Train"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "mid_tier",
+    "artist": "Harold Melvin & The Blue Notes",
+    "track": "If You Don't Know Me by Now"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "obscure",
+    "artist": "Shuggie Otis",
+    "track": "Strawberry Letter 23"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "obscure",
+    "artist": "Bobby Womack",
+    "track": "Across 110th Street"
+  },
+  {
+    "decade": "1970s",
+    "genre": "soul_rb",
+    "tier": "obscure",
+    "artist": "Gil Scott-Heron",
+    "track": "The Revolution Will Not Be Televised"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "popular",
+    "artist": "Pink Floyd",
+    "track": "Money"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "popular",
+    "artist": "Pink Floyd",
+    "track": "Time"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "popular",
+    "artist": "Genesis",
+    "track": "The Carpet Crawlers"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "popular",
+    "artist": "Genesis",
+    "track": "Dancing with the Moonlit Knight"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "mid_tier",
+    "artist": "King Crimson",
+    "track": "21st Century Schizoid Man"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "mid_tier",
+    "artist": "King Crimson",
+    "track": "Epitaph"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "mid_tier",
+    "artist": "Jethro Tull",
+    "track": "Aqualung"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "mid_tier",
+    "artist": "Jethro Tull",
+    "track": "Locomotive Breath"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "mid_tier",
+    "artist": "Emerson, Lake & Palmer",
+    "track": "Lucky Man"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "mid_tier",
+    "artist": "Emerson, Lake & Palmer",
+    "track": "Karn Evil 9"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "obscure",
+    "artist": "Magma",
+    "track": "Mekanik Destruktiw Kommandoh"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "obscure",
+    "artist": "Van der Graaf Generator",
+    "track": "A Plague of Lighthouse Keepers"
+  },
+  {
+    "decade": "1970s",
+    "genre": "prog_rock",
+    "tier": "obscure",
+    "artist": "Gentle Giant",
+    "track": "The Advent of Panurge"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Johnny Cash",
+    "track": "Ring of Fire"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Johnny Cash",
+    "track": "Folsom Prison Blues"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Johnny Cash",
+    "track": "I Walk the Line"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Dolly Parton",
+    "track": "Jolene"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Dolly Parton",
+    "track": "I Will Always Love You"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Willie Nelson",
+    "track": "On the Road Again"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Willie Nelson",
+    "track": "Always on My Mind"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Willie Nelson",
+    "track": "Blue Eyes Crying in the Rain"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Waylon Jennings",
+    "track": "Good Hearted Woman"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Merle Haggard",
+    "track": "Mama Tried"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Loretta Lynn",
+    "track": "Coal Miner's Daughter"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Tammy Wynette",
+    "track": "Stand by Your Man"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "obscure",
+    "artist": "Townes Van Zandt",
+    "track": "Pancho and Lefty"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "obscure",
+    "artist": "Guy Clark",
+    "track": "Desperados Waiting for a Train"
+  },
+  {
+    "decade": "1970s",
+    "genre": "country",
+    "tier": "obscure",
+    "artist": "John Prine",
+    "track": "Angel from Montgomery"
+  },
+  {
+    "decade": "1970s",
+    "genre": "reggae",
+    "tier": "popular",
+    "artist": "Bob Marley",
+    "track": "No Woman, No Cry"
+  },
+  {
+    "decade": "1970s",
+    "genre": "reggae",
+    "tier": "popular",
+    "artist": "Bob Marley",
+    "track": "Redemption Song"
+  },
+  {
+    "decade": "1970s",
+    "genre": "reggae",
+    "tier": "popular",
+    "artist": "Bob Marley",
+    "track": "Three Little Birds"
+  },
+  {
+    "decade": "1970s",
+    "genre": "reggae",
+    "tier": "popular",
+    "artist": "Bob Marley",
+    "track": "One Love"
+  },
+  {
+    "decade": "1970s",
+    "genre": "reggae",
+    "tier": "mid_tier",
+    "artist": "Toots and the Maytals",
+    "track": "Pressure Drop"
+  },
+  {
+    "decade": "1970s",
+    "genre": "reggae",
+    "tier": "mid_tier",
+    "artist": "Jimmy Cliff",
+    "track": "The Harder They Come"
+  },
+  {
+    "decade": "1970s",
+    "genre": "reggae",
+    "tier": "mid_tier",
+    "artist": "Peter Tosh",
+    "track": "Legalize It"
+  },
+  {
+    "decade": "1970s",
+    "genre": "reggae",
+    "tier": "obscure",
+    "artist": "Lee Scratch Perry",
+    "track": "Roast Fish and Cornbread"
+  },
+  {
+    "decade": "1970s",
+    "genre": "reggae",
+    "tier": "obscure",
+    "artist": "King Tubby",
+    "track": "Dub Fi Gwan"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "Talking Heads",
+    "track": "Once in a Lifetime"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "Talking Heads",
+    "track": "Burning Down the House"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "Talking Heads",
+    "track": "Psycho Killer"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "Talking Heads",
+    "track": "This Must Be the Place"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "The Cure",
+    "track": "Just Like Heaven"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "The Cure",
+    "track": "Boys Don't Cry"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "The Cure",
+    "track": "Friday I'm in Love"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "Depeche Mode",
+    "track": "Enjoy the Silence"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "Depeche Mode",
+    "track": "Personal Jesus"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "Depeche Mode",
+    "track": "Just Can't Get Enough"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "New Order",
+    "track": "Blue Monday"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "New Order",
+    "track": "Bizarre Love Triangle"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "Duran Duran",
+    "track": "Hungry Like the Wolf"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "popular",
+    "artist": "Duran Duran",
+    "track": "Rio"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "mid_tier",
+    "artist": "Echo & the Bunnymen",
+    "track": "The Killing Moon"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "mid_tier",
+    "artist": "Echo & the Bunnymen",
+    "track": "Lips Like Sugar"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "mid_tier",
+    "artist": "The Smiths",
+    "track": "How Soon Is Now?"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "mid_tier",
+    "artist": "The Smiths",
+    "track": "This Charming Man"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "mid_tier",
+    "artist": "The Smiths",
+    "track": "There Is a Light That Never Goes Out"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "mid_tier",
+    "artist": "Joy Division",
+    "track": "Love Will Tear Us Apart"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "mid_tier",
+    "artist": "Joy Division",
+    "track": "She's Lost Control"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "mid_tier",
+    "artist": "Siouxsie and the Banshees",
+    "track": "Cities in Dust"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "mid_tier",
+    "artist": "Siouxsie and the Banshees",
+    "track": "Spellbound"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "mid_tier",
+    "artist": "The Psychedelic Furs",
+    "track": "Pretty in Pink"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "mid_tier",
+    "artist": "Simple Minds",
+    "track": "Don't You (Forget About Me)"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "obscure",
+    "artist": "Cocteau Twins",
+    "track": "Lorelei"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "obscure",
+    "artist": "Cocteau Twins",
+    "track": "Heaven or Las Vegas"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "obscure",
+    "artist": "This Mortal Coil",
+    "track": "Song to the Siren"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "obscure",
+    "artist": "The Chameleons",
+    "track": "Swamp Thing"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "obscure",
+    "artist": "The Sound",
+    "track": "Winning"
+  },
+  {
+    "decade": "1980s",
+    "genre": "new_wave",
+    "tier": "obscure",
+    "artist": "Felt",
+    "track": "Primitive Painters"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Michael Jackson",
+    "track": "Billie Jean"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Michael Jackson",
+    "track": "Thriller"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Michael Jackson",
+    "track": "Beat It"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Michael Jackson",
+    "track": "Smooth Criminal"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Madonna",
+    "track": "Like a Virgin"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Madonna",
+    "track": "Material Girl"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Madonna",
+    "track": "Like a Prayer"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Prince",
+    "track": "Purple Rain"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Prince",
+    "track": "When Doves Cry"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Prince",
+    "track": "Kiss"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Prince",
+    "track": "1999"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Whitney Houston",
+    "track": "I Wanna Dance with Somebody"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Whitney Houston",
+    "track": "Greatest Love of All"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Cyndi Lauper",
+    "track": "Time After Time"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Cyndi Lauper",
+    "track": "Girls Just Want to Have Fun"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Tears for Fears",
+    "track": "Everybody Wants to Rule the World"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Tears for Fears",
+    "track": "Shout"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Duran Duran",
+    "track": "Hungry Like the Wolf"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Duran Duran",
+    "track": "The Reflex"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Culture Club",
+    "track": "Karma Chameleon"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Culture Club",
+    "track": "Do You Really Want to Hurt Me"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "The Human League",
+    "track": "Don't You Want Me"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Kate Bush",
+    "track": "Running Up That Hill"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Kate Bush",
+    "track": "Wuthering Heights"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Sade",
+    "track": "Smooth Operator"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Sade",
+    "track": "The Sweetest Taboo"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Prefab Sprout",
+    "track": "When Love Breaks Down"
+  },
+  {
+    "decade": "1980s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "The Blue Nile",
+    "track": "Tinseltown in the Rain"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Run-D.M.C.",
+    "track": "Walk This Way"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Run-D.M.C.",
+    "track": "It's Tricky"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Grandmaster Flash",
+    "track": "The Message"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Grandmaster Flash",
+    "track": "White Lines (Don't Don't Do It)"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "LL Cool J",
+    "track": "I Can't Live Without My Radio"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Public Enemy",
+    "track": "Fight the Power"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Public Enemy",
+    "track": "Bring the Noise"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "N.W.A",
+    "track": "Straight Outta Compton"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "N.W.A",
+    "track": "F*** tha Police"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Beastie Boys",
+    "track": "Fight for Your Right"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Beastie Boys",
+    "track": "No Sleep Till Brooklyn"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "KRS-One",
+    "track": "Sound of da Police"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Big Daddy Kane",
+    "track": "Ain't No Half-Steppin'"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Eric B. & Rakim",
+    "track": "Paid in Full"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Eric B. & Rakim",
+    "track": "Follow the Leader"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Ultramagnetic MCs",
+    "track": "Critical Beatdown"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Ultramagnetic MCs",
+    "track": "Ego Trippin'"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Schoolly D",
+    "track": "PSK What Does It Mean"
+  },
+  {
+    "decade": "1980s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Boogie Down Productions",
+    "track": "South Bronx"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Guns N' Roses",
+    "track": "Sweet Child O' Mine"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Guns N' Roses",
+    "track": "Welcome to the Jungle"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Guns N' Roses",
+    "track": "Paradise City"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Bon Jovi",
+    "track": "Livin' on a Prayer"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Bon Jovi",
+    "track": "You Give Love a Bad Name"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Def Leppard",
+    "track": "Pour Some Sugar on Me"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Def Leppard",
+    "track": "Photograph"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Van Halen",
+    "track": "Jump"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Van Halen",
+    "track": "Panama"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Metallica",
+    "track": "Enter Sandman"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Metallica",
+    "track": "Master of Puppets"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Iron Maiden",
+    "track": "The Number of the Beast"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Iron Maiden",
+    "track": "Run to the Hills"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "AC/DC",
+    "track": "Back in Black"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "AC/DC",
+    "track": "You Shook Me All Night Long"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "M\u00f6tley Cr\u00fce",
+    "track": "Kickstart My Heart"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Poison",
+    "track": "Every Rose Has Its Thorn"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Whitesnake",
+    "track": "Here I Go Again"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Sonic Youth",
+    "track": "Teen Age Riot"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Sonic Youth",
+    "track": "Kool Thing"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Dinosaur Jr.",
+    "track": "Feel the Pain"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Dinosaur Jr.",
+    "track": "Start Choppin'"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "The Replacements",
+    "track": "Bastards of Young"
+  },
+  {
+    "decade": "1980s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "H\u00fcsker D\u00fc",
+    "track": "Don't Want to Know If You Are Lonely"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Kraftwerk",
+    "track": "The Model"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Kraftwerk",
+    "track": "Computer Love"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Kraftwerk",
+    "track": "Autobahn"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Depeche Mode",
+    "track": "Personal Jesus"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Depeche Mode",
+    "track": "Enjoy the Silence"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "New Order",
+    "track": "Blue Monday"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "New Order",
+    "track": "True Faith"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Yazoo",
+    "track": "Don't Go"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Yazoo",
+    "track": "Only You"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Orchestral Manoeuvres in the Dark",
+    "track": "Enola Gay"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Orchestral Manoeuvres in the Dark",
+    "track": "If You Leave"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Pet Shop Boys",
+    "track": "West End Girls"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Pet Shop Boys",
+    "track": "It's a Sin"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Eurythmics",
+    "track": "Sweet Dreams (Are Made of This)"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Cabaret Voltaire",
+    "track": "Sensoria"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Throbbing Gristle",
+    "track": "Hamburger Lady"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Front 242",
+    "track": "Headhunter"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Nitzer Ebb",
+    "track": "Join in the Chant"
+  },
+  {
+    "decade": "1980s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Coil",
+    "track": "Ostia (The Death of Pasolini)"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "R.E.M.",
+    "track": "Losing My Religion"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "R.E.M.",
+    "track": "It's the End of the World as We Know It"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "R.E.M.",
+    "track": "The One I Love"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "R.E.M.",
+    "track": "Man on the Moon"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "U2",
+    "track": "With or Without You"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "U2",
+    "track": "Where the Streets Have No Name"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "U2",
+    "track": "I Still Haven't Found What I'm Looking For"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "U2",
+    "track": "Sunday Bloody Sunday"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "The Replacements",
+    "track": "Bastards of Young"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "The Replacements",
+    "track": "Can't Hardly Wait"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "H\u00fcsker D\u00fc",
+    "track": "Don't Want to Know If You Are Lonely"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "H\u00fcsker D\u00fc",
+    "track": "Makes No Sense at All"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "The Pixies",
+    "track": "Where Is My Mind?"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "The Pixies",
+    "track": "Debaser"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "The Pixies",
+    "track": "Monkey Gone to Heaven"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "obscure",
+    "artist": "The Minutemen",
+    "track": "Corona"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "obscure",
+    "artist": "The Minutemen",
+    "track": "History Lesson - Part II"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "obscure",
+    "artist": "Fugazi",
+    "track": "Waiting Room"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "obscure",
+    "artist": "Fugazi",
+    "track": "Repeater"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "obscure",
+    "artist": "Mission of Burma",
+    "track": "That's When I Reach for My Revolver"
+  },
+  {
+    "decade": "1980s",
+    "genre": "alternative",
+    "tier": "obscure",
+    "artist": "Big Black",
+    "track": "Kerosene"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "popular",
+    "artist": "Nirvana",
+    "track": "Smells Like Teen Spirit"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "popular",
+    "artist": "Nirvana",
+    "track": "Come as You Are"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "popular",
+    "artist": "Nirvana",
+    "track": "Lithium"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "popular",
+    "artist": "Nirvana",
+    "track": "In Bloom"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "popular",
+    "artist": "Pearl Jam",
+    "track": "Alive"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "popular",
+    "artist": "Pearl Jam",
+    "track": "Jeremy"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "popular",
+    "artist": "Pearl Jam",
+    "track": "Even Flow"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "popular",
+    "artist": "Soundgarden",
+    "track": "Black Hole Sun"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "popular",
+    "artist": "Soundgarden",
+    "track": "Spoonman"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "popular",
+    "artist": "Alice in Chains",
+    "track": "Man in the Box"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "mid_tier",
+    "artist": "Alice in Chains",
+    "track": "Would?"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "mid_tier",
+    "artist": "Alice in Chains",
+    "track": "Rooster"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "mid_tier",
+    "artist": "Stone Temple Pilots",
+    "track": "Plush"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "mid_tier",
+    "artist": "Stone Temple Pilots",
+    "track": "Interstate Love Song"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "mid_tier",
+    "artist": "Screaming Trees",
+    "track": "Nearly Lost You"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "mid_tier",
+    "artist": "Temple of the Dog",
+    "track": "Hunger Strike"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "mid_tier",
+    "artist": "L7",
+    "track": "Pretend We're Dead"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "mid_tier",
+    "artist": "Bush",
+    "track": "Glycerine"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "obscure",
+    "artist": "Mudhoney",
+    "track": "Touch Me I'm Sick"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "obscure",
+    "artist": "Mudhoney",
+    "track": "Suck You Dry"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "obscure",
+    "artist": "Melvins",
+    "track": "Honey Bucket"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "obscure",
+    "artist": "Melvins",
+    "track": "Hooch"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "obscure",
+    "artist": "TAD",
+    "track": "Jinx"
+  },
+  {
+    "decade": "1990s",
+    "genre": "grunge",
+    "tier": "obscure",
+    "artist": "Green River",
+    "track": "Swallow My Pride"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Tupac Shakur",
+    "track": "California Love"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Tupac Shakur",
+    "track": "Changes"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Tupac Shakur",
+    "track": "Dear Mama"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "The Notorious B.I.G.",
+    "track": "Juicy"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "The Notorious B.I.G.",
+    "track": "Big Poppa"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "The Notorious B.I.G.",
+    "track": "Hypnotize"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Dr. Dre",
+    "track": "Nuthin' but a 'G' Thang"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Snoop Dogg",
+    "track": "Gin and Juice"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Snoop Dogg",
+    "track": "What's My Name?"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Ice Cube",
+    "track": "It Was a Good Day"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Wu-Tang Clan",
+    "track": "C.R.E.A.M."
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Wu-Tang Clan",
+    "track": "Protect Ya Neck"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Nas",
+    "track": "NY State of Mind"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Nas",
+    "track": "The World Is Yours"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "A Tribe Called Quest",
+    "track": "Can I Kick It?"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "A Tribe Called Quest",
+    "track": "Award Tour"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "OutKast",
+    "track": "Player's Ball"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "The Fugees",
+    "track": "Killing Me Softly"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Company Flow",
+    "track": "Patriotism"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Cannibal Ox",
+    "track": "Iron Galaxy"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Organized Konfusion",
+    "track": "Stress"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Black Star",
+    "track": "Definition"
+  },
+  {
+    "decade": "1990s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Pharcyde",
+    "track": "Passin' Me By"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "popular",
+    "artist": "Radiohead",
+    "track": "Creep"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "popular",
+    "artist": "Radiohead",
+    "track": "Paranoid Android"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "popular",
+    "artist": "Radiohead",
+    "track": "Karma Police"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "popular",
+    "artist": "Radiohead",
+    "track": "No Surprises"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "popular",
+    "artist": "Oasis",
+    "track": "Wonderwall"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "popular",
+    "artist": "Oasis",
+    "track": "Champagne Supernova"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "popular",
+    "artist": "Oasis",
+    "track": "Don't Look Back in Anger"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "popular",
+    "artist": "Blur",
+    "track": "Song 2"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "popular",
+    "artist": "Blur",
+    "track": "Parklife"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "mid_tier",
+    "artist": "Pavement",
+    "track": "Cut Your Hair"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "mid_tier",
+    "artist": "Pavement",
+    "track": "Range Life"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "mid_tier",
+    "artist": "Built to Spill",
+    "track": "Car"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "mid_tier",
+    "artist": "Built to Spill",
+    "track": "I Would Hurt a Fly"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "mid_tier",
+    "artist": "Modest Mouse",
+    "track": "Float On"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "mid_tier",
+    "artist": "Modest Mouse",
+    "track": "Dashboard"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "mid_tier",
+    "artist": "Pulp",
+    "track": "Common People"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "mid_tier",
+    "artist": "Suede",
+    "track": "Animal Nitrate"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "obscure",
+    "artist": "Slint",
+    "track": "Good Morning, Captain"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "obscure",
+    "artist": "Slint",
+    "track": "Breadcrumb Trail"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "obscure",
+    "artist": "Unwound",
+    "track": "Corpse Pose"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "obscure",
+    "artist": "Unwound",
+    "track": "Lifetime Achievement Award"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "obscure",
+    "artist": "Rodan",
+    "track": "Bible Silver Corner"
+  },
+  {
+    "decade": "1990s",
+    "genre": "alternative_rock",
+    "tier": "obscure",
+    "artist": "June of 44",
+    "track": "Anisette"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "The Prodigy",
+    "track": "Firestarter"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "The Prodigy",
+    "track": "Breathe"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Daft Punk",
+    "track": "Around the World"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Daft Punk",
+    "track": "Da Funk"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "The Chemical Brothers",
+    "track": "Block Rockin' Beats"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "The Chemical Brothers",
+    "track": "Hey Boy Hey Girl"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Fatboy Slim",
+    "track": "Praise You"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Fatboy Slim",
+    "track": "The Rockafeller Skank"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Aphex Twin",
+    "track": "Windowlicker"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Aphex Twin",
+    "track": "Avril 14th"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Autechre",
+    "track": "Basscadet"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Autechre",
+    "track": "Gantz Graf"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Squarepusher",
+    "track": "Come on My Selector"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Squarepusher",
+    "track": "My Red Hot Car"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Orbital",
+    "track": "Halcyon and On and On"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Underworld",
+    "track": "Born Slippy"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Boards of Canada",
+    "track": "Roygbiv"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Boards of Canada",
+    "track": "Dayvan Cowboy"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Mouse on Mars",
+    "track": "Actionist Respoke"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Mouse on Mars",
+    "track": "Diskdusk"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Autechre",
+    "track": "Cichli"
+  },
+  {
+    "decade": "1990s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "\u00b5-Ziq",
+    "track": "Hasty Boom Alert"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "R. Kelly",
+    "track": "I Believe I Can Fly"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "R. Kelly",
+    "track": "Ignition (Remix)"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Boyz II Men",
+    "track": "End of the Road"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Boyz II Men",
+    "track": "I'll Make Love to You"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "TLC",
+    "track": "Waterfalls"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "TLC",
+    "track": "No Scrubs"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "TLC",
+    "track": "Creep"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Mariah Carey",
+    "track": "Fantasy"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Mariah Carey",
+    "track": "We Belong Together"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "D'Angelo",
+    "track": "Untitled (How Does It Feel)"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "D'Angelo",
+    "track": "Brown Sugar"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Erykah Badu",
+    "track": "On & On"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Erykah Badu",
+    "track": "Tyrone"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Lauryn Hill",
+    "track": "Doo Wop (That Thing)"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Lauryn Hill",
+    "track": "Ex-Factor"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Aaliyah",
+    "track": "Try Again"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Maxwell",
+    "track": "Ascension (Don't Ever Wonder)"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Maxwell",
+    "track": "Fortunate"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Jill Scott",
+    "track": "A Long Walk"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Angie Stone",
+    "track": "Wish I Didn't Miss You"
+  },
+  {
+    "decade": "1990s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Musiq Soulchild",
+    "track": "Just Friends (Sunny)"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Britney Spears",
+    "track": "Baby One More Time"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Britney Spears",
+    "track": "Oops!... I Did It Again"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Britney Spears",
+    "track": "Toxic"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Backstreet Boys",
+    "track": "I Want It That Way"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Backstreet Boys",
+    "track": "Everybody (Backstreet's Back)"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "NSYNC",
+    "track": "Bye Bye Bye"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "NSYNC",
+    "track": "It's Gonna Be Me"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Spice Girls",
+    "track": "Wannabe"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Spice Girls",
+    "track": "Say You'll Be There"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Spice Girls",
+    "track": "2 Become 1"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Destiny's Child",
+    "track": "Say My Name"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Destiny's Child",
+    "track": "Bills, Bills, Bills"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Destiny's Child",
+    "track": "Survivor"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Hanson",
+    "track": "MMMBop"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Aqua",
+    "track": "Barbie Girl"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Bj\u00f6rk",
+    "track": "Hyperballad"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Bj\u00f6rk",
+    "track": "J\u00f3ga"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Tori Amos",
+    "track": "Cornflake Girl"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Fiona Apple",
+    "track": "Criminal"
+  },
+  {
+    "decade": "1990s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Tori Amos",
+    "track": "Silent All These Years"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "popular",
+    "artist": "The Strokes",
+    "track": "Last Nite"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "popular",
+    "artist": "The Strokes",
+    "track": "Someday"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "popular",
+    "artist": "The Strokes",
+    "track": "Reptilia"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "popular",
+    "artist": "The White Stripes",
+    "track": "Seven Nation Army"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "popular",
+    "artist": "The White Stripes",
+    "track": "Fell in Love with a Girl"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "popular",
+    "artist": "The White Stripes",
+    "track": "Icky Thump"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "popular",
+    "artist": "Arctic Monkeys",
+    "track": "I Bet You Look Good on the Dancefloor"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "popular",
+    "artist": "Arctic Monkeys",
+    "track": "When the Sun Goes Down"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "popular",
+    "artist": "Interpol",
+    "track": "Obstacle 1"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "popular",
+    "artist": "Interpol",
+    "track": "Slow Hands"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "popular",
+    "artist": "The Killers",
+    "track": "Mr. Brightside"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "popular",
+    "artist": "The Killers",
+    "track": "Somebody Told Me"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "mid_tier",
+    "artist": "Modest Mouse",
+    "track": "Float On"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "mid_tier",
+    "artist": "Modest Mouse",
+    "track": "Dashboard"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "mid_tier",
+    "artist": "Death Cab for Cutie",
+    "track": "I Will Follow You into the Dark"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "mid_tier",
+    "artist": "Death Cab for Cutie",
+    "track": "Soul Meets Body"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "mid_tier",
+    "artist": "The Shins",
+    "track": "New Slang"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "mid_tier",
+    "artist": "The Shins",
+    "track": "Phantom Limb"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "mid_tier",
+    "artist": "Franz Ferdinand",
+    "track": "Take Me Out"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "mid_tier",
+    "artist": "Franz Ferdinand",
+    "track": "Do You Want To"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "mid_tier",
+    "artist": "Yeah Yeah Yeahs",
+    "track": "Maps"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "mid_tier",
+    "artist": "Yeah Yeah Yeahs",
+    "track": "Gold Lion"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "obscure",
+    "artist": "The Microphones",
+    "track": "The Glow Pt. 2"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "obscure",
+    "artist": "Neutral Milk Hotel",
+    "track": "In the Aeroplane Over the Sea"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "obscure",
+    "artist": "Neutral Milk Hotel",
+    "track": "Holland, 1945"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "obscure",
+    "artist": "Sufjan Stevens",
+    "track": "Chicago"
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "obscure",
+    "artist": "Sufjan Stevens",
+    "track": "John Wayne Gacy, Jr."
+  },
+  {
+    "decade": "2000s",
+    "genre": "indie_rock",
+    "tier": "obscure",
+    "artist": "Bon Iver",
+    "track": "Skinny Love"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Eminem",
+    "track": "Lose Yourself"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Eminem",
+    "track": "Stan"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Eminem",
+    "track": "Without Me"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Kanye West",
+    "track": "Gold Digger"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Kanye West",
+    "track": "Stronger"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Kanye West",
+    "track": "Jesus Walks"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "50 Cent",
+    "track": "In da Club"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "50 Cent",
+    "track": "Candy Shop"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Jay-Z",
+    "track": "99 Problems"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Jay-Z",
+    "track": "Empire State of Mind"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "OutKast",
+    "track": "Hey Ya!"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "OutKast",
+    "track": "Ms. Jackson"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "The Roots",
+    "track": "The Seed (2.0)"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "The Roots",
+    "track": "The Next Movement"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Common",
+    "track": "The Light"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Common",
+    "track": "The People"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Talib Kweli",
+    "track": "Get By"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Mos Def",
+    "track": "Mathematics"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Cannibal Ox",
+    "track": "Pigeon"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "El-P",
+    "track": "Deep Space 9mm"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Aesop Rock",
+    "track": "None Shall Pass"
+  },
+  {
+    "decade": "2000s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "MF DOOM",
+    "track": "All Caps"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Beyonc\u00e9",
+    "track": "Crazy in Love"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Beyonc\u00e9",
+    "track": "Single Ladies (Put a Ring on It)"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Justin Timberlake",
+    "track": "Cry Me a River"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Justin Timberlake",
+    "track": "SexyBack"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Britney Spears",
+    "track": "Toxic"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Britney Spears",
+    "track": "Gimme More"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Lady Gaga",
+    "track": "Poker Face"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Lady Gaga",
+    "track": "Bad Romance"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Amy Winehouse",
+    "track": "Rehab"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Amy Winehouse",
+    "track": "Back to Black"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Alicia Keys",
+    "track": "Fallin'"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Alicia Keys",
+    "track": "No One"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Christina Aguilera",
+    "track": "Beautiful"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Kelly Clarkson",
+    "track": "Since U Been Gone"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Fiona Apple",
+    "track": "Criminal"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Fiona Apple",
+    "track": "Paper Bag"
+  },
+  {
+    "decade": "2000s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Regina Spektor",
+    "track": "Fidelity"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Daft Punk",
+    "track": "One More Time"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Daft Punk",
+    "track": "Harder, Better, Faster, Stronger"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Justice",
+    "track": "D.A.N.C.E."
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Justice",
+    "track": "We Are Your Friends"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Moby",
+    "track": "Porcelain"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "LCD Soundsystem",
+    "track": "All My Friends"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "LCD Soundsystem",
+    "track": "Dance Yrself Clean"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "M.I.A.",
+    "track": "Paper Planes"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "M.I.A.",
+    "track": "Galang"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "The Knife",
+    "track": "Heartbeats"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Burial",
+    "track": "Archangel"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Burial",
+    "track": "Untrue"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Four Tet",
+    "track": "She Moves She"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Four Tet",
+    "track": "Rounds"
+  },
+  {
+    "decade": "2000s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Caribou",
+    "track": "Odessa"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "Radiohead",
+    "track": "Idioteque"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "Radiohead",
+    "track": "Everything in Its Right Place"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "Radiohead",
+    "track": "Paranoid Android"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "Coldplay",
+    "track": "Yellow"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "Coldplay",
+    "track": "Clocks"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "Coldplay",
+    "track": "The Scientist"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "Green Day",
+    "track": "American Idiot"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "popular",
+    "artist": "Green Day",
+    "track": "Boulevard of Broken Dreams"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "The Killers",
+    "track": "Mr. Brightside"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "Franz Ferdinand",
+    "track": "Take Me Out"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "Bloc Party",
+    "track": "Banquet"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "The Libertines",
+    "track": "Can't Stand Me Now"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "The White Stripes",
+    "track": "Seven Nation Army"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "mid_tier",
+    "artist": "The Strokes",
+    "track": "Last Nite"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "obscure",
+    "artist": "Sufjan Stevens",
+    "track": "Chicago"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "obscure",
+    "artist": "Bon Iver",
+    "track": "Skinny Love"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "obscure",
+    "artist": "Grizzly Bear",
+    "track": "Two Weeks"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "obscure",
+    "artist": "Animal Collective",
+    "track": "My Girls"
+  },
+  {
+    "decade": "2000s",
+    "genre": "alternative",
+    "tier": "obscure",
+    "artist": "Deerhunter",
+    "track": "Helicopter"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Usher",
+    "track": "Yeah!"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Usher",
+    "track": "Confessions Part II"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Usher",
+    "track": "Burn"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Alicia Keys",
+    "track": "No One"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Alicia Keys",
+    "track": "If I Ain't Got You"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Rihanna",
+    "track": "Umbrella"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Rihanna",
+    "track": "We Found Love"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "John Legend",
+    "track": "Ordinary People"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "John Legend",
+    "track": "All of Me"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "D'Angelo",
+    "track": "Left & Right"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "D'Angelo",
+    "track": "Untitled (How Does It Feel)"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Ne-Yo",
+    "track": "So Sick"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Chris Brown",
+    "track": "Run It!"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Bilal",
+    "track": "Soul Sista"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Bilal",
+    "track": "Sometimes"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Raphael Saadiq",
+    "track": "100 Yard Dash"
+  },
+  {
+    "decade": "2000s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Anthony Hamilton",
+    "track": "Charlene"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "popular",
+    "artist": "Vampire Weekend",
+    "track": "A-Punk"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "popular",
+    "artist": "Vampire Weekend",
+    "track": "Cousins"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "popular",
+    "artist": "Vampire Weekend",
+    "track": "Diane Young"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "popular",
+    "artist": "Foster the People",
+    "track": "Pumped Up Kicks"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "popular",
+    "artist": "Tame Impala",
+    "track": "The Less I Know the Better"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "popular",
+    "artist": "Tame Impala",
+    "track": "Elephant"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "popular",
+    "artist": "Tame Impala",
+    "track": "Feels Like We Only Go Backwards"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "popular",
+    "artist": "Arctic Monkeys",
+    "track": "Do I Wanna Know?"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "popular",
+    "artist": "Arctic Monkeys",
+    "track": "R U Mine?"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "popular",
+    "artist": "The 1975",
+    "track": "Chocolate"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "mid_tier",
+    "artist": "MGMT",
+    "track": "Electric Feel"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "mid_tier",
+    "artist": "MGMT",
+    "track": "Kids"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "mid_tier",
+    "artist": "The xx",
+    "track": "Intro"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "mid_tier",
+    "artist": "The xx",
+    "track": "Crystalised"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "mid_tier",
+    "artist": "Beach House",
+    "track": "Myth"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "mid_tier",
+    "artist": "Beach House",
+    "track": "Space Song"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "mid_tier",
+    "artist": "Mac DeMarco",
+    "track": "Chamber of Reflection"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "mid_tier",
+    "artist": "Real Estate",
+    "track": "It's Real"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "obscure",
+    "artist": "Grizzly Bear",
+    "track": "Two Weeks"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "obscure",
+    "artist": "Animal Collective",
+    "track": "My Girls"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "obscure",
+    "artist": "Deerhunter",
+    "track": "Helicopter"
+  },
+  {
+    "decade": "2010s",
+    "genre": "indie_pop",
+    "tier": "obscure",
+    "artist": "Washed Out",
+    "track": "Feel It All Around"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Kendrick Lamar",
+    "track": "HUMBLE."
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Kendrick Lamar",
+    "track": "Alright"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Kendrick Lamar",
+    "track": "Swimming Pools (Drank)"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Kendrick Lamar",
+    "track": "DNA."
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Drake",
+    "track": "Hotline Bling"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Drake",
+    "track": "God's Plan"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Drake",
+    "track": "One Dance"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Drake",
+    "track": "In My Feelings"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "J. Cole",
+    "track": "No Role Modelz"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "J. Cole",
+    "track": "Work Out"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Future",
+    "track": "Mask Off"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Childish Gambino",
+    "track": "Redbone"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Childish Gambino",
+    "track": "This Is America"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Tyler, The Creator",
+    "track": "Yonkers"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Tyler, The Creator",
+    "track": "EARFQUAKE"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "A$AP Rocky",
+    "track": "F**kin' Problems"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "A$AP Rocky",
+    "track": "Goldie"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Travis Scott",
+    "track": "SICKO MODE"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Logic",
+    "track": "1-800-273-8255"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Death Grips",
+    "track": "Guillotine"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Death Grips",
+    "track": "I've Seen Footage"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Open Mike Eagle",
+    "track": "Dark Comedy Late Show"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Danny Brown",
+    "track": "Grown Up"
+  },
+  {
+    "decade": "2010s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "clipping.",
+    "track": "The Show"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Taylor Swift",
+    "track": "Shake It Off"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Taylor Swift",
+    "track": "Blank Space"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Taylor Swift",
+    "track": "We Are Never Ever Getting Back Together"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Taylor Swift",
+    "track": "Look What You Made Me Do"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Adele",
+    "track": "Rolling in the Deep"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Adele",
+    "track": "Someone Like You"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Adele",
+    "track": "Hello"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Bruno Mars",
+    "track": "Uptown Funk"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Bruno Mars",
+    "track": "Just the Way You Are"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Bruno Mars",
+    "track": "24K Magic"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Ariana Grande",
+    "track": "Thank U, Next"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Ariana Grande",
+    "track": "7 rings"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Lorde",
+    "track": "Royals"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Lorde",
+    "track": "Green Light"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Billie Eilish",
+    "track": "bad guy"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Billie Eilish",
+    "track": "bury a friend"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Lana Del Rey",
+    "track": "Video Games"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Lana Del Rey",
+    "track": "Summertime Sadness"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Carly Rae Jepsen",
+    "track": "Call Me Maybe"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "FKA twigs",
+    "track": "Two Weeks"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "FKA twigs",
+    "track": "Cellophane"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Charli XCX",
+    "track": "Vroom Vroom"
+  },
+  {
+    "decade": "2010s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Grimes",
+    "track": "Oblivion"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Skrillex",
+    "track": "Bangarang"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Skrillex",
+    "track": "Scary Monsters and Nice Sprites"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Avicii",
+    "track": "Wake Me Up"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Avicii",
+    "track": "Levels"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Calvin Harris",
+    "track": "We Found Love"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Calvin Harris",
+    "track": "Summer"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "David Guetta",
+    "track": "Titanium"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Disclosure",
+    "track": "Latch"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Disclosure",
+    "track": "White Noise"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Flume",
+    "track": "Never Be Like You"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Flume",
+    "track": "Holdin On"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "ODESZA",
+    "track": "Say My Name"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Porter Robinson",
+    "track": "Language"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Oneohtrix Point Never",
+    "track": "Boring Angel"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Tim Hecker",
+    "track": "Virgins"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "James Blake",
+    "track": "Retrograde"
+  },
+  {
+    "decade": "2010s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Arca",
+    "track": "Piel"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Frank Ocean",
+    "track": "Thinkin Bout You"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Frank Ocean",
+    "track": "Pyramids"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Frank Ocean",
+    "track": "Nights"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "The Weeknd",
+    "track": "Blinding Lights"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "The Weeknd",
+    "track": "The Hills"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "The Weeknd",
+    "track": "Can't Feel My Face"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "The Weeknd",
+    "track": "Starboy"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Solange",
+    "track": "Cranes in the Sky"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "SZA",
+    "track": "The Weekend"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "SZA",
+    "track": "Love Galore"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Miguel",
+    "track": "Adorn"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Miguel",
+    "track": "Sky Walker"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Daniel Caesar",
+    "track": "Get You"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Kelela",
+    "track": "Rewind"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Kelela",
+    "track": "LMK"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Kali Uchis",
+    "track": "After the Storm"
+  },
+  {
+    "decade": "2010s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Ravyn Lenae",
+    "track": "Sticky"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Foo Fighters",
+    "track": "The Pretender"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Foo Fighters",
+    "track": "Everlong"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Arctic Monkeys",
+    "track": "R U Mine?"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Muse",
+    "track": "Uprising"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Muse",
+    "track": "Knights of Cydonia"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Imagine Dragons",
+    "track": "Radioactive"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Linkin Park",
+    "track": "In the End"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Queens of the Stone Age",
+    "track": "The Way You Used to Do"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Tame Impala",
+    "track": "Let It Happen"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Cage the Elephant",
+    "track": "Ain't No Rest for the Wicked"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Black Keys",
+    "track": "Lonely Boy"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The Black Keys",
+    "track": "Tighten Up"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Portugal. The Man",
+    "track": "Feel It Still"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "The War on Drugs",
+    "track": "Red Eyes"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Swans",
+    "track": "Oxygen"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Deafheaven",
+    "track": "Dream House"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Daughters",
+    "track": "Satan in the Wait"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "King Gizzard & The Lizard Wizard",
+    "track": "Rattlesnake"
+  },
+  {
+    "decade": "2010s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "King Gizzard & The Lizard Wizard",
+    "track": "Gamma Knife"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Luke Combs",
+    "track": "Beautiful Crazy"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Luke Combs",
+    "track": "Forever After All"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Chris Stapleton",
+    "track": "Tennessee Whiskey"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Chris Stapleton",
+    "track": "Broken Halos"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Zach Bryan",
+    "track": "Something in the Orange"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Morgan Wallen",
+    "track": "Whiskey Glasses"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Morgan Wallen",
+    "track": "Last Night"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Luke Bryan",
+    "track": "Country Girl (Shake It for Me)"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Sturgill Simpson",
+    "track": "Turtles All the Way Down"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Jason Isbell",
+    "track": "Cover Me Up"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Tyler Childers",
+    "track": "All Your'n"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Colter Wall",
+    "track": "Sleeping on the Blacktop"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Kacey Musgraves",
+    "track": "Follow Your Arrow"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Kacey Musgraves",
+    "track": "High Horse"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Miranda Lambert",
+    "track": "The House That Built Me"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Eric Church",
+    "track": "Springsteen"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Thomas Rhett",
+    "track": "Die a Happy Man"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Blake Shelton",
+    "track": "God's Country"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "obscure",
+    "artist": "Tyler Childers",
+    "track": "Feathered Indians"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "obscure",
+    "artist": "Orville Peck",
+    "track": "Dead of Night"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "obscure",
+    "artist": "Charley Crockett",
+    "track": "I Need Your Love"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "obscure",
+    "artist": "Margo Price",
+    "track": "Hands of Time"
+  },
+  {
+    "decade": "2010s",
+    "genre": "country",
+    "tier": "obscure",
+    "artist": "Orville Peck",
+    "track": "Turn to Hate"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Weeknd",
+    "track": "Blinding Lights"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Weeknd",
+    "track": "Save Your Tears"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Weeknd",
+    "track": "Starboy"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Dua Lipa",
+    "track": "Levitating"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Dua Lipa",
+    "track": "Don't Start Now"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Dua Lipa",
+    "track": "Physical"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Olivia Rodrigo",
+    "track": "drivers license"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Olivia Rodrigo",
+    "track": "good 4 u"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Olivia Rodrigo",
+    "track": "vampire"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Harry Styles",
+    "track": "As It Was"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "Harry Styles",
+    "track": "Watermelon Sugar"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "popular",
+    "artist": "The Kid LAROI",
+    "track": "Stay"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Doja Cat",
+    "track": "Say So"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Doja Cat",
+    "track": "Kiss Me More"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Doja Cat",
+    "track": "Need to Know"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Lizzo",
+    "track": "Good as Hell"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Lizzo",
+    "track": "About Damn Time"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Megan Thee Stallion",
+    "track": "Savage"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "mid_tier",
+    "artist": "Megan Thee Stallion",
+    "track": "Body"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Caroline Polachek",
+    "track": "So Hot You're Hurting My Feelings"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Caroline Polachek",
+    "track": "Bunny Is a Rider"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Rina Sawayama",
+    "track": "XS"
+  },
+  {
+    "decade": "2020s",
+    "genre": "pop",
+    "tier": "obscure",
+    "artist": "Rina Sawayama",
+    "track": "Comme des Gar\u00e7ons"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Travis Scott",
+    "track": "SICKO MODE"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Post Malone",
+    "track": "Circles"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Post Malone",
+    "track": "Sunflower"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Post Malone",
+    "track": "Rockstar"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Lil Nas X",
+    "track": "Old Town Road"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Cardi B",
+    "track": "WAP"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Cardi B",
+    "track": "Bodak Yellow"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "popular",
+    "artist": "Bad Bunny",
+    "track": "Tit\u00ed Me Pregunt\u00f3"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Playboi Carti",
+    "track": "Magnolia"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Lil Uzi Vert",
+    "track": "XO Tour Llif3"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Roddy Ricch",
+    "track": "The Box"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Jack Harlow",
+    "track": "First Class"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "21 Savage",
+    "track": "Bank Account"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "mid_tier",
+    "artist": "Lil Baby",
+    "track": "Drip Too Hard"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Injury Reserve",
+    "track": "Jailbreak the Tesla"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Injury Reserve",
+    "track": "Knees"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "JPEGMAFIA",
+    "track": "BALD!"
+  },
+  {
+    "decade": "2020s",
+    "genre": "hip_hop",
+    "tier": "obscure",
+    "artist": "Earl Sweatshirt",
+    "track": "Chum"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "popular",
+    "artist": "Phoebe Bridgers",
+    "track": "Kyoto"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "popular",
+    "artist": "Phoebe Bridgers",
+    "track": "Garden Song"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "popular",
+    "artist": "Phoebe Bridgers",
+    "track": "Motion Sickness"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "popular",
+    "artist": "Clairo",
+    "track": "Bags"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "popular",
+    "artist": "Clairo",
+    "track": "Sofia"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "popular",
+    "artist": "Boygenius",
+    "track": "Not Strong Enough"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "popular",
+    "artist": "Lucy Dacus",
+    "track": "Night Shift"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "mid_tier",
+    "artist": "Snail Mail",
+    "track": "Pristine"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "mid_tier",
+    "artist": "Japanese Breakfast",
+    "track": "Be Sweet"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "mid_tier",
+    "artist": "Japanese Breakfast",
+    "track": "Paprika"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "mid_tier",
+    "artist": "Big Thief",
+    "track": "Simulation Swarm"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "mid_tier",
+    "artist": "Big Thief",
+    "track": "Not"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "mid_tier",
+    "artist": "Mitski",
+    "track": "Nobody"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "obscure",
+    "artist": "Black Country, New Road",
+    "track": "Concorde"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "obscure",
+    "artist": "Black Country, New Road",
+    "track": "The Place Where He Inserted the Blade"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "obscure",
+    "artist": "Dry Cleaning",
+    "track": "Scratchcard Lanyard"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "obscure",
+    "artist": "Dry Cleaning",
+    "track": "Strong Feelings"
+  },
+  {
+    "decade": "2020s",
+    "genre": "indie",
+    "tier": "obscure",
+    "artist": "Geese",
+    "track": "Disco"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "Dua Lipa",
+    "track": "Don't Start Now"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "The Weeknd",
+    "track": "Blinding Lights"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "popular",
+    "artist": "The Weeknd",
+    "track": "Take My Breath"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Charli XCX",
+    "track": "Good Ones"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Charli XCX",
+    "track": "Vroom Vroom"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Charli XCX",
+    "track": "Unlock It"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "100 gecs",
+    "track": "money machine"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "100 gecs",
+    "track": "hand crushed by a mallet"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "mid_tier",
+    "artist": "Porter Robinson",
+    "track": "Good Faith"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "A.G. Cook",
+    "track": "Beautiful Superstar"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "A.G. Cook",
+    "track": "Oh Yeah"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "SOPHIE",
+    "track": "BIPP"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "SOPHIE",
+    "track": "Immaterial"
+  },
+  {
+    "decade": "2020s",
+    "genre": "electronic",
+    "tier": "obscure",
+    "artist": "Dorian Electra",
+    "track": "Flamboyant"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "SZA",
+    "track": "Kill Bill"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "SZA",
+    "track": "Good Days"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "SZA",
+    "track": "Snooze"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Summer Walker",
+    "track": "Girls Need Love"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Summer Walker",
+    "track": "Playing Games"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "popular",
+    "artist": "Doja Cat",
+    "track": "Streets"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Jazmine Sullivan",
+    "track": "Pick Up Your Feelings"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Jazmine Sullivan",
+    "track": "Bust Your Windows"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "H.E.R.",
+    "track": "Damage"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "H.E.R.",
+    "track": "Focus"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "mid_tier",
+    "artist": "Giveon",
+    "track": "Heartbreak Anniversary"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Yves Tumor",
+    "track": "Gospel for a New Century"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Yves Tumor",
+    "track": "Kerosene!"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "Eartheater",
+    "track": "Mitosis"
+  },
+  {
+    "decade": "2020s",
+    "genre": "r_b",
+    "tier": "obscure",
+    "artist": "KeiyaA",
+    "track": "Hvnli"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Wet Leg",
+    "track": "Chaise Longue"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Wet Leg",
+    "track": "Wet Dream"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "Maneskin",
+    "track": "Beggin'"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "The Killers",
+    "track": "My Own Soul's Warning"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "popular",
+    "artist": "M\u00e5neskin",
+    "track": "I Wanna Be Your Slave"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "IDLES",
+    "track": "Danny Nedelko"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "IDLES",
+    "track": "Never Fight a Man With a Perm"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "IDLES",
+    "track": "Colossus"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Fontaines D.C.",
+    "track": "Boys in the Better Land"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Fontaines D.C.",
+    "track": "A Hero's Death"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Parquet Courts",
+    "track": "Wide Awake"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "mid_tier",
+    "artist": "Turnstile",
+    "track": "Mystery"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Black Midi",
+    "track": "John L"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Black Midi",
+    "track": "953"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Squid",
+    "track": "Paddling"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Squid",
+    "track": "Narrator"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Black Country, New Road",
+    "track": "Sunglasses"
+  },
+  {
+    "decade": "2020s",
+    "genre": "rock",
+    "tier": "obscure",
+    "artist": "Black Country, New Road",
+    "track": "Athen's, France"
+  },
+  {
+    "decade": "2020s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Morgan Wallen",
+    "track": "Whiskey Glasses"
+  },
+  {
+    "decade": "2020s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Morgan Wallen",
+    "track": "Last Night"
+  },
+  {
+    "decade": "2020s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Zach Bryan",
+    "track": "Something in the Orange"
+  },
+  {
+    "decade": "2020s",
+    "genre": "country",
+    "tier": "popular",
+    "artist": "Luke Combs",
+    "track": "Beautiful Crazy"
+  },
+  {
+    "decade": "2020s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Tyler Childers",
+    "track": "All Your'n"
+  },
+  {
+    "decade": "2020s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Tyler Childers",
+    "track": "Feathered Indians"
+  },
+  {
+    "decade": "2020s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Colter Wall",
+    "track": "Sleeping on the Blacktop"
+  },
+  {
+    "decade": "2020s",
+    "genre": "country",
+    "tier": "mid_tier",
+    "artist": "Sturgill Simpson",
+    "track": "Turtles All the Way Down"
+  },
+  {
+    "decade": "2020s",
+    "genre": "country",
+    "tier": "obscure",
+    "artist": "Orville Peck",
+    "track": "Dead of Night"
+  },
+  {
+    "decade": "2020s",
+    "genre": "country",
+    "tier": "obscure",
+    "artist": "Orville Peck",
+    "track": "Turn to Hate"
+  },
+  {
+    "decade": "2020s",
+    "genre": "country",
+    "tier": "obscure",
+    "artist": "Charley Crockett",
+    "track": "I Need Your Love"
+  }
+]
