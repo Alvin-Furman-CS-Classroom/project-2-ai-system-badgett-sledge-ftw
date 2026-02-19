@@ -2,7 +2,7 @@
 
 ## Goal
 
-Deliver a **rule-based preference system** (logical rules + weight vectors) that scores songs using the existing knowledge base. Input is **(1) survey answers** and **(2) user ratings on a sample of songs** from the KB. Ratings are used to refine weights (and optionally to boost songs similar to highly-rated ones). Module 3 will consume this system to rank candidates.
+Deliver a **rule-based preference system** (logical rules + weight vectors) that scores songs using the existing knowledge base. Input is **(1) survey answers** and **(2) user like/dislike on a personalized, adaptively chosen sample of songs** from the KB. The like/dislike phase uses **hill-climbing-style active learning**: the next songs shown depend on the current preference model and prior ratings, and each response refines the weights so the model moves toward the user's true preference. The refined weights (and optionally similarity to liked songs) drive scoring. Module 3 will consume this system to rank candidates.
 
 ## Current Foundation
 
@@ -31,16 +31,27 @@ Survey **output**: a single structured object (e.g. dict or dataclass) holding u
 
 **Implementation note:** Survey can be implemented as (a) a static config (e.g. JSON or Python dict) that defines questions and allowed values, plus (b) a function or small script that collects answers (CLI prompts or later a simple UI) and returns the preference profile. For checkpoint, CLI or hardcoded profile is enough; no need for a full web survey.
 
-## 2. Song Sampling and User Ratings (Post-Survey)
+## 2. Song Sampling and User Ratings (Post-Survey): Hill-Climbing-Style Active Learning
 
-After the user completes the survey:
+After the user completes the initial survey, the **like/dislike section** uses a **hill-climbing-like active learning** strategy: maintain a single current preference model (rules + weights), update it from each user response, and choose the **next** songs to show based on the current model so that feedback is informative and the model moves toward the user's true preference.
 
-- **Sample songs from the KB**: Select a fixed number of songs (e.g. 10–20) to show the user. Options: (a) random sample, (b) stratified (e.g. cover multiple genres/moods so the user sees variety), or (c) top-K by initial rule-based score so they are relevant to the profile. Stratified or score-based sampling gives more informative ratings.
-- **Present the list**: Show each song's artist and track (and optionally a few KB facts) so the user can rate them. Data comes from `kb.get_song(mbid)` and optionally `kb.get_fact(...)`.
-- **Collect ratings**: User rates how much they like each song. Simple scheme: numeric scale (e.g. 1–5) or like / neutral / dislike. Store as a list of `(mbid, rating)` pairs (e.g. `UserRatings` or list of tuples).
+**Loop (repeat until enough ratings or user stops):**
+
+1. **Select next songs**: Using the **current** rules + weights (and optionally ratings so far), choose a small batch of songs (e.g. 3–5) to show. Strategy:
+   - **Exploit**: Include some songs the current model scores highly (personalized to current estimate).
+   - **Explore / active learning**: Include songs near the **decision boundary** (scores in a middle band, e.g. neither clearly liked nor disliked by the model) so that like/dislike gives maximum information, or songs that differ from already-rated ones on one or two features to probe the preference surface.
+2. **Present the batch**: Show each song's artist and track (and optionally a few KB facts). User responds with **like** or **dislike** (and optionally skip/neutral).
+3. **Update the model (hill-climbing step)**: Refine the weight vector from the new ratings (e.g. increase weights for rules that liked songs satisfy, decrease for rules that disliked songs satisfy). This is the "move" in preference space toward the user's likes and away from dislikes.
+4. **Repeat**: With the updated weights, select the next batch and continue.
+
+**Concrete choices:**
+
+- **First batch**: Use initial survey-based rules + equal (or survey-derived) weights; select e.g. top-K by score (personalized) or stratified across genres/moods so the first responses are informative.
+- **Subsequent batches**: Use the **refined** weights. Next-song policy examples: (a) score all unrated songs with current scorer, pick a mix of high-scoring (exploit) and mid-scoring / boundary (explore) songs; (b) prefer songs that are "one feature different" from a liked song to test that dimension. Exclude already-rated mbids.
+- **Rating scheme**: Like / dislike (binary) is enough for weight refinement; optional neutral/skip. Store as `(mbid, rating)` with rating e.g. 1 (dislike), 2 (neutral), 3 (like) for numeric refinement.
 - **Persistence**: Keep ratings in memory for the session; optionally save/load (e.g. JSON) so the same user can reuse them without re-rating.
 
-This list of **rated songs** is a second input to the preference system and is used in the next step to refine weights (and optionally in scoring).
+This yields a **rated song list** and a **refined weight vector** that have been updated in a hill-climbing manner: each step uses feedback to move the single preference model toward the user's revealed preferences.
 
 ## 3. Data Model: Preference Profile, Rules, Weight Vector, Ratings
 
@@ -80,10 +91,10 @@ or a method on a `PreferenceSystem` / `RuleBasedScorer` class that holds the pro
   - `rules.py`: rule representation (condition types, target values) and **building** rules from a `PreferenceProfile` (e.g. one rule per feature: genre match, mood match, danceable match, etc.).
   - `weights.py` or inside `rules.py`: weight vector definition and default weights (equal or configurable).
   - `scorer.py`: class that holds rules + weights (refined by ratings if provided), takes KB in constructor or `score(song_mbid, kb)`, and returns float; optionally `score_all` for batch.
-  - `sampling.py`: function to select N songs from the KB for rating (random, stratified, or by initial score). Returns list of mbids.
-  - `ratings.py`: data structure for user ratings `(mbid, rating)`; function to apply ratings to refine the weight vector (given KB, rules, current weights, and ratings list).
+  - `sampling.py`: (1) Initial batch: select N songs for the first like/dislike round (e.g. top-K by initial score or stratified). (2) **Adaptive (hill-climbing) batch**: given KB, current scorer (rules + weights), and ratings-so-far, select the *next* N songs (e.g. mix of high-score and boundary/mid-score, excluding already-rated). Returns list of mbids.
+  - `ratings.py`: data structure for user ratings `(mbid, rating)`; function to apply ratings to refine the weight vector (given KB, rules, current weights, and ratings list). Used after each batch (or after each single rating) in the active-learning loop.
 - **Dependency**: This module **depends only on** the KB interface (`KnowledgeBase` from `src/knowledge_base_wrapper.py`). No dependency on Module 3 or 4.
-- **Entry point / demo**: A script that (1) loads KB, (2) runs survey (or loads hardcoded profile), (3) builds initial rules + weights, (4) samples songs and collects ratings (CLI or hardcoded list for demo), (5) refines weights from ratings, (6) runs scorer on a few songs and prints scores. This demonstrates the full flow: survey → ratings → rule-based scoring.
+- **Entry point / demo**: A script that (1) loads KB, (2) runs survey (or loads hardcoded profile), (3) builds initial rules + weights, (4) runs the **hill-climbing like/dislike loop**: repeatedly select next batch (adaptive sampling), present songs, collect like/dislike, refine weights, then select next batch until done, (5) runs scorer on a few songs and prints scores. This demonstrates: survey → adaptive like/dislike (active learning) → refined rule-based scoring.
 
 ## 6. Flow Diagram
 
@@ -97,22 +108,27 @@ flowchart LR
     Profile[Preference profile]
     Rules[Logical rules]
     InitialWeights[Initial weight vector]
-    Sample[Sample songs from KB]
-    Ratings[User ratings]
-    RefineWeights[Refine weights from ratings]
     Scorer[Scorer]
+    SelectBatch[Select next batch of songs]
+    PresentRate[Present songs, collect like or dislike]
+    RefineWeights[Refine weights from ratings]
+    Ratings[User ratings so far]
   end
   Survey --> Profile
   Profile --> Rules
   Profile --> InitialWeights
-  KB --> Sample
-  Sample --> Ratings
-  Rules --> RefineWeights
-  InitialWeights --> RefineWeights
-  Ratings --> RefineWeights
+  Rules --> InitialWeights
+  InitialWeights --> Scorer
   Rules --> Scorer
-  RefineWeights --> Scorer
   KB --> Scorer
+  Scorer --> SelectBatch
+  KB --> SelectBatch
+  Ratings --> SelectBatch
+  SelectBatch --> PresentRate
+  PresentRate --> Ratings
+  Ratings --> RefineWeights
+  Rules --> RefineWeights
+  RefineWeights --> Scorer
   Scorer --> Scores["Scores per song"]
 ```
 
@@ -126,9 +142,9 @@ flowchart LR
     - A song that matches all rules gets a higher score than one that matches none.
     - A song that matches genre but not mood gets a score between those two (if weights are positive).
     - Edge cases: song missing a fact (e.g. no mood) → rule for mood yields 0 or "no match"; scorer does not crash.
-  - **Sampling**: given KB, request N songs; get N distinct mbids (or fewer if KB is small); optionally assert stratification if implemented.
+  - **Sampling**: (1) Initial batch: given KB and optional scorer, get N distinct mbids. (2) Adaptive batch: given KB, current scorer, and list of already-rated mbids, next batch excludes those and returns e.g. mix of high-score and boundary songs; assert batch size and no duplicates with already-rated.
   - **Ratings and weight refinement**: with fixture KB and a small ratings list (e.g. high rating for a song that satisfies "genre=rock", low for one that doesn't), apply refinement and assert that the "genre" rule weight increases (or that after refinement, a rock song scores higher than before).
-- **Integration test** (in `integration_tests/module_2/`): load real or fixture KB, (1) build profile from survey-like input, (2) build rules and initial weights, (3) sample songs and apply mock ratings (e.g. high for some mbids, low for others), (4) refine weights, (5) run scorer on multiple songs. Assert that output is a list of (mbid, score) with sensible ordering and that highly-rated-style songs rank higher after refinement.
+- **Integration test** (in `integration_tests/module_2/`): load real or fixture KB, (1) build profile from survey-like input, (2) build rules and initial weights, (3) run a short **hill-climbing loop**: get initial batch, apply mock like/dislike, refine weights, get next batch (adaptive), apply mock ratings again, refine, (4) run scorer on multiple songs. Assert that (mbid, score) ordering is sensible and that songs similar to liked ones rank higher after refinement; optionally assert that the second batch differs from the first (e.g. includes boundary or different mix).
 
 ## 8. README and AGENTS.md
 
@@ -147,8 +163,9 @@ flowchart LR
 | ------------------ | -------------------------------------------------------------------------- |
 | Survey schema      | Questions and mapping to KB facts; way to produce a preference profile.    |
 | Preference profile | Data structure for survey answers.                                         |
-| Song sampling      | Select N songs from KB for rating (random or stratified).                  |
-| User ratings       | Data structure and collection for (mbid, rating); optional save/load.      |
+| Song sampling      | Initial batch (e.g. top-K or stratified); **adaptive batch** (next N given current scorer + ratings) for hill-climbing like/dislike. |
+| User ratings       | Data structure and collection for (mbid, like/dislike); optional save/load. |
+| Active-learning loop | Hill-climbing: select batch → present → like/dislike → refine weights → repeat; next batch uses updated weights and excludes already-rated. |
 | Logical rules      | Representation and construction from profile; evaluatable against KB.     |
 | Weight vector      | Initial (from survey) and refined (from ratings); per-rule or per-feature. |
 | Weight refinement  | Update weights using which rules each rated song satisfies and its rating. |
