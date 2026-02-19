@@ -416,17 +416,18 @@ def main():
 
 
     print_section("HUMAN GENERATED QUERY EXAMPLE")
-    mbid = kb.get_mbid_by_song("Fire Engine Dream")
+    mbid = kb.get_mbid_by_song("B.O.B.")
     if mbid:
         song = kb.get_song(mbid)
         artist = song.get('artist', 'Unknown') if song else 'Unknown'
+        track = song.get('track', 'Unknown') if song else 'Unknown'
         genres = kb.get_fact('has_genre', mbid)
         loudness = kb.get_fact('has_loudness', mbid)
-        print(f"\nFire Engine Dream by {artist} MBID: {mbid}")
+        print(f"\n {track} {artist} MBID: {mbid}")
         print(f"Genres: {genres}")
         print(f"Loudness: {loudness}")
     else:
-        print("\nSong 'Fire Engine Dream' not found in knowledge base")
+        print("\nSong {'B.O.B.'} not found in knowledge base")
     print("\n")
 
 
