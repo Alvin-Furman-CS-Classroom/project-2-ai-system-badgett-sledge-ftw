@@ -12,10 +12,11 @@ from pathlib import Path
 
 
 class Rating(Enum):
-    """User rating levels."""
+    """User rating levels (1–4 scale with a neutral middle option)."""
     DISLIKE = 1
-    LIKE = 2
-    REALLY_LIKE = 3
+    NEUTRAL = 2   # In between: okay, so-so, no strong opinion
+    LIKE = 3
+    REALLY_LIKE = 4
     
     @classmethod
     def from_string(cls, value: str) -> 'Rating':
@@ -23,21 +24,26 @@ class Rating(Enum):
         value_lower = value.lower().strip()
         if value_lower in ["dislike", "1"]:
             return cls.DISLIKE
-        elif value_lower in ["like", "2"]:
+        elif value_lower in ["neutral", "okay", "ok", "so-so", "soso", "meh", "indifferent", "2"]:
+            return cls.NEUTRAL
+        elif value_lower in ["like", "3"]:
             return cls.LIKE
-        elif value_lower in ["really like", "really_like", "3"]:
+        elif value_lower in ["really like", "really_like", "4"]:
             return cls.REALLY_LIKE
         else:
-            raise ValueError(f"Invalid rating: {value}. Must be 'dislike', 'like', or 'really_like'")
+            raise ValueError(
+                f"Invalid rating: {value}. Must be 'dislike', 'neutral', 'like', or 'really_like'"
+            )
     
     def to_numeric(self) -> int:
-        """Convert rating to numeric value (1-3)."""
+        """Convert rating to numeric value (1–4)."""
         return self.value
     
     def __str__(self) -> str:
         """Human-readable string."""
         return {
             Rating.DISLIKE: "Dislike",
+            Rating.NEUTRAL: "Neutral",
             Rating.LIKE: "Like",
             Rating.REALLY_LIKE: "Really Like"
         }[self]
@@ -162,8 +168,9 @@ def collect_ratings_interactive(song_mbids: List[str], kb) -> UserRatings:
     print("=" * 70)
     print("\nRate each song using:")
     print("  [1] Dislike")
-    print("  [2] Like")
-    print("  [3] Really Like")
+    print("  [2] Neutral  (okay / no strong opinion)")
+    print("  [3] Like")
+    print("  [4] Really Like")
     print("\n" + "-" * 70)
     
     for i, mbid in enumerate(song_mbids, 1):
@@ -204,18 +211,21 @@ def collect_ratings_interactive(song_mbids: List[str], kb) -> UserRatings:
         # Get rating
         while True:
             try:
-                rating_input = input(f"\nYour rating (1-3): ").strip()
+                rating_input = input(f"\nYour rating (1-4): ").strip()
                 if rating_input == "1":
                     rating = Rating.DISLIKE
                     break
                 elif rating_input == "2":
-                    rating = Rating.LIKE
+                    rating = Rating.NEUTRAL
                     break
                 elif rating_input == "3":
+                    rating = Rating.LIKE
+                    break
+                elif rating_input == "4":
                     rating = Rating.REALLY_LIKE
                     break
                 else:
-                    print("Invalid input. Please enter 1, 2, or 3.")
+                    print("Invalid input. Please enter 1, 2, 3, or 4.")
             except KeyboardInterrupt:
                 print("\n\nRating collection cancelled.")
                 return ratings

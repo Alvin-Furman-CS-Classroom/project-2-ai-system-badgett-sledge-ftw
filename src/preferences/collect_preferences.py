@@ -104,9 +104,10 @@ def main():
     
     # Show rating distribution
     rating_counts = {
-        "Really Like": len(ratings.get_highly_rated(Rating.REALLY_LIKE)),
+        "Really Like": len([r for mbid, r in ratings.get_all_ratings() if r == Rating.REALLY_LIKE]),
         "Like": len([r for mbid, r in ratings.get_all_ratings() if r == Rating.LIKE]),
-        "Dislike": len(ratings.get_low_rated(Rating.DISLIKE))
+        "Neutral": len([r for mbid, r in ratings.get_all_ratings() if r == Rating.NEUTRAL]),
+        "Dislike": len([r for mbid, r in ratings.get_all_ratings() if r == Rating.DISLIKE]),
     }
     print(f"\nRating distribution:")
     for rating_name, count in rating_counts.items():

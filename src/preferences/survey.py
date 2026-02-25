@@ -45,6 +45,69 @@ class PreferenceProfile:
         return self.loudness_min is not None and self.loudness_max is not None
 
 
+# Map KB genre codes (as stored in knowledge base) to full display names for the survey.
+# Used so Question 1 lists full names and accepts either full name or code from the user.
+GENRE_DISPLAY_NAMES = {
+    "alternative": "Alternative",
+    "ambient": "Ambient",
+    "blu": "Blues",
+    "blues": "Blues",
+    "cla": "Classical",
+    "cou": "Country",
+    "dan": "Dance",
+    "dis": "Disco",
+    "dnb": "Drum and Bass",
+    "electronic": "Electronic",
+    "folkcountry": "Folk / Country",
+    "hip": "Hip-Hop",
+    "house": "House",
+    "jaz": "Jazz",
+    "jazz": "Jazz",
+    "met": "Metal",
+    "pop": "Pop",
+    "raphiphop": "Rap / Hip-Hop",
+    "reg": "Reggae",
+    "rhy": "Rhythm & Blues",
+    "roc": "Rock",
+    "rock": "Rock",
+    "spe": "Speech / Spoken Word",
+    "techno": "Techno",
+    "trance": "Trance",
+}
+
+
+def genre_to_display_name(kb_genre: str) -> str:
+    """Return full display name for a KB genre code; fallback to title-case if unknown."""
+    key = kb_genre.lower().strip() if kb_genre else ""
+    return GENRE_DISPLAY_NAMES.get(key, kb_genre.title() if key else kb_genre)
+
+
+def display_name_to_genre_code(display_or_code: str, kb_genres: Optional[List[str]] = None) -> Optional[str]:
+    """
+    Map user input (full name or KB code) to the KB genre code for storage.
+    If kb_genres is provided, only return a code that exists in the KB.
+    When multiple codes share a display name (e.g. blu/blues -> Blues), prefer the one in kb_genres.
+    """
+    s = (display_or_code or "").strip().lower()
+    if not s:
+        return None
+    kb_set = {g.lower(): g for g in (kb_genres or [])}
+    # All codes that match this input (by display name or by code)
+    candidates = []
+    for code, display in GENRE_DISPLAY_NAMES.items():
+        if display.lower() == s or code.lower() == s:
+            candidates.append(code)
+    if not candidates and s:
+        candidates = [s]
+    # Prefer a candidate that exists in the KB
+    if kb_genres:
+        for c in candidates:
+            if c.lower() in kb_set:
+                return kb_set[c.lower()]
+        return None
+    return candidates[0] if candidates else None
+
+
 class SurveySchema:
     """Defines the survey questions and their structure."""
     
@@ -230,17 +293,32 @@ def collect_survey_cli(kb_genres: Optional[List[str]] = None, kb_moods: Optional
     print("  MUSIC PREFERENCE SURVEY")
     print("=" * 70 + "\n")
     
-    # Question 1: Genres (multi-select)
+    # Question 1: Genres (multi-select) — list all KB genres by full name, no truncation
     print("Question 1: Which genres do you enjoy?")
     if kb_genres:
-        print(f"Available genres: {', '.join(sorted(kb_genres)[:20])}...")
+        # Show all available genres using full display names, sorted by display name
+        sorted_by_display = sorted(
+            kb_genres,
+            key=lambda g: genre_to_display_name(g)
+        )
+        display_list = [genre_to_display_name(g) for g in sorted_by_display]
+        print("Available genres (all):")
+        print("  " + ", ".join(display_list))
         print("(Enter genre names separated by commas, or press Enter for no preference)")
     else:
         print("(Enter genre names separated by commas, or press Enter for no preference)")
     
     genres_input = input("Your answer: ").strip()
     if genres_input:
-        answers["genres"] = [g.strip() for g in genres_input.split(",") if g.strip()]
+        # Parse tokens; map full names or codes to KB codes for storage
+        raw_tokens = [t.strip() for t in genres_input.split(",") if t.strip()]
+        answers["genres"] = []
+        seen_lower = set()
+        for token in raw_tokens:
+            code = display_name_to_genre_code(token, kb_genres)
+            if code and code.lower() not in seen_lower:
+                seen_lower.add(code.lower())
+                answers["genres"].append(code)
     else:
         answers["genres"] = []
     
