@@ -21,7 +21,7 @@ Your system must include 5-6 modules. Fill in the table below as you plan each m
 | Module | Topic(s) | Inputs | Outputs | Depends On | Checkpoint |
 | ------ | -------- | ------ | ------- | ---------- | ---------- |
 | 1 |  |  |  |  |  |
-| 2 |  |  |  |  |  |
+| 2 | Rule-Based Preference Encoding (survey + song ratings) | KB (Module 1), survey answers, user ratings on sampled songs | Rule-based preference system: logical rules + weight vectors refined by ratings + scorer | Module 1 (KB) | `src/preferences/`; unit tests in `unit_tests/preferences/`; integration tests in `integration_tests/module_2/` |
 | 3 |  |  |  |  |  |
 | 4 |  |  |  |  |  |
 | 5 |  |  |  |  |  |

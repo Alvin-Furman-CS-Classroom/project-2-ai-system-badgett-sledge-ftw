@@ -6,7 +6,13 @@
 
 **Module plan:**
 
-[Your Module Plan Table copied from README.md]
+| Module | Topic(s) | Inputs | Outputs | Depends On |
+| ------ | -------- | ------ | ------- | ---------- |
+| 1 | (TBD) | — | — | — |
+| 2 | Rule-Based Preference Encoding (survey + song ratings) | KB, survey answers, user ratings on sampled songs | Rule-based preference system (rules + refined weights + scorer) | Module 1 (KB) |
+| 3+ | (TBD) | — | — | Module 3 will consume Module 2’s scorer to rank candidates. |
+
+Module 2 is implemented in `src/preferences/` (survey, rules, weights, scorer, sampling, ratings, hill-climbing loop). Tests: `unit_tests/preferences/`, `integration_tests/module_2/`.
 
 ## Constraints
 
