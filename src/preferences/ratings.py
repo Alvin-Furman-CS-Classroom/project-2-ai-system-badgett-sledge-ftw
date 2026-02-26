@@ -2,13 +2,16 @@
 Song Rating System for Module 2
 
 Collects user ratings on sampled songs and stores them for weight refinement.
+Provides refine_weights_from_ratings() to update rule weights from user feedback.
 """
 
 from dataclasses import dataclass
-from typing import List, Dict, Optional, Tuple
+from typing import List, Dict, Optional, Tuple, Union
 from enum import Enum
 import json
 from pathlib import Path
+
+from preferences.rules import Rule, evaluate_rule
 
 
 class Rating(Enum):
@@ -148,6 +151,67 @@ class UserRatings:
     def __repr__(self) -> str:
         """String representation."""
         return f"UserRatings({len(self.ratings)} songs)"
+
+
+def refine_weights_from_ratings(
+    kb,
+    rules: List[Rule],
+    current_weights: Dict[str, float],
+    user_ratings: Union[UserRatings, List[Tuple[str, Rating]]],
+    alpha: float = 0.1,
+    weight_floor: float = 1e-6,
+    normalize: bool = True,
+) -> Dict[str, float]:
+    """
+    Refine the rule weight vector from user ratings (hill-climbing step).
+
+    For each rule, computes the average rating of songs that satisfy it vs. the
+    overall average; increases the rule's weight if satisfied songs were rated
+    higher, decreases if lower. Keeps weights non-negative.
+
+    Args:
+        kb: KnowledgeBase instance (to evaluate rules per song).
+        rules: List of Rule objects (e.g. from build_rules(profile)).
+        current_weights: Current weight per rule_id (e.g. from get_default_weights).
+        user_ratings: UserRatings instance or list of (mbid, Rating) tuples.
+        alpha: Learning rate for weight updates (default 0.1).
+        weight_floor: Minimum weight after update (default 1e-6).
+        normalize: If True, scale refined weights to sum to 1.0 (default True).
+
+    Returns:
+        New dict mapping rule_id -> refined weight (non-negative).
+    """
+    if isinstance(user_ratings, UserRatings):
+        rating_list = [(mbid, r.value) for mbid, r in user_ratings.get_all_ratings()]
+    else:
+        rating_list = [(mbid, r.value if hasattr(r, "value") else r) for mbid, r in user_ratings]
+
+    if not rating_list:
+        return dict(current_weights)
+
+    avg_overall = sum(n for _, n in rating_list) / len(rating_list)
+    refined: Dict[str, float] = {}
+
+    for rule in rules:
+        satisfied_numerics = [
+            n for mbid, n in rating_list
+            if evaluate_rule(rule, mbid, kb) >= 0.5
+        ]
+        avg_satisfied = (
+            sum(satisfied_numerics) / len(satisfied_numerics)
+            if satisfied_numerics
+            else 0.0
+        )
+        delta = alpha * (avg_satisfied - avg_overall)
+        new_w = current_weights.get(rule.rule_id, 0.0) + delta
+        refined[rule.rule_id] = max(weight_floor, new_w)
+
+    if normalize and refined:
+        total = sum(refined.values())
+        if total > 0:
+            refined = {rid: w / total for rid, w in refined.items()}
+
+    return refined
 
 
 def collect_ratings_interactive(song_mbids: List[str], kb) -> UserRatings:

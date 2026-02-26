@@ -18,6 +18,7 @@ from .ratings import (
     SongRating,
     UserRatings,
     collect_ratings_interactive,
+    refine_weights_from_ratings,
 )
 from .sampling import (
     sample_songs,
@@ -25,7 +26,15 @@ from .sampling import (
     sample_stratified,
     sample_by_preferences,
     sample_by_initial_score,
+    sample_next_batch,
 )
+from .rules import (
+    Rule,
+    build_rules,
+    evaluate_rule,
+    get_default_weights,
+)
+from .scorer import PreferenceScorer
 
 __all__ = [
     "SurveySchema",
@@ -38,9 +47,16 @@ __all__ = [
     "SongRating",
     "UserRatings",
     "collect_ratings_interactive",
+    "refine_weights_from_ratings",
     "sample_songs",
     "sample_random",
     "sample_stratified",
     "sample_by_preferences",
     "sample_by_initial_score",
+    "sample_next_batch",
+    "Rule",
+    "build_rules",
+    "evaluate_rule",
+    "get_default_weights",
+    "PreferenceScorer",
 ]

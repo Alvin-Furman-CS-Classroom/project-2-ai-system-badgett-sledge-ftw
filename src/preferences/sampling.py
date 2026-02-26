@@ -6,7 +6,7 @@ Supports random, stratified, preference-based, and score-based sampling.
 """
 
 import random
-from typing import List, Optional
+from typing import List, Optional, Set
 from collections import defaultdict
 from .survey import PreferenceProfile
 
@@ -276,6 +276,72 @@ def sample_by_initial_score(kb, n: int, scorer, seed: Optional[int] = None) -> L
     # Sort by score (descending) and take top N
     scored.sort(key=lambda x: x[1], reverse=True)
     return [mbid for mbid, _ in scored[:n]]
+
+
+def sample_next_batch(
+    kb,
+    n: int,
+    scorer,
+    already_rated_mbids: List[str],
+    seed: Optional[int] = None,
+    exploit_ratio: float = 0.6,
+) -> List[str]:
+    """
+    Adaptive (hill-climbing) batch: select next N songs to rate using current scorer.
+    Excludes already-rated songs. Picks a mix of high-scoring (exploit) and
+    mid-scoring / boundary (explore) songs for active learning.
+
+    Args:
+        kb: KnowledgeBase instance
+        n: Number of songs to sample
+        scorer: Scorer with score(mbid, kb) method (e.g. PreferenceScorer)
+        already_rated_mbids: MBIDs the user has already rated (will be excluded)
+        seed: Optional random seed for reproducibility
+        exploit_ratio: Fraction of batch from top-scoring songs (0–1); rest from boundary
+
+    Returns:
+        List of N (or fewer) MBIDs, excluding already_rated_mbids
+    """
+    if seed is not None:
+        random.seed(seed)
+
+    rated_set = set(already_rated_mbids)
+    all_songs = kb.get_all_songs()
+    unrated = [m for m in all_songs if m not in rated_set]
+
+    if len(unrated) <= n:
+        return unrated
+
+    scored = []
+    for mbid in unrated:
+        try:
+            s = scorer.score(mbid, kb)
+            scored.append((mbid, s))
+        except Exception:
+            continue
+
+    if not scored:
+        return random.sample(unrated, min(n, len(unrated)))
+
+    scored.sort(key=lambda x: x[1], reverse=True)
+    num_exploit = max(1, int(n * exploit_ratio))
+    num_explore = n - num_exploit
+
+    exploit_batch = [mbid for mbid, _ in scored[:num_exploit]]
+    mid_start = max(0, len(scored) // 2 - num_explore // 2)
+    mid_end = min(len(scored), mid_start + num_explore)
+    explore_candidates = [mbid for mbid, _ in scored[mid_start:mid_end] if mbid not in exploit_batch]
+    explore_batch = explore_candidates[:num_explore]
+
+    result = list(exploit_batch)
+    for m in explore_batch:
+        if m not in result:
+            result.append(m)
+    if len(result) < n:
+        remaining = [mbid for mbid, _ in scored if mbid not in result]
+        result.extend(remaining[: n - len(result)])
+    random.shuffle(result)
+    return result[:n]
 
 
 def sample_songs(kb, n: int = 15, method: str = "stratified", 
