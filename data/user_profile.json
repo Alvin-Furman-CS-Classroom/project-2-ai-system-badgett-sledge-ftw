@@ -1,0 +1,17 @@
+{
+  "preferred_genres": [
+    "raphiphop",
+    "house",
+    "jazz"
+  ],
+  "preferred_moods": [
+    "electronic",
+    "happy",
+    "party"
+  ],
+  "danceable": null,
+  "voice_instrumental": "voice",
+  "timbre": null,
+  "loudness_min": -12.0,
+  "loudness_max": -8.0
+}
