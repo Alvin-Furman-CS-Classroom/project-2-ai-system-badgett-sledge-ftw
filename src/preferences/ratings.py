@@ -5,14 +5,21 @@ Collects user ratings on sampled songs and stores them for weight refinement.
 Provides refine_weights_from_ratings() to update rule weights from user feedback.
 """
 
-from dataclasses import dataclass
-from typing import List, Dict, Optional, Tuple, Union
-from enum import Enum
 import json
+from dataclasses import dataclass
+from enum import Enum
 from pathlib import Path
+from typing import Dict, List, Optional, Tuple, Union, TYPE_CHECKING
 
 from preferences.rules import Rule, evaluate_rule
 
+if TYPE_CHECKING:
+    from knowledge_base_wrapper import KnowledgeBase
+
+# Weight refinement constants
+RULE_SATISFIED_THRESHOLD = 0.5  # Rule score >= this counts as "satisfied" for refinement
+DEFAULT_ALPHA = 0.1  # Learning rate for weight updates
+DEFAULT_WEIGHT_FLOOR = 1e-6  # Minimum weight after update
 
 class Rating(Enum):
     """User rating levels (1–4 scale with a neutral middle option)."""
@@ -20,27 +27,21 @@ class Rating(Enum):
     NEUTRAL = 2   # In between: okay, so-so, no strong opinion
     LIKE = 3
     REALLY_LIKE = 4
-    
-    @classmethod
-    def from_string(cls, value: str) -> 'Rating':
-        """Convert string to Rating enum."""
-        value_lower = value.lower().strip()
-        if value_lower in ["dislike", "1"]:
-            return cls.DISLIKE
-        elif value_lower in ["neutral", "okay", "ok", "so-so", "soso", "meh", "indifferent", "2"]:
-            return cls.NEUTRAL
-        elif value_lower in ["like", "3"]:
-            return cls.LIKE
-        elif value_lower in ["really like", "really_like", "4"]:
-            return cls.REALLY_LIKE
-        else:
-            raise ValueError(
-                f"Invalid rating: {value}. Must be 'dislike', 'neutral', 'like', or 'really_like'"
-            )
-    
+
     def to_numeric(self) -> int:
         """Convert rating to numeric value (1–4)."""
         return self.value
+
+    @classmethod
+    def from_string(cls, value: str) -> "Rating":
+        """Convert string to Rating enum."""
+        value_lower = value.lower().strip()
+        rating = _STRING_TO_RATING.get(value_lower)
+        if rating is not None:
+            return rating
+        raise ValueError(
+            f"Invalid rating: {value}. Must be 'dislike', 'neutral', 'like', or 'really_like'"
+        )
     
     def __str__(self) -> str:
         """Human-readable string."""
@@ -50,6 +51,26 @@ class Rating(Enum):
             Rating.LIKE: "Like",
             Rating.REALLY_LIKE: "Really Like"
         }[self]
+
+
+# Module-level map for Rating.from_string (avoids Enum metaclass issues)
+_STRING_TO_RATING: Dict[str, Rating] = {
+    "dislike": Rating.DISLIKE,
+    "1": Rating.DISLIKE,
+    "neutral": Rating.NEUTRAL,
+    "okay": Rating.NEUTRAL,
+    "ok": Rating.NEUTRAL,
+    "so-so": Rating.NEUTRAL,
+    "soso": Rating.NEUTRAL,
+    "meh": Rating.NEUTRAL,
+    "indifferent": Rating.NEUTRAL,
+    "2": Rating.NEUTRAL,
+    "like": Rating.LIKE,
+    "3": Rating.LIKE,
+    "really like": Rating.REALLY_LIKE,
+    "really_like": Rating.REALLY_LIKE,
+    "4": Rating.REALLY_LIKE,
+}
 
 
 @dataclass
@@ -134,13 +155,14 @@ class UserRatings:
         """Save ratings to JSON file."""
         path = Path(filepath)
         path.parent.mkdir(parents=True, exist_ok=True)
-        with open(path, 'w', encoding='utf-8') as f:
+        with open(path, "w", encoding="utf-8") as f:
             json.dump(self.to_dict(), f, indent=2)
-    
+
     @classmethod
-    def load(cls, filepath: str) -> 'UserRatings':
+    def load(cls, filepath: str) -> "UserRatings":
         """Load ratings from JSON file."""
-        with open(filepath, 'r', encoding='utf-8') as f:
+        path = Path(filepath)
+        with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
         return cls.from_dict(data)
     
@@ -154,12 +176,12 @@ class UserRatings:
 
 
 def refine_weights_from_ratings(
-    kb,
+    kb: "KnowledgeBase",
     rules: List[Rule],
     current_weights: Dict[str, float],
     user_ratings: Union[UserRatings, List[Tuple[str, Rating]]],
-    alpha: float = 0.1,
-    weight_floor: float = 1e-6,
+    alpha: float = DEFAULT_ALPHA,
+    weight_floor: float = DEFAULT_WEIGHT_FLOOR,
     normalize: bool = True,
 ) -> Dict[str, float]:
     """
@@ -174,8 +196,8 @@ def refine_weights_from_ratings(
         rules: List of Rule objects (e.g. from build_rules(profile)).
         current_weights: Current weight per rule_id (e.g. from get_default_weights).
         user_ratings: UserRatings instance or list of (mbid, Rating) tuples.
-        alpha: Learning rate for weight updates (default 0.1).
-        weight_floor: Minimum weight after update (default 1e-6).
+        alpha: Learning rate for weight updates (default DEFAULT_ALPHA).
+        weight_floor: Minimum weight after update (default DEFAULT_WEIGHT_FLOOR).
         normalize: If True, scale refined weights to sum to 1.0 (default True).
 
     Returns:
@@ -195,7 +217,7 @@ def refine_weights_from_ratings(
     for rule in rules:
         satisfied_numerics = [
             n for mbid, n in rating_list
-            if evaluate_rule(rule, mbid, kb) >= 0.5
+            if evaluate_rule(rule, mbid, kb) >= RULE_SATISFIED_THRESHOLD
         ]
         avg_satisfied = (
             sum(satisfied_numerics) / len(satisfied_numerics)
@@ -214,19 +236,66 @@ def refine_weights_from_ratings(
     return refined
 
 
-def collect_ratings_interactive(song_mbids: List[str], kb) -> UserRatings:
+INPUT_TO_RATING = {"1": Rating.DISLIKE, "2": Rating.NEUTRAL, "3": Rating.LIKE, "4": Rating.REALLY_LIKE}
+
+
+def _format_song_display(mbid: str, kb: "KnowledgeBase", index: int, total: int) -> Optional[str]:
+    """Format song info and KB facts for display. Returns None if song not in KB."""
+    song = kb.get_song(mbid)
+    if not song:
+        return None
+    lines = [
+        f"\nSong {index}/{total}:",
+        f"  Artist: {song.get('artist', 'Unknown')}",
+        f"  Track: {song.get('track', 'Unknown')}",
+    ]
+    album = song.get("album", "")
+    if album:
+        lines.append(f"  Album: {album}")
+    genre = kb.get_fact("has_genre", mbid)
+    mood = kb.get_fact("has_mood", mbid)
+    danceable = kb.get_fact("has_danceable", mbid)
+    facts = []
+    if genre:
+        genre_str = ", ".join(genre[:2]) if isinstance(genre, list) else str(genre)
+        facts.append(f"Genre: {genre_str}")
+    if mood:
+        mood_str = ", ".join(mood[:2]) if isinstance(mood, list) else str(mood)
+        facts.append(f"Mood: {mood_str}")
+    if danceable:
+        facts.append(f"Danceable: {danceable}")
+    if facts:
+        lines.append(f"  {' | '.join(facts)}")
+    return "\n".join(lines)
+
+
+def _prompt_single_rating() -> Optional[Rating]:
+    """Prompt user for one rating (1-4). Returns None on KeyboardInterrupt."""
+    try:
+        while True:
+            rating_input = input("\nYour rating (1-4): ").strip()
+            rating = INPUT_TO_RATING.get(rating_input)
+            if rating is not None:
+                return rating
+            print("Invalid input. Please enter 1, 2, 3, or 4.")
+    except KeyboardInterrupt:
+        return None
+
+
+def collect_ratings_interactive(song_mbids: List[str], kb: "KnowledgeBase") -> UserRatings:
     """
     Collect ratings interactively from user for a list of songs.
-    
+
     Args:
         song_mbids: List of MBIDs to rate
         kb: KnowledgeBase instance to get song info
-        
+
     Returns:
         UserRatings object with collected ratings
     """
     ratings = UserRatings()
-    
+    total = len(song_mbids)
+
     print("\n" + "=" * 70)
     print("  SONG RATING")
     print("=" * 70)
@@ -236,69 +305,21 @@ def collect_ratings_interactive(song_mbids: List[str], kb) -> UserRatings:
     print("  [3] Like")
     print("  [4] Really Like")
     print("\n" + "-" * 70)
-    
-    for i, mbid in enumerate(song_mbids, 1):
-        song = kb.get_song(mbid)
-        if not song:
-            print(f"\nSong {i}/{len(song_mbids)}: MBID {mbid} not found in KB, skipping...")
+
+    for index, mbid in enumerate(song_mbids, 1):
+        display = _format_song_display(mbid, kb, index, total)
+        if display is None:
+            print(f"\nSong {index}/{total}: MBID {mbid} not found in KB, skipping...")
             continue
-        
-        artist = song.get('artist', 'Unknown')
-        track = song.get('track', 'Unknown')
-        album = song.get('album', '')
-        
-        # Show some KB facts for context
-        genre = kb.get_fact('has_genre', mbid)
-        mood = kb.get_fact('has_mood', mbid)
-        danceable = kb.get_fact('has_danceable', mbid)
-        
-        print(f"\nSong {i}/{len(song_mbids)}:")
-        print(f"  Artist: {artist}")
-        print(f"  Track: {track}")
-        if album:
-            print(f"  Album: {album}")
-        
-        # Show facts if available
-        facts = []
-        if genre:
-            genre_str = ', '.join(genre[:2]) if isinstance(genre, list) else str(genre)
-            facts.append(f"Genre: {genre_str}")
-        if mood:
-            mood_str = ', '.join(mood[:2]) if isinstance(mood, list) else str(mood)
-            facts.append(f"Mood: {mood_str}")
-        if danceable:
-            facts.append(f"Danceable: {danceable}")
-        
-        if facts:
-            print(f"  {' | '.join(facts)}")
-        
-        # Get rating
-        while True:
-            try:
-                rating_input = input(f"\nYour rating (1-4): ").strip()
-                if rating_input == "1":
-                    rating = Rating.DISLIKE
-                    break
-                elif rating_input == "2":
-                    rating = Rating.NEUTRAL
-                    break
-                elif rating_input == "3":
-                    rating = Rating.LIKE
-                    break
-                elif rating_input == "4":
-                    rating = Rating.REALLY_LIKE
-                    break
-                else:
-                    print("Invalid input. Please enter 1, 2, 3, or 4.")
-            except KeyboardInterrupt:
-                print("\n\nRating collection cancelled.")
-                return ratings
-        
+        print(display)
+        rating = _prompt_single_rating()
+        if rating is None:
+            print("\n\nRating collection cancelled.")
+            return ratings
         ratings.add_rating(mbid, rating)
         print(f"  ✓ Rated as: {rating}")
-    
+
     print("\n" + "=" * 70)
     print(f"  Rating Complete! Rated {len(ratings)} songs.")
     print("=" * 70 + "\n")
-    
     return ratings

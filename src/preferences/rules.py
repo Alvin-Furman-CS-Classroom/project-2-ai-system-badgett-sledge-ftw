@@ -83,43 +83,50 @@ def build_rules(profile: PreferenceProfile) -> List[Rule]:
     return rules
 
 
+def _eval_set_match(value: Any, target: Any) -> float:
+    """Return 1.0 if value (list or single) has any element in target set, else 0.0."""
+    if not value:
+        return 0.0
+    item_set: Set[str] = set(
+        x.lower() for x in (value if isinstance(value, list) else [value])
+    )
+    target_set: Set[str] = set(target) if isinstance(target, list) else {str(target).lower()}
+    return 1.0 if (item_set & target_set) else 0.0
+
+
+def _eval_categorical(value: Any, target: Any) -> float:
+    """Return 1.0 if value equals target (case-insensitive), else 0.0."""
+    if value is None:
+        return 0.0
+    target_str = (target if isinstance(target, str) else str(target)).lower()
+    return 1.0 if str(value).lower() == target_str else 0.0
+
+
+def _eval_loudness(value: Any, target: Any) -> float:
+    """Return 1.0 if value is in [lo, hi], else 0.0."""
+    if value is None or not isinstance(target, (list, tuple)) or len(target) != 2:
+        return 0.0
+    try:
+        v = float(value)
+        lo, hi = float(target[0]), float(target[1])
+        return 1.0 if lo <= v <= hi else 0.0
+    except (TypeError, ValueError):
+        return 0.0
+
+
 def evaluate_rule(rule: Rule, mbid: str, kb: "KnowledgeBase") -> float:
     """
     Evaluate a single rule for a song. Returns 0.0 (not satisfied) or 1.0 (satisfied).
-    Optional: partial score for genre/mood (fraction of preferred that match); here we use 0/1.
     """
     value = kb.get_fact(rule.fact_type, mbid)
-
     if rule.fact_type == "has_genre":
-        if not value:
-            return 0.0
-        song_genres: Set[str] = set(g.lower() for g in (value if isinstance(value, list) else [value]))
-        preferred: Set[str] = set(rule.target)
-        return 1.0 if (song_genres & preferred) else 0.0
-
+        return _eval_set_match(value, rule.target)
     if rule.fact_type == "has_mood":
-        if not value:
-            return 0.0
-        song_moods: Set[str] = set(m.lower() for m in (value if isinstance(value, list) else [value]))
-        preferred_m: Set[str] = set(rule.target)
-        return 1.0 if (song_moods & preferred_m) else 0.0
-
+        return _eval_set_match(value, rule.target)
     if rule.fact_type in ("has_danceable", "has_voice_instrumental", "has_timbre"):
-        if value is None:
-            return 0.0
-        target_str = (rule.target if isinstance(rule.target, str) else str(rule.target)).lower()
-        return 1.0 if str(value).lower() == target_str else 0.0
-
+        return _eval_categorical(value, rule.target)
     if rule.fact_type == "has_loudness":
-        if value is None:
-            return 0.0
-        try:
-            v = float(value)
-            lo, hi = rule.target[0], rule.target[1]
-            return 1.0 if lo <= v <= hi else 0.0
-        except (TypeError, ValueError):
-            return 0.0
-
+        return _eval_loudness(value, rule.target)
     return 0.0
 
 

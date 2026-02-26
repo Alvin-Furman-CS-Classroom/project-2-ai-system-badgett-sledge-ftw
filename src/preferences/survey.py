@@ -5,8 +5,11 @@ Defines survey questions that map to knowledge base facts.
 Collects user preferences and converts them into a PreferenceProfile.
 """
 
+import json
 from dataclasses import dataclass
-from typing import List, Optional, Dict, Any
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
 from enum import Enum
 
 
@@ -276,108 +279,120 @@ def collect_survey_from_dict(answers: Dict[str, Any], kb_genres: Optional[List[s
     )
 
 
-def collect_survey_cli(kb_genres: Optional[List[str]] = None, kb_moods: Optional[List[str]] = None) -> PreferenceProfile:
-    """
-    Collect survey answers via command-line interface.
-    
-    Args:
-        kb_genres: Optional list of valid genres from KB (for display/validation)
-        kb_moods: Optional list of valid moods from KB (for display/validation)
-        
-    Returns:
-        PreferenceProfile object
-    """
-    answers = {}
-    
-    print("\n" + "=" * 70)
-    print("  MUSIC PREFERENCE SURVEY")
-    print("=" * 70 + "\n")
-    
-    # Question 1: Genres (multi-select) — list all KB genres by full name, no truncation
+def _ask_genres_cli(kb_genres: Optional[List[str]] = None) -> List[str]:
+    """Ask user for preferred genres via CLI. Returns list of KB genre codes."""
     print("Question 1: Which genres do you enjoy?")
     if kb_genres:
-        # Show all available genres using full display names, sorted by display name
-        sorted_by_display = sorted(
-            kb_genres,
-            key=lambda g: genre_to_display_name(g)
-        )
+        sorted_by_display = sorted(kb_genres, key=genre_to_display_name)
         display_list = [genre_to_display_name(g) for g in sorted_by_display]
         print("Available genres (all):")
         print("  " + ", ".join(display_list))
-        print("(Enter genre names separated by commas, or press Enter for no preference)")
-    else:
-        print("(Enter genre names separated by commas, or press Enter for no preference)")
-    
-    genres_input = input("Your answer: ").strip()
-    if genres_input:
-        # Parse tokens; map full names or codes to KB codes for storage
-        raw_tokens = [t.strip() for t in genres_input.split(",") if t.strip()]
-        answers["genres"] = []
-        seen_lower = set()
-        for token in raw_tokens:
-            code = display_name_to_genre_code(token, kb_genres)
-            if code and code.lower() not in seen_lower:
-                seen_lower.add(code.lower())
-                answers["genres"].append(code)
-    else:
-        answers["genres"] = []
-    
-    # Question 2: Moods (multi-select)
+    print("(Enter genre names separated by commas, or press Enter for no preference)")
+    raw = input("Your answer: ").strip()
+    if not raw:
+        return []
+    tokens = [t.strip() for t in raw.split(",") if t.strip()]
+    seen: set = set()
+    result = []
+    for token in tokens:
+        code = display_name_to_genre_code(token, kb_genres)
+        if code and code.lower() not in seen:
+            seen.add(code.lower())
+            result.append(code)
+    return result
+
+
+def _ask_moods_cli(kb_moods: Optional[List[str]] = None) -> List[str]:
+    """Ask user for preferred moods via CLI. Returns list of mood strings."""
     print("\nQuestion 2: What moods do you prefer in music?")
     if kb_moods:
-        print(f"Available moods: {', '.join(sorted(kb_moods))}")
-        print("(Enter mood names separated by commas, or press Enter for no preference)")
-    else:
-        print("(Enter mood names separated by commas, or press Enter for no preference)")
-    
-    moods_input = input("Your answer: ").strip()
-    if moods_input:
-        answers["moods"] = [m.strip() for m in moods_input.split(",") if m.strip()]
-    else:
-        answers["moods"] = []
-    
-    # Question 3: Danceability
-    print("\nQuestion 3: Do you prefer music you can dance to?")
-    print("Options: [1] Yes, I prefer danceable music")
-    print("         [2] No, I prefer non-danceable/chill music")
-    print("         [3] I don't have a preference")
-    danceable_input = input("Your choice (1-3): ").strip()
-    danceable_map = {"1": "danceable", "2": "not_danceable", "3": "any"}
-    answers["danceable"] = danceable_map.get(danceable_input, "any")
-    
-    # Question 4: Voice vs Instrumental
-    print("\nQuestion 4: Do you prefer songs with vocals or instrumental music?")
-    print("Options: [1] I prefer songs with vocals")
-    print("         [2] I prefer instrumental music")
-    print("         [3] I don't have a preference")
-    vi_input = input("Your choice (1-3): ").strip()
-    vi_map = {"1": "voice", "2": "instrumental", "3": "any"}
-    answers["voice_instrumental"] = vi_map.get(vi_input, "any")
-    
-    # Question 5: Timbre
-    print("\nQuestion 5: Do you prefer bright or dark-sounding music?")
-    print("Options: [1] I prefer bright-sounding music")
-    print("         [2] I prefer dark-sounding music")
-    print("         [3] I don't have a preference")
-    timbre_input = input("Your choice (1-3): ").strip()
-    timbre_map = {"1": "bright", "2": "dark", "3": "any"}
-    answers["timbre"] = timbre_map.get(timbre_input, "any")
-    
-    # Question 6: Loudness (Option 1: Volume Level Descriptions)
-    print("\nQuestion 6: What volume level do you prefer?")
-    print("Options: [1] Quiet/Soft")
-    print("         [2] Moderate/Normal")
-    print("         [3] Loud/Energetic")
-    print("         [4] I don't have a preference")
-    loudness_input = input("Your choice (1-4): ").strip()
-    loudness_map = {"1": "quiet", "2": "moderate", "3": "loud", "4": "any"}
-    answers["loudness"] = loudness_map.get(loudness_input, "any")
-    
+        print("Available moods: " + ", ".join(sorted(kb_moods)))
+    print("(Enter mood names separated by commas, or press Enter for no preference)")
+    raw = input("Your answer: ").strip()
+    return [m.strip() for m in raw.split(",") if m.strip()] if raw else []
+
+
+def _ask_single_choice_cli(prompt: str, choice_to_value: Dict[str, str], default: str) -> str:
+    """Print prompt and options, read user choice, return value from choice_to_value or default."""
+    print(prompt)
+    choice = input("Your choice: ").strip()
+    return choice_to_value.get(choice, default)
+
+
+def collect_survey_cli(kb_genres: Optional[List[str]] = None, kb_moods: Optional[List[str]] = None) -> PreferenceProfile:
+    """
+    Collect survey answers via command-line interface.
+
+    Args:
+        kb_genres: Optional list of valid genres from KB (for display/validation)
+        kb_moods: Optional list of valid moods from KB (for display/validation)
+
+    Returns:
+        PreferenceProfile object
+    """
+    print("\n" + "=" * 70)
+    print("  MUSIC PREFERENCE SURVEY")
+    print("=" * 70 + "\n")
+
+    answers: Dict[str, Any] = {}
+    answers["genres"] = _ask_genres_cli(kb_genres)
+    answers["moods"] = _ask_moods_cli(kb_moods)
+
+    answers["danceable"] = _ask_single_choice_cli(
+        "\nQuestion 3: Do you prefer music you can dance to?\n"
+        "Options: [1] Yes, I prefer danceable music\n"
+        "         [2] No, I prefer non-danceable/chill music\n"
+        "         [3] I don't have a preference",
+        {"1": "danceable", "2": "not_danceable", "3": "any"},
+        "any",
+    )
+    answers["voice_instrumental"] = _ask_single_choice_cli(
+        "\nQuestion 4: Do you prefer songs with vocals or instrumental music?\n"
+        "Options: [1] I prefer songs with vocals\n"
+        "         [2] I prefer instrumental music\n"
+        "         [3] I don't have a preference",
+        {"1": "voice", "2": "instrumental", "3": "any"},
+        "any",
+    )
+    answers["timbre"] = _ask_single_choice_cli(
+        "\nQuestion 5: Do you prefer bright or dark-sounding music?\n"
+        "Options: [1] I prefer bright-sounding music\n"
+        "         [2] I prefer dark-sounding music\n"
+        "         [3] I don't have a preference",
+        {"1": "bright", "2": "dark", "3": "any"},
+        "any",
+    )
+    answers["loudness"] = _ask_single_choice_cli(
+        "\nQuestion 6: What volume level do you prefer?\n"
+        "Options: [1] Quiet/Soft\n"
+        "         [2] Moderate/Normal\n"
+        "         [3] Loud/Energetic\n"
+        "         [4] I don't have a preference",
+        {"1": "quiet", "2": "moderate", "3": "loud", "4": "any"},
+        "any",
+    )
+
     print("\n" + "=" * 70)
     print("  Survey Complete!")
     print("=" * 70 + "\n")
-    
     return collect_survey_from_dict(answers, kb_genres, kb_moods)
+
+
+def save_profile(profile: PreferenceProfile, filepath: str = "data/user_profile.json") -> None:
+    """Save preference profile to a JSON file. Creates parent directories if needed."""
+    path = Path(filepath)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    profile_dict = {
+        "preferred_genres": profile.preferred_genres,
+        "preferred_moods": profile.preferred_moods,
+        "danceable": profile.danceable,
+        "voice_instrumental": profile.voice_instrumental,
+        "timbre": profile.timbre,
+        "loudness_min": profile.loudness_min,
+        "loudness_max": profile.loudness_max,
+    }
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(profile_dict, f, indent=2)
 
 
 if __name__ == "__main__":

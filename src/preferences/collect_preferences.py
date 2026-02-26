@@ -16,31 +16,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from knowledge_base_wrapper import KnowledgeBase
-from preferences.survey import collect_survey_cli, PreferenceProfile
+from preferences.survey import collect_survey_cli, save_profile
 from preferences.sampling import sample_songs
 from preferences.ratings import collect_ratings_interactive, UserRatings, Rating
-import json
-
-
-def save_profile(profile: PreferenceProfile, filepath: str = "data/user_profile.json"):
-    """Save preference profile to JSON file."""
-    path = Path(filepath)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    
-    profile_dict = {
-        "preferred_genres": profile.preferred_genres,
-        "preferred_moods": profile.preferred_moods,
-        "danceable": profile.danceable,
-        "voice_instrumental": profile.voice_instrumental,
-        "timbre": profile.timbre,
-        "loudness_min": profile.loudness_min,
-        "loudness_max": profile.loudness_max
-    }
-    
-    with open(path, 'w', encoding='utf-8') as f:
-        json.dump(profile_dict, f, indent=2)
-    
-    print(f"✓ Profile saved to {filepath}")
 
 
 def main():
@@ -67,9 +45,8 @@ def main():
     kb_moods = list(kb.get_all_moods())
     
     profile = collect_survey_cli(kb_genres=kb_genres, kb_moods=kb_moods)
-    
-    # Save profile
     save_profile(profile)
+    print("✓ Profile saved to data/user_profile.json")
     
     # Step 2: Sample songs based on preferences
     print("\n" + "=" * 70)

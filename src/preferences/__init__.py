@@ -12,6 +12,7 @@ from .survey import (
     LoudnessLevel,
     collect_survey_from_dict,
     collect_survey_cli,
+    save_profile,
 )
 from .ratings import (
     Rating,
@@ -43,6 +44,7 @@ __all__ = [
     "LoudnessLevel",
     "collect_survey_from_dict",
     "collect_survey_cli",
+    "save_profile",
     "Rating",
     "SongRating",
     "UserRatings",

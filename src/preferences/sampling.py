@@ -5,13 +5,26 @@ Sample songs from the knowledge base for user rating.
 Supports random, stratified, preference-based, and score-based sampling.
 """
 
+import logging
 import random
-from typing import List, Optional, Set
 from collections import defaultdict
+from typing import List, Optional, Set, Tuple, TYPE_CHECKING
+
 from .survey import PreferenceProfile
 
+if TYPE_CHECKING:
+    from knowledge_base_wrapper import KnowledgeBase
 
-def sample_random(kb, n: int, seed: Optional[int] = None) -> List[str]:
+logger = logging.getLogger(__name__)
+
+# Preference-based sampling: score weight for genre/mood match vs single-feature match
+GENRE_MATCH_WEIGHT = 2
+MOOD_MATCH_WEIGHT = 2
+SINGLE_FEATURE_MATCH_WEIGHT = 1
+DEFAULT_EXPLOIT_RATIO = 0.6
+
+
+def sample_random(kb: "KnowledgeBase", n: int, seed: Optional[int] = None) -> List[str]:
     """
     Randomly sample N songs from the knowledge base.
     
@@ -33,7 +46,7 @@ def sample_random(kb, n: int, seed: Optional[int] = None) -> List[str]:
     return random.sample(all_songs, n)
 
 
-def sample_stratified(kb, n: int, seed: Optional[int] = None) -> List[str]:
+def sample_stratified(kb: "KnowledgeBase", n: int, seed: Optional[int] = None) -> List[str]:
     """
     Stratified sampling: ensure diversity across genres and moods.
     
@@ -59,7 +72,7 @@ def sample_stratified(kb, n: int, seed: Optional[int] = None) -> List[str]:
     by_mood = defaultdict(list)
     
     for mbid in all_songs:
-        genres = kb.get_fact('has_genre', mbid)
+        genres = kb.get_fact("has_genre", mbid)
         if genres:
             if isinstance(genres, list):
                 for genre in genres[:1]:  # Use first genre
@@ -67,7 +80,7 @@ def sample_stratified(kb, n: int, seed: Optional[int] = None) -> List[str]:
             else:
                 by_genre[str(genres).lower()].append(mbid)
         
-        moods = kb.get_fact('has_mood', mbid)
+        moods = kb.get_fact("has_mood", mbid)
         if moods:
             if isinstance(moods, list):
                 for mood in moods[:1]:  # Use first mood
@@ -111,136 +124,127 @@ def sample_stratified(kb, n: int, seed: Optional[int] = None) -> List[str]:
     return sampled[:n]
 
 
-def sample_by_preferences(kb, profile: PreferenceProfile, n: int, seed: Optional[int] = None) -> List[str]:
-    """
-    Sample songs that match user preferences from the survey profile.
-    
-    Prioritizes songs that match the user's preferred genres, moods, and other
-    preferences. Ensures variety while still being relevant to preferences.
-    
-    Args:
-        kb: KnowledgeBase instance
-        profile: PreferenceProfile from survey
-        n: Number of songs to sample
-        seed: Optional random seed for reproducibility
-        
-    Returns:
-        List of MBIDs matching preferences
-    """
-    if seed is not None:
-        random.seed(seed)
-    
-    all_songs = kb.get_all_songs()
-    if len(all_songs) <= n:
-        return all_songs
-    
-    # Score songs by how many preferences they match
-    scored_songs = []
-    
-    for mbid in all_songs:
-        match_score = 0
-        matches = []
-        
-        # Check genre match
-        if profile.preferred_genres:
-            song_genres = kb.get_fact('has_genre', mbid)
-            if song_genres:
-                song_genres_list = song_genres if isinstance(song_genres, list) else [song_genres]
-                song_genres_lower = [g.lower() for g in song_genres_list]
-                preferred_lower = [g.lower() for g in profile.preferred_genres]
-                if any(g in preferred_lower for g in song_genres_lower):
-                    match_score += 2  # Genre match is important
-                    matches.append("genre")
-        
-        # Check mood match
-        if profile.preferred_moods:
-            song_moods = kb.get_fact('has_mood', mbid)
-            if song_moods:
-                song_moods_list = song_moods if isinstance(song_moods, list) else [song_moods]
-                song_moods_lower = [m.lower() for m in song_moods_list]
-                preferred_lower = [m.lower() for m in profile.preferred_moods]
-                if any(m in preferred_lower for m in song_moods_lower):
-                    match_score += 2  # Mood match is important
-                    matches.append("mood")
-        
-        # Check danceability match
-        if profile.danceable:
-            song_danceable = kb.get_fact('has_danceable', mbid)
-            if song_danceable and song_danceable.lower() == profile.danceable.lower():
-                match_score += 1
-                matches.append("danceable")
-        
-        # Check voice/instrumental match
-        if profile.voice_instrumental:
-            song_vi = kb.get_fact('has_voice_instrumental', mbid)
-            if song_vi and song_vi.lower() == profile.voice_instrumental.lower():
-                match_score += 1
-                matches.append("voice_instrumental")
-        
-        # Check timbre match
-        if profile.timbre:
-            song_timbre = kb.get_fact('has_timbre', mbid)
-            if song_timbre and song_timbre.lower() == profile.timbre.lower():
-                match_score += 1
-                matches.append("timbre")
-        
-        # Check loudness match
-        if profile.has_loudness_preference():
-            song_loudness = kb.get_fact('has_loudness', mbid)
-            if song_loudness is not None:
-                if profile.loudness_min <= song_loudness <= profile.loudness_max:
-                    match_score += 1
-                    matches.append("loudness")
-        
-        scored_songs.append((mbid, match_score, matches))
-    
-    # Sort by match score (descending)
-    scored_songs.sort(key=lambda x: x[1], reverse=True)
-    
-    # Take top matches, but ensure variety
-    # Strategy: take top-scoring songs, but try to get variety across genres/moods
-    sampled = []
-    seen_genres = set()
-    seen_moods = set()
-    
-    # First pass: prioritize high-scoring songs with variety
-    for mbid, score, matches in scored_songs:
+def _score_song_for_profile(
+    kb: "KnowledgeBase", mbid: str, profile: PreferenceProfile
+) -> Tuple[str, int, List[str]]:
+    """Score one song by how well it matches the profile. Returns (mbid, match_score, match_labels)."""
+    match_score = 0
+    matches: List[str] = []
+
+    if profile.preferred_genres:
+        song_genres = kb.get_fact("has_genre", mbid)
+        if song_genres:
+            song_list = song_genres if isinstance(song_genres, list) else [song_genres]
+            preferred_lower = [g.lower() for g in profile.preferred_genres]
+            if any(g.lower() in preferred_lower for g in song_list):
+                match_score += GENRE_MATCH_WEIGHT
+                matches.append("genre")
+
+    if profile.preferred_moods:
+        song_moods = kb.get_fact("has_mood", mbid)
+        if song_moods:
+            song_list = song_moods if isinstance(song_moods, list) else [song_moods]
+            preferred_lower = [m.lower() for m in profile.preferred_moods]
+            if any(m.lower() in preferred_lower for m in song_list):
+                match_score += MOOD_MATCH_WEIGHT
+                matches.append("mood")
+
+    if profile.danceable:
+        val = kb.get_fact("has_danceable", mbid)
+        if val and str(val).lower() == profile.danceable.lower():
+            match_score += SINGLE_FEATURE_MATCH_WEIGHT
+            matches.append("danceable")
+
+    if profile.voice_instrumental:
+        val = kb.get_fact("has_voice_instrumental", mbid)
+        if val and str(val).lower() == profile.voice_instrumental.lower():
+            match_score += SINGLE_FEATURE_MATCH_WEIGHT
+            matches.append("voice_instrumental")
+
+    if profile.timbre:
+        val = kb.get_fact("has_timbre", mbid)
+        if val and str(val).lower() == profile.timbre.lower():
+            match_score += SINGLE_FEATURE_MATCH_WEIGHT
+            matches.append("timbre")
+
+    if profile.has_loudness_preference():
+        song_loudness = kb.get_fact("has_loudness", mbid)
+        if song_loudness is not None and profile.loudness_min is not None and profile.loudness_max is not None:
+            if profile.loudness_min <= song_loudness <= profile.loudness_max:
+                match_score += SINGLE_FEATURE_MATCH_WEIGHT
+                matches.append("loudness")
+
+    return (mbid, match_score, matches)
+
+
+def _select_with_variety(
+    kb: "KnowledgeBase",
+    scored_songs: List[Tuple[str, int, List[str]]],
+    n: int,
+) -> List[str]:
+    """Select up to n MBIDs from scored_songs, favoring variety in genre/mood."""
+    sampled: List[str] = []
+    seen_genres: Set[str] = set()
+    seen_moods: Set[str] = set()
+    half_n = n // 2
+
+    for mbid, score, _ in scored_songs:
         if len(sampled) >= n:
             break
-        
-        # Check if this adds variety
-        song_genres = kb.get_fact('has_genre', mbid)
-        song_moods = kb.get_fact('has_mood', mbid)
-        
+        song_genres = kb.get_fact("has_genre", mbid)
+        song_moods = kb.get_fact("has_mood", mbid)
         adds_variety = False
         if song_genres:
             genres_list = song_genres if isinstance(song_genres, list) else [song_genres]
             if not any(g.lower() in seen_genres for g in genres_list):
                 adds_variety = True
                 seen_genres.update(g.lower() for g in genres_list)
-        
         if song_moods:
             moods_list = song_moods if isinstance(song_moods, list) else [song_moods]
             if not any(m.lower() in seen_moods for m in moods_list):
                 adds_variety = True
                 seen_moods.update(m.lower() for m in moods_list)
-        
-        # Prefer songs with at least some match (score > 0) or that add variety
-        if score > 0 or adds_variety or len(sampled) < n // 2:
+        if score > 0 or adds_variety or len(sampled) < half_n:
             sampled.append(mbid)
-    
-    # Second pass: fill remaining slots with best matches
+
     if len(sampled) < n:
         remaining = [mbid for mbid, _, _ in scored_songs if mbid not in sampled]
-        needed = n - len(sampled)
-        sampled.extend(remaining[:needed])
-    
-    # Shuffle to avoid always showing same order
+        sampled.extend(remaining[: n - len(sampled)])
     random.shuffle(sampled)
     return sampled[:n]
 
 
-def sample_by_initial_score(kb, n: int, scorer, seed: Optional[int] = None) -> List[str]:
+def sample_by_preferences(
+    kb: "KnowledgeBase", profile: PreferenceProfile, n: int, seed: Optional[int] = None
+) -> List[str]:
+    """
+    Sample songs that match user preferences from the survey profile.
+
+    Prioritizes songs that match the user's preferred genres, moods, and other
+    preferences. Ensures variety while still being relevant to preferences.
+
+    Args:
+        kb: KnowledgeBase instance
+        profile: PreferenceProfile from survey
+        n: Number of songs to sample
+        seed: Optional random seed for reproducibility
+
+    Returns:
+        List of MBIDs matching preferences
+    """
+    if seed is not None:
+        random.seed(seed)
+    all_songs = kb.get_all_songs()
+    if len(all_songs) <= n:
+        return all_songs
+    scored_songs = [_score_song_for_profile(kb, mbid, profile) for mbid in all_songs]
+    scored_songs.sort(key=lambda x: x[1], reverse=True)
+    return _select_with_variety(kb, scored_songs, n)
+
+
+def sample_by_initial_score(
+    kb: "KnowledgeBase", n: int, scorer, seed: Optional[int] = None
+) -> List[str]:
     """
     Sample top-N songs by initial rule-based score.
     
@@ -263,28 +267,27 @@ def sample_by_initial_score(kb, n: int, scorer, seed: Optional[int] = None) -> L
     if len(all_songs) <= n:
         return all_songs
     
-    # Score all songs
     scored = []
     for mbid in all_songs:
         try:
             score = scorer.score(mbid, kb)
             scored.append((mbid, score))
-        except Exception:
-            # Skip songs that can't be scored
+        except (TypeError, AttributeError, KeyError) as e:
+            logger.debug("Skip scoring %s: %s", mbid, e)
             continue
-    
+
     # Sort by score (descending) and take top N
     scored.sort(key=lambda x: x[1], reverse=True)
     return [mbid for mbid, _ in scored[:n]]
 
 
 def sample_next_batch(
-    kb,
+    kb: "KnowledgeBase",
     n: int,
     scorer,
     already_rated_mbids: List[str],
     seed: Optional[int] = None,
-    exploit_ratio: float = 0.6,
+    exploit_ratio: float = DEFAULT_EXPLOIT_RATIO,
 ) -> List[str]:
     """
     Adaptive (hill-climbing) batch: select next N songs to rate using current scorer.
@@ -317,7 +320,8 @@ def sample_next_batch(
         try:
             s = scorer.score(mbid, kb)
             scored.append((mbid, s))
-        except Exception:
+        except (TypeError, AttributeError, KeyError) as e:
+            logger.debug("Skip scoring %s: %s", mbid, e)
             continue
 
     if not scored:
@@ -344,7 +348,10 @@ def sample_next_batch(
     return result[:n]
 
 
-def sample_songs(kb, n: int = 15, method: str = "stratified", 
+def sample_songs(
+    kb: "KnowledgeBase",
+    n: int = 15,
+    method: str = "stratified", 
                 scorer=None, profile: Optional[PreferenceProfile] = None, 
                 seed: Optional[int] = None) -> List[str]:
     """

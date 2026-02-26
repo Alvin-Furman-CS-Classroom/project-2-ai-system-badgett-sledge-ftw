@@ -12,7 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from knowledge_base_wrapper import KnowledgeBase
-from preferences.survey import collect_survey_cli, PreferenceProfile
+from preferences.survey import collect_survey_cli, save_profile
 from preferences.rules import build_rules, get_default_weights
 from preferences.scorer import PreferenceScorer
 from preferences.sampling import sample_songs, sample_next_batch
@@ -21,24 +21,9 @@ from preferences.ratings import (
     collect_ratings_interactive,
     refine_weights_from_ratings,
 )
-import json
 
-
-def save_profile(profile: PreferenceProfile, filepath: str = "data/user_profile.json") -> None:
-    path = Path(filepath)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    profile_dict = {
-        "preferred_genres": profile.preferred_genres,
-        "preferred_moods": profile.preferred_moods,
-        "danceable": profile.danceable,
-        "voice_instrumental": profile.voice_instrumental,
-        "timbre": profile.timbre,
-        "loudness_min": profile.loudness_min,
-        "loudness_max": profile.loudness_max,
-    }
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(profile_dict, f, indent=2)
-    print(f"  Profile saved to {filepath}")
+# Slightly higher learning rate for interactive loop (fewer ratings per round)
+REFINEMENT_ALPHA_LOOP = 0.15
 
 
 def main(
@@ -71,6 +56,7 @@ def main(
     print("-" * 70)
     profile = collect_survey_cli(kb_genres=kb_genres, kb_moods=kb_moods)
     save_profile(profile)
+    print("  Profile saved to data/user_profile.json")
 
     # Step 2: Build rules and initial scorer
     rules = build_rules(profile)
@@ -109,7 +95,7 @@ def main(
         if not rules:
             break
 
-        weights = refine_weights_from_ratings(kb, rules, weights, ratings, alpha=0.15)
+        weights = refine_weights_from_ratings(kb, rules, weights, ratings, alpha=REFINEMENT_ALPHA_LOOP)
         scorer = PreferenceScorer(rules, weights)
         print(f"  Weights refined from your ratings. Total rated so far: {len(ratings)}")
 
