@@ -27,7 +27,8 @@ from preferences.rules import build_rules, get_default_weights
 from preferences.scorer import PreferenceScorer
 from preferences.ratings import UserRatings, refine_weights_from_ratings
 from preferences.survey import PreferenceProfile
-from search.pipeline import find_similar
+from search.pipeline import SearchResult, find_similar, rank_candidates_from_path_costs
+from search.beam import beam_topk
 
 
 def _load_profile(profile_path: str) -> PreferenceProfile:
@@ -127,6 +128,41 @@ def _resolve_query_to_mbid(kb: KnowledgeBase) -> Optional[tuple[str, str, str]]:
         print("Number out of range. Try again.")
 
 
+def _retrieve_results(kb: KnowledgeBase, scorer: PreferenceScorer, mbid: str, args) -> List[SearchResult]:
+    """
+    Run Module 3 retrieval for a resolved query MBID.
+
+    Extracted for testability: unit tests can call this helper to validate that
+    the CLI's algorithm switch routes UCS vs Beam correctly.
+    """
+    if args.algorithm == "ucs":
+        return find_similar(
+            kb=kb,
+            query_mbid=mbid,
+            scorer=scorer,
+            k=args.k,
+            alpha=args.alpha,
+            beta=args.beta,
+            max_degree=args.max_degree,
+        )
+
+    raw = beam_topk(
+        kb=kb,
+        query_mbid=mbid,
+        k=args.k,
+        beam_width=args.beam_width,
+        max_depth=args.beam_depth,
+        max_degree=args.max_degree,
+    )
+    return rank_candidates_from_path_costs(
+        kb=kb,
+        raw_costs=raw,
+        scorer=scorer,
+        alpha=args.alpha,
+        beta=args.beta,
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Query Module 3 with a user-provided song.")
     parser.add_argument("--kb", default="data/knowledge_base.json", help="Path to knowledge_base.json")
@@ -146,6 +182,14 @@ def main() -> None:
     parser.add_argument("--alpha", type=float, default=1.0, help="Weight on (negated) normalized path cost term.")
     parser.add_argument("--beta", type=float, default=1.0, help="Weight on normalized preference score term.")
     parser.add_argument("--refinement-alpha", type=float, default=0.15, help="Learning rate for refining rule weights from ratings.")
+    parser.add_argument(
+        "--algorithm",
+        choices=["ucs", "beam"],
+        default="ucs",
+        help="Retrieval algorithm used to generate candidates (UCS = exact, Beam = approximate).",
+    )
+    parser.add_argument("--beam-width", type=int, default=10, help="Beam width (only used for --algorithm beam).")
+    parser.add_argument("--beam-depth", type=int, default=6, help="Beam max depth (only used for --algorithm beam).")
 
     args = parser.parse_args()
 
@@ -177,15 +221,7 @@ def main() -> None:
         # Always show the interpreted song, since partial-name matching is allowed.
         print(f"\nInterpreting your query as: {resolved_artist} - {resolved_track}")
 
-        results = find_similar(
-            kb=kb,
-            query_mbid=mbid,
-            scorer=scorer,
-            k=args.k,
-            alpha=args.alpha,
-            beta=args.beta,
-            max_degree=args.max_degree,
-        )
+        results = _retrieve_results(kb, scorer, mbid, args)
 
         # Query label after search (kept for clarity with the output block).
         print(f"\nQuery: {resolved_artist} - {resolved_track}\n")
