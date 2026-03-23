@@ -183,7 +183,7 @@ Checkpoint 3 implementation is in good shape for technical criteria: functionali
 
 | Original finding | Status | Notes |
 | ---------------- | ------ | ----- |
-| **Major 1** — README mostly template outside Module 3 row | **Open** | No change in this pass; still worth filling before final project submission. |
+| **Major 1** — README mostly template outside Module 3 row | **Open** *(at time of re-run #1)* | **Addressed** in **re-run #2** — see [`README.md`](README.md), [`AGENTS.md`](AGENTS.md). |
 | **Major 2** — No second search variant (Beam/A*) | **Addressed** | `beam_topk` + complexity/tradeoff narrative in `src/search/beam.py`. |
 | **Minor 1** — Pipeline return wording | **Addressed** | `find_similar` return description now uses “descending by `combined_score`”. |
 
@@ -243,7 +243,7 @@ Assumptions: same rubric categories; evidence updated for improvements. Criteria
 
 - [x] ~~(Optional) add `beam.py` + short UCS vs Beam tradeoff note~~ **Done** — see `src/search/beam.py`.  
 - [x] ~~Fix pipeline doc wording (“descending by combined score”)~~ **Done** — see `src/search/pipeline.py`.  
-- [ ] Fill remaining README placeholders (title/team/proposal/other module rows/checkpoint log). *(Still open — same as Major finding 1.)*  
+- [x] ~~Fill remaining README placeholders~~ **Done** in re-run #2 — see [`README.md`](README.md). *(Was open at re-run #1.)*  
 - [ ] Verify and document PR/issue usage on GitHub before final submission. *(Unchanged.)*
 
 ### Questions (re-run)
@@ -253,3 +253,46 @@ Assumptions: same rubric categories; evidence updated for improvements. Criteria
 ---
 
 **Note:** The original Summary, Findings, Rubric Scores, Scores Summary (46/50), Action Items, Questions, and Conclusion **remain valid as the historical baseline** for the first review pass. This re-run section **supplements** that baseline with post-improvement evidence and updated scoring where justified.
+
+---
+
+## Rubric re-run (update #2) — README & AGENTS
+
+**Date of re-run:** 2026-03-23  
+**Trigger:** Repository documentation updated to resolve **Major finding 1** from the baseline review (README placeholders and thin project-level docs), in line with [`README.md`](README.md) and [`AGENTS.md`](AGENTS.md) changes.
+
+### Evidence of improvements (since re-run #1)
+
+| Area | Re-run #1 state | After re-run #2 | Evidence |
+| ---- | ----------------- | --------------- | -------- |
+| **Major 1 — README / project docs** | Open (“fill README before submission”) | **Addressed** | [`README.md`](README.md): system title, overview, team (Eleanor Badgett, Chace Sledge), proposal links (course + `MODULES.md`), **full module plan rows 1–6**, repository layout, setup, running, expanded testing commands, test structure for Modules 2–3, **checkpoint log** with dates and evidence pointers, references. |
+| **AGENTS.md alignment** | Partial placeholders in project context | **Updated** | [`AGENTS.md`](AGENTS.md): system title, theme, proposal pointer; Module **1** row added; Module 3 line mentions **beam**; implementation paths for Module 1. |
+| Module 3 test count | 53 passed | **Unchanged (53 passed)** | `pytest unit_tests/search/ integration_tests/module_3/ -q` → `53 passed` (verified 2026-03-23). |
+
+### Resolution status (supersedes re-run #1 row for Major 1 only)
+
+| Finding | Re-run #1 status | Status after re-run #2 |
+| ------- | ---------------- | ---------------------- |
+| **Major 1** — README mostly template | Open | **Addressed** — see table above. |
+
+### Rubric scores (re-run #2)
+
+**Documentation (criterion 5):** Re-run #1 scored documentation **5/5** on the strength of **Module 3 source** docs (`pipeline.py`, `beam.py`) while noting README gaps. After **`README.md` and `AGENTS.md` updates**, **project-level** documentation now matches the same tier: clear I/O, module table, checkpoints, setup, and references. **Score remains 5/5**; the improvement is **breadth and submission readiness**, not a higher numeric bracket.
+
+**All other criteria:** Unchanged from re-run #1 totals (Functionality 8, Code quality 8, Testing 8, Participation 4, I/O 5, Topic engagement 6, GitHub practices 3).
+
+| Metric | Re-run #1 | Re-run #2 |
+| ------ | --------- | --------- |
+| **Total** | **47 / 50** | **47 / 50** |
+| **Notes** | +1 vs baseline from Module 3 docs | Major 1 closed; score stable; evidence stronger |
+
+### Updated action items (re-run #2)
+
+- [x] ~~Fill README placeholders (title/team/proposal/module rows/checkpoint log)~~ **Done** — [`README.md`](README.md).  
+- [x] ~~Align `AGENTS.md` project context with README~~ **Done** — [`AGENTS.md`](AGENTS.md).  
+- [x] ~~Optional beam + pipeline doc~~ *(already done in re-run #1)*.  
+- [ ] Verify and document **PR/issue** usage on GitHub before final submission. *(Still open.)*
+
+### Note on historical sections
+
+The **baseline Findings** (lines 22–39) still record the original Major/Minor list as first-pass history. **Re-run #1** and **#2** document subsequent fixes; use **re-run #2** for the current accuracy of Major 1 and documentation evidence.
