@@ -1,104 +1,134 @@
-# [Your System Title]
+# Curated Music Recommendation System (Project 2 AI System)
 
 ## Overview
 
-Provide a concise system overview (200-300 words). Explain the unifying theme and how the modules combine into a coherent AI system.
+This system recommends music in a **curated, setlist-style** way: it uses structured song data and explicit user preferences to find tracks that fit a listener’s taste without relying on popularity alone. The unifying theme is a **hybrid pipeline**: a **knowledge base (Module 1)** stores queryable facts about songs (genre, mood, loudness, danceability, and related metadata). **Rule-based preferences (Module 2)** encode what the user wants using survey answers and ratings, producing a weighted **PreferenceScorer**. **Search over the KB (Module 3)** treats songs as a graph: neighbors come from shared indexes (genre, mood, etc.), edge costs measure feature dissimilarity, and **Uniform Cost Search** (with an optional **beam search** variant) finds top-K candidates from a **query song**; results are blended with preference scores via **`find_similar`**. Later modules will add **supervised learning from playlists (Module 4)** to refine weights or re-rank results, and **clustering (Module 5)** to diversify recommendations. Together, the modules form a single AI system aligned with the course schedule: interpretable rules and search first, then learning and organization.
 
 ## Team
 
-- Member 1
-- Member 2
-- Member 3 (if applicable)
+- Eleanor Badgett  
+- Chace Sledge  
 
 ## Proposal
 
-Link to the approved Project 1 proposal (or paste a short summary here).
+- **Course project:** [AI System — Project 2 instructions](https://csc-343.path.app/projects/project-2-ai-system/ai-system.project.md)  
+- **Module planning & theme (detailed):** see [`MODULES.md`](MODULES.md) (music recommendation using Spotify-style data, broad coverage, DJ-like curation, emphasis on features over chart popularity).
 
 ## Module Plan
 
-Your system must include 5-6 modules. Fill in the table below as you plan each module.
-
 | Module | Topic(s) | Inputs | Outputs | Depends On | Checkpoint |
 | ------ | -------- | ------ | ------- | ---------- | ---------- |
-| 1 |  |  |  |  |  |
+| 1 | Knowledge Representation / Data Processing — KB construction | Raw song data (metadata, audio features, credits) | Structured KB: `songs`, `facts`, `indexes` (e.g. `has_genre`, `has_mood`, `has_loudness`) | — | `src/knowledge_base_wrapper.py`, `src/data_acquisition/`; `unit_tests/knowledge_base_wrapper_test.py`, `unit_tests/data_acquisition/` |
 | 2 | Rule-Based Preference Encoding (survey + song ratings) | KB (Module 1), survey answers, user ratings on sampled songs | Rule-based preference system: logical rules + weight vectors refined by ratings + scorer | Module 1 (KB) | `src/preferences/`; unit tests in `unit_tests/preferences/`; integration tests in `integration_tests/module_2/` |
-| 3 | Search over KB (UCS, path costs, preference blend) | KB (Module 1), `PreferenceScorer` (Module 2), query song MBID | Top-K `SearchResult` list via `find_similar` | Modules 1–2 | `src/search/`; unit tests in `unit_tests/search/`; integration tests in `integration_tests/module_3/` |
-| 4 |  |  |  |  |  |
-| 5 |  |  |  |  |  |
-| 6 (optional) |  |  |  |  |  |
+| 3 | Search over KB (UCS, beam, path costs, preference blend) | KB (Module 1), `PreferenceScorer` (Module 2), query song MBID | Top-K `SearchResult` list via `find_similar` (UCS; optional `beam_topk`) | Modules 1–2 | `src/search/`; unit tests in `unit_tests/search/`; integration tests in `integration_tests/module_3/` |
+| 4 | Machine Learning (supervised) | KB, playlists (positive examples), optionally Module 3 results + feedback | Learned preference model (refined weights or learned scorer) | Modules 1–3 | *(planned)* `src/` TBD; tests TBD |
+| 5 | Clustering | Ranked candidates from Module 3 (or re-ranked by Module 4), KB features, optional learned preferences | Clustered recommendation groups (diversity) | Modules 1–4 | *(planned)* `src/` TBD; tests TBD |
+| 6 (optional) | *(unused or stretch)* | — | — | — | — |
 
 ## Repository Layout
 
 ```
-your-repo/
+project-2-ai-system-badgett-sledge-ftw/
 ├── src/                              # main system source code
+│   ├── knowledge_base_wrapper.py     # KB query interface
+│   ├── data_acquisition/             # KB building / external data clients
+│   ├── preferences/                  # Module 2: survey, rules, scorer, sampling, ratings
+│   └── search/                       # Module 3: costs, graph, UCS, beam, pipeline
 ├── unit_tests/                       # unit tests (parallel structure to src/)
-├── integration_tests/                # integration tests (new folder for each module)
+├── integration_tests/                # integration tests (per module beyond Module 1)
+├── data/                             # knowledge_base.json, user profile/ratings, etc.
 ├── .claude/skills/code-review/SKILL.md  # rubric-based agent review
 ├── AGENTS.md                         # instructions for your LLM agent
+├── MODULES.md                        # module planning narrative (theme, feasibility)
 └── README.md                         # system overview and checkpoints
 ```
 
 ## Setup
 
-List dependencies, setup steps, and any environment variables required to run the system.
+- **Python:** 3.10+ recommended (project tested with Python 3.12).
+- **Install dependencies:**
+
+```bash
+pip install -r requirements.txt
+```
+
+- **Optional:** copy or configure `.env` if you use MusicBrainz API keys or similar (see `src/data_acquisition/` clients).
 
 ## Running
 
-Provide commands or scripts for running modules and demos.
+- **Tests (full project unit suite):**
+
+```bash
+pytest unit_tests/ -v
+```
+
+- **Module 2 preference loop / demos:** see `src/preferences/run_preference_loop.py`, `collect_preferences.py` (run from project root with `src` on `PYTHONPATH` or `python -m` as documented in those modules).
+
+- **Module 3 search (library API):** import `find_similar`, `ucs_topk`, or `beam_topk` from `search` after adding `src` to `PYTHONPATH` (same pattern as tests).
 
 ## Testing
 
 **Unit Tests** (`unit_tests/`): Mirror the structure of `src/`. Each module should have corresponding unit tests.
 
-**Integration Tests** (`integration_tests/`): Create a new subfolder for each module beyond the first, demonstrating how modules work together.
+**Integration Tests** (`integration_tests/`): One subfolder per integrated module beyond the first (`module_2/`, `module_3/`, …).
 
 ### Running Tests
 
 Install test dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 Run all unit tests:
+
 ```bash
 pytest unit_tests/ -v
 ```
 
-Run specific test file:
+Run specific areas:
+
 ```bash
 pytest unit_tests/knowledge_base_wrapper_test.py -v
 pytest unit_tests/data_acquisition/test_build_kb.py -v
+pytest unit_tests/preferences/ -v
 pytest unit_tests/search/ -v
+pytest integration_tests/module_2/ -v
 pytest integration_tests/module_3/ -v
 ```
 
 Run tests with coverage:
+
 ```bash
 pytest unit_tests/ --cov=src --cov-report=html
 ```
 
 ### Test Structure
 
-- `unit_tests/knowledge_base_wrapper_test.py`: Tests for KnowledgeBase class
-- `unit_tests/data_acquisition/test_build_kb.py`: Tests for knowledge base builder
-- `unit_tests/fixtures/test_knowledge_base.json`: Test fixture with sample knowledge base data
+- `unit_tests/knowledge_base_wrapper_test.py`: `KnowledgeBase` class
+- `unit_tests/data_acquisition/test_build_kb.py`: KB builder
+- `unit_tests/preferences/`: Module 2 (survey, rules, scorer, sampling, ratings)
+- `unit_tests/search/`: Module 3 (costs, graph, UCS, beam, pipeline)
+- `integration_tests/module_2/`: end-to-end preference loop + scorer
+- `integration_tests/module_3/`: KB + `PreferenceScorer` + `find_similar`
+- `unit_tests/fixtures/test_knowledge_base.json`: shared KB fixture
 
 ### Test Coverage Goals
 
-- All public methods of KnowledgeBase class
-- Error handling and edge cases
-- Knowledge base construction and validation
-- Fact extraction and index building
+- Public APIs for `KnowledgeBase`, KB construction, and fact/index consistency
+- Module 2: rules, scorer, weight refinement, sampling, survey validation
+- Module 3: edge costs, neighbors, UCS, optional beam, pipeline blend with preferences
+- Error handling and edge cases for missing KB facts and invalid inputs
 
 ## Checkpoint Log
 
-| Checkpoint | Date | Modules Included | Status | Evidence |
-| ---------- | ---- | ---------------- | ------ | -------- |
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
+| Checkpoint | Date (course) | Modules Included | Status | Evidence |
+| ---------- | -------------- | ---------------- | ------ | -------- |
+| 1 | 2026-02-11 | Module 1 — KB / data | Complete | `src/knowledge_base_wrapper.py`, `src/data_acquisition/`; [`MODULE1_PLAN.md`](MODULE1_PLAN.md); unit tests under `unit_tests/data_acquisition/`, `knowledge_base_wrapper_test.py` |
+| 2 | 2026-02-26 | Module 2 — Preferences | Complete | `src/preferences/`; [`MODULE2_PLAN.md`](MODULE2_PLAN.md); [`checkpoint_2_module_report.md`](checkpoint_2_module_report.md); `unit_tests/preferences/`; `integration_tests/module_2/` |
+| 3 | 2026-03-19 | Module 3 — Search | Complete | `src/search/`; [`MODULE3_PLAN.md`](MODULE3_PLAN.md); [`checkpoint_3_module_report.md`](checkpoint_3_module_report.md); `unit_tests/search/`; `integration_tests/module_3/` |
+| 4 | 2026-04-02 | Module 4 — ML | Planned | — |
+| 5 | 2026-04-16 | Module 5 — Clustering | Planned | — |
 
 ## Required Workflow (Agent-Guided)
 
@@ -116,4 +146,6 @@ Keep `AGENTS.md` updated with your module plan, constraints, and links to APIs/d
 
 ## References
 
-List libraries, APIs, datasets, and other references used by the system.
+- **Course:** [Project 2 AI System](https://csc-343.path.app/projects/project-2-ai-system/ai-system.project.md), [Module Review Rubric](https://csc-343.path.app/projects/project-2-ai-system/ai-system.rubric.md), [Code elegance rubric](https://csc-343.path.app/rubrics/code-elegance.rubric.md)
+- **Python libraries:** `requests`, `python-dotenv`, `musicbrainzngs`, `pytest` (see `requirements.txt`)
+- **Data / APIs:** Knowledge base derived from curated pipelines in `src/data_acquisition/` (e.g. AcousticBrainz-style features, MusicBrainz metadata); see `data/README.md` and module plans for fact types

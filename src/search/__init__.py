@@ -4,6 +4,7 @@ Module 3: graph search over the knowledge base (costs, neighbors, UCS, pipeline)
 
 from search.costs import DissimilarityWeights, pairwise_dissimilarity
 from search.graph import capped_neighbors, neighbor_candidates
+from search.beam import beam_topk
 from search.pipeline import SearchResult, find_similar
 from search.ucs import ucs_topk
 
@@ -13,6 +14,7 @@ __all__ = [
     "neighbor_candidates",
     "capped_neighbors",
     "ucs_topk",
+    "beam_topk",
     "SearchResult",
     "find_similar",
 ]

@@ -83,7 +83,7 @@ def find_similar(
         dissimilarity_weights: Edge weights for UCS (see ``DissimilarityWeights``).
 
     Returns:
-        Sorted list of ``SearchResult``, longest-first by ``combined_score``.
+        Sorted list of ``SearchResult``, descending by ``combined_score``.
     """
     raw = ucs_topk(
         kb,
