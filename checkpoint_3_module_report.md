@@ -21,22 +21,22 @@ Module 3 is implemented and integration-ready. It provides a clear search pipeli
 
 ### Major
 
-1) **README remains mostly template-level outside Module 3 row updates**  
-**Evidence:** `README.md` still includes placeholders for system title/team/proposal and empty rows for modules 1/4/5.  
-**Impact on rubric:** Can reduce documentation/readiness confidence under Documentation and project-level review.  
-**Suggested fix:** Fill system overview/team/proposal and checkpoint log entries before checkpoint submission.
+1) **README and AGENTS project docs placeholders are resolved (Module 3-focused)**  
+**Evidence:** `README.md` and `AGENTS.md` include system overview/team/proposal, full module plan rows, module-specific running/test paths, and a checkpoint log with evidence pointers.  
+**Impact on rubric:** Improves documentation confidence and submission readiness under Documentation.  
+**Suggested fix:** None (except optional PR/issue documentation for GitHub Practices).
 
-2) **No second search algorithm variant yet (Beam/A*)**  
-**Evidence:** `src/search/` currently exports UCS-based retrieval and pipeline only (`__init__.py` exports `ucs_topk`, `find_similar`; no beam module).  
-**Impact on rubric:** Functionality still satisfies Module 3, but topic breadth narrative is weaker if evaluators expect explicit comparison/tradeoff discussion.  
-**Suggested fix:** Add optional `beam.py` and a short comparison note in docs (runtime tradeoff vs UCS).
+2) **Beam search variant implemented (beam_topk)**  
+**Evidence:** `src/search/beam.py` exists and `src/search/__init__.py` exports `beam_topk`; re-run evidence covers UCS vs beam tradeoffs.  
+**Impact on rubric:** Strengthens “search variants” topic narrative and supports optional algorithm-variant discussion.  
+**Suggested fix:** None (optionally mention UCS vs beam parameter tradeoff in the student report).
 
 ### Minor
 
-1) **One docstring wording typo in pipeline return description**  
-**Evidence:** `src/search/pipeline.py` says “Sorted list of `SearchResult`, longest-first by `combined_score`.”  
-**Impact on rubric:** Minor documentation precision issue only.  
-**Suggested fix:** Change wording to “highest-first by `combined_score`” or “descending by `combined_score`”.
+1) **Pipeline return-description wording corrected**  
+**Evidence:** `src/search/pipeline.py` return description now uses “descending by `combined_score`”.  
+**Impact on rubric:** Minor documentation precision issue resolved.  
+**Suggested fix:** None.
 
 ---
 
@@ -66,7 +66,7 @@ Module 3 is implemented and integration-ready. It provides a clear search pipeli
 
 **Assessment:** Testing is comprehensive and behavior-focused. Unit tests cover distance behavior, neighbor construction/capping, UCS ordering/determinism/errors, and pipeline ranking/normalization logic. Integration tests cover full KB + scorer + pipeline flow.
 
-**Evidence:** `unit_tests/search/test_costs.py`, `test_graph.py`, `test_ucs.py`, `test_pipeline.py`; `integration_tests/module_3/test_module3_integration.py`. Current run: `44 passed` for `unit_tests/search/` + `integration_tests/module_3/`.
+**Evidence:** `unit_tests/search/test_costs.py`, `test_graph.py`, `test_ucs.py`, `test_pipeline.py`; `integration_tests/module_3/test_module3_integration.py`. Current run: `58 passed` for `unit_tests/search/` + `integration_tests/module_3/`.
 
 **Score: 8/8** — Strong unit + integration coverage with meaningful assertions.
 
@@ -74,13 +74,16 @@ Module 3 is implemented and integration-ready. It provides a clear search pipeli
 
 ### 4. Individual Participation (6 points)
 
-**Assessment:** Local commit evidence for recent work shows Module 3 commits by one contributor in the last 7 days in this clone.
+**Assessment:** Local commit evidence for recent work shows Module 3 contributions from both Chace Sledge and Eleanor Badgett, but the commit activity is still skewed toward one contributor rather than evenly balanced over the last 7 days.
 
 **Evidence (local only):**  
 `git log --since="7 days ago" --oneline --format="%h %an %ad %s" --date=short` includes:  
-- `aa4016f eleanorbadgett 2026-03-22 UCS over neighbors`  
+- `971f44b Chace Sledge 2026-03-23 queries with tests`
+- `bd1338f Chace Sledge 2026-03-23 Queries for user input`
+- `893952f eleanorbadgett 2026-03-23 updated README`
+- `2e64993 eleanorbadgett 2026-03-23 rubric and fixes`
+- `aa4016f eleanorbadgett 2026-03-22 UCS over neighbors`
 - `39dc961 eleanorbadgett 2026-03-22 module 3 plan and search bones`
-- 'bd1338f Chace Sledge 2026-03-23 Queries for user input'
 
 **Score: 4/6** — Substantial progress is present, but balanced multi-member participation is not demonstrated from local recent-history evidence alone.
 
@@ -132,8 +135,8 @@ Module 3 is implemented and integration-ready. It provides a clear search pipeli
 | --------------------------- | ------ | --- | ----- |
 | 1. Functionality            | 8      | 8   | Full Module 3 flow implemented and working. |
 | 2. Code Elegance and Quality| 8      | 8   | Clean modular design and deterministic behavior. |
-| 3. Testing                  | 8      | 8   | 44 passing tests across unit + integration scope. |
-| 4. Individual Participation | 4      | 6   | Recent local history shows one contributor for Module 3 commits. |
+| 3. Testing                  | 8      | 8   | 58 passing tests across unit + integration scope. |
+| 4. Individual Participation | 4      | 6   | Recent local history shows contributions from both, but remains skewed toward one contributor. |
 | 5. Documentation            | 4      | 5   | Good module docs; repo-level template placeholders remain. |
 | 6. I/O Clarity              | 5      | 5   | Strong typed contracts and result structure. |
 | 7. Topic Engagement         | 6      | 6   | Strong search-topic implementation. |
@@ -145,9 +148,9 @@ Module 3 is implemented and integration-ready. It provides a clear search pipeli
 
 ## Action Items
 
-- [ ] Fill remaining README placeholders (title/team/proposal/other module rows/checkpoint log).  
-- [ ] (Optional but valuable) add `beam.py` + short UCS vs Beam tradeoff note for stronger search-topic breadth.  
-- [ ] Fix minor pipeline doc wording (“descending by combined score”).  
+- [x] Fill remaining README placeholders (title/team/proposal/other module rows/checkpoint log).  
+- [x] (Optional but valuable) add `beam.py` + short UCS vs Beam tradeoff note for stronger search-topic breadth.  
+- [x] Fix minor pipeline doc wording (“descending by combined score”).  
 - [ ] Verify and document PR/issue usage on GitHub before final submission.
 
 ---
@@ -178,7 +181,7 @@ Checkpoint 3 implementation is in good shape for technical criteria: functionali
 | Second search algorithm | Major finding: no Beam/A* variant; `__init__.py` listed only UCS + pipeline | **`beam_topk`** implemented; exported from `search` package | `src/search/beam.py`; `src/search/__init__.py` (`beam_topk` in `__all__`) |
 | Search-topic narrative | UCS only in primary path | UCS **plus** beam module docstring: optimality vs approximation, informal complexity | Module docstring in `src/search/beam.py` (lines 1–16): UCS vs beam tradeoff, informal \(O(\cdot)\) discussion |
 | Pipeline docstring precision | Minor finding: “longest-first by `combined_score`” | **Fixed:** “descending by `combined_score`” | `src/search/pipeline.py` (`find_similar` Returns, ~line 86) |
-| Test count (Module 3 scope) | 44 passed (`unit_tests/search/` + `integration_tests/module_3/`) | **53 passed** (added beam unit tests) | Command: `pytest unit_tests/search/ integration_tests/module_3/ -q` → `53 passed` (2026-03-23) |
+| Test count (Module 3 scope) | 44 passed (`unit_tests/search/` + `integration_tests/module_3/`) | **58 passed** (beam + `query_cli` unit tests) | Command: `pytest unit_tests/search/ integration_tests/module_3/ -q` → `58 passed` (2026-03-23) |
 
 ### Resolution status of earlier findings
 
@@ -204,7 +207,7 @@ Assumptions: same rubric categories; evidence updated for improvements. Criteria
 
 **Re-run assessment:** Beam behavior covered (exclusion of query, ordering, determinism, invalid args, parity with UCS on a small clique fixture).
 
-**Evidence:** `unit_tests/search/test_beam.py`; full suite **53 passed** for `unit_tests/search/` + `integration_tests/module_3/`.
+**Evidence:** `unit_tests/search/test_beam.py`; full suite **58 passed** for `unit_tests/search/` + `integration_tests/module_3/`.
 
 **Re-run score: 8/8** — Coverage strengthened; count updated.
 
@@ -230,7 +233,7 @@ Assumptions: same rubric categories; evidence updated for improvements. Criteria
 | --------- | -------- | ------ | ----- |
 | 1. Functionality | 8 | 8 | — |
 | 2. Code Elegance and Quality | 8 | 8 | — |
-| 3. Testing | 8 | 8 | — (evidence: 44 → **53** tests) |
+| 3. Testing | 8 | 8 | — (evidence: 44 → **58** tests) |
 | 4. Individual Participation | 4 | 4 | — |
 | 5. Documentation | 4 | **5** | +1 |
 | 6. I/O Clarity | 5 | 5 | — |
@@ -268,7 +271,7 @@ Assumptions: same rubric categories; evidence updated for improvements. Criteria
 | ---- | ----------------- | --------------- | -------- |
 | **Major 1 — README / project docs** | Open (“fill README before submission”) | **Addressed** | [`README.md`](README.md): system title, overview, team (Eleanor Badgett, Chace Sledge), proposal links (course + `MODULES.md`), **full module plan rows 1–6**, repository layout, setup, running, expanded testing commands, test structure for Modules 2–3, **checkpoint log** with dates and evidence pointers, references. |
 | **AGENTS.md alignment** | Partial placeholders in project context | **Updated** | [`AGENTS.md`](AGENTS.md): system title, theme, proposal pointer; Module **1** row added; Module 3 line mentions **beam**; implementation paths for Module 1. |
-| Module 3 test count | 53 passed | **Unchanged (53 passed)** | `pytest unit_tests/search/ integration_tests/module_3/ -q` → `53 passed` (verified 2026-03-23). |
+| Module 3 test count | 58 passed | **Unchanged (58 passed)** | `pytest unit_tests/search/ integration_tests/module_3/ -q` → `58 passed` (verified 2026-03-23). |
 
 ### Resolution status (supersedes re-run #1 row for Major 1 only)
 
