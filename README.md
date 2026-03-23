@@ -22,7 +22,7 @@ Your system must include 5-6 modules. Fill in the table below as you plan each m
 | ------ | -------- | ------ | ------- | ---------- | ---------- |
 | 1 |  |  |  |  |  |
 | 2 | Rule-Based Preference Encoding (survey + song ratings) | KB (Module 1), survey answers, user ratings on sampled songs | Rule-based preference system: logical rules + weight vectors refined by ratings + scorer | Module 1 (KB) | `src/preferences/`; unit tests in `unit_tests/preferences/`; integration tests in `integration_tests/module_2/` |
-| 3 |  |  |  |  |  |
+| 3 | Search over KB (UCS, path costs, preference blend) | KB (Module 1), `PreferenceScorer` (Module 2), query song MBID | Top-K `SearchResult` list via `find_similar` | Modules 1–2 | `src/search/`; unit tests in `unit_tests/search/`; integration tests in `integration_tests/module_3/` |
 | 4 |  |  |  |  |  |
 | 5 |  |  |  |  |  |
 | 6 (optional) |  |  |  |  |  |
@@ -69,6 +69,8 @@ Run specific test file:
 ```bash
 pytest unit_tests/knowledge_base_wrapper_test.py -v
 pytest unit_tests/data_acquisition/test_build_kb.py -v
+pytest unit_tests/search/ -v
+pytest integration_tests/module_3/ -v
 ```
 
 Run tests with coverage:

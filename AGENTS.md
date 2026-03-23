@@ -10,9 +10,11 @@
 | ------ | -------- | ------ | ------- | ---------- |
 | 1 | (TBD) | — | — | — |
 | 2 | Rule-Based Preference Encoding (survey + song ratings) | KB, survey answers, user ratings on sampled songs | Rule-based preference system (rules + refined weights + scorer) | Module 1 (KB) |
-| 3+ | (TBD) | — | — | Module 3 will consume Module 2’s scorer to rank candidates. |
+| 3 | Search over KB (UCS, graph neighbors, pipeline) | KB, `PreferenceScorer`, query MBID | Ranked similar songs (`find_similar` / `SearchResult`) | Modules 1–2 |
 
 Module 2 is implemented in `src/preferences/` (survey, rules, weights, scorer, sampling, ratings, hill-climbing loop). Tests: `unit_tests/preferences/`, `integration_tests/module_2/`.
+
+Module 3 is implemented in `src/search/` (costs, graph neighbors, UCS, `find_similar` pipeline). Tests: `unit_tests/search/`, `integration_tests/module_3/`.
 
 ## Constraints
 
