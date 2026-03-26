@@ -43,6 +43,46 @@ def _min_max_normalize(values: List[float]) -> List[float]:
     return [(v - lo) / (hi - lo) for v in values]
 
 
+def rank_candidates_from_path_costs(
+    kb: "KnowledgeBase",
+    raw_costs: List[tuple[str, float]],
+    scorer: PreferenceScorer,
+    *,
+    alpha: float = 1.0,
+    beta: float = 1.0,
+) -> List[SearchResult]:
+    """
+    Turn UCS/Beam raw candidates (mbid -> path_cost) into ranked SearchResults
+    using the same min–max normalization and blend as `find_similar`.
+
+    This exists so the query CLI can reuse the pipeline's scoring blend logic.
+    """
+    if not raw_costs:
+        return []
+
+    mbids = [mbid for mbid, _ in raw_costs]
+    costs = [c for _, c in raw_costs]
+    prefs = [scorer.score(mbid, kb) for mbid in mbids]
+
+    c_norm = _min_max_normalize(costs)
+    p_norm = _min_max_normalize(prefs)
+
+    merged: List[SearchResult] = []
+    for i, mbid in enumerate(mbids):
+        combined = -alpha * c_norm[i] + beta * p_norm[i]
+        merged.append(
+            SearchResult(
+                mbid=mbid,
+                path_cost=costs[i],
+                preference_score=prefs[i],
+                combined_score=combined,
+            )
+        )
+
+    merged.sort(key=lambda r: (-r.combined_score, r.mbid))
+    return merged
+
+
 def find_similar(
     kb: "KnowledgeBase",
     query_mbid: str,
