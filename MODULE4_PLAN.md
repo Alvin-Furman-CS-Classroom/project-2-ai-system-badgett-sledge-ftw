@@ -2,7 +2,7 @@
 name: module-4-ml-plan
 overview: Implement Module 4 as a hybrid supervised-learning layer that (1) learns/refines preference weights from playlists + ratings and (2) adds an optional ML reranker in the Module 3 pipeline, while preserving backward compatibility.
 todos:
-  - id: m4-data-contracts
+  - id: m4-data-contractsc haha
     content: Define Module 4 input schemas for playlists/ratings and artifact schema + storage paths for trained models.
     status: pending
   - id: m4-ml-package
