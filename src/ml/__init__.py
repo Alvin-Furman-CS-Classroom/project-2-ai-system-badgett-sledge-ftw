@@ -13,6 +13,7 @@ for now, this module focuses on clean, testable interfaces.
 from .dataset import TrainingExample, build_training_examples
 from .artifacts import ScorerArtifact, RerankerArtifact, load_scorer_artifact, load_reranker_artifact
 from .learned_scorer import LearnedPreferenceScorer
+from .util import build_scorer_with_optional_ml
 
 __all__ = [
     "TrainingExample",
@@ -22,5 +23,6 @@ __all__ = [
     "load_scorer_artifact",
     "load_reranker_artifact",
     "LearnedPreferenceScorer",
+    "build_scorer_with_optional_ml",
 ]
 

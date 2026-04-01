@@ -21,7 +21,7 @@ This system recommends music in a **curated, setlist-style** way: it uses struct
 | 1 | Knowledge Representation / Data Processing — KB construction | Raw song data (metadata, audio features, credits) | Structured KB: `songs`, `facts`, `indexes` (e.g. `has_genre`, `has_mood`, `has_loudness`) | — | `src/knowledge_base_wrapper.py`, `src/data_acquisition/`; `unit_tests/knowledge_base_wrapper_test.py`, `unit_tests/data_acquisition/` |
 | 2 | Rule-Based Preference Encoding (survey + song ratings) | KB (Module 1), survey answers, user ratings on sampled songs | Rule-based preference system: logical rules + weight vectors refined by ratings + scorer | Module 1 (KB) | `src/preferences/`; unit tests in `unit_tests/preferences/`; integration tests in `integration_tests/module_2/` |
 | 3 | Search over KB (UCS, beam, path costs, preference blend) | KB (Module 1), `PreferenceScorer` (Module 2), query song MBID | Top-K `SearchResult` list via `find_similar` (UCS; optional `beam_topk`) | Modules 1–2 | `src/search/`; unit tests in `unit_tests/search/`; integration tests in `integration_tests/module_3/` |
-| 4 | Machine Learning (supervised) | KB, playlists (positive examples), optionally Module 3 results + feedback | Learned preference model (refined weights or learned scorer) | Modules 1–3 | *(planned)* `src/` TBD; tests TBD |
+| 4 | Machine Learning (supervised) | KB, playlists (positive examples), `data/user_ratings.json` | Learned preference model (feature weights + `LearnedPreferenceScorer` that can rerank Module 3 results) | Modules 1–3 | `src/ml/`; unit tests in `unit_tests/ml/`; integration tests in `integration_tests/module_4/` |
 | 5 | Clustering | Ranked candidates from Module 3 (or re-ranked by Module 4), KB features, optional learned preferences | Clustered recommendation groups (diversity) | Modules 1–4 | *(planned)* `src/` TBD; tests TBD |
 | 6 (optional) | *(unused or stretch)* | — | — | — | — |
 
@@ -65,6 +65,42 @@ pytest unit_tests/ -v
 - **Module 2 preference loop / demos:** see `src/preferences/run_preference_loop.py`, `collect_preferences.py` (run from project root with `src` on `PYTHONPATH` or `python -m` as documented in those modules).
 
 - **Module 3 search (library API):** import `find_similar`, `ucs_topk`, or `beam_topk` from `search` after adding `src` to `PYTHONPATH` (same pattern as tests).
+
+- **Module 4 training (offline ML from playlists + ratings):**
+
+  1. Ensure `data/user_ratings.json` exists (e.g., by running `src/preferences/run_preference_loop.py`).
+  2. Create `data/user_playlists.json` with the agreed schema:
+
+     ```json
+     {
+       "playlists": [
+         {
+           "name": "favorites",
+           "mbids": ["<mbid-1>", "<mbid-2>"]
+         }
+       ]
+     }
+     ```
+
+  3. Train the Module 4 scorer + reranker artifacts:
+
+     ```bash
+     python -m ml.train_module4
+     ```
+
+     This writes `data/module4_scorer.json` and `data/module4_reranker.json`.
+
+  4. At recommendation time, wrap the existing `PreferenceScorer`:
+
+     ```python
+     from preferences.scorer import PreferenceScorer
+     from ml import build_scorer_with_optional_ml
+     from search.pipeline import find_similar
+
+     base_scorer = PreferenceScorer(rules, weights)
+     scorer = build_scorer_with_optional_ml(base_scorer, "data/module4_scorer.json", blend_weight=0.5)
+     results = find_similar(kb, query_mbid, scorer, k=10)
+     ```
 
 ## Testing
 

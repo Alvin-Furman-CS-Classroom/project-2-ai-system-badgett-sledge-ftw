@@ -4,31 +4,31 @@ overview: Implement Module 4 as a hybrid supervised-learning layer that (1) lear
 todos:
   - id: m4-data-contractsc
     content: Define Module 4 input schemas for playlists/ratings and artifact schema + storage paths for trained models.
-    status: pending
+    status: completed
   - id: m4-ml-package
     content: Implement src/ml package components (dataset builder, learned scorer, reranker, artifact I/O).
-    status: pending
+    status: completed
   - id: m4-offline-training
     content: Add deterministic offline training entrypoint to build data, train models, evaluate basic metrics, and save artifacts.
-    status: pending
+    status: completed
   - id: m4-scorer-integration
     content: Integrate learned scorer into existing scorer contract (score(mbid, kb)) while preserving Module 2 compatibility.
-    status: pending
+    status: completed
   - id: m4-reranker-hook
     content: Add optional ML reranker path in search pipeline with legacy behavior unchanged when reranker is absent.
-    status: pending
+    status: completed
   - id: m4-validation-fallbacks
     content: Add fallback/error handling for missing artifacts, invalid MBIDs, and schema mismatch conditions.
-    status: pending
+    status: completed
   - id: m4-unit-tests
     content: Add/update unit tests for dataset, learned scorer, reranker, artifact roundtrip, and pipeline compatibility.
-    status: pending
+    status: completed
   - id: m4-integration-tests
     content: Add module_4 integration tests for train-save-load-recommend flow and verify playlists are only read during training.
-    status: pending
+    status: completed
   - id: m4-docs-report
     content: Update README + MODULE4_PLAN/checkpoint report with commands, assumptions, and evidence for rubric readiness.
-    status: pending
+    status: in_progress
 isProject: false
 ---
 
@@ -113,10 +113,15 @@ optionalRerank --> finalResults[RankedResults]
 ### Phase 4: Inference Integration
 
 - Scorer integration:
-  - expose scorer-compatible method (`score(mbid, kb)`) so existing Module 2/3 calling patterns remain intact
-  - combine rule score and learned score with configurable weights
+  - use `LearnedPreferenceScorer` to wrap the existing `PreferenceScorer` so it still exposes `score(mbid, kb)` for Modules 2–3.
+  - compute learned feature score from Module 4 weights and combine it with the rule-based score via a blend weight λ.
+  - provide a helper (`build_scorer_with_optional_ml`) that:
+    - checks for `data/module4_scorer.json`
+    - loads it if present and valid
+    - returns either the wrapped learned scorer or the original `PreferenceScorer` as a safe fallback.
 - Search integration:
-  - extend `find_similar` to accept optional reranker/model handle
+  - keep `find_similar` signature unchanged; it only requires an object with `score(mbid, kb)`.
+  - allow callers (demos, CLIs, tests) to opt into ML-enhanced scoring by passing a `LearnedPreferenceScorer` instead of a plain `PreferenceScorer`.
   - preserve exact legacy behavior when reranker is `None`
   - ensure deterministic ordering with tie-break rules
 - Deliverable: hybrid behavior available via optional flags while default path remains stable.

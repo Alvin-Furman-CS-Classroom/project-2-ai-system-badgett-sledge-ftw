@@ -21,7 +21,12 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Set
 
 from knowledge_base_wrapper import KnowledgeBase
-from ml.artifacts import make_scorer_artifact, save_scorer_artifact
+from ml.artifacts import (
+    make_reranker_artifact,
+    make_scorer_artifact,
+    save_reranker_artifact,
+    save_scorer_artifact,
+)
 from ml.dataset import TrainingExample, build_training_examples
 from preferences import UserRatings
 
@@ -32,6 +37,7 @@ KB_PATH = DATA_DIR / "knowledge_base.json"
 PLAYLISTS_PATH = DATA_DIR / "user_playlists.json"
 RATINGS_PATH = DATA_DIR / "user_ratings.json"
 SCORER_ARTIFACT_PATH = DATA_DIR / "module4_scorer.json"
+RERANKER_ARTIFACT_PATH = DATA_DIR / "module4_reranker.json"
 
 
 def _load_playlists() -> Dict:
@@ -160,6 +166,7 @@ def train_module4_scorer(
     playlists_path: str | Path = PLAYLISTS_PATH,
     ratings_path: str | Path = RATINGS_PATH,
     artifact_path: str | Path = SCORER_ARTIFACT_PATH,
+    reranker_artifact_path: str | Path = RERANKER_ARTIFACT_PATH,
 ) -> None:
     """
     Train a simple linear-style scorer from playlists + ratings and save it.
@@ -216,8 +223,22 @@ def train_module4_scorer(
     )
     save_scorer_artifact(artifact, str(artifact_path))
 
+    # For now, use the same weights/config for the reranker artifact. This keeps
+    # the implementation simple while still exercising a distinct reranker path.
+    reranker_artifact = make_reranker_artifact(
+        source=source,
+        config={
+            "model_type": "feature_mean_difference_reranker",
+            "label_scheme": "playlist+ratings",
+            "feature_family": config["feature_family"],
+        },
+        weights=weights,
+    )
+    save_reranker_artifact(reranker_artifact, str(reranker_artifact_path))
+
     print(f"Module 4 training complete. Learned {len(weights)} feature weights.")
     print(f"Scorer artifact written to: {artifact_path}")
+    print(f"Reranker artifact written to: {reranker_artifact_path}")
 
 
 if __name__ == "__main__":
