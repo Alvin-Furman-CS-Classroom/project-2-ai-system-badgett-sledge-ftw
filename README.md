@@ -102,6 +102,63 @@ pytest unit_tests/ -v
      results = find_similar(kb, query_mbid, scorer, k=10)
      ```
 
+- **Module 4 interactive demo (Query CLI with ML):**
+
+  After training Module 2 preferences and (optionally) running Module 4 training:
+
+  ```bash
+  python src/search/query_cli.py --use-ml-scorer --use-ml-reranker
+  ```
+
+  This CLI:
+  - loads `user_profile.json` and optionally refines rule-based weights from `user_ratings.json`
+  - wraps the scorer with Module 4’s learned scorer if `data/module4_scorer.json` exists
+  - runs Module 3 search (`ucs` or `beam`) to get candidates
+  - applies the Module 4 reranker if `data/module4_reranker.json` exists
+  - prints top recommendations with combined, preference, and path-cost scores
+
+## Module 4 Design and Behavior
+
+Module 4 adds a **supervised-learning layer** on top of the rule-based preferences:
+
+- **Labels (what “good” means):**
+  - Any song in any playlist in `data/user_playlists.json` is treated as a **base positive**.
+  - Ratings in `data/user_ratings.json` refine that signal:
+    - `REALLY_LIKE` / `LIKE` → stronger positives.
+    - `DISLIKE` → negative, even if the song is in a playlist.
+    - `NEUTRAL` → weak/optional signal.
+  - Additional negatives come from songs that are rated but not in playlists.
+
+- **Features (what the model looks at):**
+  - Derived from the KB via `KnowledgeBase.get_fact(...)`:
+    - `genre:*`, `mood:*`, `danceable:*`
+    - `voice/instrumental` (`vi:*`), `timbre:*`
+    - `loudness_bucket:quiet|medium|loud`
+    - a `bias` feature for baseline preference.
+
+- **Learned scorer (how scores are computed):**
+  - Training computes, for each feature \(f\):
+
+    \[
+    w_f = \text{avg(label | f present)} - \text{global avg label}
+    \]
+
+  - At inference, `LearnedPreferenceScorer`:
+    - sums \(w_f\) over all features present for a song to get a **learned feature score**,
+    - blends it with the existing rule-based score:
+
+    \[
+    \text{final} = (1 - \lambda) \cdot \text{rule\_score} + \lambda \cdot \text{learned\_score}
+    \]
+
+  - \(\lambda\) (blend weight) defaults to 0.5 in the CLI helper but can be tuned.
+
+- **Reranker (optional second stage):**
+  - Module 3’s `find_similar` produces a list of `SearchResult`s (with path cost, preference score, and combined score).
+  - The reranker uses the same feature family and learned weights to compute a **reranker score** per candidate and re-orders the list, without changing `find_similar` itself.
+
+This design keeps the system **interpretable** (features and rules are KB-based) while allowing playlists + ratings to statistically adjust which features matter most, and it integrates cleanly with the existing search pipeline and CLIs.
+
 ## Testing
 
 **Unit Tests** (`unit_tests/`): Mirror the structure of `src/`. Each module should have corresponding unit tests.

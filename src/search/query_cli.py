@@ -29,6 +29,9 @@ from preferences.ratings import UserRatings, refine_weights_from_ratings
 from preferences.survey import PreferenceProfile
 from search.pipeline import SearchResult, find_similar, rank_candidates_from_path_costs
 from search.beam import beam_topk
+from ml import build_scorer_with_optional_ml
+from ml.artifacts import load_reranker_artifact
+from ml.reranker import rerank_results_with_artifact
 
 
 def _load_profile(profile_path: str) -> PreferenceProfile:
@@ -136,7 +139,7 @@ def _retrieve_results(kb: KnowledgeBase, scorer: PreferenceScorer, mbid: str, ar
     the CLI's algorithm switch routes UCS vs Beam correctly.
     """
     if args.algorithm == "ucs":
-        return find_similar(
+        results = find_similar(
             kb=kb,
             query_mbid=mbid,
             scorer=scorer,
@@ -145,6 +148,14 @@ def _retrieve_results(kb: KnowledgeBase, scorer: PreferenceScorer, mbid: str, ar
             beta=args.beta,
             max_degree=args.max_degree,
         )
+        # Optional second-stage rerank using Module 4 artifact.
+        if args.use_ml_reranker:
+            try:
+                artifact = load_reranker_artifact(args.ml_reranker_artifact)
+            except FileNotFoundError:
+                return results
+            return rerank_results_with_artifact(kb, results, artifact)
+        return results
 
     raw = beam_topk(
         kb=kb,
@@ -154,13 +165,20 @@ def _retrieve_results(kb: KnowledgeBase, scorer: PreferenceScorer, mbid: str, ar
         max_depth=args.beam_depth,
         max_degree=args.max_degree,
     )
-    return rank_candidates_from_path_costs(
+    results = rank_candidates_from_path_costs(
         kb=kb,
         raw_costs=raw,
         scorer=scorer,
         alpha=args.alpha,
         beta=args.beta,
     )
+    if args.use_ml_reranker:
+        try:
+            artifact = load_reranker_artifact(args.ml_reranker_artifact)
+        except FileNotFoundError:
+            return results
+        return rerank_results_with_artifact(kb, results, artifact)
+    return results
 
 
 def main() -> None:
@@ -190,6 +208,26 @@ def main() -> None:
     )
     parser.add_argument("--beam-width", type=int, default=10, help="Beam width (only used for --algorithm beam).")
     parser.add_argument("--beam-depth", type=int, default=6, help="Beam max depth (only used for --algorithm beam).")
+    parser.add_argument(
+        "--use-ml-scorer",
+        action="store_true",
+        help="Wrap the rule-based scorer with the Module 4 learned scorer if data/module4_scorer.json exists.",
+    )
+    parser.add_argument(
+        "--use-ml-reranker",
+        action="store_true",
+        help="Apply Module 4 reranker on top of search results if data/module4_reranker.json exists.",
+    )
+    parser.add_argument(
+        "--ml-scorer-artifact",
+        default="data/module4_scorer.json",
+        help="Path to Module 4 scorer artifact JSON.",
+    )
+    parser.add_argument(
+        "--ml-reranker-artifact",
+        default="data/module4_reranker.json",
+        help="Path to Module 4 reranker artifact JSON.",
+    )
 
     args = parser.parse_args()
 
@@ -206,9 +244,22 @@ def main() -> None:
         enable=args.use_ratings,
         refinement_alpha=args.refinement_alpha,
     )
-    scorer = PreferenceScorer(rules, weights)
+    base_scorer = PreferenceScorer(rules, weights)
+    if args.use_ml_scorer:
+        scorer = build_scorer_with_optional_ml(
+            base_scorer,
+            artifact_path=args.ml_scorer_artifact,
+            blend_weight=0.5,
+        )
+    else:
+        scorer = base_scorer
 
-    print("\nLoaded Module 2 preferences. Starting Module 3 query...\n")
+    print("\nLoaded Module 2 preferences.", end="")
+    if args.use_ml_scorer:
+        print(" Module 4 learned scorer is ENABLED.", end="")
+    if args.use_ml_reranker:
+        print(" Module 4 reranker is ENABLED.", end="")
+    print("\nStarting Module 3 query...\n")
 
     while True:
         resolved = _resolve_query_to_mbid(kb)
