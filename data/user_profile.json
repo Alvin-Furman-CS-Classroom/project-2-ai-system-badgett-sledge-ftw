@@ -1,14 +1,24 @@
 {
   "preferred_genres": [
     "roc",
-    "alternative"
+    "alternative",
+    "electronic",
+    "jaz",
+    "hip",
+    "trance",
+    "rhy",
+    "ambient"
   ],
   "preferred_moods": [
-    "Happy"
+    "Happy",
+    "electronic",
+    "party",
+    "relaxed",
+    "sad"
   ],
-  "danceable": null,
-  "voice_instrumental": null,
+  "danceable": "danceable",
+  "voice_instrumental": "instrumental",
   "timbre": "bright",
-  "loudness_min": null,
-  "loudness_max": null
+  "loudness_min": -15.6248474121,
+  "loudness_max": -11.6248474121
 }

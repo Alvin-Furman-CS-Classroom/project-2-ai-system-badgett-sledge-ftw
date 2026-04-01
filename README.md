@@ -220,7 +220,7 @@ pytest unit_tests/ --cov=src --cov-report=html
 | 1 | 2026-02-11 | Module 1 — KB / data | Complete | `src/knowledge_base_wrapper.py`, `src/data_acquisition/`; [`MODULE1_PLAN.md`](MODULE1_PLAN.md); unit tests under `unit_tests/data_acquisition/`, `knowledge_base_wrapper_test.py` |
 | 2 | 2026-02-26 | Module 2 — Preferences | Complete | `src/preferences/`; [`MODULE2_PLAN.md`](MODULE2_PLAN.md); [`checkpoint_2_module_report.md`](checkpoint_2_module_report.md); `unit_tests/preferences/`; `integration_tests/module_2/` |
 | 3 | 2026-03-19 | Module 3 — Search | Complete | `src/search/`; [`MODULE3_PLAN.md`](MODULE3_PLAN.md); [`checkpoint_3_module_report.md`](checkpoint_3_module_report.md); `unit_tests/search/`; `integration_tests/module_3/` |
-| 4 | 2026-04-02 | Module 4 — ML | Planned | — |
+| 4 | 2026-04-02 | Module 4 — ML | Complete | `src/ml/`; [`MODULE4_PLAN.md`](MODULE4_PLAN.md); [`checkpoint_4_module_report.md`](checkpoint_4_module_report.md); `unit_tests/ml/`; `integration_tests/module_4/`; train: `python -m ml.train_module4`; demo: `python src/search/query_cli.py --use-ml-scorer --use-ml-reranker` |
 | 5 | 2026-04-16 | Module 5 — Clustering | Planned | — |
 
 ## Required Workflow (Agent-Guided)

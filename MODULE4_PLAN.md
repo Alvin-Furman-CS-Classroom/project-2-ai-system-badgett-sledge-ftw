@@ -28,7 +28,7 @@ todos:
     status: completed
   - id: m4-docs-report
     content: Update README + MODULE4_PLAN/checkpoint report with commands, assumptions, and evidence for rubric readiness.
-    status: in_progress
+    status: completed
 isProject: false
 ---
 
