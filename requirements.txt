@@ -2,3 +2,4 @@ requests>=2.31.0
 python-dotenv>=1.0.0
 musicbrainzngs>=0.7.1
 pytest>=7.4.0
+matplotlib>=3.8.0
