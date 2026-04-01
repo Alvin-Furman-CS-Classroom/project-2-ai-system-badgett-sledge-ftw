@@ -287,9 +287,14 @@ def main() -> None:
                     f" | combined={r.combined_score:.3f} | pref={r.preference_score:.3f} | cost={r.path_cost:.3f}"
                 )
 
-        again = input("\nSearch another song? [y/N]: ").strip().lower()
-        if again not in ("y", "yes"):
-            break
+        # Ask whether to search another song; only specific y/n variants are accepted.
+        while True:
+            again = input("\nSearch another song? [y/N]: ").strip().lower()
+            if again in ("y", "yes"):
+                break
+            if again in ("n", "no", ""):
+                return
+            print("Invalid input (must be y/n). Please try again.")
 
 
 if __name__ == "__main__":
