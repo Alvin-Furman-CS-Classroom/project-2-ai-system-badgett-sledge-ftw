@@ -1,0 +1,55 @@
+{
+  "config": {
+    "feature_family": [
+      "genre",
+      "mood",
+      "danceable",
+      "voice_instrumental",
+      "timbre",
+      "loudness_bucket",
+      "bias"
+    ],
+    "label_scheme": "playlist+ratings",
+    "model_type": "feature_mean_difference_reranker"
+  },
+  "source": {
+    "kb_snapshot": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/knowledge_base.json",
+    "playlists_file": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/personas/persona_03_omnivore_indie/user_playlists.json",
+    "ratings_file": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/personas/persona_03_omnivore_indie/user_ratings.json"
+  },
+  "trained_at": "2026-04-09T19:47:37+00:00",
+  "version": 1,
+  "weights": {
+    "bias": 0.0,
+    "danceable:danceable": 0.028508771929824372,
+    "danceable:not_danceable": -0.013157894736842146,
+    "genre:alternative": 0.06184210526315781,
+    "genre:ambient": 0.029149797570850233,
+    "genre:cla": -0.06315789473684219,
+    "genre:dan": 0.08684210526315783,
+    "genre:electronic": -0.007602339181286499,
+    "genre:folkcountry": 0.006842105263157761,
+    "genre:hip": -0.013157894736842146,
+    "genre:house": -0.2631578947368422,
+    "genre:jaz": 0.022136222910216774,
+    "genre:met": -0.7131578947368422,
+    "genre:pop": -0.11315789473684223,
+    "genre:raphiphop": -0.7131578947368422,
+    "genre:rhy": 0.10684210526315774,
+    "genre:roc": 0.1423976608187133,
+    "genre:spe": -0.7131578947368422,
+    "genre:trance": 0.036842105263157676,
+    "loudness_bucket:loud": -0.01815789473684215,
+    "loudness_bucket:medium": 0.02017543859649129,
+    "mood:acoustic": -0.023684210526315863,
+    "mood:electronic": -0.028542510121457587,
+    "mood:happy": 0.03128654970760214,
+    "mood:party": 0.0011278195488720888,
+    "mood:relaxed": -0.03924485125858124,
+    "mood:sad": -0.008612440191387627,
+    "timbre:bright": 0.04838056680161951,
+    "timbre:dark": -0.10482456140350893,
+    "vi:instrumental": -0.019824561403508856,
+    "vi:voice": 0.012929061784897056
+  }
+}

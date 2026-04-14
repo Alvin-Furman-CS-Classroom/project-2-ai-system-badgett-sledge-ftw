@@ -1,0 +1,18 @@
+{
+  "preferred_genres": [
+    "alternative",
+    "electronic",
+    "jaz",
+    "folkcountry"
+  ],
+  "preferred_moods": [
+    "relaxed",
+    "electronic",
+    "happy"
+  ],
+  "danceable": null,
+  "voice_instrumental": null,
+  "timbre": null,
+  "loudness_min": -12.0,
+  "loudness_max": -8.0
+}

@@ -1,0 +1,53 @@
+{
+  "config": {
+    "feature_family": [
+      "genre",
+      "mood",
+      "danceable",
+      "voice_instrumental",
+      "timbre",
+      "loudness_bucket",
+      "bias"
+    ],
+    "label_scheme": "playlist+ratings",
+    "model_type": "feature_mean_difference"
+  },
+  "source": {
+    "kb_snapshot": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/knowledge_base.json",
+    "playlists_file": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/personas/persona_02_classic_rock_dad/user_playlists.json",
+    "ratings_file": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/personas/persona_02_classic_rock_dad/user_ratings.json"
+  },
+  "trained_at": "2026-04-09T19:47:37+00:00",
+  "version": 1,
+  "weights": {
+    "bias": 0.0,
+    "danceable:danceable": -0.08785714285714308,
+    "danceable:not_danceable": 0.07398496240601504,
+    "genre:ambient": 0.07880952380952377,
+    "genre:blues": 0.14964285714285686,
+    "genre:cla": 0.06441558441558415,
+    "genre:electronic": -0.13507936507936524,
+    "genre:folkcountry": 0.1371428571428569,
+    "genre:hip": -0.262857142857143,
+    "genre:house": 0.10380952380952357,
+    "genre:jaz": -0.008690476190476248,
+    "genre:pop": 0.017142857142857015,
+    "genre:rhy": -0.262857142857143,
+    "genre:roc": 0.09098901098901091,
+    "genre:spe": 0.33714285714285697,
+    "genre:techno": -0.662857142857143,
+    "genre:trance": -0.14619047619047643,
+    "loudness_bucket:loud": -0.01548872180451144,
+    "loudness_bucket:medium": 0.01839285714285699,
+    "mood:acoustic": 0.10637362637362624,
+    "mood:electronic": -0.14952380952380973,
+    "mood:happy": 0.1371428571428569,
+    "mood:party": -0.05376623376623402,
+    "mood:relaxed": -0.0073015873015873645,
+    "mood:sad": 0.08714285714285697,
+    "timbre:bright": 0.14714285714285713,
+    "timbre:dark": -0.19619047619047641,
+    "vi:instrumental": -0.06841269841269848,
+    "vi:voice": 0.07243697478991584
+  }
+}

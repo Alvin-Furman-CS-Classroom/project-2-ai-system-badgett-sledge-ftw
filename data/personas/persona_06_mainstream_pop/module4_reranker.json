@@ -1,0 +1,53 @@
+{
+  "config": {
+    "feature_family": [
+      "genre",
+      "mood",
+      "danceable",
+      "voice_instrumental",
+      "timbre",
+      "loudness_bucket",
+      "bias"
+    ],
+    "label_scheme": "playlist+ratings",
+    "model_type": "feature_mean_difference_reranker"
+  },
+  "source": {
+    "kb_snapshot": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/knowledge_base.json",
+    "playlists_file": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/personas/persona_06_mainstream_pop/user_playlists.json",
+    "ratings_file": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/personas/persona_06_mainstream_pop/user_ratings.json"
+  },
+  "trained_at": "2026-04-09T19:47:37+00:00",
+  "version": 1,
+  "weights": {
+    "bias": 0.0,
+    "danceable:danceable": 0.048279069767441785,
+    "danceable:not_danceable": -0.0670542635658915,
+    "genre:ambient": 0.0130532633158289,
+    "genre:blues": -0.6837209302325582,
+    "genre:cla": -0.6837209302325582,
+    "genre:electronic": 0.010564784053156084,
+    "genre:folkcountry": -0.03372093023255818,
+    "genre:hip": -0.6837209302325582,
+    "genre:house": 0.3162790697674418,
+    "genre:jaz": 0.06779422128259338,
+    "genre:jazz": -0.6837209302325582,
+    "genre:pop": 0.26294573643410857,
+    "genre:rhy": -0.1837209302325582,
+    "genre:roc": -0.3837209302325582,
+    "genre:rock": 0.3162790697674418,
+    "genre:trance": -0.10372093023255824,
+    "loudness_bucket:loud": 0.03801820020222446,
+    "loudness_bucket:medium": -0.043720930232558186,
+    "mood:acoustic": -0.03372093023255818,
+    "mood:electronic": -0.04254445964432296,
+    "mood:happy": -0.014970930232558244,
+    "mood:party": -0.019015047879616942,
+    "mood:relaxed": -0.018503538928210328,
+    "mood:sad": 0.042945736434108484,
+    "timbre:bright": 0.0037790697674418006,
+    "timbre:dark": -0.004773561811505678,
+    "vi:instrumental": -0.0024709302325581772,
+    "vi:voice": 0.001464254952627031
+  }
+}

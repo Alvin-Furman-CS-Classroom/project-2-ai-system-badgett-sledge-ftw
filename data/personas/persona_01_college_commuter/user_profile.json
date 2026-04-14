@@ -1,0 +1,17 @@
+{
+  "preferred_genres": [
+    "hip",
+    "rhy",
+    "pop"
+  ],
+  "preferred_moods": [
+    "happy",
+    "party",
+    "relaxed"
+  ],
+  "danceable": null,
+  "voice_instrumental": null,
+  "timbre": null,
+  "loudness_min": -12.0,
+  "loudness_max": -8.0
+}
