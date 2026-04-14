@@ -40,6 +40,93 @@ def _load_profile(profile_path: str) -> PreferenceProfile:
     return PreferenceProfile(**data)
 
 
+def _load_playlist_seed_mbids(playlists_path: str, seed_count: int) -> List[str]:
+    """
+    Load up to ``seed_count`` MBIDs from a user_playlists.json-style file.
+    """
+    if seed_count <= 0:
+        return []
+
+    try:
+        with open(playlists_path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except FileNotFoundError:
+        return []
+
+    out: List[str] = []
+    seen = set()
+    for playlist in payload.get("playlists", []):
+        mbids = playlist.get("mbids", [])
+        if not isinstance(mbids, list):
+            continue
+        for mbid in mbids:
+            if not isinstance(mbid, str):
+                continue
+            if mbid in seen:
+                continue
+            seen.add(mbid)
+            out.append(mbid)
+            if len(out) >= seed_count:
+                return out
+    return out
+
+
+def _resolve_query_from_mbid(kb: KnowledgeBase, mbid: str) -> Optional[tuple[str, str, str]]:
+    song = kb.get_song(mbid)
+    if not song:
+        print(f"MBID not found in knowledge base: {mbid}")
+        return None
+    artist = (song.get("artist") or "Unknown").strip()
+    track = (song.get("track") or "Unknown").strip()
+    return mbid, artist, track
+
+
+def _apply_persona_overrides(args: argparse.Namespace) -> argparse.Namespace:
+    """
+    If --persona-dir is provided, set profile/ratings/artifact paths to that
+    folder and enable ratings + ML toggles for low-friction demos.
+    """
+    if not args.persona_dir:
+        return args
+
+    pdir = Path(args.persona_dir)
+    if not pdir.exists() or not pdir.is_dir():
+        raise FileNotFoundError(f"Persona directory not found: {pdir}")
+
+    args.profile = str(pdir / "user_profile.json")
+    args.ratings = str(pdir / "user_ratings.json")
+    args.playlists = str(pdir / "user_playlists.json")
+    args.ml_scorer_artifact = str(pdir / "module4_scorer.json")
+    args.ml_reranker_artifact = str(pdir / "module4_reranker.json")
+    args.use_ratings = True
+    args.use_ml_scorer = True
+    args.use_ml_reranker = True
+    return args
+
+
+def _print_results_for_query(
+    kb: KnowledgeBase,
+    scorer: PreferenceScorer,
+    query_tuple: tuple[str, str, str],
+    args: argparse.Namespace,
+) -> None:
+    mbid, resolved_artist, resolved_track = query_tuple
+    print(f"\nInterpreting your query as: {resolved_artist} - {resolved_track}")
+    results = _retrieve_results(kb, scorer, mbid, args)
+    print(f"\nQuery: {resolved_artist} - {resolved_track}\n")
+    if not results:
+        print("No results found (unusually low connectivity). Try a different song.")
+        return
+
+    print("Top recommendations:")
+    for i, r in enumerate(results, 1):
+        song = kb.get_song(r.mbid) or {}
+        print(
+            f"  {i}. {song.get('artist', 'Unknown')} - {song.get('track', 'Unknown')}"
+            f" | combined={r.combined_score:.3f} | pref={r.preference_score:.3f} | cost={r.path_cost:.3f}"
+        )
+
+
 def _maybe_refine_weights(
     kb: KnowledgeBase,
     rules,
@@ -111,7 +198,11 @@ def _resolve_query_to_mbid(kb: KnowledgeBase) -> Optional[tuple[str, str, str]]:
     _print_candidate_list(kb, candidates, limit=10)
 
     if len(candidates) == 1:
-        return candidates[0]
+        mbid = candidates[0]
+        resolved_song = kb.get_song(mbid) or {}
+        resolved_artist = (resolved_song.get("artist") or artist or "Unknown").strip()
+        resolved_track = (resolved_song.get("track") or track or "Unknown").strip()
+        return mbid, resolved_artist, resolved_track
 
     while True:
         choice = input("Pick number (or press Enter to cancel): ").strip()
@@ -185,6 +276,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Query Module 3 with a user-provided song.")
     parser.add_argument("--kb", default="data/knowledge_base.json", help="Path to knowledge_base.json")
     parser.add_argument(
+        "--persona-dir",
+        default=None,
+        help="Persona directory containing user_profile.json, user_ratings.json, user_playlists.json, and module4 artifacts.",
+    )
+    parser.add_argument(
         "--profile",
         default="data/user_profile.json",
         help="Path to user_profile.json produced by Module 2 survey",
@@ -228,8 +324,34 @@ def main() -> None:
         default="data/module4_reranker.json",
         help="Path to Module 4 reranker artifact JSON.",
     )
+    parser.add_argument(
+        "--playlists",
+        default="data/user_playlists.json",
+        help="Path to user_playlists.json (used when --seed-from-playlist is enabled).",
+    )
+    parser.add_argument(
+        "--query-mbid",
+        default=None,
+        help="Run non-interactively using this exact query MBID.",
+    )
+    parser.add_argument(
+        "--seed-from-playlist",
+        action="store_true",
+        help="Run non-interactively using one or more MBIDs from playlists (see --seed-count).",
+    )
+    parser.add_argument(
+        "--seed-count",
+        type=int,
+        default=1,
+        help="Number of playlist MBIDs to use when --seed-from-playlist is set.",
+    )
+    parser.add_argument(
+        "--once",
+        action="store_true",
+        help="Run one query cycle and exit (useful for demos/scripts).",
+    )
 
-    args = parser.parse_args()
+    args = _apply_persona_overrides(parser.parse_args())
 
     kb = KnowledgeBase(args.kb)
     profile = _load_profile(args.profile)
@@ -261,31 +383,37 @@ def main() -> None:
         print(" Module 4 reranker is ENABLED.", end="")
     print("\nStarting Module 3 query...\n")
 
+    # Non-interactive paths (ideal for repeatable tests/demos).
+    if args.query_mbid:
+        resolved = _resolve_query_from_mbid(kb, args.query_mbid)
+        if not resolved:
+            return
+        _print_results_for_query(kb, scorer, resolved, args)
+        return
+
+    if args.seed_from_playlist:
+        seed_mbids = _load_playlist_seed_mbids(args.playlists, args.seed_count)
+        if not seed_mbids:
+            print(f"No seed MBIDs found in playlists file: {args.playlists}")
+            return
+        print(f"Using {len(seed_mbids)} seed MBID(s) from {args.playlists}")
+        for mbid in seed_mbids:
+            resolved = _resolve_query_from_mbid(kb, mbid)
+            if not resolved:
+                continue
+            _print_results_for_query(kb, scorer, resolved, args)
+        return
+
     while True:
         resolved = _resolve_query_to_mbid(kb)
         if not resolved:
             print("No query selected. Exiting.")
             return
 
-        mbid, resolved_artist, resolved_track = resolved
+        _print_results_for_query(kb, scorer, resolved, args)
 
-        # Always show the interpreted song, since partial-name matching is allowed.
-        print(f"\nInterpreting your query as: {resolved_artist} - {resolved_track}")
-
-        results = _retrieve_results(kb, scorer, mbid, args)
-
-        # Query label after search (kept for clarity with the output block).
-        print(f"\nQuery: {resolved_artist} - {resolved_track}\n")
-        if not results:
-            print("No results found (unusually low connectivity). Try a different song.")
-        else:
-            print("Top recommendations:")
-            for i, r in enumerate(results, 1):
-                song = kb.get_song(r.mbid) or {}
-                print(
-                    f"  {i}. {song.get('artist', 'Unknown')} - {song.get('track', 'Unknown')}"
-                    f" | combined={r.combined_score:.3f} | pref={r.preference_score:.3f} | cost={r.path_cost:.3f}"
-                )
+        if args.once:
+            return
 
         # Ask whether to search another song; only specific y/n variants are accepted.
         while True:

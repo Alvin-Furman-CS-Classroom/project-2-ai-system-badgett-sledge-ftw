@@ -1,0 +1,54 @@
+{
+  "config": {
+    "feature_family": [
+      "genre",
+      "mood",
+      "danceable",
+      "voice_instrumental",
+      "timbre",
+      "loudness_bucket",
+      "bias"
+    ],
+    "label_scheme": "playlist+ratings",
+    "model_type": "feature_mean_difference_reranker"
+  },
+  "source": {
+    "kb_snapshot": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/knowledge_base.json",
+    "playlists_file": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/personas/persona_05_classical_choral/user_playlists.json",
+    "ratings_file": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/personas/persona_05_classical_choral/user_ratings.json"
+  },
+  "trained_at": "2026-04-09T19:47:37+00:00",
+  "version": 1,
+  "weights": {
+    "bias": 0.0,
+    "danceable:danceable": -0.645945945945946,
+    "danceable:not_danceable": 0.10092905405405406,
+    "genre:ambient": 0.11857018308631206,
+    "genre:blues": -0.245945945945946,
+    "genre:cla": 0.20405405405405408,
+    "genre:dis": 0.05405405405405406,
+    "genre:electronic": -0.05394594594594593,
+    "genre:folkcountry": 0.254054054054054,
+    "genre:hip": -0.745945945945946,
+    "genre:house": -0.5459459459459459,
+    "genre:jaz": 0.05405405405405406,
+    "genre:jazz": 0.254054054054054,
+    "genre:met": -0.745945945945946,
+    "genre:pop": -0.245945945945946,
+    "genre:roc": -0.34594594594594597,
+    "genre:rock": -0.245945945945946,
+    "genre:trance": -0.745945945945946,
+    "loudness_bucket:loud": 0.06605405405405407,
+    "loudness_bucket:medium": -0.1376126126126127,
+    "mood:acoustic": 0.19405405405405407,
+    "mood:electronic": -0.23166023166023164,
+    "mood:happy": 0.0318318318318318,
+    "mood:party": -0.31737451737451744,
+    "mood:relaxed": 0.12328482328482326,
+    "mood:sad": 0.15405405405405392,
+    "timbre:bright": -0.08344594594594601,
+    "timbre:dark": 0.06357786357786355,
+    "vi:instrumental": 0.054054054054053946,
+    "vi:voice": -0.0997920997920998
+  }
+}

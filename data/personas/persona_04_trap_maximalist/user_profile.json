@@ -1,0 +1,15 @@
+{
+  "preferred_genres": [
+    "hip",
+    "electronic"
+  ],
+  "preferred_moods": [
+    "party",
+    "happy"
+  ],
+  "danceable": "danceable",
+  "voice_instrumental": "voice",
+  "timbre": "bright",
+  "loudness_min": -8.0,
+  "loudness_max": -5.0
+}

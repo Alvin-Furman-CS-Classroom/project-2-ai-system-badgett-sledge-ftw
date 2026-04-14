@@ -1,0 +1,15 @@
+{
+  "preferred_genres": [
+    "pop"
+  ],
+  "preferred_moods": [
+    "happy",
+    "party",
+    "relaxed"
+  ],
+  "danceable": "danceable",
+  "voice_instrumental": "voice",
+  "timbre": "bright",
+  "loudness_min": -12.0,
+  "loudness_max": -8.0
+}

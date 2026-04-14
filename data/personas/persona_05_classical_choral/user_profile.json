@@ -1,0 +1,14 @@
+{
+  "preferred_genres": [
+    "cla"
+  ],
+  "preferred_moods": [
+    "relaxed",
+    "acoustic"
+  ],
+  "danceable": "not_danceable",
+  "voice_instrumental": null,
+  "timbre": null,
+  "loudness_min": -15.0,
+  "loudness_max": -12.0
+}
