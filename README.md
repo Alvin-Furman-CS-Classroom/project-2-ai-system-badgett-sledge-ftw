@@ -110,6 +110,16 @@ pytest unit_tests/ -v
   python src/search/query_cli.py --use-ml-scorer --use-ml-reranker
   ```
 
+- **Module 5 clustering (diversify recommendations):**
+
+  Module 5 is an optional post-retrieval organization step that clusters the top-N
+  candidate recommendations (from Module 3, optionally reranked by Module 4) and
+  returns a diversified top-K list via round-robin across clusters.
+
+  ```bash
+  python src/search/query_cli.py --use-clustering --cluster-k 5 --cluster-pool-size 50
+  ```
+
   This CLI:
   - loads `user_profile.json` and optionally refines rule-based weights from `user_ratings.json`
   - wraps the scorer with Module 4’s learned scorer if `data/module4_scorer.json` exists

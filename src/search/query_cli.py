@@ -18,6 +18,7 @@ import json
 import sys
 from pathlib import Path
 from typing import List, Optional
+from datetime import datetime
 
 # Add src/ to the path so we can import project modules when run directly.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -32,6 +33,8 @@ from search.beam import beam_topk
 from ml import build_scorer_with_optional_ml
 from ml.artifacts import load_reranker_artifact
 from ml.reranker import rerank_results_with_artifact
+from clustering.kmeans import KMeansConfig
+from clustering.organize import cluster_and_organize
 
 
 def _load_profile(profile_path: str) -> PreferenceProfile:
@@ -138,20 +141,25 @@ def _retrieve_results(kb: KnowledgeBase, scorer: PreferenceScorer, mbid: str, ar
     Extracted for testability: unit tests can call this helper to validate that
     the CLI's algorithm switch routes UCS vs Beam correctly.
     """
+    retrieval_k = args.k
+    if getattr(args, "use_clustering", False):
+        retrieval_k = max(int(args.k), int(args.cluster_pool_size))
+
     if args.algorithm == "ucs":
         results = find_similar(
             kb=kb,
             query_mbid=mbid,
             scorer=scorer,
-            k=args.k,
+            k=retrieval_k,
             alpha=args.alpha,
             beta=args.beta,
             max_degree=args.max_degree,
         )
         # Optional second-stage rerank using Module 4 artifact.
-        if args.use_ml_reranker:
+        if getattr(args, "use_ml_reranker", False):
             try:
-                artifact = load_reranker_artifact(args.ml_reranker_artifact)
+                artifact_path = getattr(args, "ml_reranker_artifact", "data/module4_reranker.json")
+                artifact = load_reranker_artifact(artifact_path)
             except FileNotFoundError:
                 return results
             return rerank_results_with_artifact(kb, results, artifact)
@@ -160,7 +168,7 @@ def _retrieve_results(kb: KnowledgeBase, scorer: PreferenceScorer, mbid: str, ar
     raw = beam_topk(
         kb=kb,
         query_mbid=mbid,
-        k=args.k,
+        k=retrieval_k,
         beam_width=args.beam_width,
         max_depth=args.beam_depth,
         max_degree=args.max_degree,
@@ -172,13 +180,46 @@ def _retrieve_results(kb: KnowledgeBase, scorer: PreferenceScorer, mbid: str, ar
         alpha=args.alpha,
         beta=args.beta,
     )
-    if args.use_ml_reranker:
+    if getattr(args, "use_ml_reranker", False):
         try:
-            artifact = load_reranker_artifact(args.ml_reranker_artifact)
+            artifact_path = getattr(args, "ml_reranker_artifact", "data/module4_reranker.json")
+            artifact = load_reranker_artifact(artifact_path)
         except FileNotFoundError:
             return results
         return rerank_results_with_artifact(kb, results, artifact)
     return results
+
+
+def _slug(s: str) -> str:
+    s = "".join(ch if ch.isalnum() else "-" for ch in (s or "").strip().lower())
+    while "--" in s:
+        s = s.replace("--", "-")
+    return s.strip("-") or "unknown"
+
+
+def _save_recommendation_playlist(
+    mbids: List[str],
+    *,
+    playlist_name: str,
+    out_dir: Path,
+) -> Path:
+    out_dir.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filename = f"recommendations_{_slug(playlist_name)}_{stamp}.json"
+    out_path = out_dir / filename
+    payload = {"name": playlist_name, "mbids": mbids}
+    with out_path.open("w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
+    return out_path
+
+
+def _extend_session_mbids(session_mbids: List[str], results: List[SearchResult]) -> None:
+    """Append recommendation MBIDs in order; skip duplicates (keep first occurrence)."""
+    seen = set(session_mbids)
+    for r in results:
+        if r.mbid not in seen:
+            seen.add(r.mbid)
+            session_mbids.append(r.mbid)
 
 
 def main() -> None:
@@ -228,6 +269,49 @@ def main() -> None:
         default="data/module4_reranker.json",
         help="Path to Module 4 reranker artifact JSON.",
     )
+    parser.add_argument(
+        "--use-clustering",
+        action="store_true",
+        help="Apply Module 5 clustering to diversify the final top-K results (post-retrieval).",
+    )
+    parser.add_argument("--cluster-k", type=int, default=5, help="Number of clusters for Module 5 K-means.")
+    parser.add_argument(
+        "--cluster-pool-size",
+        type=int,
+        default=50,
+        help="Top-N candidate pool size to cluster (must be >= k).",
+    )
+    parser.add_argument("--cluster-seed", type=int, default=343, help="Random seed for deterministic K-means init.")
+    parser.add_argument("--cluster-max-iters", type=int, default=25, help="Max iterations for K-means.")
+    parser.add_argument(
+        "--auto-ml",
+        action="store_true",
+        default=True,
+        help="Automatically enable Module 4 learned scorer + reranker if artifact files exist (default: enabled).",
+    )
+    parser.add_argument(
+        "--no-auto-ml",
+        action="store_false",
+        dest="auto_ml",
+        help="Disable auto enabling of Module 4 learned scorer/reranker.",
+    )
+    parser.add_argument(
+        "--save-playlist",
+        action="store_true",
+        default=True,
+        help="When you finish searching (no more songs), save one combined playlist to data/playlists/ (default: enabled).",
+    )
+    parser.add_argument(
+        "--no-save-playlist",
+        action="store_false",
+        dest="save_playlist",
+        help="Do not save a combined playlist when you exit the search loop.",
+    )
+    parser.add_argument(
+        "--playlist-out-dir",
+        default="data/playlists",
+        help="Directory where recommendation playlists will be saved (default: data/playlists).",
+    )
 
     args = parser.parse_args()
 
@@ -245,6 +329,13 @@ def main() -> None:
         refinement_alpha=args.refinement_alpha,
     )
     base_scorer = PreferenceScorer(rules, weights)
+    # Auto-ML: enable scorer/reranker when artifacts exist.
+    if args.auto_ml:
+        if Path(args.ml_scorer_artifact).exists():
+            args.use_ml_scorer = True
+        if Path(args.ml_reranker_artifact).exists():
+            args.use_ml_reranker = True
+
     if args.use_ml_scorer:
         scorer = build_scorer_with_optional_ml(
             base_scorer,
@@ -260,6 +351,13 @@ def main() -> None:
     if args.use_ml_reranker:
         print(" Module 4 reranker is ENABLED.", end="")
     print("\nStarting Module 3 query...\n")
+    if args.save_playlist:
+        print(
+            "When you finish (answer N to 'Search another song?'), your recommendations "
+            "from this session are saved as one playlist.\n"
+        )
+
+    session_mbids: List[str] = []
 
     while True:
         resolved = _resolve_query_to_mbid(kb)
@@ -273,6 +371,14 @@ def main() -> None:
         print(f"\nInterpreting your query as: {resolved_artist} - {resolved_track}")
 
         results = _retrieve_results(kb, scorer, mbid, args)
+        if args.use_clustering and results:
+            clustered = cluster_and_organize(
+                kb,
+                results,
+                top_k=args.k,
+                kmeans=KMeansConfig(k=args.cluster_k, seed=args.cluster_seed, max_iters=args.cluster_max_iters),
+            )
+            results = list(clustered.diversified)
 
         # Query label after search (kept for clarity with the output block).
         print(f"\nQuery: {resolved_artist} - {resolved_track}\n")
@@ -287,12 +393,21 @@ def main() -> None:
                     f" | combined={r.combined_score:.3f} | pref={r.preference_score:.3f} | cost={r.path_cost:.3f}"
                 )
 
+            _extend_session_mbids(session_mbids, results)
+
         # Ask whether to search another song; only specific y/n variants are accepted.
         while True:
             again = input("\nSearch another song? [y/N]: ").strip().lower()
             if again in ("y", "yes"):
                 break
             if again in ("n", "no", ""):
+                if args.save_playlist and session_mbids:
+                    out_path = _save_recommendation_playlist(
+                        session_mbids,
+                        playlist_name="session_recommendations",
+                        out_dir=Path(args.playlist_out_dir),
+                    )
+                    print(f"\nSaved recommendation playlist to: {out_path}")
                 return
             print("Invalid input (must be y/n). Please try again.")
 

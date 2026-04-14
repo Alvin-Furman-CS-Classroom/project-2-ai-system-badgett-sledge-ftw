@@ -4,19 +4,19 @@ overview: Implement Module 5 as a deterministic K-means clustering layer that or
 todos:
   - id: m5-contracts
     content: Define Module 5 data contracts and deterministic K-means configuration (k, seed, pool size).
-    status: pending
+    status: completed
   - id: m5-impl
     content: Implement src/clustering feature builder, K-means algorithm, and result organizer APIs.
-    status: pending
+    status: completed
   - id: m5-integration
     content: Integrate optional clustering path into query workflow without breaking existing Module 3/4 behavior.
-    status: pending
+    status: completed
   - id: m5-tests
     content: Add unit_tests/clustering and integration_tests/module_5 coverage for determinism, edge cases, and diversity behavior.
-    status: pending
+    status: completed
   - id: m5-docs
     content: Update README and create Module 5 planning/report artifacts for checkpoint submission.
-    status: pending
+    status: completed
 isProject: false
 ---
 
