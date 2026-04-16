@@ -142,7 +142,7 @@ def ensure_playlists_file_interactive() -> Optional[Path]:
                     pass
                 else:
                     return default_standard
-        except Exception:
+        except (OSError, json.JSONDecodeError, TypeError, ValueError, AttributeError):
             print("Existing playlists file could not be parsed; you may choose another.")
 
     print("Playlist options:")
@@ -179,7 +179,7 @@ def ensure_playlists_file_interactive() -> Optional[Path]:
                     continue
             try:
                 _convert_simple_playlist_to_user_playlists(path, dest)
-            except Exception as e:  # pragma: no cover - defensive
+            except (OSError, json.JSONDecodeError, TypeError, ValueError, AttributeError) as e:  # pragma: no cover - defensive
                 print(f"Failed to convert playlist: {e}")
                 continue
             return dest
@@ -299,6 +299,43 @@ def run_query_wizard() -> None:
         sys.argv = old_argv
 
 
+def _run_full_pipeline() -> None:
+    run_preferences_wizard()
+    if _prompt_yes_no("\nEnable / retrain the Module 4 ML layer now?", default=True):
+        playlists_path = ensure_playlists_file_interactive()
+        run_ml_training_wizard(playlists_path)
+    run_query_wizard()
+
+
+def _run_ml_only() -> None:
+    playlists_path = ensure_playlists_file_interactive()
+    run_ml_training_wizard(playlists_path)
+
+
+def _execute_menu_choice(choice: str) -> bool:
+    """
+    Execute one main-menu action.
+
+    Returns:
+        True to keep showing the menu, False to exit.
+    """
+    if choice == "5":
+        print("Goodbye.")
+        return False
+
+    if choice == "1":
+        _run_full_pipeline()
+    elif choice == "2":
+        run_preferences_wizard()
+    elif choice == "3":
+        _run_ml_only()
+    elif choice == "4":
+        run_query_wizard()
+
+    print("\nReturning to main menu.\n")
+    return True
+
+
 def main_menu() -> None:
     _print_banner("CURATED MUSIC RECOMMENDATION SYSTEM - UNIFIED CLI")
     print(
@@ -317,26 +354,8 @@ def main_menu() -> None:
             print("Please enter a number between 1 and 5.")
             continue
 
-        if choice == "5":
-            print("Goodbye.")
+        if not _execute_menu_choice(choice):
             return
-
-        if choice == "1":
-            # Full pipeline: run preferences, then optionally ML, then query.
-            run_preferences_wizard()
-            if _prompt_yes_no("\nEnable / retrain the Module 4 ML layer now?", default=True):
-                playlists_path = ensure_playlists_file_interactive()
-                run_ml_training_wizard(playlists_path)
-            run_query_wizard()
-        elif choice == "2":
-            run_preferences_wizard()
-        elif choice == "3":
-            playlists_path = ensure_playlists_file_interactive()
-            run_ml_training_wizard(playlists_path)
-        elif choice == "4":
-            run_query_wizard()
-
-        print("\nReturning to main menu.\n")
 
 
 if __name__ == "__main__":

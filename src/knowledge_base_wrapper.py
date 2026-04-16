@@ -7,7 +7,7 @@ to access structured facts and relations about songs.
 """
 
 import json
-from typing import Dict, List, Set, Optional
+from typing import Dict, List, Optional, Set
 from pathlib import Path
 
 
@@ -34,7 +34,7 @@ class KnowledgeBase:
             kb_file = project_root / kb_path
         
         try:
-            with open(kb_file, 'r', encoding='utf-8') as f:
+            with open(kb_file, "r", encoding="utf-8") as f:
                 self.data = json.load(f)
         except FileNotFoundError:
             raise FileNotFoundError(f"Knowledge base file not found: {kb_file}")
@@ -43,9 +43,9 @@ class KnowledgeBase:
         except IOError as e:
             raise IOError(f"Error reading knowledge base file {kb_file}: {e}")
         
-        self.songs = self.data.get('songs', {})
-        self.facts = self.data.get('facts', {})
-        self.indexes = self.data.get('indexes', {})
+        self.songs = self.data.get("songs", {})
+        self.facts = self.data.get("facts", {})
+        self.indexes = self.data.get("indexes", {})
     
     def get_song(self, mbid: str) -> Optional[Dict]:
         """
@@ -83,7 +83,7 @@ class KnowledgeBase:
         Returns:
             List of MBIDs for songs in that genre
         """
-        genre_index = self.indexes.get('by_genre', {})
+        genre_index = self.indexes.get("by_genre", {})
         return genre_index.get(genre.lower(), [])
     
     def songs_by_danceable(self, danceable: str) -> List[str]:
@@ -96,7 +96,7 @@ class KnowledgeBase:
         Returns:
             List of MBIDs for songs matching the danceability
         """
-        danceable_index = self.indexes.get('by_danceable', {})
+        danceable_index = self.indexes.get("by_danceable", {})
         return danceable_index.get(danceable.lower(), [])
     
     def songs_by_voice_instrumental(self, voice_type: str) -> List[str]:
@@ -109,7 +109,7 @@ class KnowledgeBase:
         Returns:
             List of MBIDs for songs matching the type
         """
-        vi_index = self.indexes.get('by_voice_instrumental', {})
+        vi_index = self.indexes.get("by_voice_instrumental", {})
         return vi_index.get(voice_type.lower(), [])
     
     def songs_by_timbre(self, timbre: str) -> List[str]:
@@ -122,7 +122,7 @@ class KnowledgeBase:
         Returns:
             List of MBIDs for songs matching the timbre
         """
-        timbre_index = self.indexes.get('by_timbre', {})
+        timbre_index = self.indexes.get("by_timbre", {})
         return timbre_index.get(timbre.lower(), [])
     
     def songs_by_mood(self, mood: str) -> List[str]:
@@ -135,7 +135,7 @@ class KnowledgeBase:
         Returns:
             List of MBIDs for songs with that mood
         """
-        mood_index = self.indexes.get('by_mood', {})
+        mood_index = self.indexes.get("by_mood", {})
         return mood_index.get(mood.lower(), [])
     
     def songs_in_loudness_range(self, min_loudness: float, max_loudness: float) -> List[str]:
@@ -149,7 +149,7 @@ class KnowledgeBase:
         Returns:
             List of MBIDs for songs in the loudness range
         """
-        loudness_facts = self.facts.get('has_loudness', {})
+        loudness_facts = self.facts.get("has_loudness", {})
         return [
             mbid for mbid, loudness in loudness_facts.items()
             if loudness is not None and min_loudness <= loudness <= max_loudness
@@ -162,7 +162,7 @@ class KnowledgeBase:
         Returns:
             Set of all genre names
         """
-        genre_index = self.indexes.get('by_genre', {})
+        genre_index = self.indexes.get("by_genre", {})
         return set(genre_index.keys())
     
     def get_all_moods(self) -> Set[str]:
@@ -172,7 +172,7 @@ class KnowledgeBase:
         Returns:
             Set of all mood names
         """
-        mood_index = self.indexes.get('by_mood', {})
+        mood_index = self.indexes.get("by_mood", {})
         return set(mood_index.keys())
     
     def get_all_songs(self) -> List[str]:
@@ -210,8 +210,8 @@ class KnowledgeBase:
             MBID if exact match found, None otherwise
         """
         for mbid, song in self.songs.items():
-            song_track = song.get('track', '').strip().lower()
-            song_artist = song.get('artist', '').strip().lower()
+            song_track = song.get("track", "").strip().lower()
+            song_artist = song.get("artist", "").strip().lower()
             
             if song_track == track_lower:
                 if artist_lower is None:
@@ -232,12 +232,12 @@ class KnowledgeBase:
             MBID if partial match found, None otherwise
         """
         for mbid, song in self.songs.items():
-            song_track = song.get('track', '').strip().lower()
+            song_track = song.get("track", "").strip().lower()
             
             if track_lower in song_track or song_track in track_lower:
                 if artist_lower is None:
                     return mbid
-                song_artist = song.get('artist', '').strip().lower()
+                song_artist = song.get("artist", "").strip().lower()
                 if artist_lower in song_artist or song_artist in artist_lower:
                     return mbid
         return None
@@ -293,22 +293,26 @@ class KnowledgeBase:
         matches = []
         
         for mbid, song in self.songs.items():
-            song_track = song.get('track', '').strip().lower()
-            song_artist = song.get('artist', '').strip().lower()
+            song_track = song.get("track", "").strip().lower()
+            song_artist = song.get("artist", "").strip().lower()
             
             # Check if track matches
-            track_matches = (track_lower == song_track or 
-                           track_lower in song_track or 
-                           song_track in track_lower)
+            track_matches = (
+                track_lower == song_track
+                or track_lower in song_track
+                or song_track in track_lower
+            )
             
             if not track_matches:
                 continue
             
             # If artist specified, check if it matches too
             if artist_lower:
-                artist_matches = (artist_lower == song_artist or 
-                                artist_lower in song_artist or 
-                                song_artist in artist_lower)
+                artist_matches = (
+                    artist_lower == song_artist
+                    or artist_lower in song_artist
+                    or song_artist in artist_lower
+                )
                 if artist_matches:
                     matches.append(mbid)
             else:

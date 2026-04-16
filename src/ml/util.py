@@ -1,5 +1,4 @@
 from pathlib import Path
-from typing import Optional
 
 from preferences import PreferenceScorer
 
@@ -25,7 +24,7 @@ def build_scorer_with_optional_ml(
 
     try:
         artifact = load_scorer_artifact(str(path))
-    except Exception:
+    except (OSError, TypeError, ValueError, KeyError):
         # If the artifact is corrupt or incompatible, fall back safely.
         return base_scorer
 

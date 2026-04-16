@@ -351,9 +351,11 @@ def sample_next_batch(
 def sample_songs(
     kb: "KnowledgeBase",
     n: int = 15,
-    method: str = "stratified", 
-                scorer=None, profile: Optional[PreferenceProfile] = None, 
-                seed: Optional[int] = None) -> List[str]:
+    method: str = "stratified",
+    scorer=None,
+    profile: Optional[PreferenceProfile] = None,
+    seed: Optional[int] = None,
+) -> List[str]:
     """
     Sample songs from knowledge base using specified method.
     
@@ -373,15 +375,18 @@ def sample_songs(
     """
     if method == "random":
         return sample_random(kb, n, seed)
-    elif method == "stratified":
+    if method == "stratified":
         return sample_stratified(kb, n, seed)
-    elif method == "preference_based":
+    if method == "preference_based":
         if profile is None:
             raise ValueError("profile is required for preference_based sampling")
         return sample_by_preferences(kb, profile, n, seed)
-    elif method == "score_based":
+    if method == "score_based":
         if scorer is None:
             raise ValueError("scorer is required for score_based sampling")
         return sample_by_initial_score(kb, n, scorer, seed)
-    else:
-        raise ValueError(f"Invalid sampling method: {method}. Must be 'random', 'stratified', 'preference_based', or 'score_based'")
+
+    raise ValueError(
+        f"Invalid sampling method: {method}. Must be 'random', 'stratified', "
+        "'preference_based', or 'score_based'"
+    )

@@ -322,7 +322,18 @@ def _extend_session_mbids(session_mbids: List[str], results: List[SearchResult])
             session_mbids.append(r.mbid)
 
 
-def main() -> None:
+def _save_session_playlist_if_needed(args: argparse.Namespace, session_mbids: List[str]) -> None:
+    if not args.save_playlist or not session_mbids:
+        return
+    out_path = _save_recommendation_playlist(
+        session_mbids,
+        playlist_name="session_recommendations",
+        out_dir=Path(args.playlist_out_dir),
+    )
+    print(f"\nSaved recommendation playlist to: {out_path}")
+
+
+def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Query Module 3 with a user-provided song.")
     parser.add_argument("--kb", default="data/knowledge_base.json", help="Path to knowledge_base.json")
     parser.add_argument(
@@ -443,10 +454,10 @@ def main() -> None:
         default="data/playlists",
         help="Directory where recommendation playlists will be saved (default: data/playlists).",
     )
+    return parser
 
-    args = _apply_persona_overrides(parser.parse_args())
 
-    kb = KnowledgeBase(args.kb)
+def _build_scorer(kb: KnowledgeBase, args: argparse.Namespace) -> PreferenceScorer:
     profile = _load_profile(args.profile)
 
     rules = build_rules(profile)
@@ -460,6 +471,7 @@ def main() -> None:
         refinement_alpha=args.refinement_alpha,
     )
     base_scorer = PreferenceScorer(rules, weights)
+
     # Auto-ML: enable scorer/reranker when artifacts exist.
     if args.auto_ml:
         if Path(args.ml_scorer_artifact).exists():
@@ -468,14 +480,15 @@ def main() -> None:
             args.use_ml_reranker = True
 
     if args.use_ml_scorer:
-        scorer = build_scorer_with_optional_ml(
+        return build_scorer_with_optional_ml(
             base_scorer,
             artifact_path=args.ml_scorer_artifact,
             blend_weight=0.5,
         )
-    else:
-        scorer = base_scorer
+    return base_scorer
 
+
+def _print_runtime_status(args: argparse.Namespace) -> None:
     print("\nLoaded Module 2 preferences.", end="")
     if args.use_ml_scorer:
         print(" Module 4 learned scorer is ENABLED.", end="")
@@ -488,45 +501,53 @@ def main() -> None:
             "from this session are saved as one playlist.\n"
         )
 
-    session_mbids: List[str] = []
 
-    # Non-interactive paths (ideal for repeatable tests/demos).
-    if args.query_mbid:
-        resolved = _resolve_query_from_mbid(kb, args.query_mbid)
+def _run_query_mbid_mode(
+    kb: KnowledgeBase,
+    scorer: PreferenceScorer,
+    args: argparse.Namespace,
+    session_mbids: List[str],
+) -> bool:
+    if not args.query_mbid:
+        return False
+    resolved = _resolve_query_from_mbid(kb, args.query_mbid)
+    if not resolved:
+        return True
+    results = _print_results_for_query(kb, scorer, resolved, args)
+    _extend_session_mbids(session_mbids, results)
+    _save_session_playlist_if_needed(args, session_mbids)
+    return True
+
+
+def _run_seed_playlist_mode(
+    kb: KnowledgeBase,
+    scorer: PreferenceScorer,
+    args: argparse.Namespace,
+    session_mbids: List[str],
+) -> bool:
+    if not args.seed_from_playlist:
+        return False
+    seed_mbids = _load_playlist_seed_mbids(args.playlists, args.seed_count)
+    if not seed_mbids:
+        print(f"No seed MBIDs found in playlists file: {args.playlists}")
+        return True
+    print(f"Using {len(seed_mbids)} seed MBID(s) from {args.playlists}")
+    for mbid in seed_mbids:
+        resolved = _resolve_query_from_mbid(kb, mbid)
         if not resolved:
-            return
+            continue
         results = _print_results_for_query(kb, scorer, resolved, args)
         _extend_session_mbids(session_mbids, results)
-        if args.save_playlist and session_mbids:
-            out_path = _save_recommendation_playlist(
-                session_mbids,
-                playlist_name="session_recommendations",
-                out_dir=Path(args.playlist_out_dir),
-            )
-            print(f"\nSaved recommendation playlist to: {out_path}")
-        return
+    _save_session_playlist_if_needed(args, session_mbids)
+    return True
 
-    if args.seed_from_playlist:
-        seed_mbids = _load_playlist_seed_mbids(args.playlists, args.seed_count)
-        if not seed_mbids:
-            print(f"No seed MBIDs found in playlists file: {args.playlists}")
-            return
-        print(f"Using {len(seed_mbids)} seed MBID(s) from {args.playlists}")
-        for mbid in seed_mbids:
-            resolved = _resolve_query_from_mbid(kb, mbid)
-            if not resolved:
-                continue
-            results = _print_results_for_query(kb, scorer, resolved, args)
-            _extend_session_mbids(session_mbids, results)
-        if args.save_playlist and session_mbids:
-            out_path = _save_recommendation_playlist(
-                session_mbids,
-                playlist_name="session_recommendations",
-                out_dir=Path(args.playlist_out_dir),
-            )
-            print(f"\nSaved recommendation playlist to: {out_path}")
-        return
 
+def _run_interactive_mode(
+    kb: KnowledgeBase,
+    scorer: PreferenceScorer,
+    args: argparse.Namespace,
+    session_mbids: List[str],
+) -> None:
     while True:
         resolved = _resolve_query_to_mbid(kb)
         if not resolved:
@@ -536,13 +557,7 @@ def main() -> None:
         results = _print_results_for_query(kb, scorer, resolved, args)
         _extend_session_mbids(session_mbids, results)
         if args.once:
-            if args.save_playlist and session_mbids:
-                out_path = _save_recommendation_playlist(
-                    session_mbids,
-                    playlist_name="session_recommendations",
-                    out_dir=Path(args.playlist_out_dir),
-                )
-                print(f"\nSaved recommendation playlist to: {out_path}")
+            _save_session_playlist_if_needed(args, session_mbids)
             return
 
         # Ask whether to search another song; only specific y/n variants are accepted.
@@ -551,15 +566,30 @@ def main() -> None:
             if again in ("y", "yes"):
                 break
             if again in ("n", "no", ""):
-                if args.save_playlist and session_mbids:
-                    out_path = _save_recommendation_playlist(
-                        session_mbids,
-                        playlist_name="session_recommendations",
-                        out_dir=Path(args.playlist_out_dir),
-                    )
-                    print(f"\nSaved recommendation playlist to: {out_path}")
+                _save_session_playlist_if_needed(args, session_mbids)
                 return
             print("Invalid input (must be y/n). Please try again.")
+
+
+def main() -> None:
+    parser = _build_parser()
+
+    args = _apply_persona_overrides(parser.parse_args())
+
+    kb = KnowledgeBase(args.kb)
+    scorer = _build_scorer(kb, args)
+    _print_runtime_status(args)
+
+    session_mbids: List[str] = []
+
+    # Non-interactive paths (ideal for repeatable tests/demos).
+    if _run_query_mbid_mode(kb, scorer, args, session_mbids):
+        return
+
+    if _run_seed_playlist_mode(kb, scorer, args, session_mbids):
+        return
+
+    _run_interactive_mode(kb, scorer, args, session_mbids)
 
 
 if __name__ == "__main__":

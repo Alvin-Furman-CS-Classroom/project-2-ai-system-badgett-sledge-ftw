@@ -307,12 +307,10 @@ def interactive_playlist_picker(kb):
     return playlist_mbids
 
 
-def main() -> None:
-    kb = KnowledgeBase("data/knowledge_base.json")
-    playlist = interactive_playlist_picker(kb)
-    print(f"Final playlist size: {len(playlist)}")
-
-    # Recommended flow (Module 4): save playlist and update/merge user profile from it.
+def _persist_playlist_outputs(kb: KnowledgeBase, playlist: List[str]) -> None:
+    """
+    Save playlist artifacts and merge/update user profile from playlist features.
+    """
     playlist_path = save_playlist(playlist)
     print(f"Playlist saved to: {playlist_path}")
     user_playlists_path = upsert_user_playlists_file(playlist, name="user_playlist_v1")
@@ -323,6 +321,15 @@ def main() -> None:
     merged_profile = merge_profile(existing_profile or {}, derived)
     profile_path = save_user_profile(merged_profile)
     print(f"Updated profile saved to: {profile_path}")
+
+
+def main() -> None:
+    kb = KnowledgeBase("data/knowledge_base.json")
+    playlist = interactive_playlist_picker(kb)
+    print(f"Final playlist size: {len(playlist)}")
+
+    # Recommended flow (Module 4): save playlist and update/merge user profile from it.
+    _persist_playlist_outputs(kb, playlist)
 
 
 if __name__ == "__main__":
