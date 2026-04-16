@@ -173,6 +173,56 @@ Module 4 adds a **supervised-learning layer** on top of the rule-based preferenc
 
 This design keeps the system **interpretable** (features and rules are KB-based) while allowing playlists + ratings to statistically adjust which features matter most, and it integrates cleanly with the existing search pipeline and CLIs.
 
+## Module 5 Design and Behavior
+
+Module 5 adds an **optional post-retrieval organization layer** that improves
+recommendation variety without changing the underlying retrieval/scoring APIs.
+
+- **Inputs (what Module 5 receives):**
+  - A ranked candidate list of `SearchResult` objects from Module 3 (and
+    optionally reranked by Module 4).
+  - KB facts for each candidate MBID (genre, mood, danceable,
+    voice/instrumental, timbre, loudness).
+
+- **Feature representation (what is clustered):**
+  - Module 5 builds deterministic binary feature vectors from KB facts:
+    - multi-hot: `genre:*`, `mood:*`
+    - one-hot/binary: `danceable:*`, `vi:*`, `timbre:*`
+    - one-hot bucket: `loudness_bucket:quiet|medium|loud`
+  - Feature vocabulary is derived from the current candidate pool and sorted to
+    keep dimensional ordering deterministic.
+
+- **K-means behavior (how clusters are formed):**
+  - Uses deterministic K-means with config (`k`, `seed`, `max_iters`).
+  - Tie-breaks are stable (lower cluster index on equal distances).
+  - Edge-case handling:
+    - empty pool -> empty output
+    - `k <= 1` -> single cluster
+    - `k > n` -> cap `k` to number of points
+
+- **Diversification policy (how final top-K is served):**
+  - Rank songs within each cluster by existing `combined_score` (desc, MBID tie-break).
+  - Order clusters by their strongest member score.
+  - Produce final results via round-robin across clusters to avoid one cluster
+    dominating the output.
+
+- **Output contract (what callers receive):**
+  - `ClusteredRecommendationSet` with:
+    - `clusters`: per-cluster ordered members
+    - `diversified`: final served ordering (length <= requested `top_k`)
+    - `metadata`: reproducibility fields (`k`, `seed`, `max_iters`, pool size, vocab size)
+
+- **CLI integration (how to use it):**
+  - Enable with `--use-clustering`.
+  - Tune behavior with:
+    - `--cluster-k`
+    - `--cluster-pool-size`
+    - `--cluster-seed`
+    - `--cluster-max-iters`
+
+This design keeps Module 5 **compatible and optional**: when clustering is
+disabled, the system returns the baseline ranked list from Modules 3/4.
+
 ## Testing
 
 **Unit Tests** (`unit_tests/`): Mirror the structure of `src/`. Each module should have corresponding unit tests.
