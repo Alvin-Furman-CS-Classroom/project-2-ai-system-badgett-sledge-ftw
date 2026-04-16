@@ -1,0 +1,358 @@
+{
+  "name": "persona_06_mainstream_pop diversified top 50",
+  "source": "presentation/figures/module5/persona_06_mainstream_pop_union_query_pool_mbids.json",
+  "mbids": [
+    "0358e4ab-8530-4714-a9b6-6d9477103fa9",
+    "954c6f5a-e2e2-4e6f-a1ca-be352966fb63",
+    "0c2ccac1-2a7d-4fb8-8b23-6019a8a116db",
+    "9b8a074d-0556-488a-894e-5fa2a26a11d2",
+    "046f641f-636b-49d2-821c-3294c635023c",
+    "6f398b5c-d94a-4f7a-b216-0e9250e8adf4",
+    "50f8d5d0-d870-419e-8901-fa306d4868af",
+    "9b66a19a-dd13-444c-adda-ec54a9f63a94",
+    "3ea499d9-47e8-4475-b890-314ffb7bc9c8",
+    "045a66e5-77aa-4ae7-9567-d6d7e222c951",
+    "5972c88b-6557-4f2b-9c1f-470a9df96377",
+    "0c8f7acd-e514-4cb3-bb4b-f629e01e197b",
+    "0cb991ae-0538-43dc-81e1-9d8bda73a9c5",
+    "0c3c704b-0f8c-46c1-8c54-8b0b8d471049",
+    "61c8d382-e4ef-4284-96ba-68e947135529",
+    "0c188696-4fa2-4a46-84ea-575c80f8ad3d",
+    "3e9c57e7-6bbc-4498-be9c-269cafada9db",
+    "3ba898ea-35ee-47dd-b7ba-b2bdf12270b5",
+    "3ee5f377-6645-4c09-87df-4480524e8fef",
+    "0cf59b15-ea57-4b7f-b843-95afd1046b43",
+    "6f7bc4cf-e089-421a-ada9-9ef1f42799ac",
+    "501af452-933f-4cbf-9507-6c7972c82add",
+    "500c5a15-b3ac-4244-b20b-27d1eadccae3",
+    "9e0ffeba-003f-4d24-93c2-77ba125a831b",
+    "614ead87-71b3-4a07-addd-0ba963b1e370",
+    "503be599-4205-4ef3-bb8b-d265ea7276bb",
+    "6fd73eae-d894-4847-9e9e-30c3c4d9a31a",
+    "59668347-39e7-4362-a535-73df8c3dac1b",
+    "5779377f-5802-4bb5-804b-84796bac7ba0",
+    "3bd4742d-1816-4b90-b2cc-8cc4dd2518aa",
+    "0323c820-7976-4fb6-a52d-ce334e37dfd3",
+    "5725ba09-9514-416f-afbd-1331b768e133",
+    "925e312f-4452-46d9-b989-d6d1e32d37ae",
+    "61e503ad-dff7-42f2-9ddf-994fe0ebcb6c",
+    "0437e9ae-0966-476e-9c73-b2082e04049a",
+    "92666e77-b7b3-436f-be43-273837e66d0c",
+    "959f62c0-815a-4e9a-bfa7-3b5e59cd62aa",
+    "66b1dd15-bf49-482f-b787-f10576e675ec",
+    "92de0f28-3c1b-428d-b3b0-72fefc682107",
+    "0c2756d0-1df2-4f02-a9c1-bdc4862497a7",
+    "57c7718a-23e5-4301-9692-12ce3e91e850",
+    "9b85f53f-cfc6-448f-a549-293ba7ab1eaf",
+    "0c8538ec-79f7-4b52-882c-cf13f91248e2",
+    "66ebc2ce-a4e6-4f37-b40f-759cd8bffa9b",
+    "956f48ce-0e96-4746-8317-6bc1bce7c05d",
+    "0c6d1073-fe1a-4784-a3c7-23e5289427dc",
+    "59fdc91b-91a5-4dde-a059-c989e5b629d1",
+    "92167fcc-0d51-44f3-82d2-1520cc66f82a",
+    "506ea65b-0b76-428a-9376-6cdef347aafb",
+    "6f578c4e-9bc2-4b2c-95ab-0effb39c23e3"
+  ],
+  "tracks": [
+    {
+      "mbid": "0358e4ab-8530-4714-a9b6-6d9477103fa9",
+      "artist": "Louisa John-Krol",
+      "track": "I Am the Djinn",
+      "label": "Louisa John-Krol \u2014 I Am the Djinn"
+    },
+    {
+      "mbid": "954c6f5a-e2e2-4e6f-a1ca-be352966fb63",
+      "artist": "Reba McEntire",
+      "track": "We're So Good Together (Album Version)",
+      "label": "Reba McEntire \u2014 We're So Good Together (Album Version)"
+    },
+    {
+      "mbid": "0c2ccac1-2a7d-4fb8-8b23-6019a8a116db",
+      "artist": "Francis Cabrel",
+      "track": "On Ne Va Nulle Part",
+      "label": "Francis Cabrel \u2014 On Ne Va Nulle Part"
+    },
+    {
+      "mbid": "9b8a074d-0556-488a-894e-5fa2a26a11d2",
+      "artist": "Stratovarius",
+      "track": "Luminous",
+      "label": "Stratovarius \u2014 Luminous"
+    },
+    {
+      "mbid": "046f641f-636b-49d2-821c-3294c635023c",
+      "artist": "The Monkees",
+      "track": "Papa Gene's Blues",
+      "label": "The Monkees \u2014 Papa Gene's Blues"
+    },
+    {
+      "mbid": "6f398b5c-d94a-4f7a-b216-0e9250e8adf4",
+      "artist": "Shakin' Pyramids",
+      "track": "You Can Bet",
+      "label": "Shakin' Pyramids \u2014 You Can Bet"
+    },
+    {
+      "mbid": "50f8d5d0-d870-419e-8901-fa306d4868af",
+      "artist": "Daby Tour\u00e9",
+      "track": "Iris",
+      "label": "Daby Tour\u00e9 \u2014 Iris"
+    },
+    {
+      "mbid": "9b66a19a-dd13-444c-adda-ec54a9f63a94",
+      "artist": "Uriah Heep",
+      "track": "Woman of the World",
+      "label": "Uriah Heep \u2014 Woman of the World"
+    },
+    {
+      "mbid": "3ea499d9-47e8-4475-b890-314ffb7bc9c8",
+      "artist": "Rose Chronicles",
+      "track": "Thrown to the Sand",
+      "label": "Rose Chronicles \u2014 Thrown to the Sand"
+    },
+    {
+      "mbid": "045a66e5-77aa-4ae7-9567-d6d7e222c951",
+      "artist": "Ween",
+      "track": "She's Your Baby",
+      "label": "Ween \u2014 She's Your Baby"
+    },
+    {
+      "mbid": "5972c88b-6557-4f2b-9c1f-470a9df96377",
+      "artist": "Devil Doll",
+      "track": "[untitled]",
+      "label": "Devil Doll \u2014 [untitled]"
+    },
+    {
+      "mbid": "0c8f7acd-e514-4cb3-bb4b-f629e01e197b",
+      "artist": "Robert Palmer",
+      "track": "Every Kinda People",
+      "label": "Robert Palmer \u2014 Every Kinda People"
+    },
+    {
+      "mbid": "0cb991ae-0538-43dc-81e1-9d8bda73a9c5",
+      "artist": "Weltschmertz",
+      "track": "Astronaut",
+      "label": "Weltschmertz \u2014 Astronaut"
+    },
+    {
+      "mbid": "0c3c704b-0f8c-46c1-8c54-8b0b8d471049",
+      "artist": "Electric Light Orchestra",
+      "track": "Secret Lives",
+      "label": "Electric Light Orchestra \u2014 Secret Lives"
+    },
+    {
+      "mbid": "61c8d382-e4ef-4284-96ba-68e947135529",
+      "artist": "Nick Cave & The Bad Seeds",
+      "track": "Brompton Oratory",
+      "label": "Nick Cave & The Bad Seeds \u2014 Brompton Oratory"
+    },
+    {
+      "mbid": "0c188696-4fa2-4a46-84ea-575c80f8ad3d",
+      "artist": "Charlotte Martin",
+      "track": "Where the Soul Never Dies",
+      "label": "Charlotte Martin \u2014 Where the Soul Never Dies"
+    },
+    {
+      "mbid": "3e9c57e7-6bbc-4498-be9c-269cafada9db",
+      "artist": "Ray Campi",
+      "track": "Don't Let the Bad Times Get You Down",
+      "label": "Ray Campi \u2014 Don't Let the Bad Times Get You Down"
+    },
+    {
+      "mbid": "3ba898ea-35ee-47dd-b7ba-b2bdf12270b5",
+      "artist": "John Sebastian",
+      "track": "Welcome Back",
+      "label": "John Sebastian \u2014 Welcome Back"
+    },
+    {
+      "mbid": "3ee5f377-6645-4c09-87df-4480524e8fef",
+      "artist": "Sting",
+      "track": "Stolen Car",
+      "label": "Sting \u2014 Stolen Car"
+    },
+    {
+      "mbid": "0cf59b15-ea57-4b7f-b843-95afd1046b43",
+      "artist": "Taylor Dayne",
+      "track": "Prove Your Love",
+      "label": "Taylor Dayne \u2014 Prove Your Love"
+    },
+    {
+      "mbid": "6f7bc4cf-e089-421a-ada9-9ef1f42799ac",
+      "artist": "R.E.M.",
+      "track": "Daysleeper",
+      "label": "R.E.M. \u2014 Daysleeper"
+    },
+    {
+      "mbid": "501af452-933f-4cbf-9507-6c7972c82add",
+      "artist": "Fattburger",
+      "track": "You're the First, the Last, My Everything",
+      "label": "Fattburger \u2014 You're the First, the Last, My Everything"
+    },
+    {
+      "mbid": "500c5a15-b3ac-4244-b20b-27d1eadccae3",
+      "artist": "Fumie Kumatani",
+      "track": "SPEED HIGHWAY: ACT2 - Skyscraper Downhill \"GOIN' DOWN!? - Cash Cash vs. Jun Senoue RMX\"",
+      "label": "Fumie Kumatani \u2014 SPEED HIGHWAY: ACT2 - Skyscraper Downhill \"GOIN' DOWN!? - Cash Cash vs. Jun Senoue RMX\""
+    },
+    {
+      "mbid": "9e0ffeba-003f-4d24-93c2-77ba125a831b",
+      "artist": "Sven Panne",
+      "track": "Alles ist viel sch\u00f6ner",
+      "label": "Sven Panne \u2014 Alles ist viel sch\u00f6ner"
+    },
+    {
+      "mbid": "614ead87-71b3-4a07-addd-0ba963b1e370",
+      "artist": "Patricia Kaas",
+      "track": "Rien Ne S'arr\u00eate (In\u00e9dit)",
+      "label": "Patricia Kaas \u2014 Rien Ne S'arr\u00eate (In\u00e9dit)"
+    },
+    {
+      "mbid": "503be599-4205-4ef3-bb8b-d265ea7276bb",
+      "artist": "Antenna",
+      "track": "Divine",
+      "label": "Antenna \u2014 Divine"
+    },
+    {
+      "mbid": "6fd73eae-d894-4847-9e9e-30c3c4d9a31a",
+      "artist": "The Blackeyed Susans",
+      "track": "Four Walls",
+      "label": "The Blackeyed Susans \u2014 Four Walls"
+    },
+    {
+      "mbid": "59668347-39e7-4362-a535-73df8c3dac1b",
+      "artist": "\u690d\u677e\u4f38\u592b",
+      "track": "Troia",
+      "label": "\u690d\u677e\u4f38\u592b \u2014 Troia"
+    },
+    {
+      "mbid": "5779377f-5802-4bb5-804b-84796bac7ba0",
+      "artist": "Japanische Kampfh\u00f6rspiele",
+      "track": "Momo",
+      "label": "Japanische Kampfh\u00f6rspiele \u2014 Momo"
+    },
+    {
+      "mbid": "3bd4742d-1816-4b90-b2cc-8cc4dd2518aa",
+      "artist": "Peter Frampton",
+      "track": "Lines on My Face",
+      "label": "Peter Frampton \u2014 Lines on My Face"
+    },
+    {
+      "mbid": "0323c820-7976-4fb6-a52d-ce334e37dfd3",
+      "artist": "Roger Whittaker",
+      "track": "Mamy Blue",
+      "label": "Roger Whittaker \u2014 Mamy Blue"
+    },
+    {
+      "mbid": "5725ba09-9514-416f-afbd-1331b768e133",
+      "artist": "The Cult",
+      "track": "Revolution",
+      "label": "The Cult \u2014 Revolution"
+    },
+    {
+      "mbid": "925e312f-4452-46d9-b989-d6d1e32d37ae",
+      "artist": "Ben Weaver",
+      "track": "Broken by 2",
+      "label": "Ben Weaver \u2014 Broken by 2"
+    },
+    {
+      "mbid": "61e503ad-dff7-42f2-9ddf-994fe0ebcb6c",
+      "artist": "L\u00fanasa",
+      "track": "Cregg's Pipes: Cregg's Pipes / Uist Reel / John Doherty's",
+      "label": "L\u00fanasa \u2014 Cregg's Pipes: Cregg's Pipes / Uist Reel / John Doherty's"
+    },
+    {
+      "mbid": "0437e9ae-0966-476e-9c73-b2082e04049a",
+      "artist": "The Easybeats",
+      "track": "Pretty Girl",
+      "label": "The Easybeats \u2014 Pretty Girl"
+    },
+    {
+      "mbid": "92666e77-b7b3-436f-be43-273837e66d0c",
+      "artist": "The Poozies",
+      "track": "Beinn a' Cheathaich",
+      "label": "The Poozies \u2014 Beinn a' Cheathaich"
+    },
+    {
+      "mbid": "959f62c0-815a-4e9a-bfa7-3b5e59cd62aa",
+      "artist": "Darkwood",
+      "track": "Schattenmal",
+      "label": "Darkwood \u2014 Schattenmal"
+    },
+    {
+      "mbid": "66b1dd15-bf49-482f-b787-f10576e675ec",
+      "artist": "Sammy Hagar",
+      "track": "Surrender",
+      "label": "Sammy Hagar \u2014 Surrender"
+    },
+    {
+      "mbid": "92de0f28-3c1b-428d-b3b0-72fefc682107",
+      "artist": "Glaskas",
+      "track": "Goeiemore",
+      "label": "Glaskas \u2014 Goeiemore"
+    },
+    {
+      "mbid": "0c2756d0-1df2-4f02-a9c1-bdc4862497a7",
+      "artist": "Roxette",
+      "track": "Queen of Rain",
+      "label": "Roxette \u2014 Queen of Rain"
+    },
+    {
+      "mbid": "57c7718a-23e5-4301-9692-12ce3e91e850",
+      "artist": "Queen",
+      "track": "Modern Times Rock 'n' Roll",
+      "label": "Queen \u2014 Modern Times Rock 'n' Roll"
+    },
+    {
+      "mbid": "9b85f53f-cfc6-448f-a549-293ba7ab1eaf",
+      "artist": "Roger McGuinn",
+      "track": "Bag Full of Money",
+      "label": "Roger McGuinn \u2014 Bag Full of Money"
+    },
+    {
+      "mbid": "0c8538ec-79f7-4b52-882c-cf13f91248e2",
+      "artist": "Homeboy Sandman",
+      "track": "Soap",
+      "label": "Homeboy Sandman \u2014 Soap"
+    },
+    {
+      "mbid": "66ebc2ce-a4e6-4f37-b40f-759cd8bffa9b",
+      "artist": "The Pogues",
+      "track": "Rain Street",
+      "label": "The Pogues \u2014 Rain Street"
+    },
+    {
+      "mbid": "956f48ce-0e96-4746-8317-6bc1bce7c05d",
+      "artist": "Book of Love",
+      "track": "Sea of Tranquility",
+      "label": "Book of Love \u2014 Sea of Tranquility"
+    },
+    {
+      "mbid": "0c6d1073-fe1a-4784-a3c7-23e5289427dc",
+      "artist": "Four Hours Sleep feat. Edwyn Collins",
+      "track": "Don't You Ever Listen to Me",
+      "label": "Four Hours Sleep feat. Edwyn Collins \u2014 Don't You Ever Listen to Me"
+    },
+    {
+      "mbid": "59fdc91b-91a5-4dde-a059-c989e5b629d1",
+      "artist": "The Doors",
+      "track": "The Crystal Ship",
+      "label": "The Doors \u2014 The Crystal Ship"
+    },
+    {
+      "mbid": "92167fcc-0d51-44f3-82d2-1520cc66f82a",
+      "artist": "Laura Veirs",
+      "track": "Shape Shifter",
+      "label": "Laura Veirs \u2014 Shape Shifter"
+    },
+    {
+      "mbid": "506ea65b-0b76-428a-9376-6cdef347aafb",
+      "artist": "Marc-Uwe Kling & Die Gesellschaft",
+      "track": "Deutsche Touristen",
+      "label": "Marc-Uwe Kling & Die Gesellschaft \u2014 Deutsche Touristen"
+    },
+    {
+      "mbid": "6f578c4e-9bc2-4b2c-95ab-0effb39c23e3",
+      "artist": "Wes King",
+      "track": "Life Is Precious",
+      "label": "Wes King \u2014 Life Is Precious"
+    }
+  ]
+}

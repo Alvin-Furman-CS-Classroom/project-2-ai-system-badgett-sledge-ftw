@@ -1,0 +1,358 @@
+{
+  "name": "persona_04_trap_maximalist diversified top 50",
+  "source": "presentation/figures/module5/persona_04_trap_maximalist_union_query_pool_mbids.json",
+  "mbids": [
+    "0c239aaa-c40e-42f5-9f0e-457a0e88121c",
+    "9e5ef11d-f696-4a46-b5fe-ce92b7548a5b",
+    "573aed31-f6db-4f77-ab97-7dacd6e7102c",
+    "0c807284-3be6-4afa-a32c-151f04727c9c",
+    "0dc5e72a-6856-4627-a43a-3b5e6db17a2f",
+    "503fbfc7-99b6-4bb8-94c5-a2b3b6eadc77",
+    "0c424600-fe85-4a5e-af57-e28957dbd84f",
+    "9e5fd463-a460-4422-9f6d-920901d74bc9",
+    "6604d480-d606-40ae-b987-57fbb28b4cfc",
+    "9e74875e-45b9-432f-8f2c-57136ec0af29",
+    "041a7d4f-5c6e-4bd2-802d-139af53d2325",
+    "9296aa13-3c31-4d6b-ab03-578ebeb22607",
+    "614f8a78-85ac-4c00-830c-715914c82513",
+    "0cd3a2f5-d067-4e60-9ac3-6c79c4392b2d",
+    "954f8bb3-415c-4dfe-92e3-e168f0bb4c2c",
+    "66a089e3-c51f-43d2-95ad-daf49ffb1ec8",
+    "04af4fcb-087a-485b-8d37-2cfb8e1da0b2",
+    "95a8036e-053b-43bb-a399-23adc1ea6127",
+    "6f530d9e-b21a-437f-9ddc-741ac729805d",
+    "3e826001-f74d-4d3c-8f37-8d80f567b379",
+    "50f997c1-82ce-42c0-be0a-cecbf3e7e9b9",
+    "3e3357f4-5095-48c4-8399-01610d370028",
+    "0c0e975e-056a-4bfd-bff2-2f8d2a9deba7",
+    "509dffd6-2463-4d21-9601-211eb06a5cb3",
+    "92db0dab-25c9-441e-9921-b9c6cab83159",
+    "66dae603-a8fc-478d-8fd5-550c78d962fb",
+    "030963fb-2d38-4604-a292-4ce180d8cce2",
+    "509d6286-e49e-455a-b98d-8d3c012fdd53",
+    "594b68f5-356c-4cae-a32e-4564a512c58f",
+    "61872d5a-ab9b-47bf-a6fd-246a6a15bbf9",
+    "663b1641-c099-4cd9-9c18-a98705309211",
+    "92e9267f-06f0-4a5b-a232-2c32ede5a242",
+    "04f04c78-d488-4ed2-a6b7-ce2d910416c3",
+    "66576abf-2e72-4d4f-8ef2-7577cd2434b7",
+    "61b46e97-063e-456e-9ea3-40c19c9c2d9c",
+    "9240d518-a78d-412b-922f-b2db811602d2",
+    "506759a5-31f4-48ed-9b47-65a29e312a44",
+    "959e8d2e-29c5-4656-b800-2d21a03cb922",
+    "0d9163a9-8602-4b32-9890-b4bce0ec79c7",
+    "683249e2-1cb1-42ef-aa09-410a4ffff76a",
+    "662bb6ab-ebd3-40c1-ac3b-29be577c21a9",
+    "046d5f61-8eac-4752-be06-d6096716992a",
+    "508dad05-30e5-4ad5-9128-6c523bbde229",
+    "95d51344-9692-4580-974f-2a5dcf263c6c",
+    "3e671687-0d39-4809-b3d6-72f205f14863",
+    "6fb9c834-6974-494c-aeb5-57e9ef815077",
+    "6fd84c2c-47b1-4c2a-9a9c-351634328a78",
+    "59703555-a20d-44b5-b848-8e82408ddd8b",
+    "685dd992-71f6-463b-9d05-5b2519089052",
+    "9bec0757-ffa5-43ca-ab87-5bf8277993a3"
+  ],
+  "tracks": [
+    {
+      "mbid": "0c239aaa-c40e-42f5-9f0e-457a0e88121c",
+      "artist": "Really Doe feat. Kanye West",
+      "track": "Magnetic Power",
+      "label": "Really Doe feat. Kanye West \u2014 Magnetic Power"
+    },
+    {
+      "mbid": "9e5ef11d-f696-4a46-b5fe-ce92b7548a5b",
+      "artist": "Radial",
+      "track": "Smoking Kills (Rumenige & Loktibrada remix)",
+      "label": "Radial \u2014 Smoking Kills (Rumenige & Loktibrada remix)"
+    },
+    {
+      "mbid": "573aed31-f6db-4f77-ab97-7dacd6e7102c",
+      "artist": "DJ KipRaq & DJ Kibo",
+      "track": "Track 42",
+      "label": "DJ KipRaq & DJ Kibo \u2014 Track 42"
+    },
+    {
+      "mbid": "0c807284-3be6-4afa-a32c-151f04727c9c",
+      "artist": "Showaddywaddy",
+      "track": "Rock 'n' Roll Man",
+      "label": "Showaddywaddy \u2014 Rock 'n' Roll Man"
+    },
+    {
+      "mbid": "0dc5e72a-6856-4627-a43a-3b5e6db17a2f",
+      "artist": "SND",
+      "track": "05:36:58",
+      "label": "SND \u2014 05:36:58"
+    },
+    {
+      "mbid": "503fbfc7-99b6-4bb8-94c5-a2b3b6eadc77",
+      "artist": "Boogie Down Productions",
+      "track": "Super-Hoe",
+      "label": "Boogie Down Productions \u2014 Super-Hoe"
+    },
+    {
+      "mbid": "0c424600-fe85-4a5e-af57-e28957dbd84f",
+      "artist": "Morcheeba feat. Big Daddy Kane",
+      "track": "What's You Name",
+      "label": "Morcheeba feat. Big Daddy Kane \u2014 What's You Name"
+    },
+    {
+      "mbid": "9e5fd463-a460-4422-9f6d-920901d74bc9",
+      "artist": "DJ Food",
+      "track": "Funkativity",
+      "label": "DJ Food \u2014 Funkativity"
+    },
+    {
+      "mbid": "6604d480-d606-40ae-b987-57fbb28b4cfc",
+      "artist": "Mastodon",
+      "track": "The Czar: I. Usurper - II. Escape - III. Martyr - IV. Spiral",
+      "label": "Mastodon \u2014 The Czar: I. Usurper - II. Escape - III. Martyr - IV. Spiral"
+    },
+    {
+      "mbid": "9e74875e-45b9-432f-8f2c-57136ec0af29",
+      "artist": "Ralf Bendix",
+      "track": "Babysitter-Boogie",
+      "label": "Ralf Bendix \u2014 Babysitter-Boogie"
+    },
+    {
+      "mbid": "041a7d4f-5c6e-4bd2-802d-139af53d2325",
+      "artist": "Megadeth",
+      "track": "Time: The Beginning",
+      "label": "Megadeth \u2014 Time: The Beginning"
+    },
+    {
+      "mbid": "9296aa13-3c31-4d6b-ab03-578ebeb22607",
+      "artist": "Yello",
+      "track": "Ocean Club",
+      "label": "Yello \u2014 Ocean Club"
+    },
+    {
+      "mbid": "614f8a78-85ac-4c00-830c-715914c82513",
+      "artist": "DISL Automatic",
+      "track": "Retribution",
+      "label": "DISL Automatic \u2014 Retribution"
+    },
+    {
+      "mbid": "0cd3a2f5-d067-4e60-9ac3-6c79c4392b2d",
+      "artist": "The Roots",
+      "track": "Ital (The Universal Side)",
+      "label": "The Roots \u2014 Ital (The Universal Side)"
+    },
+    {
+      "mbid": "954f8bb3-415c-4dfe-92e3-e168f0bb4c2c",
+      "artist": "Spaceseed featuring Nik Turner",
+      "track": "Nessie",
+      "label": "Spaceseed featuring Nik Turner \u2014 Nessie"
+    },
+    {
+      "mbid": "66a089e3-c51f-43d2-95ad-daf49ffb1ec8",
+      "artist": "Johnny Kidd & The Pirates",
+      "track": "Big Blon' Baby",
+      "label": "Johnny Kidd & The Pirates \u2014 Big Blon' Baby"
+    },
+    {
+      "mbid": "04af4fcb-087a-485b-8d37-2cfb8e1da0b2",
+      "artist": "Plan 9",
+      "track": "Ship of Fools",
+      "label": "Plan 9 \u2014 Ship of Fools"
+    },
+    {
+      "mbid": "95a8036e-053b-43bb-a399-23adc1ea6127",
+      "artist": "Spike",
+      "track": "It Takes Two (Deeper Love)",
+      "label": "Spike \u2014 It Takes Two (Deeper Love)"
+    },
+    {
+      "mbid": "6f530d9e-b21a-437f-9ddc-741ac729805d",
+      "artist": "Flawless Real Talk",
+      "track": "Bar Break",
+      "label": "Flawless Real Talk \u2014 Bar Break"
+    },
+    {
+      "mbid": "3e826001-f74d-4d3c-8f37-8d80f567b379",
+      "artist": "Orion feat. Ego",
+      "track": "Kam v\u00edtr tam pl\u00e1\u0161\u0165",
+      "label": "Orion feat. Ego \u2014 Kam v\u00edtr tam pl\u00e1\u0161\u0165"
+    },
+    {
+      "mbid": "50f997c1-82ce-42c0-be0a-cecbf3e7e9b9",
+      "artist": "Motorbass",
+      "track": "Les ondes",
+      "label": "Motorbass \u2014 Les ondes"
+    },
+    {
+      "mbid": "3e3357f4-5095-48c4-8399-01610d370028",
+      "artist": "Zutons",
+      "track": "You Will You Won't",
+      "label": "Zutons \u2014 You Will You Won't"
+    },
+    {
+      "mbid": "0c0e975e-056a-4bfd-bff2-2f8d2a9deba7",
+      "artist": "Mister Metaphor",
+      "track": "Change Up",
+      "label": "Mister Metaphor \u2014 Change Up"
+    },
+    {
+      "mbid": "509dffd6-2463-4d21-9601-211eb06a5cb3",
+      "artist": "Dale Watson",
+      "track": "Truckstop in la Grange",
+      "label": "Dale Watson \u2014 Truckstop in la Grange"
+    },
+    {
+      "mbid": "92db0dab-25c9-441e-9921-b9c6cab83159",
+      "artist": "Oddisee",
+      "track": "Butcher\u2019s Back",
+      "label": "Oddisee \u2014 Butcher\u2019s Back"
+    },
+    {
+      "mbid": "66dae603-a8fc-478d-8fd5-550c78d962fb",
+      "artist": "L\u2019Arm\u00e9e des 12",
+      "track": "Delirium 84",
+      "label": "L\u2019Arm\u00e9e des 12 \u2014 Delirium 84"
+    },
+    {
+      "mbid": "030963fb-2d38-4604-a292-4ce180d8cce2",
+      "artist": "Victoria R",
+      "track": "Cosmos",
+      "label": "Victoria R \u2014 Cosmos"
+    },
+    {
+      "mbid": "509d6286-e49e-455a-b98d-8d3c012fdd53",
+      "artist": "Blue Dots",
+      "track": "Viva Las Vegas",
+      "label": "Blue Dots \u2014 Viva Las Vegas"
+    },
+    {
+      "mbid": "594b68f5-356c-4cae-a32e-4564a512c58f",
+      "artist": "Queens of the Stone Age",
+      "track": "Tangled Up in Plaid",
+      "label": "Queens of the Stone Age \u2014 Tangled Up in Plaid"
+    },
+    {
+      "mbid": "61872d5a-ab9b-47bf-a6fd-246a6a15bbf9",
+      "artist": "Michel Sardou (Congr\u00e8s 81) 04",
+      "track": "Ils Ont le P\u00e9trole, Mais C'est Tout",
+      "label": "Michel Sardou (Congr\u00e8s 81) 04 \u2014 Ils Ont le P\u00e9trole, Mais C'est Tout"
+    },
+    {
+      "mbid": "663b1641-c099-4cd9-9c18-a98705309211",
+      "artist": "Hayden",
+      "track": "Woody",
+      "label": "Hayden \u2014 Woody"
+    },
+    {
+      "mbid": "92e9267f-06f0-4a5b-a232-2c32ede5a242",
+      "artist": "Nucleus Roots",
+      "track": "Dub Rule",
+      "label": "Nucleus Roots \u2014 Dub Rule"
+    },
+    {
+      "mbid": "04f04c78-d488-4ed2-a6b7-ce2d910416c3",
+      "artist": "Colourbox",
+      "track": "Baby I Love You So",
+      "label": "Colourbox \u2014 Baby I Love You So"
+    },
+    {
+      "mbid": "66576abf-2e72-4d4f-8ef2-7577cd2434b7",
+      "artist": "Jam",
+      "track": "Town Called Malice",
+      "label": "Jam \u2014 Town Called Malice"
+    },
+    {
+      "mbid": "61b46e97-063e-456e-9ea3-40c19c9c2d9c",
+      "artist": "Johnny Dankworth & His Orchestra",
+      "track": "Experiments With Mice",
+      "label": "Johnny Dankworth & His Orchestra \u2014 Experiments With Mice"
+    },
+    {
+      "mbid": "9240d518-a78d-412b-922f-b2db811602d2",
+      "artist": "Lou Reed",
+      "track": "Modern Dance",
+      "label": "Lou Reed \u2014 Modern Dance"
+    },
+    {
+      "mbid": "506759a5-31f4-48ed-9b47-65a29e312a44",
+      "artist": "\u041d\u043e\u0447\u043d\u044b\u0435 \u0441\u043d\u0430\u0439\u043f\u0435\u0440\u044b",
+      "track": "\u0415\u0432\u0440\u0435\u0439\u0441\u043a\u0430\u044f",
+      "label": "\u041d\u043e\u0447\u043d\u044b\u0435 \u0441\u043d\u0430\u0439\u043f\u0435\u0440\u044b \u2014 \u0415\u0432\u0440\u0435\u0439\u0441\u043a\u0430\u044f"
+    },
+    {
+      "mbid": "959e8d2e-29c5-4656-b800-2d21a03cb922",
+      "artist": "Pusha T Feat Chris Brown",
+      "track": "Sweet Serenade",
+      "label": "Pusha T Feat Chris Brown \u2014 Sweet Serenade"
+    },
+    {
+      "mbid": "0d9163a9-8602-4b32-9890-b4bce0ec79c7",
+      "artist": "Public Enemy",
+      "track": "Superman's Back in the Building",
+      "label": "Public Enemy \u2014 Superman's Back in the Building"
+    },
+    {
+      "mbid": "683249e2-1cb1-42ef-aa09-410a4ffff76a",
+      "artist": "Rip Carson",
+      "track": "Nobody's Woman",
+      "label": "Rip Carson \u2014 Nobody's Woman"
+    },
+    {
+      "mbid": "662bb6ab-ebd3-40c1-ac3b-29be577c21a9",
+      "artist": "Queen",
+      "track": "Don't Stop Me Now",
+      "label": "Queen \u2014 Don't Stop Me Now"
+    },
+    {
+      "mbid": "046d5f61-8eac-4752-be06-d6096716992a",
+      "artist": "Leland Martin",
+      "track": "Hand-Me-Downs",
+      "label": "Leland Martin \u2014 Hand-Me-Downs"
+    },
+    {
+      "mbid": "508dad05-30e5-4ad5-9128-6c523bbde229",
+      "artist": "Z\u2010Trip & DJ Radar",
+      "track": "[untitled]",
+      "label": "Z\u2010Trip & DJ Radar \u2014 [untitled]"
+    },
+    {
+      "mbid": "95d51344-9692-4580-974f-2a5dcf263c6c",
+      "artist": "Rocketmann!",
+      "track": "Cyber Talk",
+      "label": "Rocketmann! \u2014 Cyber Talk"
+    },
+    {
+      "mbid": "3e671687-0d39-4809-b3d6-72f205f14863",
+      "artist": "Natalie Cole",
+      "track": "Pink Cadillac (extended club mix)",
+      "label": "Natalie Cole \u2014 Pink Cadillac (extended club mix)"
+    },
+    {
+      "mbid": "6fb9c834-6974-494c-aeb5-57e9ef815077",
+      "artist": "Tremeloes",
+      "track": "Ain't Nothing but a House Party",
+      "label": "Tremeloes \u2014 Ain't Nothing but a House Party"
+    },
+    {
+      "mbid": "6fd84c2c-47b1-4c2a-9a9c-351634328a78",
+      "artist": "R.E.M.",
+      "track": "So Fast, So Numb",
+      "label": "R.E.M. \u2014 So Fast, So Numb"
+    },
+    {
+      "mbid": "59703555-a20d-44b5-b848-8e82408ddd8b",
+      "artist": "Burnt Toast & Jam",
+      "track": "Hey Hey Hey",
+      "label": "Burnt Toast & Jam \u2014 Hey Hey Hey"
+    },
+    {
+      "mbid": "685dd992-71f6-463b-9d05-5b2519089052",
+      "artist": "The Sapphires",
+      "track": "Gotta Have Your Love",
+      "label": "The Sapphires \u2014 Gotta Have Your Love"
+    },
+    {
+      "mbid": "9bec0757-ffa5-43ca-ab87-5bf8277993a3",
+      "artist": "Heltah Skeltah",
+      "track": "Outro",
+      "label": "Heltah Skeltah \u2014 Outro"
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "name": "persona_01_college_commuter diversified top 50",
+  "source": "presentation/figures/module5/persona_01_college_commuter_union_query_pool_mbids.json",
+  "mbids": [
+    "66198676-5762-4a4e-a60f-16354e72c654",
+    "3efe5ad1-e42c-4965-b959-49635d6c3ae0",
+    "3b73ac70-aa8d-4c5d-ba25-1efe4320cef1",
+    "50c22bca-fc80-489a-9570-7a6cbbf09ec7",
+    "95e9f096-920b-4222-bff4-c519fc3ea159",
+    "57391f9f-e080-4af2-84fb-4f10918023f7",
+    "66207b1e-9fc7-4a28-acc5-5914069ab673",
+    "667ec9a4-c28a-4779-bbf0-2ffcd40e1388",
+    "0475f627-fea0-400f-b09f-0001c6c2d268",
+    "6889c6d5-59fb-40b9-8c14-1bd1f9e16191",
+    "611baada-91e1-4769-a060-953b1ca11d10",
+    "5038afde-9dea-4866-a7b4-e97502956759",
+    "68095e67-65e8-4310-a873-85f8a311cdee",
+    "68e4b855-cb59-4a05-bd6b-fa20a86e4263",
+    "0d6dce0d-d037-42bd-a5a0-83ad7e0a0209",
+    "959d2f50-6c73-46df-8882-7414efc952ef",
+    "03f6bd6e-2e61-4c1c-b3ae-19a9dc403814",
+    "5732c7d3-7c55-42df-ba0f-1ccda6d9353b",
+    "6f63a938-a9bc-4d50-bc90-4f4f20718848",
+    "920151a9-ec50-4a09-8032-48c5fb11a9c5",
+    "0dedc0e3-9624-4c24-8ce5-0e53742ad99f",
+    "951f2896-c258-48e0-b3b8-53281b3a42f4",
+    "042b38e1-9026-4268-b18c-e0246306aa5e",
+    "508f0579-b119-41eb-b4eb-ce55583a74a5",
+    "9258893f-c036-4114-8de7-5419ade7325c",
+    "9b3303eb-43be-414c-9cff-b972478814c5",
+    "3b7c0699-3796-4913-8539-3cd1ce626afa",
+    "577d4411-5130-4161-86ba-7ff2acc4e4cb",
+    "04e3071b-7e4b-444d-b9a3-2f557892a04d",
+    "5926110f-2c25-4750-ad7f-ca422870b5a4",
+    "6fdb4386-f4fb-4761-ad4f-74c17ba8c85c",
+    "9e1156e8-c64a-4940-ae12-ae9f16092646",
+    "59c91362-3a3a-4fd4-a752-0dc28f6344f9",
+    "3b0e3138-0090-4329-9267-b0322405aeea",
+    "04e5bbbe-431d-48bf-99d8-c7edea4183a0",
+    "66072bbc-9cee-498d-9af3-66066d1f8aa2",
+    "5005b7c2-6a04-474a-8a17-8943afecc4dc",
+    "9ed34a53-85bb-4c52-9220-0dc1beaae392",
+    "61c4af45-57ca-4d47-bcd0-cf49d130a8d8",
+    "666c2edd-3364-4dcd-bc10-962a9554f51b",
+    "3e457c27-8bb6-4ab6-9d43-adf48b77c189",
+    "68317ce3-3acc-4c49-be7e-410c72834980",
+    "03ba05df-4020-4b5a-b7bc-9d70fa160b15",
+    "04236ed0-ba16-478a-8796-65d09ed97c17",
+    "04b929ca-a3c9-4a33-8f6e-1f9d3a701941",
+    "0cd08177-9265-42e8-aaee-d2fafe6c7ddd",
+    "3e718a1e-281c-44e4-b29b-51a07d314bdb",
+    "6fc11e03-415f-4cb9-855d-10543b1bad5a",
+    "04456fc1-36b4-4ea8-8be3-d6329f5c607f",
+    "04f04c78-d488-4ed2-a6b7-ce2d910416c3"
+  ],
+  "tracks": [
+    {
+      "mbid": "66198676-5762-4a4e-a60f-16354e72c654",
+      "artist": "Supr\u00eame NTM",
+      "track": "Plus rien ne va",
+      "label": "Supr\u00eame NTM \u2014 Plus rien ne va"
+    },
+    {
+      "mbid": "3efe5ad1-e42c-4965-b959-49635d6c3ae0",
+      "artist": "Keith Richards",
+      "track": "You Don't Move Me",
+      "label": "Keith Richards \u2014 You Don't Move Me"
+    },
+    {
+      "mbid": "3b73ac70-aa8d-4c5d-ba25-1efe4320cef1",
+      "artist": "KC and The Sunshine Band",
+      "track": "Do You Feel All Right (single edit)",
+      "label": "KC and The Sunshine Band \u2014 Do You Feel All Right (single edit)"
+    },
+    {
+      "mbid": "50c22bca-fc80-489a-9570-7a6cbbf09ec7",
+      "artist": "Return to Forever",
+      "track": "Song to the Pharaoh Kings",
+      "label": "Return to Forever \u2014 Song to the Pharaoh Kings"
+    },
+    {
+      "mbid": "95e9f096-920b-4222-bff4-c519fc3ea159",
+      "artist": "Nancy Sinatra",
+      "track": "In Our Time",
+      "label": "Nancy Sinatra \u2014 In Our Time"
+    },
+    {
+      "mbid": "57391f9f-e080-4af2-84fb-4f10918023f7",
+      "artist": "Wat Tyler",
+      "track": "We Pledge Our Allegiance to Satan",
+      "label": "Wat Tyler \u2014 We Pledge Our Allegiance to Satan"
+    },
+    {
+      "mbid": "66207b1e-9fc7-4a28-acc5-5914069ab673",
+      "artist": "Jeff Mills",
+      "track": "Late Night",
+      "label": "Jeff Mills \u2014 Late Night"
+    },
+    {
+      "mbid": "667ec9a4-c28a-4779-bbf0-2ffcd40e1388",
+      "artist": "This Dark Noise",
+      "track": "It Was Me",
+      "label": "This Dark Noise \u2014 It Was Me"
+    },
+    {
+      "mbid": "0475f627-fea0-400f-b09f-0001c6c2d268",
+      "artist": "Randy Crawford",
+      "track": "A Lot That You Can Do",
+      "label": "Randy Crawford \u2014 A Lot That You Can Do"
+    },
+    {
+      "mbid": "6889c6d5-59fb-40b9-8c14-1bd1f9e16191",
+      "artist": "Miles Davis",
+      "track": "Inamorata and Narration by Conrad Roberts",
+      "label": "Miles Davis \u2014 Inamorata and Narration by Conrad Roberts"
+    },
+    {
+      "mbid": "611baada-91e1-4769-a060-953b1ca11d10",
+      "artist": "Ulcerate",
+      "track": "Burnt Offering",
+      "label": "Ulcerate \u2014 Burnt Offering"
+    },
+    {
+      "mbid": "5038afde-9dea-4866-a7b4-e97502956759",
+      "artist": "The Beatles",
+      "track": "Day Tripper",
+      "label": "The Beatles \u2014 Day Tripper"
+    },
+    {
+      "mbid": "68095e67-65e8-4310-a873-85f8a311cdee",
+      "artist": "Basstoy",
+      "track": "Runnin'",
+      "label": "Basstoy \u2014 Runnin'"
+    },
+    {
+      "mbid": "68e4b855-cb59-4a05-bd6b-fa20a86e4263",
+      "artist": "Plaisance",
+      "track": "Mist",
+      "label": "Plaisance \u2014 Mist"
+    },
+    {
+      "mbid": "0d6dce0d-d037-42bd-a5a0-83ad7e0a0209",
+      "artist": "Al Jarreau",
+      "track": "Blue Angel",
+      "label": "Al Jarreau \u2014 Blue Angel"
+    },
+    {
+      "mbid": "959d2f50-6c73-46df-8882-7414efc952ef",
+      "artist": "Earth",
+      "track": "Angels of Darkness, Demons of Light I",
+      "label": "Earth \u2014 Angels of Darkness, Demons of Light I"
+    },
+    {
+      "mbid": "03f6bd6e-2e61-4c1c-b3ae-19a9dc403814",
+      "artist": "Green Day",
+      "track": "Walking Contradiction",
+      "label": "Green Day \u2014 Walking Contradiction"
+    },
+    {
+      "mbid": "5732c7d3-7c55-42df-ba0f-1ccda6d9353b",
+      "artist": "Twink",
+      "track": "Ten Thousand Words in a Cardboard Box",
+      "label": "Twink \u2014 Ten Thousand Words in a Cardboard Box"
+    },
+    {
+      "mbid": "6f63a938-a9bc-4d50-bc90-4f4f20718848",
+      "artist": "The Orb",
+      "track": "Kan Kan",
+      "label": "The Orb \u2014 Kan Kan"
+    },
+    {
+      "mbid": "920151a9-ec50-4a09-8032-48c5fb11a9c5",
+      "artist": "Average White Band",
+      "track": "Pick Up the Pieces",
+      "label": "Average White Band \u2014 Pick Up the Pieces"
+    },
+    {
+      "mbid": "0dedc0e3-9624-4c24-8ce5-0e53742ad99f",
+      "artist": "Albino & DJ Mike Ballast",
+      "track": "\u00dcberlebenstraining",
+      "label": "Albino & DJ Mike Ballast \u2014 \u00dcberlebenstraining"
+    },
+    {
+      "mbid": "951f2896-c258-48e0-b3b8-53281b3a42f4",
+      "artist": "Little People",
+      "track": "Behind Closed Doors (edit)",
+      "label": "Little People \u2014 Behind Closed Doors (edit)"
+    },
+    {
+      "mbid": "042b38e1-9026-4268-b18c-e0246306aa5e",
+      "artist": "Todd Rundgren",
+      "track": "Open My Eyes",
+      "label": "Todd Rundgren \u2014 Open My Eyes"
+    },
+    {
+      "mbid": "508f0579-b119-41eb-b4eb-ce55583a74a5",
+      "artist": "Hi-Strung Ramblers",
+      "track": "309",
+      "label": "Hi-Strung Ramblers \u2014 309"
+    },
+    {
+      "mbid": "9258893f-c036-4114-8de7-5419ade7325c",
+      "artist": "Slacker",
+      "track": "Your Face (original mix)",
+      "label": "Slacker \u2014 Your Face (original mix)"
+    },
+    {
+      "mbid": "9b3303eb-43be-414c-9cff-b972478814c5",
+      "artist": "N.W.A",
+      "track": "Just Don\u2019t Bite It",
+      "label": "N.W.A \u2014 Just Don\u2019t Bite It"
+    },
+    {
+      "mbid": "3b7c0699-3796-4913-8539-3cd1ce626afa",
+      "artist": "\u041a\u0438\u043d\u043e",
+      "track": "\u0425\u043e\u0447\u0443 \u043f\u0435\u0440\u0435\u043c\u0435\u043d",
+      "label": "\u041a\u0438\u043d\u043e \u2014 \u0425\u043e\u0447\u0443 \u043f\u0435\u0440\u0435\u043c\u0435\u043d"
+    },
+    {
+      "mbid": "577d4411-5130-4161-86ba-7ff2acc4e4cb",
+      "artist": "A Guy Called Gerald",
+      "track": "Body and Fear",
+      "label": "A Guy Called Gerald \u2014 Body and Fear"
+    },
+    {
+      "mbid": "04e3071b-7e4b-444d-b9a3-2f557892a04d",
+      "artist": "Karma to Burn",
+      "track": "(Waltz of the) Playboy Pallbearers",
+      "label": "Karma to Burn \u2014 (Waltz of the) Playboy Pallbearers"
+    },
+    {
+      "mbid": "5926110f-2c25-4750-ad7f-ca422870b5a4",
+      "artist": "Beach Boys (In Concert 1973) 20",
+      "track": "Fun, Fun, Fun",
+      "label": "Beach Boys (In Concert 1973) 20 \u2014 Fun, Fun, Fun"
+    },
+    {
+      "mbid": "6fdb4386-f4fb-4761-ad4f-74c17ba8c85c",
+      "artist": "The B-52's",
+      "track": "Love in the Year 3000",
+      "label": "The B-52's \u2014 Love in the Year 3000"
+    },
+    {
+      "mbid": "9e1156e8-c64a-4940-ae12-ae9f16092646",
+      "artist": "Giorgio",
+      "track": "If You Weren't Afraid",
+      "label": "Giorgio \u2014 If You Weren't Afraid"
+    },
+    {
+      "mbid": "59c91362-3a3a-4fd4-a752-0dc28f6344f9",
+      "artist": "Chumbawamba",
+      "track": "Money Money Money",
+      "label": "Chumbawamba \u2014 Money Money Money"
+    },
+    {
+      "mbid": "3b0e3138-0090-4329-9267-b0322405aeea",
+      "artist": "The Doors",
+      "track": "Been Down So Long",
+      "label": "The Doors \u2014 Been Down So Long"
+    },
+    {
+      "mbid": "04e5bbbe-431d-48bf-99d8-c7edea4183a0",
+      "artist": "Against Me!",
+      "track": "Money Changes Everything",
+      "label": "Against Me! \u2014 Money Changes Everything"
+    },
+    {
+      "mbid": "66072bbc-9cee-498d-9af3-66066d1f8aa2",
+      "artist": "B\u00f6hse Onkelz",
+      "track": "Wir ham' noch lange nicht genug",
+      "label": "B\u00f6hse Onkelz \u2014 Wir ham' noch lange nicht genug"
+    },
+    {
+      "mbid": "5005b7c2-6a04-474a-8a17-8943afecc4dc",
+      "artist": "Black Uhuru",
+      "track": "I Love King Selassie",
+      "label": "Black Uhuru \u2014 I Love King Selassie"
+    },
+    {
+      "mbid": "9ed34a53-85bb-4c52-9220-0dc1beaae392",
+      "artist": "Herweijer",
+      "track": "Devil's Dance",
+      "label": "Herweijer \u2014 Devil's Dance"
+    },
+    {
+      "mbid": "61c4af45-57ca-4d47-bcd0-cf49d130a8d8",
+      "artist": "Ralph Tresvant",
+      "track": "Stone Cold Gentleman (Rizz's interlude)",
+      "label": "Ralph Tresvant \u2014 Stone Cold Gentleman (Rizz's interlude)"
+    },
+    {
+      "mbid": "666c2edd-3364-4dcd-bc10-962a9554f51b",
+      "artist": "Vincent",
+      "track": "Blofeld",
+      "label": "Vincent \u2014 Blofeld"
+    },
+    {
+      "mbid": "3e457c27-8bb6-4ab6-9d43-adf48b77c189",
+      "artist": "Amorphis",
+      "track": "Into Hiding",
+      "label": "Amorphis \u2014 Into Hiding"
+    },
+    {
+      "mbid": "68317ce3-3acc-4c49-be7e-410c72834980",
+      "artist": "Nausea",
+      "track": "Home Sweet Home",
+      "label": "Nausea \u2014 Home Sweet Home"
+    },
+    {
+      "mbid": "03ba05df-4020-4b5a-b7bc-9d70fa160b15",
+      "artist": "Asian Dub Foundation",
+      "track": "Change",
+      "label": "Asian Dub Foundation \u2014 Change"
+    },
+    {
+      "mbid": "04236ed0-ba16-478a-8796-65d09ed97c17",
+      "artist": "Brancaccio & Aisher",
+      "track": "Lovely Day (original mix)",
+      "label": "Brancaccio & Aisher \u2014 Lovely Day (original mix)"
+    },
+    {
+      "mbid": "04b929ca-a3c9-4a33-8f6e-1f9d3a701941",
+      "artist": "Ozomatli",
+      "track": "Who's to Blame (feat. Chali 2na)",
+      "label": "Ozomatli \u2014 Who's to Blame (feat. Chali 2na)"
+    },
+    {
+      "mbid": "0cd08177-9265-42e8-aaee-d2fafe6c7ddd",
+      "artist": "Nine Inch Nails",
+      "track": "10 Miles High",
+      "label": "Nine Inch Nails \u2014 10 Miles High"
+    },
+    {
+      "mbid": "3e718a1e-281c-44e4-b29b-51a07d314bdb",
+      "artist": "The Amboy Dukes",
+      "track": "Journey To The Center Of The Mind",
+      "label": "The Amboy Dukes \u2014 Journey To The Center Of The Mind"
+    },
+    {
+      "mbid": "6fc11e03-415f-4cb9-855d-10543b1bad5a",
+      "artist": "The Moodists",
+      "track": "Some Kinda Jones",
+      "label": "The Moodists \u2014 Some Kinda Jones"
+    },
+    {
+      "mbid": "04456fc1-36b4-4ea8-8be3-d6329f5c607f",
+      "artist": "Tom Tyler",
+      "track": "Attitude Adjuster",
+      "label": "Tom Tyler \u2014 Attitude Adjuster"
+    },
+    {
+      "mbid": "04f04c78-d488-4ed2-a6b7-ce2d910416c3",
+      "artist": "Colourbox",
+      "track": "Baby I Love You So",
+      "label": "Colourbox \u2014 Baby I Love You So"
+    }
+  ]
+}

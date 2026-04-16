@@ -1,0 +1,358 @@
+{
+  "name": "persona_03_omnivore_indie diversified top 50",
+  "source": "presentation/figures/module5/persona_03_omnivore_indie_union_query_pool_mbids.json",
+  "mbids": [
+    "3eb38858-54dc-4947-ba13-80f6d86e5876",
+    "57e398ed-1264-4914-a169-987f8ddf926a",
+    "0318ee7e-4430-4536-9d25-f55abc6cdbd4",
+    "500cdb97-bb85-42b3-ae7a-c9eb817b107e",
+    "0dbab244-8379-426b-ba15-d08622b4a2e0",
+    "57df2b21-1d50-4225-b74a-b690f2a2e3b8",
+    "6f023a28-55c8-47cf-be78-5956ddb589ab",
+    "59e8d186-6927-40b1-9ba1-23fcd20bc5e7",
+    "032081df-f732-44f6-a69d-012c533b1f66",
+    "0c9c9ee2-39d4-43b9-a0f4-70d7f8897c40",
+    "92dde2c2-7639-43b8-8b65-82dc4ee8cbb2",
+    "667f1e1d-61c3-47bb-98df-0e5523ce69f9",
+    "9e94cc42-dfe2-4a7c-8485-cf6b50cf7bd4",
+    "95dcf804-9035-4827-93e7-f42ff270b39d",
+    "03ad34fc-0a18-40f4-8d57-7f93e8866676",
+    "59106d66-0581-40c1-8293-fb5420e3b230",
+    "6f86b662-057d-4821-8d2c-50e6249c6ab0",
+    "9b7497bf-22ca-49ac-9d8d-cad256323815",
+    "04b72479-7db8-4151-af20-b37b98ebcfdc",
+    "0d3d595b-52fe-4f81-9fbb-a73e0a7ead84",
+    "0c916dae-ef3e-4109-890c-e1c88f9960e6",
+    "9e513db6-2895-4928-9605-7ea0cbbf46d0",
+    "68d05f36-62a1-413a-b7c3-b47712733f68",
+    "9e127209-7a55-4504-ac58-205f2c6d209e",
+    "3bd389d7-f006-45e1-a034-763e8b8b6127",
+    "507abac7-9fde-408a-9eeb-872ffdb50a72",
+    "0cb22d00-f6ce-44f2-ac77-fee8d37882ec",
+    "034542bf-555c-4074-b44c-445adc9830bd",
+    "9b1ec3f4-6b1f-47f9-ae3a-55dc65a821a4",
+    "9ef2ab3a-69ca-4030-b585-ddfb622fb4f5",
+    "50d53cfb-f069-4457-921e-05202016c929",
+    "613d371c-b538-4795-a473-af0f39bc56a8",
+    "0ce710f7-667b-416d-9610-5f4342ff0520",
+    "0c1cd4b0-de35-409d-ab78-18060758eba2",
+    "578d3118-b9a7-41b4-a65e-aa9961b6e563",
+    "0c78bc62-0085-4fe4-8f53-a835a6e6f6aa",
+    "66a115a7-471b-4ed3-9514-64fe1331b101",
+    "3b53eb84-0a31-4a8c-8a4f-56c8ea68f02d",
+    "0cfc0e16-f0f5-440e-97b5-73fd4bf5872c",
+    "504ebcc6-9f30-48ed-9190-acdf0911b914",
+    "66bc26bd-3262-4522-9bbd-a4d3ba1a703a",
+    "0da84647-8d77-4c2c-80fc-8d5184b7989e",
+    "0d88d3b2-aa40-4435-9172-4b505b356815",
+    "50c08d20-be4a-4336-bfa2-f80d32851bec",
+    "0d706898-6acc-4ff6-9940-d8a5b09e3fe6",
+    "6173ee08-3552-470b-995e-c279ed4e692a",
+    "66bd7045-4770-42f1-a547-1a4647da4107",
+    "3e552b72-880b-46a4-9d70-6b3a848e58d1",
+    "0d9a18e7-69b6-4118-9604-c1e256a634f8",
+    "0319aa35-5365-414d-9b11-7bd98bca87fa"
+  ],
+  "tracks": [
+    {
+      "mbid": "3eb38858-54dc-4947-ba13-80f6d86e5876",
+      "artist": "Critical Mass",
+      "track": "Vacation",
+      "label": "Critical Mass \u2014 Vacation"
+    },
+    {
+      "mbid": "57e398ed-1264-4914-a169-987f8ddf926a",
+      "artist": "Heidi Berry",
+      "track": "The Californian",
+      "label": "Heidi Berry \u2014 The Californian"
+    },
+    {
+      "mbid": "0318ee7e-4430-4536-9d25-f55abc6cdbd4",
+      "artist": "J\u00f6rg Maurer",
+      "track": "Beethoven und das Rheinland",
+      "label": "J\u00f6rg Maurer \u2014 Beethoven und das Rheinland"
+    },
+    {
+      "mbid": "500cdb97-bb85-42b3-ae7a-c9eb817b107e",
+      "artist": "Fr\u00e9d\u00e9ric Fran\u00e7ois",
+      "track": "Quand Vient Le Soir On Se Retrouve",
+      "label": "Fr\u00e9d\u00e9ric Fran\u00e7ois \u2014 Quand Vient Le Soir On Se Retrouve"
+    },
+    {
+      "mbid": "0dbab244-8379-426b-ba15-d08622b4a2e0",
+      "artist": "Evocation",
+      "track": "A Wind Has Risen",
+      "label": "Evocation \u2014 A Wind Has Risen"
+    },
+    {
+      "mbid": "57df2b21-1d50-4225-b74a-b690f2a2e3b8",
+      "artist": "Tom Petty and The Heartbreakers",
+      "track": "Listen to Her Heart",
+      "label": "Tom Petty and The Heartbreakers \u2014 Listen to Her Heart"
+    },
+    {
+      "mbid": "6f023a28-55c8-47cf-be78-5956ddb589ab",
+      "artist": "Leatherface",
+      "track": "I Want the Moon",
+      "label": "Leatherface \u2014 I Want the Moon"
+    },
+    {
+      "mbid": "59e8d186-6927-40b1-9ba1-23fcd20bc5e7",
+      "artist": "Pauline Taylor",
+      "track": "Solo Flying Mystery Man",
+      "label": "Pauline Taylor \u2014 Solo Flying Mystery Man"
+    },
+    {
+      "mbid": "032081df-f732-44f6-a69d-012c533b1f66",
+      "artist": "Bright Eyes",
+      "track": "Landlocked Blues",
+      "label": "Bright Eyes \u2014 Landlocked Blues"
+    },
+    {
+      "mbid": "0c9c9ee2-39d4-43b9-a0f4-70d7f8897c40",
+      "artist": "Nickel Creek",
+      "track": "Git Along Little Dogies",
+      "label": "Nickel Creek \u2014 Git Along Little Dogies"
+    },
+    {
+      "mbid": "92dde2c2-7639-43b8-8b65-82dc4ee8cbb2",
+      "artist": "Hell",
+      "track": "Overture (Themes From Deathsquad)",
+      "label": "Hell \u2014 Overture (Themes From Deathsquad)"
+    },
+    {
+      "mbid": "667f1e1d-61c3-47bb-98df-0e5523ce69f9",
+      "artist": "Marvin Gaye",
+      "track": "It's a Lonely World Without Your Love",
+      "label": "Marvin Gaye \u2014 It's a Lonely World Without Your Love"
+    },
+    {
+      "mbid": "9e94cc42-dfe2-4a7c-8485-cf6b50cf7bd4",
+      "artist": "The Business",
+      "track": "Another Rebel Dead",
+      "label": "The Business \u2014 Another Rebel Dead"
+    },
+    {
+      "mbid": "95dcf804-9035-4827-93e7-f42ff270b39d",
+      "artist": "Linkin Park",
+      "track": "The Messenger",
+      "label": "Linkin Park \u2014 The Messenger"
+    },
+    {
+      "mbid": "03ad34fc-0a18-40f4-8d57-7f93e8866676",
+      "artist": "Seide",
+      "track": "Entsinnung (Reminiscing)",
+      "label": "Seide \u2014 Entsinnung (Reminiscing)"
+    },
+    {
+      "mbid": "59106d66-0581-40c1-8293-fb5420e3b230",
+      "artist": "Burt Bacharach",
+      "track": "I'm a Better Man (feat. Engelbert)",
+      "label": "Burt Bacharach \u2014 I'm a Better Man (feat. Engelbert)"
+    },
+    {
+      "mbid": "6f86b662-057d-4821-8d2c-50e6249c6ab0",
+      "artist": "Altermalice",
+      "track": "Prologue ~Birth~",
+      "label": "Altermalice \u2014 Prologue ~Birth~"
+    },
+    {
+      "mbid": "9b7497bf-22ca-49ac-9d8d-cad256323815",
+      "artist": "Max\u00efmo Park",
+      "track": "Graffiti",
+      "label": "Max\u00efmo Park \u2014 Graffiti"
+    },
+    {
+      "mbid": "04b72479-7db8-4151-af20-b37b98ebcfdc",
+      "artist": "Doughboys",
+      "track": "Shine",
+      "label": "Doughboys \u2014 Shine"
+    },
+    {
+      "mbid": "0d3d595b-52fe-4f81-9fbb-a73e0a7ead84",
+      "artist": "Manna",
+      "track": "Stars",
+      "label": "Manna \u2014 Stars"
+    },
+    {
+      "mbid": "0c916dae-ef3e-4109-890c-e1c88f9960e6",
+      "artist": "Abdoulaye Diabat\u00e9",
+      "track": "Lansine",
+      "label": "Abdoulaye Diabat\u00e9 \u2014 Lansine"
+    },
+    {
+      "mbid": "9e513db6-2895-4928-9605-7ea0cbbf46d0",
+      "artist": "Charles Aznavour",
+      "track": "Mon \u00c9mouvant Amour",
+      "label": "Charles Aznavour \u2014 Mon \u00c9mouvant Amour"
+    },
+    {
+      "mbid": "68d05f36-62a1-413a-b7c3-b47712733f68",
+      "artist": "Roma Amor",
+      "track": "M\u00e9lancolie",
+      "label": "Roma Amor \u2014 M\u00e9lancolie"
+    },
+    {
+      "mbid": "9e127209-7a55-4504-ac58-205f2c6d209e",
+      "artist": "John Leyton",
+      "track": "Make Love to Me",
+      "label": "John Leyton \u2014 Make Love to Me"
+    },
+    {
+      "mbid": "3bd389d7-f006-45e1-a034-763e8b8b6127",
+      "artist": "The Untamed Youth",
+      "track": "Angel Face",
+      "label": "The Untamed Youth \u2014 Angel Face"
+    },
+    {
+      "mbid": "507abac7-9fde-408a-9eeb-872ffdb50a72",
+      "artist": "Rose Hill Drive",
+      "track": "Declaration of Independence",
+      "label": "Rose Hill Drive \u2014 Declaration of Independence"
+    },
+    {
+      "mbid": "0cb22d00-f6ce-44f2-ac77-fee8d37882ec",
+      "artist": "Eva Cort\u00e9s",
+      "track": "Embrujo (Bewitched, Bothered and Bewildered)",
+      "label": "Eva Cort\u00e9s \u2014 Embrujo (Bewitched, Bothered and Bewildered)"
+    },
+    {
+      "mbid": "034542bf-555c-4074-b44c-445adc9830bd",
+      "artist": "Darkwood",
+      "track": "Nothing Left to Lose",
+      "label": "Darkwood \u2014 Nothing Left to Lose"
+    },
+    {
+      "mbid": "9b1ec3f4-6b1f-47f9-ae3a-55dc65a821a4",
+      "artist": "Nadia Birkenstock",
+      "track": "Intro: Ma Fransez",
+      "label": "Nadia Birkenstock \u2014 Intro: Ma Fransez"
+    },
+    {
+      "mbid": "9ef2ab3a-69ca-4030-b585-ddfb622fb4f5",
+      "artist": "Richard Anthony",
+      "track": "Lundi, Lundi",
+      "label": "Richard Anthony \u2014 Lundi, Lundi"
+    },
+    {
+      "mbid": "50d53cfb-f069-4457-921e-05202016c929",
+      "artist": "Die \u00c4rzte",
+      "track": "Ist das alles?",
+      "label": "Die \u00c4rzte \u2014 Ist das alles?"
+    },
+    {
+      "mbid": "613d371c-b538-4795-a473-af0f39bc56a8",
+      "artist": "Viikate",
+      "track": "Olkoon n\u00e4in",
+      "label": "Viikate \u2014 Olkoon n\u00e4in"
+    },
+    {
+      "mbid": "0ce710f7-667b-416d-9610-5f4342ff0520",
+      "artist": "Tori Amos",
+      "track": "China",
+      "label": "Tori Amos \u2014 China"
+    },
+    {
+      "mbid": "0c1cd4b0-de35-409d-ab78-18060758eba2",
+      "artist": "Ranarim",
+      "track": "Stolt Signhild",
+      "label": "Ranarim \u2014 Stolt Signhild"
+    },
+    {
+      "mbid": "578d3118-b9a7-41b4-a65e-aa9961b6e563",
+      "artist": "Peter Broderick",
+      "track": "Moment",
+      "label": "Peter Broderick \u2014 Moment"
+    },
+    {
+      "mbid": "0c78bc62-0085-4fe4-8f53-a835a6e6f6aa",
+      "artist": "David Bowie",
+      "track": "Be My Wife",
+      "label": "David Bowie \u2014 Be My Wife"
+    },
+    {
+      "mbid": "66a115a7-471b-4ed3-9514-64fe1331b101",
+      "artist": "Jad Fair & Yo La Tengo",
+      "track": "Texas Man Abducted by Aliens for Outer Space Joy Ride",
+      "label": "Jad Fair & Yo La Tengo \u2014 Texas Man Abducted by Aliens for Outer Space Joy Ride"
+    },
+    {
+      "mbid": "3b53eb84-0a31-4a8c-8a4f-56c8ea68f02d",
+      "artist": "And One",
+      "track": "Michael Caine",
+      "label": "And One \u2014 Michael Caine"
+    },
+    {
+      "mbid": "0cfc0e16-f0f5-440e-97b5-73fd4bf5872c",
+      "artist": "Anu Taul",
+      "track": "Siidisiiv\u00e4",
+      "label": "Anu Taul \u2014 Siidisiiv\u00e4"
+    },
+    {
+      "mbid": "504ebcc6-9f30-48ed-9190-acdf0911b914",
+      "artist": "Gregorian feat. Amelia Brightman",
+      "track": "Mistletoe and Wine",
+      "label": "Gregorian feat. Amelia Brightman \u2014 Mistletoe and Wine"
+    },
+    {
+      "mbid": "66bc26bd-3262-4522-9bbd-a4d3ba1a703a",
+      "artist": "Unknown",
+      "track": "Drive In",
+      "label": "Unknown \u2014 Drive In"
+    },
+    {
+      "mbid": "0da84647-8d77-4c2c-80fc-8d5184b7989e",
+      "artist": "Flies",
+      "track": "Alexander Bell Believes",
+      "label": "Flies \u2014 Alexander Bell Believes"
+    },
+    {
+      "mbid": "0d88d3b2-aa40-4435-9172-4b505b356815",
+      "artist": "Robyn Hitchcock and The Egyptians",
+      "track": "So You Think You're in Love",
+      "label": "Robyn Hitchcock and The Egyptians \u2014 So You Think You're in Love"
+    },
+    {
+      "mbid": "50c08d20-be4a-4336-bfa2-f80d32851bec",
+      "artist": "Robbie Williams",
+      "track": "Ain't That a Kick in the Head",
+      "label": "Robbie Williams \u2014 Ain't That a Kick in the Head"
+    },
+    {
+      "mbid": "0d706898-6acc-4ff6-9940-d8a5b09e3fe6",
+      "artist": "The Chieftains",
+      "track": "Carrickfergus",
+      "label": "The Chieftains \u2014 Carrickfergus"
+    },
+    {
+      "mbid": "6173ee08-3552-470b-995e-c279ed4e692a",
+      "artist": "Duran Duran",
+      "track": "Save a Prayer (US single version)",
+      "label": "Duran Duran \u2014 Save a Prayer (US single version)"
+    },
+    {
+      "mbid": "66bd7045-4770-42f1-a547-1a4647da4107",
+      "artist": "Zelda Reorchestrated",
+      "track": "Dancer",
+      "label": "Zelda Reorchestrated \u2014 Dancer"
+    },
+    {
+      "mbid": "3e552b72-880b-46a4-9d70-6b3a848e58d1",
+      "artist": "Small Faces",
+      "track": "All or Nothing",
+      "label": "Small Faces \u2014 All or Nothing"
+    },
+    {
+      "mbid": "0d9a18e7-69b6-4118-9604-c1e256a634f8",
+      "artist": "Soundgarden",
+      "track": "Big Dumb Sex",
+      "label": "Soundgarden \u2014 Big Dumb Sex"
+    },
+    {
+      "mbid": "0319aa35-5365-414d-9b11-7bd98bca87fa",
+      "artist": "The Beatles",
+      "track": "You Really Got a Hold on Me (Pop 63)",
+      "label": "The Beatles \u2014 You Really Got a Hold on Me (Pop 63)"
+    }
+  ]
+}
