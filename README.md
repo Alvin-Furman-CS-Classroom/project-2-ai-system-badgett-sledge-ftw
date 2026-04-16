@@ -2,7 +2,7 @@
 
 ## Overview
 
-This system recommends music in a **curated, setlist-style** way: it uses structured song data and explicit user preferences to find tracks that fit a listener’s taste without relying on popularity alone. The unifying theme is a **hybrid pipeline**: a **knowledge base (Module 1)** stores queryable facts about songs (genre, mood, loudness, danceability, and related metadata). **Rule-based preferences (Module 2)** encode what the user wants using survey answers and ratings, producing a weighted **PreferenceScorer**. **Search over the KB (Module 3)** treats songs as a graph: neighbors come from shared indexes (genre, mood, etc.), edge costs measure feature dissimilarity, and **Uniform Cost Search** (with an optional **beam search** variant) finds top-K candidates from a **query song**; results are blended with preference scores via **`find_similar`**. Later modules will add **supervised learning from playlists (Module 4)** to refine weights or re-rank results, and **clustering (Module 5)** to diversify recommendations. Together, the modules form a single AI system aligned with the course schedule: interpretable rules and search first, then learning and organization.
+This system recommends music in a **curated, setlist-style** way: it uses structured song data and explicit user preferences to find tracks that fit a listener’s taste without relying on popularity alone. The unifying theme is a **hybrid pipeline**: a **knowledge base (Module 1)** stores queryable facts about songs (genre, mood, loudness, danceability, and related metadata). **Rule-based preferences (Module 2)** encode what the user wants using survey answers and ratings, producing a weighted **PreferenceScorer**. **Search over the KB (Module 3)** treats songs as a graph: neighbors come from shared indexes (genre, mood, etc.), edge costs measure feature dissimilarity, and **Uniform Cost Search** (with an optional **beam search** variant) finds top-K candidates from a **query song**; results are blended with preference scores via **`find_similar`**. **Supervised learning from playlists (Module 4)** refines weights or re-ranks results using learned feature weights. **Clustering (Module 5)** optionally organizes retrieval candidates into diverse groups (K-means on KB-derived features, round-robin serving). Together, the modules form a single AI system aligned with the course schedule: interpretable rules and search first, then learning and organization.
 
 ## Team
 
@@ -22,7 +22,7 @@ This system recommends music in a **curated, setlist-style** way: it uses struct
 | 2 | Rule-Based Preference Encoding (survey + song ratings) | KB (Module 1), survey answers, user ratings on sampled songs | Rule-based preference system: logical rules + weight vectors refined by ratings + scorer | Module 1 (KB) | `src/preferences/`; unit tests in `unit_tests/preferences/`; integration tests in `integration_tests/module_2/` |
 | 3 | Search over KB (UCS, beam, path costs, preference blend) | KB (Module 1), `PreferenceScorer` (Module 2), query song MBID | Top-K `SearchResult` list via `find_similar` (UCS; optional `beam_topk`) | Modules 1–2 | `src/search/`; unit tests in `unit_tests/search/`; integration tests in `integration_tests/module_3/` |
 | 4 | Machine Learning (supervised) | KB, playlists (positive examples), `data/user_ratings.json` | Learned preference model (feature weights + `LearnedPreferenceScorer` that can rerank Module 3 results) | Modules 1–3 | `src/ml/`; unit tests in `unit_tests/ml/`; integration tests in `integration_tests/module_4/` |
-| 5 | Clustering | Ranked candidates from Module 3 (or re-ranked by Module 4), KB features, optional learned preferences | Clustered recommendation groups (diversity) | Modules 1–4 | *(planned)* `src/` TBD; tests TBD |
+| 5 | Clustering | Ranked candidates from Module 3 (or re-ranked by Module 4), KB features | Diversified top-K via K-means + round-robin across clusters | Modules 1–4 | `src/clustering/`; `unit_tests/clustering/`; `integration_tests/module_5/`; [`MODULE5_PLAN.md`](MODULE5_PLAN.md) |
 | 6 (optional) | *(unused or stretch)* | — | — | — | — |
 
 ## Repository Layout
@@ -33,10 +33,13 @@ project-2-ai-system-badgett-sledge-ftw/
 │   ├── knowledge_base_wrapper.py     # KB query interface
 │   ├── data_acquisition/             # KB building / external data clients
 │   ├── preferences/                  # Module 2: survey, rules, scorer, sampling, ratings
-│   └── search/                       # Module 3: costs, graph, UCS, beam, pipeline
+│   ├── search/                       # Module 3: costs, graph, UCS, beam, pipeline, query_cli
+│   ├── ml/                           # Module 4: dataset, learned scorer, reranker, training
+│   └── clustering/                 # Module 5: KB features, K-means, organize / diversify
 ├── unit_tests/                       # unit tests (parallel structure to src/)
 ├── integration_tests/                # integration tests (per module beyond Module 1)
-├── data/                             # knowledge_base.json, user profile/ratings, etc.
+├── presentation/                     # optional figures / scripts for module demos (e.g. Module 5 PCA)
+├── data/                             # knowledge_base.json, user profile/ratings, personas, etc.
 ├── .claude/skills/code-review/SKILL.md  # rubric-based agent review
 ├── AGENTS.md                         # instructions for your LLM agent
 ├── MODULES.md                        # module planning narrative (theme, feasibility)
@@ -122,9 +125,10 @@ pytest unit_tests/ -v
 
   This CLI:
   - loads `user_profile.json` and optionally refines rule-based weights from `user_ratings.json`
-  - wraps the scorer with Module 4’s learned scorer if `data/module4_scorer.json` exists
+  - wraps the scorer with Module 4’s learned scorer if `data/module4_scorer.json` exists (when `--use-ml-scorer`)
   - runs Module 3 search (`ucs` or `beam`) to get candidates
-  - applies the Module 4 reranker if `data/module4_reranker.json` exists
+  - applies the Module 4 reranker if `data/module4_reranker.json` exists (when `--use-ml-reranker`)
+  - optionally applies Module 5 clustering (`--use-clustering`) to diversify the final top-K
   - prints top recommendations with combined, preference, and path-cost scores
 
 ## Module 4 Design and Behavior
@@ -196,8 +200,12 @@ pytest unit_tests/knowledge_base_wrapper_test.py -v
 pytest unit_tests/data_acquisition/test_build_kb.py -v
 pytest unit_tests/preferences/ -v
 pytest unit_tests/search/ -v
+pytest unit_tests/ml/ -v
+pytest unit_tests/clustering/ -v
 pytest integration_tests/module_2/ -v
 pytest integration_tests/module_3/ -v
+pytest integration_tests/module_4/ -v
+pytest integration_tests/module_5/ -v
 ```
 
 Run tests with coverage:
@@ -212,8 +220,12 @@ pytest unit_tests/ --cov=src --cov-report=html
 - `unit_tests/data_acquisition/test_build_kb.py`: KB builder
 - `unit_tests/preferences/`: Module 2 (survey, rules, scorer, sampling, ratings)
 - `unit_tests/search/`: Module 3 (costs, graph, UCS, beam, pipeline)
+- `unit_tests/ml/`: Module 4 (dataset, learned scorer, reranker, artifacts)
+- `unit_tests/clustering/`: Module 5 (features, K-means, organize / diversify)
 - `integration_tests/module_2/`: end-to-end preference loop + scorer
 - `integration_tests/module_3/`: KB + `PreferenceScorer` + `find_similar`
+- `integration_tests/module_4/`: train → load → recommend with learned scorer
+- `integration_tests/module_5/`: retrieval pool + clustering invariants
 - `unit_tests/fixtures/test_knowledge_base.json`: shared KB fixture
 
 ### Test Coverage Goals
@@ -221,6 +233,8 @@ pytest unit_tests/ --cov=src --cov-report=html
 - Public APIs for `KnowledgeBase`, KB construction, and fact/index consistency
 - Module 2: rules, scorer, weight refinement, sampling, survey validation
 - Module 3: edge costs, neighbors, UCS, optional beam, pipeline blend with preferences
+- Module 4: supervised labels from playlists/ratings, artifact round-trip, optional reranker
+- Module 5: KB feature vectors, deterministic K-means, diversified ordering from candidate pools
 - Error handling and edge cases for missing KB facts and invalid inputs
 
 ## Checkpoint Log
@@ -231,7 +245,7 @@ pytest unit_tests/ --cov=src --cov-report=html
 | 2 | 2026-02-26 | Module 2 — Preferences | Complete | `src/preferences/`; [`MODULE2_PLAN.md`](MODULE2_PLAN.md); [`checkpoint_2_module_report.md`](checkpoint_2_module_report.md); `unit_tests/preferences/`; `integration_tests/module_2/` |
 | 3 | 2026-03-19 | Module 3 — Search | Complete | `src/search/`; [`MODULE3_PLAN.md`](MODULE3_PLAN.md); [`checkpoint_3_module_report.md`](checkpoint_3_module_report.md); `unit_tests/search/`; `integration_tests/module_3/` |
 | 4 | 2026-04-02 | Module 4 — ML | Complete | `src/ml/`; [`MODULE4_PLAN.md`](MODULE4_PLAN.md); [`checkpoint_4_module_report.md`](checkpoint_4_module_report.md); `unit_tests/ml/`; `integration_tests/module_4/`; train: `python -m ml.train_module4`; demo: `python src/search/query_cli.py --use-ml-scorer --use-ml-reranker` |
-| 5 | 2026-04-16 | Module 5 — Clustering | Planned | — |
+| 5 | 2026-04-16 | Module 5 — Clustering | Complete | `src/clustering/`; [`MODULE5_PLAN.md`](MODULE5_PLAN.md); [`presentation/module5_cluster_analysis.md`](presentation/module5_cluster_analysis.md); `unit_tests/clustering/`; `integration_tests/module_5/`; demo: `python src/search/query_cli.py --use-clustering --cluster-k 5 --cluster-pool-size 50` |
 
 ## Required Workflow (Agent-Guided)
 
