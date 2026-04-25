@@ -90,6 +90,18 @@ def run_preferences_wizard() -> None:
     )
 
 
+def run_preferences_gui() -> None:
+    """
+    Launch the Module 2 GUI flow (survey + ratings).
+    """
+    from preferences.gui_preference_loop import main as gui_main
+
+    _print_banner("MODULE 2: PREFERENCE SURVEY + RATINGS GUI")
+    if not _kb_exists():
+        return
+    gui_main()
+
+
 def _convert_simple_playlist_to_user_playlists(src_path: Path, dest_path: Path) -> None:
     """
     Convert a simple playlist JSON of the form:
@@ -319,7 +331,7 @@ def _execute_menu_choice(choice: str) -> bool:
     Returns:
         True to keep showing the menu, False to exit.
     """
-    if choice == "5":
+    if choice == "6":
         print("Goodbye.")
         return False
 
@@ -331,6 +343,8 @@ def _execute_menu_choice(choice: str) -> bool:
         _run_ml_only()
     elif choice == "4":
         run_query_wizard()
+    elif choice == "5":
+        run_preferences_gui()
 
     print("\nReturning to main menu.\n")
     return True
@@ -342,16 +356,17 @@ def main_menu() -> None:
         "This wizard can walk you through the full pipeline or let you\n"
         "run individual steps:\n"
         "  1) Full pipeline: preferences → ML training → query\n"
-        "  2) Preferences only (Module 2)\n"
+        "  2) Preferences only (Module 2 CLI)\n"
         "  3) ML training only (Module 4)\n"
         "  4) Query only (Modules 3–4)\n"
-        "  5) Exit\n"
+        "  5) Preferences GUI (Module 2)\n"
+        "  6) Exit\n"
     )
 
     while True:
-        choice = input("Choose an option [1-5]: ").strip()
-        if choice not in {"1", "2", "3", "4", "5"}:
-            print("Please enter a number between 1 and 5.")
+        choice = input("Choose an option [1-6]: ").strip()
+        if choice not in {"1", "2", "3", "4", "5", "6"}:
+            print("Please enter a number between 1 and 6.")
             continue
 
         if not _execute_menu_choice(choice):
