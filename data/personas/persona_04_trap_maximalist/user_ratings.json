@@ -1,0 +1,164 @@
+{
+  "ratings": [
+    {
+      "mbid": "030d1f63-65ba-4d8e-b8b8-7be14b3fe1bf",
+      "rating": "LIKE"
+    },
+    {
+      "mbid": "034bd291-f4d1-4a78-82d6-02864ae18c61",
+      "rating": "DISLIKE"
+    },
+    {
+      "mbid": "035cff73-5347-404a-a282-41e33b06cb08",
+      "rating": "DISLIKE"
+    },
+    {
+      "mbid": "0392ef32-ceb2-4149-add7-04a1518006d3",
+      "rating": "LIKE"
+    },
+    {
+      "mbid": "03fe142e-ab0d-434e-9edb-f0b87da597da",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "044b7aac-c627-486b-a300-60f128e38f6a",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "04acf980-d4be-4587-a7bc-78f78d6c7db6",
+      "rating": "LIKE"
+    },
+    {
+      "mbid": "0c23e716-a63b-432c-a799-234fe888135e",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "0d776e4c-54a6-466d-9f86-555ca35b1fc4",
+      "rating": "DISLIKE"
+    },
+    {
+      "mbid": "3b85431f-cf55-47cb-b3b2-f2443b0f554f",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "3e8642fa-a2aa-4b3d-bf18-742fceb544f6",
+      "rating": "LIKE"
+    },
+    {
+      "mbid": "3e88befd-a711-4fef-b28b-72e86f9e5d08",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "3eb27f4e-c370-4864-97fe-d1e583461325",
+      "rating": "DISLIKE"
+    },
+    {
+      "mbid": "5025216c-e1d2-4918-ace9-369a72ddc5d0",
+      "rating": "NEUTRAL"
+    },
+    {
+      "mbid": "50619329-bca5-4a1e-bcc4-62d520c52d67",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "506653ce-9b17-4bb4-84d0-21537cf0b6d5",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "50d991e6-c894-43da-acb5-5552c4e13972",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "571b236e-58b4-4982-aa0f-402afb13729d",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "572105ed-3a7e-4d06-9102-84952492bba7",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "57323b26-2013-4540-9321-6515751837fc",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "57b8c16a-7078-4e9c-a358-273f307ebc81",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "5959dce8-7118-40b6-ae97-aaf8db3bd58f",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "612cc87b-140d-4f71-ad39-7b715063fa78",
+      "rating": "LIKE"
+    },
+    {
+      "mbid": "663430c1-9261-4bfa-89c0-e1209c1ec70c",
+      "rating": "LIKE"
+    },
+    {
+      "mbid": "664fe891-b4f5-4d66-a532-c35e691cfe63",
+      "rating": "LIKE"
+    },
+    {
+      "mbid": "66e9b406-5d53-4b78-9ffa-bda12f38a524",
+      "rating": "LIKE"
+    },
+    {
+      "mbid": "68048c6f-5632-438c-9dda-4d1860bce6e9",
+      "rating": "DISLIKE"
+    },
+    {
+      "mbid": "6872514b-a4cb-4d2d-91a1-0ee8b4c66cd0",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "68a519a9-a2ad-4a29-b71a-a808520a34a0",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "95141867-045e-431d-9dc3-640ec379c99d",
+      "rating": "DISLIKE"
+    },
+    {
+      "mbid": "956968ca-88d1-411c-bff1-7c53d08f5a12",
+      "rating": "DISLIKE"
+    },
+    {
+      "mbid": "95750cab-0f08-48a2-9532-506d6a1b2c20",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "959c15bb-2659-47b9-a017-1a29a0dd8c93",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "95bb85c1-0f9a-426d-b641-12b8c12f3998",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "95e188ba-8a5f-44ab-bedb-15efc11269a4",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "9b3305a6-7e65-4c87-a932-e734a07c6bed",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "9b4cc9a7-da27-418b-a677-2e2d1b15f93d",
+      "rating": "DISLIKE"
+    },
+    {
+      "mbid": "9b6bcf89-7439-4b0c-acd3-f84350ce5701",
+      "rating": "NEUTRAL"
+    },
+    {
+      "mbid": "9bf143ff-04b2-4a8a-b696-f737447d2d8d",
+      "rating": "REALLY_LIKE"
+    },
+    {
+      "mbid": "9e450af7-a998-42ec-b621-0bc691d7247d",
+      "rating": "REALLY_LIKE"
+    }
+  ]
+}

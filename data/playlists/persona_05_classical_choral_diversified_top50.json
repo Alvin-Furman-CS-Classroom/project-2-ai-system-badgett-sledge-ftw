@@ -1,0 +1,358 @@
+{
+  "name": "persona_05_classical_choral diversified top 50",
+  "source": "presentation/figures/module5/persona_05_classical_choral_union_query_pool_mbids.json",
+  "mbids": [
+    "5055604a-47a2-4680-a0ae-82dbf54194dd",
+    "033721f8-1ac2-4c36-88f0-1e51c52edd13",
+    "0464e99a-6573-4fa2-9b98-53bb2cdeae11",
+    "3be438c7-0890-4054-9ab2-2ea0982705f8",
+    "68b2aea3-2c4d-487f-b6fe-ca3643ab2d77",
+    "6fbc1a05-cfb7-4246-b4af-ace0303e8953",
+    "9bd9873f-e7c6-4a03-8083-c4933c920531",
+    "04529d49-f37c-4788-82c3-b0c2488e33fe",
+    "68078741-b124-4a11-8771-7ec899b3c477",
+    "3e164481-d986-40d4-a408-b9420180e912",
+    "57d61040-672b-40af-a01b-f23ec559392b",
+    "95f39f52-eed5-4faf-91d6-a455b09df4e2",
+    "9efbcd31-c8f2-4b73-a257-6a6631eccfb2",
+    "04c9c211-1ffe-4762-aa10-7d1db273c152",
+    "68121fa8-0758-4548-b71c-6f02545e2c68",
+    "03177b37-6029-4b36-972a-f34fd9caf0cf",
+    "3eae0478-7720-4b2b-8265-2ee4717b7a2c",
+    "0ca82941-d40e-49c4-9914-88b21c5b134a",
+    "041b4800-3676-49eb-819a-b31b1c23196d",
+    "04dbbfc5-c0c5-4221-b109-b9e5e9733b38",
+    "037f219b-ae6d-45eb-9e63-7d5e7cd7328d",
+    "031c24ce-4448-4d1c-8515-b2336bd1cbcc",
+    "0ca30b03-ed12-440c-ae8e-0c0ed9975617",
+    "0dd7d64a-5edb-4aac-a732-0b0bb35ac1b4",
+    "046331c3-1d39-4092-9ccd-fcf38a0a4e1a",
+    "0dde7254-9906-4854-a1bc-f1718eab9e90",
+    "0c6cdbb3-7909-4244-9bcf-c376d7b59fdd",
+    "0342359d-882f-477e-9bb2-8697f82b06d2",
+    "92bf1e11-ef95-4c54-9f60-fcffa1e867bb",
+    "9efc6a69-4492-4572-ae07-52ce749f0d2f",
+    "04ac7411-fffe-4137-a0bd-0440424218a4",
+    "57806dad-9144-4540-adf9-8e8412b1e227",
+    "0d3279d3-7958-4952-91af-105814a3a5ef",
+    "035bd309-44eb-43da-be6c-dc0e1be6c594",
+    "03fd73f2-a144-48e6-b0b6-8bd0fdbb9b44",
+    "92fd5576-1b1b-4c83-9777-85af70d8029e",
+    "04d41580-f1c5-41ba-ad05-74051b32640a",
+    "9210b8eb-54ab-4188-a97c-ab9167828a9e",
+    "664892a9-a455-491a-bd58-d874075301d4",
+    "037e72c3-fea5-43ed-be8a-6c3ed21a4d12",
+    "0c57a062-3eee-4aa8-a476-3c6523cafbc5",
+    "3e601d1a-f867-4dd2-8725-ba5f7a401743",
+    "0c1c4987-321a-41e8-b920-9899caa4e582",
+    "9b77334e-18d9-40b1-909a-057c8d8d3bc3",
+    "92ac931f-b3d3-400b-ad1d-4b7712450565",
+    "03920be3-9b2d-46f7-9239-4211806a97d6",
+    "66b0a68f-9459-4f0e-84a1-b9812358aa06",
+    "5760e3f6-3f4f-44ad-a0c5-e511d9e24cbd",
+    "0c4a68c0-aa0d-42f1-a16e-168dc12db58e",
+    "9e644b22-0fa3-4063-9b63-9ac53ff02661"
+  ],
+  "tracks": [
+    {
+      "mbid": "5055604a-47a2-4680-a0ae-82dbf54194dd",
+      "artist": "Soft Machine",
+      "track": "All White",
+      "label": "Soft Machine \u2014 All White"
+    },
+    {
+      "mbid": "033721f8-1ac2-4c36-88f0-1e51c52edd13",
+      "artist": "\u0421\u0435\u0440\u0433\u0435\u0439 \u0412\u0430\u0441\u0438\u043b\u044c\u0435\u0432\u0438\u0447 \u0420\u0430\u0445\u043c\u0430\u043d\u0438\u043d\u043e\u0432",
+      "track": "Rhapsody on a Theme of Paganini, op. 43: Variation VII: Meno mosso, a tempo moderato",
+      "label": "\u0421\u0435\u0440\u0433\u0435\u0439 \u0412\u0430\u0441\u0438\u043b\u044c\u0435\u0432\u0438\u0447 \u0420\u0430\u0445\u043c\u0430\u043d\u0438\u043d\u043e\u0432 \u2014 Rhapsody on a Theme of Paganini, op. 43: Variation VII: Meno mosso, a tempo moderato"
+    },
+    {
+      "mbid": "0464e99a-6573-4fa2-9b98-53bb2cdeae11",
+      "artist": "Unknown",
+      "track": "Of Fathers and Sons",
+      "label": "Unknown \u2014 Of Fathers and Sons"
+    },
+    {
+      "mbid": "3be438c7-0890-4054-9ab2-2ea0982705f8",
+      "artist": "Robert Schumann",
+      "track": "Kreisleriana, Op. 16: VII. Sehr rasch",
+      "label": "Robert Schumann \u2014 Kreisleriana, Op. 16: VII. Sehr rasch"
+    },
+    {
+      "mbid": "68b2aea3-2c4d-487f-b6fe-ca3643ab2d77",
+      "artist": "Rajhesh Vaidhya",
+      "track": "Bhagyada",
+      "label": "Rajhesh Vaidhya \u2014 Bhagyada"
+    },
+    {
+      "mbid": "6fbc1a05-cfb7-4246-b4af-ace0303e8953",
+      "artist": "Ray Charles",
+      "track": "Don't Put All Your Dreams in One Basket",
+      "label": "Ray Charles \u2014 Don't Put All Your Dreams in One Basket"
+    },
+    {
+      "mbid": "9bd9873f-e7c6-4a03-8083-c4933c920531",
+      "artist": "Francesco Geminiani",
+      "track": "Concerto n\u00b02 en Si b\u00e9mol Majeur: IV. Adagio",
+      "label": "Francesco Geminiani \u2014 Concerto n\u00b02 en Si b\u00e9mol Majeur: IV. Adagio"
+    },
+    {
+      "mbid": "04529d49-f37c-4788-82c3-b0c2488e33fe",
+      "artist": "Thomas Newman",
+      "track": "Sorry for Nothing",
+      "label": "Thomas Newman \u2014 Sorry for Nothing"
+    },
+    {
+      "mbid": "68078741-b124-4a11-8771-7ec899b3c477",
+      "artist": "Lorne Balfe",
+      "track": "The Map",
+      "label": "Lorne Balfe \u2014 The Map"
+    },
+    {
+      "mbid": "3e164481-d986-40d4-a408-b9420180e912",
+      "artist": "Glenn Miller and His Orchestra",
+      "track": "Pagan Love Song",
+      "label": "Glenn Miller and His Orchestra \u2014 Pagan Love Song"
+    },
+    {
+      "mbid": "57d61040-672b-40af-a01b-f23ec559392b",
+      "artist": "Kjell Elvis",
+      "track": "Ett liv!",
+      "label": "Kjell Elvis \u2014 Ett liv!"
+    },
+    {
+      "mbid": "95f39f52-eed5-4faf-91d6-a455b09df4e2",
+      "artist": "Al Jolson",
+      "track": "Anniversary Song",
+      "label": "Al Jolson \u2014 Anniversary Song"
+    },
+    {
+      "mbid": "9efbcd31-c8f2-4b73-a257-6a6631eccfb2",
+      "artist": "Martin Hayes & Dennis Cahill",
+      "track": "The Night Poor Larry Was Stretched",
+      "label": "Martin Hayes & Dennis Cahill \u2014 The Night Poor Larry Was Stretched"
+    },
+    {
+      "mbid": "04c9c211-1ffe-4762-aa10-7d1db273c152",
+      "artist": "Antonio Vivaldi",
+      "track": "Violin Concerto in C major, op. 4 no. 7, RV 185: II. Allegro",
+      "label": "Antonio Vivaldi \u2014 Violin Concerto in C major, op. 4 no. 7, RV 185: II. Allegro"
+    },
+    {
+      "mbid": "68121fa8-0758-4548-b71c-6f02545e2c68",
+      "artist": "Felix Mendelssohn",
+      "track": "Symphony no. 3 in A minor \"Scottish\", op. 56: 3. Adagio",
+      "label": "Felix Mendelssohn \u2014 Symphony no. 3 in A minor \"Scottish\", op. 56: 3. Adagio"
+    },
+    {
+      "mbid": "03177b37-6029-4b36-972a-f34fd9caf0cf",
+      "artist": "Wolfgang Amadeus Mozart",
+      "track": "Requiem in D minor, K. 626 (S\u00fc\u00dfmayr completion): IIIf. Sequenz: \"Lacrimosa\"",
+      "label": "Wolfgang Amadeus Mozart \u2014 Requiem in D minor, K. 626 (S\u00fc\u00dfmayr completion): IIIf. Sequenz: \"Lacrimosa\""
+    },
+    {
+      "mbid": "3eae0478-7720-4b2b-8265-2ee4717b7a2c",
+      "artist": "Lead Belly",
+      "track": "Keep Your Hands Off Her",
+      "label": "Lead Belly \u2014 Keep Your Hands Off Her"
+    },
+    {
+      "mbid": "0ca82941-d40e-49c4-9914-88b21c5b134a",
+      "artist": "Patty Andrews",
+      "track": "Suddenly There's a Valley",
+      "label": "Patty Andrews \u2014 Suddenly There's a Valley"
+    },
+    {
+      "mbid": "041b4800-3676-49eb-819a-b31b1c23196d",
+      "artist": "Trevor Jones",
+      "track": "Jen Trapped in Lair / Jen Reaches Chamber of Life",
+      "label": "Trevor Jones \u2014 Jen Trapped in Lair / Jen Reaches Chamber of Life"
+    },
+    {
+      "mbid": "04dbbfc5-c0c5-4221-b109-b9e5e9733b38",
+      "artist": "Modest Mussogrsky",
+      "track": "Pictures at an Exhibition: III. Tuileries",
+      "label": "Modest Mussogrsky \u2014 Pictures at an Exhibition: III. Tuileries"
+    },
+    {
+      "mbid": "037f219b-ae6d-45eb-9e63-7d5e7cd7328d",
+      "artist": "[nature sounds]",
+      "track": "Moorland Spring: Curlew",
+      "label": "[nature sounds] \u2014 Moorland Spring: Curlew"
+    },
+    {
+      "mbid": "031c24ce-4448-4d1c-8515-b2336bd1cbcc",
+      "artist": "Johann Sebastian Bach",
+      "track": "Partita No. 1 in B-flat major, BWV 825: III. Corrente",
+      "label": "Johann Sebastian Bach \u2014 Partita No. 1 in B-flat major, BWV 825: III. Corrente"
+    },
+    {
+      "mbid": "0ca30b03-ed12-440c-ae8e-0c0ed9975617",
+      "artist": "Thin White Rope",
+      "track": "Triangle Song",
+      "label": "Thin White Rope \u2014 Triangle Song"
+    },
+    {
+      "mbid": "0dd7d64a-5edb-4aac-a732-0b0bb35ac1b4",
+      "artist": "Nat King Cole",
+      "track": "The Christmas Song (Merry Christmas to You) (new Version)",
+      "label": "Nat King Cole \u2014 The Christmas Song (Merry Christmas to You) (new Version)"
+    },
+    {
+      "mbid": "046331c3-1d39-4092-9ccd-fcf38a0a4e1a",
+      "artist": "Johann Pachelbel",
+      "track": "Fugues on the \"Magnificat octavi toni\": X.",
+      "label": "Johann Pachelbel \u2014 Fugues on the \"Magnificat octavi toni\": X."
+    },
+    {
+      "mbid": "0dde7254-9906-4854-a1bc-f1718eab9e90",
+      "artist": "Alfred Schnittke",
+      "track": "The Master and Margarita: Meister und Margarita II",
+      "label": "Alfred Schnittke \u2014 The Master and Margarita: Meister und Margarita II"
+    },
+    {
+      "mbid": "0c6cdbb3-7909-4244-9bcf-c376d7b59fdd",
+      "artist": "Johann Sebastian Bach",
+      "track": "Six Chorales of Various Kinds \"Sch\u00fcbler Chorales\": Wo soll ich fliehen hin, BWV 646",
+      "label": "Johann Sebastian Bach \u2014 Six Chorales of Various Kinds \"Sch\u00fcbler Chorales\": Wo soll ich fliehen hin, BWV 646"
+    },
+    {
+      "mbid": "0342359d-882f-477e-9bb2-8697f82b06d2",
+      "artist": "Victor Young",
+      "track": "My Foolish Heart: Theme",
+      "label": "Victor Young \u2014 My Foolish Heart: Theme"
+    },
+    {
+      "mbid": "92bf1e11-ef95-4c54-9f60-fcffa1e867bb",
+      "artist": "New Orleans Rhythm Kings",
+      "track": "That's A Plenty",
+      "label": "New Orleans Rhythm Kings \u2014 That's A Plenty"
+    },
+    {
+      "mbid": "9efc6a69-4492-4572-ae07-52ce749f0d2f",
+      "artist": "Nat King Cole",
+      "track": "The Christmas Song (Merry Christmas to You)",
+      "label": "Nat King Cole \u2014 The Christmas Song (Merry Christmas to You)"
+    },
+    {
+      "mbid": "04ac7411-fffe-4137-a0bd-0440424218a4",
+      "artist": "Johann Sebastian Bach",
+      "track": "Orchestral Suite no. 2 in B minor, BWV 1067: VI. Menuet",
+      "label": "Johann Sebastian Bach \u2014 Orchestral Suite no. 2 in B minor, BWV 1067: VI. Menuet"
+    },
+    {
+      "mbid": "57806dad-9144-4540-adf9-8e8412b1e227",
+      "artist": "Gaspard le Roux",
+      "track": "Pi\u00e8ces in G minor: Menuet",
+      "label": "Gaspard le Roux \u2014 Pi\u00e8ces in G minor: Menuet"
+    },
+    {
+      "mbid": "0d3279d3-7958-4952-91af-105814a3a5ef",
+      "artist": "Luis Bacalov",
+      "track": "Sospensioni",
+      "label": "Luis Bacalov \u2014 Sospensioni"
+    },
+    {
+      "mbid": "035bd309-44eb-43da-be6c-dc0e1be6c594",
+      "artist": "Don Williams",
+      "track": "Standing Knee Deep in a River (Dying of Thirst)",
+      "label": "Don Williams \u2014 Standing Knee Deep in a River (Dying of Thirst)"
+    },
+    {
+      "mbid": "03fd73f2-a144-48e6-b0b6-8bd0fdbb9b44",
+      "artist": "Ray Condo & His Hardrock Goners",
+      "track": "High Temperature",
+      "label": "Ray Condo & His Hardrock Goners \u2014 High Temperature"
+    },
+    {
+      "mbid": "92fd5576-1b1b-4c83-9777-85af70d8029e",
+      "artist": "Johnny Mathis",
+      "track": "Wasn't the Summer Short",
+      "label": "Johnny Mathis \u2014 Wasn't the Summer Short"
+    },
+    {
+      "mbid": "04d41580-f1c5-41ba-ad05-74051b32640a",
+      "artist": "Maurice Ravel",
+      "track": "Pr\u00e9lude",
+      "label": "Maurice Ravel \u2014 Pr\u00e9lude"
+    },
+    {
+      "mbid": "9210b8eb-54ab-4188-a97c-ab9167828a9e",
+      "artist": "Antonio Vivaldi",
+      "track": "Juditha triumphans Oratorio: Recitativo abra \"In urbe interim pia\"",
+      "label": "Antonio Vivaldi \u2014 Juditha triumphans Oratorio: Recitativo abra \"In urbe interim pia\""
+    },
+    {
+      "mbid": "664892a9-a455-491a-bd58-d874075301d4",
+      "artist": "*shels",
+      "track": "M",
+      "label": "*shels \u2014 M"
+    },
+    {
+      "mbid": "037e72c3-fea5-43ed-be8a-6c3ed21a4d12",
+      "artist": "Vangelis",
+      "track": "Creation Du Monde",
+      "label": "Vangelis \u2014 Creation Du Monde"
+    },
+    {
+      "mbid": "0c57a062-3eee-4aa8-a476-3c6523cafbc5",
+      "artist": "Dale Hawkins",
+      "track": "Daredevil",
+      "label": "Dale Hawkins \u2014 Daredevil"
+    },
+    {
+      "mbid": "3e601d1a-f867-4dd2-8725-ba5f7a401743",
+      "artist": "Bing Crosby&Louis Armstrong",
+      "track": "Gone Fishin' (live version)",
+      "label": "Bing Crosby&Louis Armstrong \u2014 Gone Fishin' (live version)"
+    },
+    {
+      "mbid": "0c1c4987-321a-41e8-b920-9899caa4e582",
+      "artist": "Tomaso Giovanni Albinoni",
+      "track": "Concerto Undicesimo in C minor: II. Larghetto",
+      "label": "Tomaso Giovanni Albinoni \u2014 Concerto Undicesimo in C minor: II. Larghetto"
+    },
+    {
+      "mbid": "9b77334e-18d9-40b1-909a-057c8d8d3bc3",
+      "artist": "Karl Richter",
+      "track": "Choral Preludes op.122: 5. Schm\u00fccke dich, o liebe Seele",
+      "label": "Karl Richter \u2014 Choral Preludes op.122: 5. Schm\u00fccke dich, o liebe Seele"
+    },
+    {
+      "mbid": "92ac931f-b3d3-400b-ad1d-4b7712450565",
+      "artist": "Philip Glass",
+      "track": "Dark Kitchen",
+      "label": "Philip Glass \u2014 Dark Kitchen"
+    },
+    {
+      "mbid": "03920be3-9b2d-46f7-9239-4211806a97d6",
+      "artist": "Ludwig van Beethoven",
+      "track": "String Quartet in F minor, Op. 95: III. Allegro assai vivace ma serioso",
+      "label": "Ludwig van Beethoven \u2014 String Quartet in F minor, Op. 95: III. Allegro assai vivace ma serioso"
+    },
+    {
+      "mbid": "66b0a68f-9459-4f0e-84a1-b9812358aa06",
+      "artist": "Ricky Nelson",
+      "track": "It's Late (alternate version)",
+      "label": "Ricky Nelson \u2014 It's Late (alternate version)"
+    },
+    {
+      "mbid": "5760e3f6-3f4f-44ad-a0c5-e511d9e24cbd",
+      "artist": "Blind Boy Fuller",
+      "track": "I'm a Rattlesnakin' Daddy",
+      "label": "Blind Boy Fuller \u2014 I'm a Rattlesnakin' Daddy"
+    },
+    {
+      "mbid": "0c4a68c0-aa0d-42f1-a16e-168dc12db58e",
+      "artist": "Carter Burwell",
+      "track": "Malkovich Shrine",
+      "label": "Carter Burwell \u2014 Malkovich Shrine"
+    },
+    {
+      "mbid": "9e644b22-0fa3-4063-9b63-9ac53ff02661",
+      "artist": "Jean Sibelius",
+      "track": "Swanwhite, op. 54: Act III: no. 12: Largamente",
+      "label": "Jean Sibelius \u2014 Swanwhite, op. 54: Act III: no. 12: Largamente"
+    }
+  ]
+}

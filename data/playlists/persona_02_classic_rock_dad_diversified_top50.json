@@ -1,0 +1,358 @@
+{
+  "name": "persona_02_classic_rock_dad diversified top 50",
+  "source": "presentation/figures/module5/persona_02_classic_rock_dad_union_query_pool_mbids.json",
+  "mbids": [
+    "04a41325-66dd-4f8a-89a3-bec0f52bea84",
+    "95bd8c47-2443-401e-98ff-a385109af954",
+    "666f7eba-e8da-4913-8cf1-94b16fb34f23",
+    "59ba1b5c-d9a0-469c-a1a4-80091d646eeb",
+    "3b6429f7-1e11-4693-8fe9-fed69745cfc0",
+    "68e9c8da-df16-4d36-a296-fc6e9457dc1d",
+    "6f8ad8a1-d475-4d5b-af16-9eb3d465e1b9",
+    "9599dd0a-74da-466d-9224-7cc2de30771c",
+    "6fad1510-cfdf-40b3-8a6a-c201bad5c914",
+    "6f4a96b9-ac4f-4f97-a798-cdec99111c6a",
+    "575e125b-10bb-4bdb-854d-dff1fb5da662",
+    "3b8ecafa-5a41-4fa1-b621-370d878ae29c",
+    "0d27dbb2-c34b-4b35-b4d6-08af6f71c24a",
+    "66516dca-93f4-48de-bddc-51d0c9a51efa",
+    "9e7501b4-d681-4371-bbc9-22b72f68f2d8",
+    "92b30494-5db1-4e46-8e97-aeb0cff303e4",
+    "68561692-df49-4ec2-b65d-97a67a6bceac",
+    "9bbf147d-ea77-4af0-8676-8a0f37af027f",
+    "0d13c19b-36f0-42ae-86e6-09657a3d0791",
+    "0cc6cb43-e4e7-4e97-a776-d00c0028b780",
+    "9eab3c98-6538-4c2e-bd11-d5d922c6d703",
+    "3e6ca89f-1aa5-4d11-8ff6-e8ef4df12273",
+    "6f1c25f6-efd8-411a-af14-2440396f3631",
+    "660fc6ca-8f50-4578-87ca-55c258874fc3",
+    "66d9d787-8d74-4cad-8b71-2c3b4565444d",
+    "95f7c819-564c-43e4-bd13-655f5a2eb5c8",
+    "3b2d942d-bde2-4fa5-8f06-9430a9ec3a2b",
+    "57e79ec6-6cde-49a7-b81f-03692c0a8d62",
+    "61165314-d8af-4904-a74e-e364863e7604",
+    "3ba80cee-0d9a-42ee-aef4-fafb5d955dcd",
+    "59c090e2-f01c-4814-b506-baab332e9e64",
+    "04a78b95-1252-49a5-b70e-40ea12d608b6",
+    "9e41ad04-f56d-414b-a886-e93fbce62f10",
+    "03e50d06-4ef8-40ba-8fcc-5f2a0dbe2480",
+    "61d4aa96-25df-4f39-a0ba-f6ba8ba01779",
+    "0dbf9187-b33f-49a5-a89b-cdc0500fc6d9",
+    "66c4fed4-a4fb-47b2-9eb9-b8df43fab4af",
+    "0c3d0cd1-bb56-4449-b1a1-ac5c4695801f",
+    "3b942ebf-ab58-4120-92e1-37de8e92112e",
+    "50821af5-96ab-4364-8772-142398663cdc",
+    "048dcc13-6742-4ef3-af0b-14a181e25593",
+    "9badd507-887c-497f-be73-0693605156fa",
+    "579b91ce-6cf3-411c-b273-720c30023d42",
+    "0d9035eb-cada-4dc6-a38e-bdfe9a411382",
+    "668798ff-24b2-4610-bf7b-f8afa506e17f",
+    "680fe6cd-16f0-4185-9411-472c115691dd",
+    "9565188e-37e7-442e-a84f-fca3b2d34f06",
+    "681f71cb-8936-4ae9-9e91-807b70795e7b",
+    "661a8539-6b55-46f7-a977-c3272cc342f6",
+    "0dc9542c-8cd9-44b0-ae39-c673d6cabeaa"
+  ],
+  "tracks": [
+    {
+      "mbid": "04a41325-66dd-4f8a-89a3-bec0f52bea84",
+      "artist": "POCKETMAN",
+      "track": "Take Flight (Wings)",
+      "label": "POCKETMAN \u2014 Take Flight (Wings)"
+    },
+    {
+      "mbid": "95bd8c47-2443-401e-98ff-a385109af954",
+      "artist": "The Rolling Stones",
+      "track": "Route 66",
+      "label": "The Rolling Stones \u2014 Route 66"
+    },
+    {
+      "mbid": "666f7eba-e8da-4913-8cf1-94b16fb34f23",
+      "artist": "Luther Wright & the Wrongs",
+      "track": "Young Lust",
+      "label": "Luther Wright & the Wrongs \u2014 Young Lust"
+    },
+    {
+      "mbid": "59ba1b5c-d9a0-469c-a1a4-80091d646eeb",
+      "artist": "The Oscar Peterson Trio",
+      "track": "Have You Met Miss Jones?",
+      "label": "The Oscar Peterson Trio \u2014 Have You Met Miss Jones?"
+    },
+    {
+      "mbid": "3b6429f7-1e11-4693-8fe9-fed69745cfc0",
+      "artist": "Dmitry Shostakovich",
+      "track": "Suite from \"Katerina Ismailova\", op. 114a: III. Largo",
+      "label": "Dmitry Shostakovich \u2014 Suite from \"Katerina Ismailova\", op. 114a: III. Largo"
+    },
+    {
+      "mbid": "68e9c8da-df16-4d36-a296-fc6e9457dc1d",
+      "artist": "Soundgarden",
+      "track": "Fell on Black Days",
+      "label": "Soundgarden \u2014 Fell on Black Days"
+    },
+    {
+      "mbid": "6f8ad8a1-d475-4d5b-af16-9eb3d465e1b9",
+      "artist": "Wat Tyler",
+      "track": "Johnny's Puppy",
+      "label": "Wat Tyler \u2014 Johnny's Puppy"
+    },
+    {
+      "mbid": "9599dd0a-74da-466d-9224-7cc2de30771c",
+      "artist": "Parabellum",
+      "track": "Stalag 27",
+      "label": "Parabellum \u2014 Stalag 27"
+    },
+    {
+      "mbid": "6fad1510-cfdf-40b3-8a6a-c201bad5c914",
+      "artist": "Santana",
+      "track": "Let Me Inside",
+      "label": "Santana \u2014 Let Me Inside"
+    },
+    {
+      "mbid": "6f4a96b9-ac4f-4f97-a798-cdec99111c6a",
+      "artist": "Duke Ellington, Charles Mingus, Max Roach",
+      "track": "A Little Max (Parfait)",
+      "label": "Duke Ellington, Charles Mingus, Max Roach \u2014 A Little Max (Parfait)"
+    },
+    {
+      "mbid": "575e125b-10bb-4bdb-854d-dff1fb5da662",
+      "artist": "Unknown",
+      "track": "Flames",
+      "label": "Unknown \u2014 Flames"
+    },
+    {
+      "mbid": "3b8ecafa-5a41-4fa1-b621-370d878ae29c",
+      "artist": "Danny Brown",
+      "track": "Clean Up",
+      "label": "Danny Brown \u2014 Clean Up"
+    },
+    {
+      "mbid": "0d27dbb2-c34b-4b35-b4d6-08af6f71c24a",
+      "artist": "Johann Sebastian Bach",
+      "track": "Partita No. 1 in B-flat major, BWV 825: III. Courante",
+      "label": "Johann Sebastian Bach \u2014 Partita No. 1 in B-flat major, BWV 825: III. Courante"
+    },
+    {
+      "mbid": "66516dca-93f4-48de-bddc-51d0c9a51efa",
+      "artist": "The Proletariat",
+      "track": "Subsidized",
+      "label": "The Proletariat \u2014 Subsidized"
+    },
+    {
+      "mbid": "9e7501b4-d681-4371-bbc9-22b72f68f2d8",
+      "artist": "BeauSoleil",
+      "track": "Rolling Pin",
+      "label": "BeauSoleil \u2014 Rolling Pin"
+    },
+    {
+      "mbid": "92b30494-5db1-4e46-8e97-aeb0cff303e4",
+      "artist": "Danny Elfman",
+      "track": "Bad Witch",
+      "label": "Danny Elfman \u2014 Bad Witch"
+    },
+    {
+      "mbid": "68561692-df49-4ec2-b65d-97a67a6bceac",
+      "artist": "Dudley Simpson",
+      "track": "Music from \"The Android Invasion\" Parts 3 & 4 (Extended Suite)",
+      "label": "Dudley Simpson \u2014 Music from \"The Android Invasion\" Parts 3 & 4 (Extended Suite)"
+    },
+    {
+      "mbid": "9bbf147d-ea77-4af0-8676-8a0f37af027f",
+      "artist": "Tricky",
+      "track": "Mellow",
+      "label": "Tricky \u2014 Mellow"
+    },
+    {
+      "mbid": "0d13c19b-36f0-42ae-86e6-09657a3d0791",
+      "artist": "Antonio Vivaldi",
+      "track": "Salmo 109: Dixit Dominus, RV 594: 9. Gloria Patri",
+      "label": "Antonio Vivaldi \u2014 Salmo 109: Dixit Dominus, RV 594: 9. Gloria Patri"
+    },
+    {
+      "mbid": "0cc6cb43-e4e7-4e97-a776-d00c0028b780",
+      "artist": "Belly",
+      "track": "Gepetto (remix)",
+      "label": "Belly \u2014 Gepetto (remix)"
+    },
+    {
+      "mbid": "9eab3c98-6538-4c2e-bd11-d5d922c6d703",
+      "artist": "Jakatta",
+      "track": "It Will Be",
+      "label": "Jakatta \u2014 It Will Be"
+    },
+    {
+      "mbid": "3e6ca89f-1aa5-4d11-8ff6-e8ef4df12273",
+      "artist": "Unknown",
+      "track": "Wagon Attack",
+      "label": "Unknown \u2014 Wagon Attack"
+    },
+    {
+      "mbid": "6f1c25f6-efd8-411a-af14-2440396f3631",
+      "artist": "Michael Giacchino",
+      "track": "Moreau Trouble Than She's Worth",
+      "label": "Michael Giacchino \u2014 Moreau Trouble Than She's Worth"
+    },
+    {
+      "mbid": "660fc6ca-8f50-4578-87ca-55c258874fc3",
+      "artist": "The March Violets",
+      "track": "Walk Into the Sun",
+      "label": "The March Violets \u2014 Walk Into the Sun"
+    },
+    {
+      "mbid": "66d9d787-8d74-4cad-8b71-2c3b4565444d",
+      "artist": "George Fenton",
+      "track": "A New Day",
+      "label": "George Fenton \u2014 A New Day"
+    },
+    {
+      "mbid": "95f7c819-564c-43e4-bd13-655f5a2eb5c8",
+      "artist": "Tequilajazzz",
+      "track": "\u0422\u0435\u043c\u0430 \u043f\u0440\u043e\u0448\u043b\u043e\u0433\u043e \u043b\u0435\u0442\u0430",
+      "label": "Tequilajazzz \u2014 \u0422\u0435\u043c\u0430 \u043f\u0440\u043e\u0448\u043b\u043e\u0433\u043e \u043b\u0435\u0442\u0430"
+    },
+    {
+      "mbid": "3b2d942d-bde2-4fa5-8f06-9430a9ec3a2b",
+      "artist": "Madonna",
+      "track": "Everybody",
+      "label": "Madonna \u2014 Everybody"
+    },
+    {
+      "mbid": "57e79ec6-6cde-49a7-b81f-03692c0a8d62",
+      "artist": "Letum",
+      "track": "Never Change",
+      "label": "Letum \u2014 Never Change"
+    },
+    {
+      "mbid": "61165314-d8af-4904-a74e-e364863e7604",
+      "artist": "Peter Ilyich Tchaikovsky",
+      "track": "Symphony no. 6 in B minor, op. 74 \"Path\u00e9tique\": III. Allegro molto vivace",
+      "label": "Peter Ilyich Tchaikovsky \u2014 Symphony no. 6 in B minor, op. 74 \"Path\u00e9tique\": III. Allegro molto vivace"
+    },
+    {
+      "mbid": "3ba80cee-0d9a-42ee-aef4-fafb5d955dcd",
+      "artist": "Teenage Fanclub",
+      "track": "Everything Flows",
+      "label": "Teenage Fanclub \u2014 Everything Flows"
+    },
+    {
+      "mbid": "59c090e2-f01c-4814-b506-baab332e9e64",
+      "artist": "Patrick Doyle",
+      "track": "Goodbye Grace / The Chase",
+      "label": "Patrick Doyle \u2014 Goodbye Grace / The Chase"
+    },
+    {
+      "mbid": "04a78b95-1252-49a5-b70e-40ea12d608b6",
+      "artist": "Die Toten Hosen",
+      "track": "Born to Lose",
+      "label": "Die Toten Hosen \u2014 Born to Lose"
+    },
+    {
+      "mbid": "9e41ad04-f56d-414b-a886-e93fbce62f10",
+      "artist": "Bounty Killer",
+      "track": "Cellular Phone",
+      "label": "Bounty Killer \u2014 Cellular Phone"
+    },
+    {
+      "mbid": "03e50d06-4ef8-40ba-8fcc-5f2a0dbe2480",
+      "artist": "The Mercury Program",
+      "track": "Gently Turned On Your Head",
+      "label": "The Mercury Program \u2014 Gently Turned On Your Head"
+    },
+    {
+      "mbid": "61d4aa96-25df-4f39-a0ba-f6ba8ba01779",
+      "artist": "Anton\u00edn Dvo\u0159\u00e1k",
+      "track": "Symphony no. 9 in E minor. op. 95 \"From the New World\": III. Scherzo: Molto vivace",
+      "label": "Anton\u00edn Dvo\u0159\u00e1k \u2014 Symphony no. 9 in E minor. op. 95 \"From the New World\": III. Scherzo: Molto vivace"
+    },
+    {
+      "mbid": "0dbf9187-b33f-49a5-a89b-cdc0500fc6d9",
+      "artist": "Mastodon",
+      "track": "Elephant Man",
+      "label": "Mastodon \u2014 Elephant Man"
+    },
+    {
+      "mbid": "66c4fed4-a4fb-47b2-9eb9-b8df43fab4af",
+      "artist": "T\u00eates Raides",
+      "track": "Le Phare",
+      "label": "T\u00eates Raides \u2014 Le Phare"
+    },
+    {
+      "mbid": "0c3d0cd1-bb56-4449-b1a1-ac5c4695801f",
+      "artist": "David Bowie",
+      "track": "Blackout",
+      "label": "David Bowie \u2014 Blackout"
+    },
+    {
+      "mbid": "3b942ebf-ab58-4120-92e1-37de8e92112e",
+      "artist": "Ricardo Villalobos",
+      "track": "Baila Sin Petit",
+      "label": "Ricardo Villalobos \u2014 Baila Sin Petit"
+    },
+    {
+      "mbid": "50821af5-96ab-4364-8772-142398663cdc",
+      "artist": "RQTN",
+      "track": "Le transfert",
+      "label": "RQTN \u2014 Le transfert"
+    },
+    {
+      "mbid": "048dcc13-6742-4ef3-af0b-14a181e25593",
+      "artist": "Ap\u00f3cr\u00fdphos",
+      "track": "The Language of Isolation",
+      "label": "Ap\u00f3cr\u00fdphos \u2014 The Language of Isolation"
+    },
+    {
+      "mbid": "9badd507-887c-497f-be73-0693605156fa",
+      "artist": "Randy Bachman",
+      "track": "Prairie Town",
+      "label": "Randy Bachman \u2014 Prairie Town"
+    },
+    {
+      "mbid": "579b91ce-6cf3-411c-b273-720c30023d42",
+      "artist": "The Knife",
+      "track": "N.Y. Hotel",
+      "label": "The Knife \u2014 N.Y. Hotel"
+    },
+    {
+      "mbid": "0d9035eb-cada-4dc6-a38e-bdfe9a411382",
+      "artist": "Jerry Lee Lewis",
+      "track": "Hold on I'm Coming (Fast version)",
+      "label": "Jerry Lee Lewis \u2014 Hold on I'm Coming (Fast version)"
+    },
+    {
+      "mbid": "668798ff-24b2-4610-bf7b-f8afa506e17f",
+      "artist": "Japan",
+      "track": "Halloween",
+      "label": "Japan \u2014 Halloween"
+    },
+    {
+      "mbid": "680fe6cd-16f0-4185-9411-472c115691dd",
+      "artist": "Circa Waves",
+      "track": "Deserve This",
+      "label": "Circa Waves \u2014 Deserve This"
+    },
+    {
+      "mbid": "9565188e-37e7-442e-a84f-fca3b2d34f06",
+      "artist": "Dawn Chorus Ignites",
+      "track": "Dawn Chorus Ignites",
+      "label": "Dawn Chorus Ignites \u2014 Dawn Chorus Ignites"
+    },
+    {
+      "mbid": "681f71cb-8936-4ae9-9e91-807b70795e7b",
+      "artist": "The Mission",
+      "track": "Cocoon",
+      "label": "The Mission \u2014 Cocoon"
+    },
+    {
+      "mbid": "661a8539-6b55-46f7-a977-c3272cc342f6",
+      "artist": "Bill Monroe and His Bluegrass Boys",
+      "track": "Shady Grove",
+      "label": "Bill Monroe and His Bluegrass Boys \u2014 Shady Grove"
+    },
+    {
+      "mbid": "0dc9542c-8cd9-44b0-ae39-c673d6cabeaa",
+      "artist": "Zdob \u0219i Zdub",
+      "track": "\u0422\u044b \u043c\u0435\u043d\u044f \u043e\u0441\u0442\u0430\u0432\u0438\u043b\u0430",
+      "label": "Zdob \u0219i Zdub \u2014 \u0422\u044b \u043c\u0435\u043d\u044f \u043e\u0441\u0442\u0430\u0432\u0438\u043b\u0430"
+    }
+  ]
+}

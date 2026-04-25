@@ -1,0 +1,53 @@
+{
+  "config": {
+    "feature_family": [
+      "genre",
+      "mood",
+      "danceable",
+      "voice_instrumental",
+      "timbre",
+      "loudness_bucket",
+      "bias"
+    ],
+    "label_scheme": "playlist+ratings",
+    "model_type": "feature_mean_difference_reranker"
+  },
+  "source": {
+    "kb_snapshot": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/knowledge_base.json",
+    "playlists_file": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/personas/persona_04_trap_maximalist/user_playlists.json",
+    "ratings_file": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/personas/persona_04_trap_maximalist/user_ratings.json"
+  },
+  "trained_at": "2026-04-09T19:47:37+00:00",
+  "version": 1,
+  "weights": {
+    "bias": 0.0,
+    "danceable:danceable": 0.16083333333333327,
+    "danceable:not_danceable": -0.24125000000000013,
+    "genre:ambient": -0.10038461538461552,
+    "genre:blues": -0.06833333333333347,
+    "genre:cla": -0.3850000000000001,
+    "genre:dan": 0.06499999999999995,
+    "genre:electronic": 0.017941176470588127,
+    "genre:hip": 0.21045454545454534,
+    "genre:house": 0.22499999999999987,
+    "genre:jaz": -0.053749999999999964,
+    "genre:pop": -0.06833333333333347,
+    "genre:raphiphop": 0.16499999999999992,
+    "genre:rhy": -0.7350000000000001,
+    "genre:roc": 0.2649999999999999,
+    "genre:techno": 0.2649999999999999,
+    "genre:trance": 0.15249999999999986,
+    "loudness_bucket:loud": -0.12388888888888894,
+    "loudness_bucket:medium": 0.10136363636363621,
+    "mood:acoustic": -0.25807692307692315,
+    "mood:electronic": 0.09000000000000008,
+    "mood:happy": -0.1725000000000001,
+    "mood:party": 0.20000000000000007,
+    "mood:relaxed": -0.18999999999999995,
+    "mood:sad": -0.5183333333333334,
+    "timbre:bright": 0.0002941176470587781,
+    "timbre:dark": -0.00021739130434783593,
+    "vi:instrumental": -0.22730769230769243,
+    "vi:voice": 0.10944444444444434
+  }
+}

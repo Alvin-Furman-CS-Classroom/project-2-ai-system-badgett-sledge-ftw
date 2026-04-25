@@ -1,0 +1,47 @@
+{
+  "config": {
+    "feature_family": [
+      "genre",
+      "mood",
+      "danceable",
+      "voice_instrumental",
+      "timbre",
+      "loudness_bucket",
+      "bias"
+    ],
+    "label_scheme": "playlist+ratings",
+    "model_type": "feature_mean_difference_reranker"
+  },
+  "source": {
+    "kb_snapshot": "/Users/chacehome/Desktop/csc 343/project 2/project-2-ai-system-badgett-sledge-ftw/data/knowledge_base.json",
+    "playlists_file": "/Users/chacehome/Desktop/csc 343/project 2/project-2-ai-system-badgett-sledge-ftw/data/user_playlists.json",
+    "ratings_file": "/Users/chacehome/Desktop/csc 343/project 2/project-2-ai-system-badgett-sledge-ftw/data/user_ratings.json"
+  },
+  "trained_at": "2026-04-01T15:44:51+00:00",
+  "version": 1,
+  "weights": {
+    "bias": 0.0,
+    "danceable:danceable": -0.15833333333333333,
+    "danceable:not_danceable": 0.05757575757575761,
+    "genre:alternative": 0.06666666666666676,
+    "genre:ambient": 0.06666666666666665,
+    "genre:electronic": -0.050000000000000044,
+    "genre:folkcountry": 0.2666666666666667,
+    "genre:jaz": -0.01904761904761898,
+    "genre:pop": 0.2666666666666667,
+    "genre:roc": 0.0,
+    "genre:rock": 0.2666666666666667,
+    "genre:trance": -0.07619047619047614,
+    "loudness_bucket:loud": 0.033333333333333326,
+    "loudness_bucket:medium": -0.022222222222222254,
+    "mood:acoustic": -0.08333333333333326,
+    "mood:electronic": -0.1333333333333333,
+    "mood:happy": 0.0,
+    "mood:party": -0.033333333333333326,
+    "mood:relaxed": 0.01666666666666672,
+    "mood:sad": -0.08333333333333326,
+    "timbre:bright": 0.0,
+    "vi:instrumental": 0.033333333333333326,
+    "vi:voice": -0.008333333333333304
+  }
+}

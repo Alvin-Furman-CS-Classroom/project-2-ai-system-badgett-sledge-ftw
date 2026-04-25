@@ -1,0 +1,4376 @@
+{
+  "1960s": {
+    "rock": {
+      "popular": [
+        {
+          "artist": "The Beatles",
+          "track": "Hey Jude"
+        },
+        {
+          "artist": "The Beatles",
+          "track": "Come Together"
+        },
+        {
+          "artist": "The Beatles",
+          "track": "Let It Be"
+        },
+        {
+          "artist": "The Beatles",
+          "track": "Yesterday"
+        },
+        {
+          "artist": "The Beatles",
+          "track": "A Day in the Life"
+        },
+        {
+          "artist": "The Beatles",
+          "track": "Strawberry Fields Forever"
+        },
+        {
+          "artist": "The Rolling Stones",
+          "track": "Paint It Black"
+        },
+        {
+          "artist": "The Rolling Stones",
+          "track": "Gimme Shelter"
+        },
+        {
+          "artist": "The Rolling Stones",
+          "track": "Sympathy for the Devil"
+        },
+        {
+          "artist": "The Rolling Stones",
+          "track": "Satisfaction"
+        },
+        {
+          "artist": "The Rolling Stones",
+          "track": "Jumpin' Jack Flash"
+        },
+        {
+          "artist": "The Who",
+          "track": "My Generation"
+        },
+        {
+          "artist": "The Who",
+          "track": "Baba O'Riley"
+        },
+        {
+          "artist": "The Who",
+          "track": "Won't Get Fooled Again"
+        },
+        {
+          "artist": "The Who",
+          "track": "Pinball Wizard"
+        },
+        {
+          "artist": "The Doors",
+          "track": "Light My Fire"
+        },
+        {
+          "artist": "The Doors",
+          "track": "Break On Through"
+        },
+        {
+          "artist": "The Doors",
+          "track": "Riders on the Storm"
+        },
+        {
+          "artist": "Jimi Hendrix",
+          "track": "Purple Haze"
+        },
+        {
+          "artist": "Jimi Hendrix",
+          "track": "All Along the Watchtower"
+        },
+        {
+          "artist": "Jimi Hendrix",
+          "track": "Voodoo Child (Slight Return)"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "The Kinks",
+          "track": "Waterloo Sunset"
+        },
+        {
+          "artist": "The Kinks",
+          "track": "You Really Got Me"
+        },
+        {
+          "artist": "The Kinks",
+          "track": "Lola"
+        },
+        {
+          "artist": "The Kinks",
+          "track": "Sunny Afternoon"
+        },
+        {
+          "artist": "The Byrds",
+          "track": "Mr. Tambourine Man"
+        },
+        {
+          "artist": "The Byrds",
+          "track": "Turn! Turn! Turn!"
+        },
+        {
+          "artist": "The Byrds",
+          "track": "Eight Miles High"
+        },
+        {
+          "artist": "Cream",
+          "track": "Sunshine of Your Love"
+        },
+        {
+          "artist": "Cream",
+          "track": "White Room"
+        },
+        {
+          "artist": "Cream",
+          "track": "Crossroads"
+        },
+        {
+          "artist": "The Yardbirds",
+          "track": "Heart Full of Soul"
+        },
+        {
+          "artist": "The Yardbirds",
+          "track": "For Your Love"
+        },
+        {
+          "artist": "Jefferson Airplane",
+          "track": "Somebody to Love"
+        },
+        {
+          "artist": "Jefferson Airplane",
+          "track": "White Rabbit"
+        },
+        {
+          "artist": "The Animals",
+          "track": "House of the Rising Sun"
+        },
+        {
+          "artist": "The Animals",
+          "track": "We Gotta Get Out of This Place"
+        },
+        {
+          "artist": "The Band",
+          "track": "The Weight"
+        },
+        {
+          "artist": "The Band",
+          "track": "Up on Cripple Creek"
+        },
+        {
+          "artist": "Creedence Clearwater Revival",
+          "track": "Fortunate Son"
+        },
+        {
+          "artist": "Creedence Clearwater Revival",
+          "track": "Proud Mary"
+        },
+        {
+          "artist": "Creedence Clearwater Revival",
+          "track": "Bad Moon Rising"
+        },
+        {
+          "artist": "The Zombies",
+          "track": "Time of the Season"
+        },
+        {
+          "artist": "The Zombies",
+          "track": "She's Not There"
+        },
+        {
+          "artist": "Buffalo Springfield",
+          "track": "For What It's Worth"
+        },
+        {
+          "artist": "Traffic",
+          "track": "Dear Mr. Fantasy"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Velvet Underground",
+          "track": "Heroin"
+        },
+        {
+          "artist": "Velvet Underground",
+          "track": "Sunday Morning"
+        },
+        {
+          "artist": "Velvet Underground",
+          "track": "Sweet Jane"
+        },
+        {
+          "artist": "The Stooges",
+          "track": "I Wanna Be Your Dog"
+        },
+        {
+          "artist": "The Stooges",
+          "track": "Search and Destroy"
+        },
+        {
+          "artist": "Love",
+          "track": "Alone Again Or"
+        },
+        {
+          "artist": "Love",
+          "track": "7 and 7 Is"
+        },
+        {
+          "artist": "The Sonics",
+          "track": "Strychnine"
+        },
+        {
+          "artist": "The Sonics",
+          "track": "Have Love Will Travel"
+        },
+        {
+          "artist": "13th Floor Elevators",
+          "track": "You're Gonna Miss Me"
+        },
+        {
+          "artist": "The Seeds",
+          "track": "Pushin' Too Hard"
+        },
+        {
+          "artist": "The Pretty Things",
+          "track": "Rosalyn"
+        },
+        {
+          "artist": "The Shadows of Knight",
+          "track": "Gloria"
+        },
+        {
+          "artist": "Count Five",
+          "track": "Psychotic Reaction"
+        }
+      ]
+    },
+    "pop": {
+      "popular": [
+        {
+          "artist": "The Beach Boys",
+          "track": "Good Vibrations"
+        },
+        {
+          "artist": "The Beach Boys",
+          "track": "God Only Knows"
+        },
+        {
+          "artist": "The Beach Boys",
+          "track": "Wouldn't It Be Nice"
+        },
+        {
+          "artist": "The Beach Boys",
+          "track": "California Girls"
+        },
+        {
+          "artist": "The Supremes",
+          "track": "You Can't Hurry Love"
+        },
+        {
+          "artist": "The Supremes",
+          "track": "Stop! In the Name of Love"
+        },
+        {
+          "artist": "The Supremes",
+          "track": "Baby Love"
+        },
+        {
+          "artist": "The Supremes",
+          "track": "Where Did Our Love Go"
+        },
+        {
+          "artist": "The Temptations",
+          "track": "My Girl"
+        },
+        {
+          "artist": "The Temptations",
+          "track": "Ain't Too Proud to Beg"
+        },
+        {
+          "artist": "The Temptations",
+          "track": "Papa Was a Rollin' Stone"
+        },
+        {
+          "artist": "The Four Tops",
+          "track": "I Can't Help Myself"
+        },
+        {
+          "artist": "The Four Tops",
+          "track": "Reach Out I'll Be There"
+        },
+        {
+          "artist": "Dionne Warwick",
+          "track": "Walk On By"
+        },
+        {
+          "artist": "Dionne Warwick",
+          "track": "I Say a Little Prayer"
+        },
+        {
+          "artist": "The Shirelles",
+          "track": "Will You Love Me Tomorrow"
+        },
+        {
+          "artist": "The Crystals",
+          "track": "Then He Kissed Me"
+        },
+        {
+          "artist": "The Drifters",
+          "track": "Under the Boardwalk"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "The Mamas & The Papas",
+          "track": "California Dreamin'"
+        },
+        {
+          "artist": "The Mamas & The Papas",
+          "track": "Monday, Monday"
+        },
+        {
+          "artist": "The Mamas & The Papas",
+          "track": "Dream a Little Dream of Me"
+        },
+        {
+          "artist": "Dusty Springfield",
+          "track": "Son of a Preacher Man"
+        },
+        {
+          "artist": "Dusty Springfield",
+          "track": "You Don't Have to Say You Love Me"
+        },
+        {
+          "artist": "Petula Clark",
+          "track": "Downtown"
+        },
+        {
+          "artist": "Nancy Sinatra",
+          "track": "These Boots Are Made for Walkin'"
+        },
+        {
+          "artist": "The Ronettes",
+          "track": "Be My Baby"
+        },
+        {
+          "artist": "The Ronettes",
+          "track": "Walking in the Rain"
+        },
+        {
+          "artist": "The Shangri-Las",
+          "track": "Leader of the Pack"
+        },
+        {
+          "artist": "The Shangri-Las",
+          "track": "Remember (Walking in the Sand)"
+        },
+        {
+          "artist": "Lesley Gore",
+          "track": "It's My Party"
+        },
+        {
+          "artist": "Bobby Vinton",
+          "track": "Blue Velvet"
+        },
+        {
+          "artist": "Bobby Vee",
+          "track": "Take Good Care of My Baby"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Sandy Denny",
+          "track": "Who Knows Where the Time Goes"
+        },
+        {
+          "artist": "Vashti Bunyan",
+          "track": "Diamond Day"
+        },
+        {
+          "artist": "Nico",
+          "track": "These Days"
+        },
+        {
+          "artist": "Linda Perhacs",
+          "track": "Chimacum Rain"
+        },
+        {
+          "artist": "Judee Sill",
+          "track": "The Kiss"
+        },
+        {
+          "artist": "Karen Dalton",
+          "track": "Something on Your Mind"
+        }
+      ]
+    },
+    "jazz": {
+      "popular": [
+        {
+          "artist": "Miles Davis",
+          "track": "So What"
+        },
+        {
+          "artist": "Miles Davis",
+          "track": "Blue in Green"
+        },
+        {
+          "artist": "Miles Davis",
+          "track": "All Blues"
+        },
+        {
+          "artist": "John Coltrane",
+          "track": "Giant Steps"
+        },
+        {
+          "artist": "John Coltrane",
+          "track": "A Love Supreme"
+        },
+        {
+          "artist": "John Coltrane",
+          "track": "My Favorite Things"
+        },
+        {
+          "artist": "Thelonious Monk",
+          "track": "Round Midnight"
+        },
+        {
+          "artist": "Dave Brubeck",
+          "track": "Take Five"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Charles Mingus",
+          "track": "Goodbye Pork Pie Hat"
+        },
+        {
+          "artist": "Herbie Hancock",
+          "track": "Watermelon Man"
+        },
+        {
+          "artist": "Cannonball Adderley",
+          "track": "Mercy, Mercy, Mercy"
+        },
+        {
+          "artist": "Bill Evans",
+          "track": "Waltz for Debby"
+        },
+        {
+          "artist": "Stan Getz",
+          "track": "The Girl from Ipanema"
+        },
+        {
+          "artist": "Art Blakey",
+          "track": "Moanin'"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Sun Ra",
+          "track": "Space Is the Place"
+        },
+        {
+          "artist": "Ornette Coleman",
+          "track": "Lonely Woman"
+        },
+        {
+          "artist": "Cecil Taylor",
+          "track": "Unit Structures"
+        }
+      ]
+    },
+    "soul_rb": {
+      "popular": [
+        {
+          "artist": "Aretha Franklin",
+          "track": "Respect"
+        },
+        {
+          "artist": "Aretha Franklin",
+          "track": "Natural Woman"
+        },
+        {
+          "artist": "Aretha Franklin",
+          "track": "Chain of Fools"
+        },
+        {
+          "artist": "Aretha Franklin",
+          "track": "Think"
+        },
+        {
+          "artist": "James Brown",
+          "track": "I Got You (I Feel Good)"
+        },
+        {
+          "artist": "James Brown",
+          "track": "Papa's Got a Brand New Bag"
+        },
+        {
+          "artist": "James Brown",
+          "track": "It's a Man's Man's Man's World"
+        },
+        {
+          "artist": "Otis Redding",
+          "track": "Sittin' on the Dock of the Bay"
+        },
+        {
+          "artist": "Otis Redding",
+          "track": "Try a Little Tenderness"
+        },
+        {
+          "artist": "Otis Redding",
+          "track": "I've Been Loving You Too Long"
+        },
+        {
+          "artist": "Sam Cooke",
+          "track": "A Change Is Gonna Come"
+        },
+        {
+          "artist": "Sam Cooke",
+          "track": "You Send Me"
+        },
+        {
+          "artist": "Sam Cooke",
+          "track": "Cupid"
+        },
+        {
+          "artist": "Ray Charles",
+          "track": "Georgia on My Mind"
+        },
+        {
+          "artist": "Ray Charles",
+          "track": "Hit the Road Jack"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Wilson Pickett",
+          "track": "In the Midnight Hour"
+        },
+        {
+          "artist": "Wilson Pickett",
+          "track": "Mustang Sally"
+        },
+        {
+          "artist": "Marvin Gaye",
+          "track": "I Heard It Through the Grapevine"
+        },
+        {
+          "artist": "Marvin Gaye",
+          "track": "Ain't That Peculiar"
+        },
+        {
+          "artist": "Curtis Mayfield",
+          "track": "People Get Ready"
+        },
+        {
+          "artist": "Curtis Mayfield",
+          "track": "Move On Up"
+        },
+        {
+          "artist": "Al Green",
+          "track": "Let's Stay Together"
+        },
+        {
+          "artist": "Al Green",
+          "track": "Tired of Being Alone"
+        },
+        {
+          "artist": "Smokey Robinson",
+          "track": "The Tracks of My Tears"
+        },
+        {
+          "artist": "Smokey Robinson",
+          "track": "Tears of a Clown"
+        },
+        {
+          "artist": "Stevie Wonder",
+          "track": "Uptight (Everything's Alright)"
+        },
+        {
+          "artist": "Stevie Wonder",
+          "track": "Signed, Sealed, Delivered I'm Yours"
+        },
+        {
+          "artist": "The Impressions",
+          "track": "People Get Ready"
+        },
+        {
+          "artist": "The Impressions",
+          "track": "We're a Winner"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Betty Davis",
+          "track": "If I'm in Luck I Might Get Picked Up"
+        },
+        {
+          "artist": "Sharon Jones",
+          "track": "100 Days, 100 Nights"
+        },
+        {
+          "artist": "Laura Lee",
+          "track": "Women's Love Rights"
+        },
+        {
+          "artist": "Ann Peebles",
+          "track": "I Can't Stand the Rain"
+        },
+        {
+          "artist": "Bettye LaVette",
+          "track": "Let Me Down Easy"
+        },
+        {
+          "artist": "Carla Thomas",
+          "track": "B-A-B-Y"
+        }
+      ]
+    },
+    "folk": {
+      "popular": [
+        {
+          "artist": "Bob Dylan",
+          "track": "Like a Rolling Stone"
+        },
+        {
+          "artist": "Bob Dylan",
+          "track": "Blowin' in the Wind"
+        },
+        {
+          "artist": "Bob Dylan",
+          "track": "The Times They Are a-Changin'"
+        },
+        {
+          "artist": "Bob Dylan",
+          "track": "Mr. Tambourine Man"
+        },
+        {
+          "artist": "Bob Dylan",
+          "track": "Tangled Up in Blue"
+        },
+        {
+          "artist": "Joan Baez",
+          "track": "Diamonds & Rust"
+        },
+        {
+          "artist": "Joan Baez",
+          "track": "We Shall Overcome"
+        },
+        {
+          "artist": "Simon & Garfunkel",
+          "track": "The Sound of Silence"
+        },
+        {
+          "artist": "Simon & Garfunkel",
+          "track": "Bridge Over Troubled Water"
+        },
+        {
+          "artist": "Simon & Garfunkel",
+          "track": "Mrs. Robinson"
+        },
+        {
+          "artist": "Simon & Garfunkel",
+          "track": "The Boxer"
+        },
+        {
+          "artist": "Peter, Paul and Mary",
+          "track": "Puff the Magic Dragon"
+        },
+        {
+          "artist": "Peter, Paul and Mary",
+          "track": "If I Had a Hammer"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Joni Mitchell",
+          "track": "Both Sides Now"
+        },
+        {
+          "artist": "Joni Mitchell",
+          "track": "Big Yellow Taxi"
+        },
+        {
+          "artist": "Joni Mitchell",
+          "track": "A Case of You"
+        },
+        {
+          "artist": "Neil Young",
+          "track": "Heart of Gold"
+        },
+        {
+          "artist": "Neil Young",
+          "track": "Old Man"
+        },
+        {
+          "artist": "Crosby, Stills & Nash",
+          "track": "Suite: Judy Blue Eyes"
+        },
+        {
+          "artist": "Crosby, Stills & Nash",
+          "track": "Woodstock"
+        },
+        {
+          "artist": "The Byrds",
+          "track": "Eight Miles High"
+        },
+        {
+          "artist": "Donovan",
+          "track": "Sunshine Superman"
+        },
+        {
+          "artist": "Donovan",
+          "track": "Mellow Yellow"
+        },
+        {
+          "artist": "Cat Stevens",
+          "track": "Wild World"
+        },
+        {
+          "artist": "Cat Stevens",
+          "track": "Father and Son"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Nick Drake",
+          "track": "Pink Moon"
+        },
+        {
+          "artist": "Nick Drake",
+          "track": "River Man"
+        },
+        {
+          "artist": "Tim Buckley",
+          "track": "Song to the Siren"
+        },
+        {
+          "artist": "Tim Buckley",
+          "track": "Once I Was"
+        },
+        {
+          "artist": "Fred Neil",
+          "track": "Everybody's Talkin'"
+        },
+        {
+          "artist": "Karen Dalton",
+          "track": "Something on Your Mind"
+        }
+      ]
+    },
+    "blues": {
+      "popular": [
+        {
+          "artist": "B.B. King",
+          "track": "The Thrill Is Gone"
+        },
+        {
+          "artist": "B.B. King",
+          "track": "Every Day I Have the Blues"
+        },
+        {
+          "artist": "Muddy Waters",
+          "track": "Mannish Boy"
+        },
+        {
+          "artist": "Muddy Waters",
+          "track": "Hoochie Coochie Man"
+        },
+        {
+          "artist": "Muddy Waters",
+          "track": "Got My Mojo Working"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Howlin' Wolf",
+          "track": "Smokestack Lightnin'"
+        },
+        {
+          "artist": "Howlin' Wolf",
+          "track": "Spoonful"
+        },
+        {
+          "artist": "John Lee Hooker",
+          "track": "Boom Boom"
+        },
+        {
+          "artist": "John Lee Hooker",
+          "track": "One Bourbon, One Scotch, One Beer"
+        },
+        {
+          "artist": "Albert King",
+          "track": "Born Under a Bad Sign"
+        },
+        {
+          "artist": "Freddie King",
+          "track": "Hide Away"
+        },
+        {
+          "artist": "Buddy Guy",
+          "track": "Stone Crazy"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Skip James",
+          "track": "Hard Time Killing Floor Blues"
+        },
+        {
+          "artist": "Mississippi John Hurt",
+          "track": "Avalon Blues"
+        },
+        {
+          "artist": "Son House",
+          "track": "Death Letter"
+        },
+        {
+          "artist": "Robert Johnson",
+          "track": "Cross Road Blues"
+        }
+      ]
+    }
+  },
+  "1970s": {
+    "rock": {
+      "popular": [
+        {
+          "artist": "Led Zeppelin",
+          "track": "Stairway to Heaven"
+        },
+        {
+          "artist": "Led Zeppelin",
+          "track": "Whole Lotta Love"
+        },
+        {
+          "artist": "Led Zeppelin",
+          "track": "Black Dog"
+        },
+        {
+          "artist": "Led Zeppelin",
+          "track": "Kashmir"
+        },
+        {
+          "artist": "Led Zeppelin",
+          "track": "Rock and Roll"
+        },
+        {
+          "artist": "Pink Floyd",
+          "track": "Comfortably Numb"
+        },
+        {
+          "artist": "Pink Floyd",
+          "track": "Wish You Were Here"
+        },
+        {
+          "artist": "Pink Floyd",
+          "track": "Money"
+        },
+        {
+          "artist": "Pink Floyd",
+          "track": "Another Brick in the Wall"
+        },
+        {
+          "artist": "The Eagles",
+          "track": "Hotel California"
+        },
+        {
+          "artist": "The Eagles",
+          "track": "Take It Easy"
+        },
+        {
+          "artist": "The Eagles",
+          "track": "Desperado"
+        },
+        {
+          "artist": "Queen",
+          "track": "Bohemian Rhapsody"
+        },
+        {
+          "artist": "Queen",
+          "track": "We Will Rock You"
+        },
+        {
+          "artist": "Queen",
+          "track": "Don't Stop Me Now"
+        },
+        {
+          "artist": "Queen",
+          "track": "Somebody to Love"
+        },
+        {
+          "artist": "AC/DC",
+          "track": "Highway to Hell"
+        },
+        {
+          "artist": "AC/DC",
+          "track": "Back in Black"
+        },
+        {
+          "artist": "AC/DC",
+          "track": "Thunderstruck"
+        },
+        {
+          "artist": "Lynyrd Skynyrd",
+          "track": "Free Bird"
+        },
+        {
+          "artist": "Lynyrd Skynyrd",
+          "track": "Sweet Home Alabama"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Black Sabbath",
+          "track": "Paranoid"
+        },
+        {
+          "artist": "Black Sabbath",
+          "track": "Iron Man"
+        },
+        {
+          "artist": "Black Sabbath",
+          "track": "War Pigs"
+        },
+        {
+          "artist": "Deep Purple",
+          "track": "Smoke on the Water"
+        },
+        {
+          "artist": "Deep Purple",
+          "track": "Highway Star"
+        },
+        {
+          "artist": "Aerosmith",
+          "track": "Dream On"
+        },
+        {
+          "artist": "Aerosmith",
+          "track": "Walk This Way"
+        },
+        {
+          "artist": "Kiss",
+          "track": "Rock and Roll All Nite"
+        },
+        {
+          "artist": "Kiss",
+          "track": "Detroit Rock City"
+        },
+        {
+          "artist": "Rush",
+          "track": "Tom Sawyer"
+        },
+        {
+          "artist": "Rush",
+          "track": "Limelight"
+        },
+        {
+          "artist": "Yes",
+          "track": "Roundabout"
+        },
+        {
+          "artist": "Yes",
+          "track": "Owner of a Lonely Heart"
+        },
+        {
+          "artist": "The Allman Brothers Band",
+          "track": "Ramblin' Man"
+        },
+        {
+          "artist": "The Allman Brothers Band",
+          "track": "Jessica"
+        },
+        {
+          "artist": "ZZ Top",
+          "track": "La Grange"
+        },
+        {
+          "artist": "ZZ Top",
+          "track": "Sharp Dressed Man"
+        },
+        {
+          "artist": "Thin Lizzy",
+          "track": "The Boys Are Back in Town"
+        },
+        {
+          "artist": "Boston",
+          "track": "More Than a Feeling"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Can",
+          "track": "Vitamin C"
+        },
+        {
+          "artist": "Can",
+          "track": "Halleluhwah"
+        },
+        {
+          "artist": "Neu!",
+          "track": "Hallogallo"
+        },
+        {
+          "artist": "Neu!",
+          "track": "F\u00fcr immer"
+        },
+        {
+          "artist": "Television",
+          "track": "Marquee Moon"
+        },
+        {
+          "artist": "Television",
+          "track": "See No Evil"
+        },
+        {
+          "artist": "Big Star",
+          "track": "September Gurls"
+        },
+        {
+          "artist": "Big Star",
+          "track": "Thirteen"
+        },
+        {
+          "artist": "The Modern Lovers",
+          "track": "Roadrunner"
+        },
+        {
+          "artist": "Pere Ubu",
+          "track": "The Modern Dance"
+        }
+      ]
+    },
+    "punk": {
+      "popular": [
+        {
+          "artist": "The Ramones",
+          "track": "Blitzkrieg Bop"
+        },
+        {
+          "artist": "The Ramones",
+          "track": "I Wanna Be Sedated"
+        },
+        {
+          "artist": "The Ramones",
+          "track": "Rockaway Beach"
+        },
+        {
+          "artist": "The Clash",
+          "track": "London Calling"
+        },
+        {
+          "artist": "The Clash",
+          "track": "Should I Stay or Should I Go"
+        },
+        {
+          "artist": "The Clash",
+          "track": "Rock the Casbah"
+        },
+        {
+          "artist": "Sex Pistols",
+          "track": "Anarchy in the U.K."
+        },
+        {
+          "artist": "Sex Pistols",
+          "track": "God Save the Queen"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "The Stooges",
+          "track": "Search and Destroy"
+        },
+        {
+          "artist": "Dead Kennedys",
+          "track": "Holiday in Cambodia"
+        },
+        {
+          "artist": "X",
+          "track": "Los Angeles"
+        },
+        {
+          "artist": "The Damned",
+          "track": "New Rose"
+        },
+        {
+          "artist": "Buzzcocks",
+          "track": "Ever Fallen in Love"
+        },
+        {
+          "artist": "The Jam",
+          "track": "That's Entertainment"
+        },
+        {
+          "artist": "Richard Hell & The Voidoids",
+          "track": "Blank Generation"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Wire",
+          "track": "Three Girl Rhumba"
+        },
+        {
+          "artist": "Wire",
+          "track": "12XU"
+        },
+        {
+          "artist": "Suicide",
+          "track": "Ghost Rider"
+        },
+        {
+          "artist": "Suicide",
+          "track": "Frankie Teardrop"
+        },
+        {
+          "artist": "Crass",
+          "track": "Do They Owe Us a Living?"
+        },
+        {
+          "artist": "The Fall",
+          "track": "Totally Wired"
+        }
+      ]
+    },
+    "disco_funk": {
+      "popular": [
+        {
+          "artist": "Bee Gees",
+          "track": "Stayin' Alive"
+        },
+        {
+          "artist": "Bee Gees",
+          "track": "Night Fever"
+        },
+        {
+          "artist": "Bee Gees",
+          "track": "How Deep Is Your Love"
+        },
+        {
+          "artist": "Donna Summer",
+          "track": "I Feel Love"
+        },
+        {
+          "artist": "Donna Summer",
+          "track": "Hot Stuff"
+        },
+        {
+          "artist": "Chic",
+          "track": "Le Freak"
+        },
+        {
+          "artist": "Chic",
+          "track": "Good Times"
+        },
+        {
+          "artist": "KC and the Sunshine Band",
+          "track": "Get Down Tonight"
+        },
+        {
+          "artist": "KC and the Sunshine Band",
+          "track": "That's the Way (I Like It)"
+        },
+        {
+          "artist": "Village People",
+          "track": "Y.M.C.A."
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Parliament",
+          "track": "Flash Light"
+        },
+        {
+          "artist": "Parliament",
+          "track": "Give Up the Funk"
+        },
+        {
+          "artist": "Funkadelic",
+          "track": "One Nation Under a Groove"
+        },
+        {
+          "artist": "Funkadelic",
+          "track": "Maggot Brain"
+        },
+        {
+          "artist": "Earth, Wind & Fire",
+          "track": "September"
+        },
+        {
+          "artist": "Earth, Wind & Fire",
+          "track": "Boogie Wonderland"
+        },
+        {
+          "artist": "Kool & the Gang",
+          "track": "Celebration"
+        },
+        {
+          "artist": "Kool & the Gang",
+          "track": "Jungle Boogie"
+        },
+        {
+          "artist": "The O'Jays",
+          "track": "Love Train"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Cymande",
+          "track": "Bra"
+        },
+        {
+          "artist": "Cymande",
+          "track": "The Message"
+        },
+        {
+          "artist": "Mandrill",
+          "track": "Fencewalk"
+        },
+        {
+          "artist": "The Meters",
+          "track": "Cissy Strut"
+        },
+        {
+          "artist": "Betty Wright",
+          "track": "Clean Up Woman"
+        },
+        {
+          "artist": "Sharon Jones & The Dap-Kings",
+          "track": "100 Days, 100 Nights"
+        }
+      ]
+    },
+    "soul_rb": {
+      "popular": [
+        {
+          "artist": "Marvin Gaye",
+          "track": "What's Going On"
+        },
+        {
+          "artist": "Marvin Gaye",
+          "track": "Let's Get It On"
+        },
+        {
+          "artist": "Stevie Wonder",
+          "track": "Superstition"
+        },
+        {
+          "artist": "Stevie Wonder",
+          "track": "Isn't She Lovely"
+        },
+        {
+          "artist": "Stevie Wonder",
+          "track": "Living for the City"
+        },
+        {
+          "artist": "Al Green",
+          "track": "Love and Happiness"
+        },
+        {
+          "artist": "Al Green",
+          "track": "Take Me to the River"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Curtis Mayfield",
+          "track": "Superfly"
+        },
+        {
+          "artist": "Isaac Hayes",
+          "track": "Theme from Shaft"
+        },
+        {
+          "artist": "Barry White",
+          "track": "Can't Get Enough of Your Love"
+        },
+        {
+          "artist": "The O'Jays",
+          "track": "Love Train"
+        },
+        {
+          "artist": "Harold Melvin & The Blue Notes",
+          "track": "If You Don't Know Me by Now"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Shuggie Otis",
+          "track": "Strawberry Letter 23"
+        },
+        {
+          "artist": "Bobby Womack",
+          "track": "Across 110th Street"
+        },
+        {
+          "artist": "Gil Scott-Heron",
+          "track": "The Revolution Will Not Be Televised"
+        }
+      ]
+    },
+    "prog_rock": {
+      "popular": [
+        {
+          "artist": "Pink Floyd",
+          "track": "Money"
+        },
+        {
+          "artist": "Pink Floyd",
+          "track": "Time"
+        },
+        {
+          "artist": "Genesis",
+          "track": "The Carpet Crawlers"
+        },
+        {
+          "artist": "Genesis",
+          "track": "Dancing with the Moonlit Knight"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "King Crimson",
+          "track": "21st Century Schizoid Man"
+        },
+        {
+          "artist": "King Crimson",
+          "track": "Epitaph"
+        },
+        {
+          "artist": "Jethro Tull",
+          "track": "Aqualung"
+        },
+        {
+          "artist": "Jethro Tull",
+          "track": "Locomotive Breath"
+        },
+        {
+          "artist": "Emerson, Lake & Palmer",
+          "track": "Lucky Man"
+        },
+        {
+          "artist": "Emerson, Lake & Palmer",
+          "track": "Karn Evil 9"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Magma",
+          "track": "Mekanik Destruktiw Kommandoh"
+        },
+        {
+          "artist": "Van der Graaf Generator",
+          "track": "A Plague of Lighthouse Keepers"
+        },
+        {
+          "artist": "Gentle Giant",
+          "track": "The Advent of Panurge"
+        }
+      ]
+    },
+    "country": {
+      "popular": [
+        {
+          "artist": "Johnny Cash",
+          "track": "Ring of Fire"
+        },
+        {
+          "artist": "Johnny Cash",
+          "track": "Folsom Prison Blues"
+        },
+        {
+          "artist": "Johnny Cash",
+          "track": "I Walk the Line"
+        },
+        {
+          "artist": "Dolly Parton",
+          "track": "Jolene"
+        },
+        {
+          "artist": "Dolly Parton",
+          "track": "I Will Always Love You"
+        },
+        {
+          "artist": "Willie Nelson",
+          "track": "On the Road Again"
+        },
+        {
+          "artist": "Willie Nelson",
+          "track": "Always on My Mind"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Willie Nelson",
+          "track": "Blue Eyes Crying in the Rain"
+        },
+        {
+          "artist": "Waylon Jennings",
+          "track": "Good Hearted Woman"
+        },
+        {
+          "artist": "Merle Haggard",
+          "track": "Mama Tried"
+        },
+        {
+          "artist": "Loretta Lynn",
+          "track": "Coal Miner's Daughter"
+        },
+        {
+          "artist": "Tammy Wynette",
+          "track": "Stand by Your Man"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Townes Van Zandt",
+          "track": "Pancho and Lefty"
+        },
+        {
+          "artist": "Guy Clark",
+          "track": "Desperados Waiting for a Train"
+        },
+        {
+          "artist": "John Prine",
+          "track": "Angel from Montgomery"
+        }
+      ]
+    },
+    "reggae": {
+      "popular": [
+        {
+          "artist": "Bob Marley",
+          "track": "No Woman, No Cry"
+        },
+        {
+          "artist": "Bob Marley",
+          "track": "Redemption Song"
+        },
+        {
+          "artist": "Bob Marley",
+          "track": "Three Little Birds"
+        },
+        {
+          "artist": "Bob Marley",
+          "track": "One Love"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Toots and the Maytals",
+          "track": "Pressure Drop"
+        },
+        {
+          "artist": "Jimmy Cliff",
+          "track": "The Harder They Come"
+        },
+        {
+          "artist": "Peter Tosh",
+          "track": "Legalize It"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Lee Scratch Perry",
+          "track": "Roast Fish and Cornbread"
+        },
+        {
+          "artist": "King Tubby",
+          "track": "Dub Fi Gwan"
+        }
+      ]
+    }
+  },
+  "1980s": {
+    "new_wave": {
+      "popular": [
+        {
+          "artist": "Talking Heads",
+          "track": "Once in a Lifetime"
+        },
+        {
+          "artist": "Talking Heads",
+          "track": "Burning Down the House"
+        },
+        {
+          "artist": "Talking Heads",
+          "track": "Psycho Killer"
+        },
+        {
+          "artist": "Talking Heads",
+          "track": "This Must Be the Place"
+        },
+        {
+          "artist": "The Cure",
+          "track": "Just Like Heaven"
+        },
+        {
+          "artist": "The Cure",
+          "track": "Boys Don't Cry"
+        },
+        {
+          "artist": "The Cure",
+          "track": "Friday I'm in Love"
+        },
+        {
+          "artist": "Depeche Mode",
+          "track": "Enjoy the Silence"
+        },
+        {
+          "artist": "Depeche Mode",
+          "track": "Personal Jesus"
+        },
+        {
+          "artist": "Depeche Mode",
+          "track": "Just Can't Get Enough"
+        },
+        {
+          "artist": "New Order",
+          "track": "Blue Monday"
+        },
+        {
+          "artist": "New Order",
+          "track": "Bizarre Love Triangle"
+        },
+        {
+          "artist": "Duran Duran",
+          "track": "Hungry Like the Wolf"
+        },
+        {
+          "artist": "Duran Duran",
+          "track": "Rio"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Echo & the Bunnymen",
+          "track": "The Killing Moon"
+        },
+        {
+          "artist": "Echo & the Bunnymen",
+          "track": "Lips Like Sugar"
+        },
+        {
+          "artist": "The Smiths",
+          "track": "How Soon Is Now?"
+        },
+        {
+          "artist": "The Smiths",
+          "track": "This Charming Man"
+        },
+        {
+          "artist": "The Smiths",
+          "track": "There Is a Light That Never Goes Out"
+        },
+        {
+          "artist": "Joy Division",
+          "track": "Love Will Tear Us Apart"
+        },
+        {
+          "artist": "Joy Division",
+          "track": "She's Lost Control"
+        },
+        {
+          "artist": "Siouxsie and the Banshees",
+          "track": "Cities in Dust"
+        },
+        {
+          "artist": "Siouxsie and the Banshees",
+          "track": "Spellbound"
+        },
+        {
+          "artist": "The Psychedelic Furs",
+          "track": "Pretty in Pink"
+        },
+        {
+          "artist": "Simple Minds",
+          "track": "Don't You (Forget About Me)"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Cocteau Twins",
+          "track": "Lorelei"
+        },
+        {
+          "artist": "Cocteau Twins",
+          "track": "Heaven or Las Vegas"
+        },
+        {
+          "artist": "This Mortal Coil",
+          "track": "Song to the Siren"
+        },
+        {
+          "artist": "The Chameleons",
+          "track": "Swamp Thing"
+        },
+        {
+          "artist": "The Sound",
+          "track": "Winning"
+        },
+        {
+          "artist": "Felt",
+          "track": "Primitive Painters"
+        }
+      ]
+    },
+    "pop": {
+      "popular": [
+        {
+          "artist": "Michael Jackson",
+          "track": "Billie Jean"
+        },
+        {
+          "artist": "Michael Jackson",
+          "track": "Thriller"
+        },
+        {
+          "artist": "Michael Jackson",
+          "track": "Beat It"
+        },
+        {
+          "artist": "Michael Jackson",
+          "track": "Smooth Criminal"
+        },
+        {
+          "artist": "Madonna",
+          "track": "Like a Virgin"
+        },
+        {
+          "artist": "Madonna",
+          "track": "Material Girl"
+        },
+        {
+          "artist": "Madonna",
+          "track": "Like a Prayer"
+        },
+        {
+          "artist": "Prince",
+          "track": "Purple Rain"
+        },
+        {
+          "artist": "Prince",
+          "track": "When Doves Cry"
+        },
+        {
+          "artist": "Prince",
+          "track": "Kiss"
+        },
+        {
+          "artist": "Prince",
+          "track": "1999"
+        },
+        {
+          "artist": "Whitney Houston",
+          "track": "I Wanna Dance with Somebody"
+        },
+        {
+          "artist": "Whitney Houston",
+          "track": "Greatest Love of All"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Cyndi Lauper",
+          "track": "Time After Time"
+        },
+        {
+          "artist": "Cyndi Lauper",
+          "track": "Girls Just Want to Have Fun"
+        },
+        {
+          "artist": "Tears for Fears",
+          "track": "Everybody Wants to Rule the World"
+        },
+        {
+          "artist": "Tears for Fears",
+          "track": "Shout"
+        },
+        {
+          "artist": "Duran Duran",
+          "track": "Hungry Like the Wolf"
+        },
+        {
+          "artist": "Duran Duran",
+          "track": "The Reflex"
+        },
+        {
+          "artist": "Culture Club",
+          "track": "Karma Chameleon"
+        },
+        {
+          "artist": "Culture Club",
+          "track": "Do You Really Want to Hurt Me"
+        },
+        {
+          "artist": "The Human League",
+          "track": "Don't You Want Me"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Kate Bush",
+          "track": "Running Up That Hill"
+        },
+        {
+          "artist": "Kate Bush",
+          "track": "Wuthering Heights"
+        },
+        {
+          "artist": "Sade",
+          "track": "Smooth Operator"
+        },
+        {
+          "artist": "Sade",
+          "track": "The Sweetest Taboo"
+        },
+        {
+          "artist": "Prefab Sprout",
+          "track": "When Love Breaks Down"
+        },
+        {
+          "artist": "The Blue Nile",
+          "track": "Tinseltown in the Rain"
+        }
+      ]
+    },
+    "hip_hop": {
+      "popular": [
+        {
+          "artist": "Run-D.M.C.",
+          "track": "Walk This Way"
+        },
+        {
+          "artist": "Run-D.M.C.",
+          "track": "It's Tricky"
+        },
+        {
+          "artist": "Grandmaster Flash",
+          "track": "The Message"
+        },
+        {
+          "artist": "Grandmaster Flash",
+          "track": "White Lines (Don't Don't Do It)"
+        },
+        {
+          "artist": "LL Cool J",
+          "track": "I Can't Live Without My Radio"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Public Enemy",
+          "track": "Fight the Power"
+        },
+        {
+          "artist": "Public Enemy",
+          "track": "Bring the Noise"
+        },
+        {
+          "artist": "N.W.A",
+          "track": "Straight Outta Compton"
+        },
+        {
+          "artist": "N.W.A",
+          "track": "F*** tha Police"
+        },
+        {
+          "artist": "Beastie Boys",
+          "track": "Fight for Your Right"
+        },
+        {
+          "artist": "Beastie Boys",
+          "track": "No Sleep Till Brooklyn"
+        },
+        {
+          "artist": "KRS-One",
+          "track": "Sound of da Police"
+        },
+        {
+          "artist": "Big Daddy Kane",
+          "track": "Ain't No Half-Steppin'"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Eric B. & Rakim",
+          "track": "Paid in Full"
+        },
+        {
+          "artist": "Eric B. & Rakim",
+          "track": "Follow the Leader"
+        },
+        {
+          "artist": "Ultramagnetic MCs",
+          "track": "Critical Beatdown"
+        },
+        {
+          "artist": "Ultramagnetic MCs",
+          "track": "Ego Trippin'"
+        },
+        {
+          "artist": "Schoolly D",
+          "track": "PSK What Does It Mean"
+        },
+        {
+          "artist": "Boogie Down Productions",
+          "track": "South Bronx"
+        }
+      ]
+    },
+    "rock": {
+      "popular": [
+        {
+          "artist": "Guns N' Roses",
+          "track": "Sweet Child O' Mine"
+        },
+        {
+          "artist": "Guns N' Roses",
+          "track": "Welcome to the Jungle"
+        },
+        {
+          "artist": "Guns N' Roses",
+          "track": "Paradise City"
+        },
+        {
+          "artist": "Bon Jovi",
+          "track": "Livin' on a Prayer"
+        },
+        {
+          "artist": "Bon Jovi",
+          "track": "You Give Love a Bad Name"
+        },
+        {
+          "artist": "Def Leppard",
+          "track": "Pour Some Sugar on Me"
+        },
+        {
+          "artist": "Def Leppard",
+          "track": "Photograph"
+        },
+        {
+          "artist": "Van Halen",
+          "track": "Jump"
+        },
+        {
+          "artist": "Van Halen",
+          "track": "Panama"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Metallica",
+          "track": "Enter Sandman"
+        },
+        {
+          "artist": "Metallica",
+          "track": "Master of Puppets"
+        },
+        {
+          "artist": "Iron Maiden",
+          "track": "The Number of the Beast"
+        },
+        {
+          "artist": "Iron Maiden",
+          "track": "Run to the Hills"
+        },
+        {
+          "artist": "AC/DC",
+          "track": "Back in Black"
+        },
+        {
+          "artist": "AC/DC",
+          "track": "You Shook Me All Night Long"
+        },
+        {
+          "artist": "M\u00f6tley Cr\u00fce",
+          "track": "Kickstart My Heart"
+        },
+        {
+          "artist": "Poison",
+          "track": "Every Rose Has Its Thorn"
+        },
+        {
+          "artist": "Whitesnake",
+          "track": "Here I Go Again"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Sonic Youth",
+          "track": "Teen Age Riot"
+        },
+        {
+          "artist": "Sonic Youth",
+          "track": "Kool Thing"
+        },
+        {
+          "artist": "Dinosaur Jr.",
+          "track": "Feel the Pain"
+        },
+        {
+          "artist": "Dinosaur Jr.",
+          "track": "Start Choppin'"
+        },
+        {
+          "artist": "The Replacements",
+          "track": "Bastards of Young"
+        },
+        {
+          "artist": "H\u00fcsker D\u00fc",
+          "track": "Don't Want to Know If You Are Lonely"
+        }
+      ]
+    },
+    "electronic": {
+      "popular": [
+        {
+          "artist": "Kraftwerk",
+          "track": "The Model"
+        },
+        {
+          "artist": "Kraftwerk",
+          "track": "Computer Love"
+        },
+        {
+          "artist": "Kraftwerk",
+          "track": "Autobahn"
+        },
+        {
+          "artist": "Depeche Mode",
+          "track": "Personal Jesus"
+        },
+        {
+          "artist": "Depeche Mode",
+          "track": "Enjoy the Silence"
+        },
+        {
+          "artist": "New Order",
+          "track": "Blue Monday"
+        },
+        {
+          "artist": "New Order",
+          "track": "True Faith"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Yazoo",
+          "track": "Don't Go"
+        },
+        {
+          "artist": "Yazoo",
+          "track": "Only You"
+        },
+        {
+          "artist": "Orchestral Manoeuvres in the Dark",
+          "track": "Enola Gay"
+        },
+        {
+          "artist": "Orchestral Manoeuvres in the Dark",
+          "track": "If You Leave"
+        },
+        {
+          "artist": "Pet Shop Boys",
+          "track": "West End Girls"
+        },
+        {
+          "artist": "Pet Shop Boys",
+          "track": "It's a Sin"
+        },
+        {
+          "artist": "Eurythmics",
+          "track": "Sweet Dreams (Are Made of This)"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Cabaret Voltaire",
+          "track": "Sensoria"
+        },
+        {
+          "artist": "Throbbing Gristle",
+          "track": "Hamburger Lady"
+        },
+        {
+          "artist": "Front 242",
+          "track": "Headhunter"
+        },
+        {
+          "artist": "Nitzer Ebb",
+          "track": "Join in the Chant"
+        },
+        {
+          "artist": "Coil",
+          "track": "Ostia (The Death of Pasolini)"
+        }
+      ]
+    },
+    "alternative": {
+      "popular": [
+        {
+          "artist": "R.E.M.",
+          "track": "Losing My Religion"
+        },
+        {
+          "artist": "R.E.M.",
+          "track": "It's the End of the World as We Know It"
+        },
+        {
+          "artist": "R.E.M.",
+          "track": "The One I Love"
+        },
+        {
+          "artist": "R.E.M.",
+          "track": "Man on the Moon"
+        },
+        {
+          "artist": "U2",
+          "track": "With or Without You"
+        },
+        {
+          "artist": "U2",
+          "track": "Where the Streets Have No Name"
+        },
+        {
+          "artist": "U2",
+          "track": "I Still Haven't Found What I'm Looking For"
+        },
+        {
+          "artist": "U2",
+          "track": "Sunday Bloody Sunday"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "The Replacements",
+          "track": "Bastards of Young"
+        },
+        {
+          "artist": "The Replacements",
+          "track": "Can't Hardly Wait"
+        },
+        {
+          "artist": "H\u00fcsker D\u00fc",
+          "track": "Don't Want to Know If You Are Lonely"
+        },
+        {
+          "artist": "H\u00fcsker D\u00fc",
+          "track": "Makes No Sense at All"
+        },
+        {
+          "artist": "The Pixies",
+          "track": "Where Is My Mind?"
+        },
+        {
+          "artist": "The Pixies",
+          "track": "Debaser"
+        },
+        {
+          "artist": "The Pixies",
+          "track": "Monkey Gone to Heaven"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "The Minutemen",
+          "track": "Corona"
+        },
+        {
+          "artist": "The Minutemen",
+          "track": "History Lesson - Part II"
+        },
+        {
+          "artist": "Fugazi",
+          "track": "Waiting Room"
+        },
+        {
+          "artist": "Fugazi",
+          "track": "Repeater"
+        },
+        {
+          "artist": "Mission of Burma",
+          "track": "That's When I Reach for My Revolver"
+        },
+        {
+          "artist": "Big Black",
+          "track": "Kerosene"
+        }
+      ]
+    }
+  },
+  "1990s": {
+    "grunge": {
+      "popular": [
+        {
+          "artist": "Nirvana",
+          "track": "Smells Like Teen Spirit"
+        },
+        {
+          "artist": "Nirvana",
+          "track": "Come as You Are"
+        },
+        {
+          "artist": "Nirvana",
+          "track": "Lithium"
+        },
+        {
+          "artist": "Nirvana",
+          "track": "In Bloom"
+        },
+        {
+          "artist": "Pearl Jam",
+          "track": "Alive"
+        },
+        {
+          "artist": "Pearl Jam",
+          "track": "Jeremy"
+        },
+        {
+          "artist": "Pearl Jam",
+          "track": "Even Flow"
+        },
+        {
+          "artist": "Soundgarden",
+          "track": "Black Hole Sun"
+        },
+        {
+          "artist": "Soundgarden",
+          "track": "Spoonman"
+        },
+        {
+          "artist": "Alice in Chains",
+          "track": "Man in the Box"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Alice in Chains",
+          "track": "Would?"
+        },
+        {
+          "artist": "Alice in Chains",
+          "track": "Rooster"
+        },
+        {
+          "artist": "Stone Temple Pilots",
+          "track": "Plush"
+        },
+        {
+          "artist": "Stone Temple Pilots",
+          "track": "Interstate Love Song"
+        },
+        {
+          "artist": "Screaming Trees",
+          "track": "Nearly Lost You"
+        },
+        {
+          "artist": "Temple of the Dog",
+          "track": "Hunger Strike"
+        },
+        {
+          "artist": "L7",
+          "track": "Pretend We're Dead"
+        },
+        {
+          "artist": "Bush",
+          "track": "Glycerine"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Mudhoney",
+          "track": "Touch Me I'm Sick"
+        },
+        {
+          "artist": "Mudhoney",
+          "track": "Suck You Dry"
+        },
+        {
+          "artist": "Melvins",
+          "track": "Honey Bucket"
+        },
+        {
+          "artist": "Melvins",
+          "track": "Hooch"
+        },
+        {
+          "artist": "TAD",
+          "track": "Jinx"
+        },
+        {
+          "artist": "Green River",
+          "track": "Swallow My Pride"
+        }
+      ]
+    },
+    "hip_hop": {
+      "popular": [
+        {
+          "artist": "Tupac Shakur",
+          "track": "California Love"
+        },
+        {
+          "artist": "Tupac Shakur",
+          "track": "Changes"
+        },
+        {
+          "artist": "Tupac Shakur",
+          "track": "Dear Mama"
+        },
+        {
+          "artist": "The Notorious B.I.G.",
+          "track": "Juicy"
+        },
+        {
+          "artist": "The Notorious B.I.G.",
+          "track": "Big Poppa"
+        },
+        {
+          "artist": "The Notorious B.I.G.",
+          "track": "Hypnotize"
+        },
+        {
+          "artist": "Dr. Dre",
+          "track": "Nuthin' but a 'G' Thang"
+        },
+        {
+          "artist": "Snoop Dogg",
+          "track": "Gin and Juice"
+        },
+        {
+          "artist": "Snoop Dogg",
+          "track": "What's My Name?"
+        },
+        {
+          "artist": "Ice Cube",
+          "track": "It Was a Good Day"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Wu-Tang Clan",
+          "track": "C.R.E.A.M."
+        },
+        {
+          "artist": "Wu-Tang Clan",
+          "track": "Protect Ya Neck"
+        },
+        {
+          "artist": "Nas",
+          "track": "NY State of Mind"
+        },
+        {
+          "artist": "Nas",
+          "track": "The World Is Yours"
+        },
+        {
+          "artist": "A Tribe Called Quest",
+          "track": "Can I Kick It?"
+        },
+        {
+          "artist": "A Tribe Called Quest",
+          "track": "Award Tour"
+        },
+        {
+          "artist": "OutKast",
+          "track": "Player's Ball"
+        },
+        {
+          "artist": "The Fugees",
+          "track": "Killing Me Softly"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Company Flow",
+          "track": "Patriotism"
+        },
+        {
+          "artist": "Cannibal Ox",
+          "track": "Iron Galaxy"
+        },
+        {
+          "artist": "Organized Konfusion",
+          "track": "Stress"
+        },
+        {
+          "artist": "Black Star",
+          "track": "Definition"
+        },
+        {
+          "artist": "Pharcyde",
+          "track": "Passin' Me By"
+        }
+      ]
+    },
+    "alternative_rock": {
+      "popular": [
+        {
+          "artist": "Radiohead",
+          "track": "Creep"
+        },
+        {
+          "artist": "Radiohead",
+          "track": "Paranoid Android"
+        },
+        {
+          "artist": "Radiohead",
+          "track": "Karma Police"
+        },
+        {
+          "artist": "Radiohead",
+          "track": "No Surprises"
+        },
+        {
+          "artist": "Oasis",
+          "track": "Wonderwall"
+        },
+        {
+          "artist": "Oasis",
+          "track": "Champagne Supernova"
+        },
+        {
+          "artist": "Oasis",
+          "track": "Don't Look Back in Anger"
+        },
+        {
+          "artist": "Blur",
+          "track": "Song 2"
+        },
+        {
+          "artist": "Blur",
+          "track": "Parklife"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Pavement",
+          "track": "Cut Your Hair"
+        },
+        {
+          "artist": "Pavement",
+          "track": "Range Life"
+        },
+        {
+          "artist": "Built to Spill",
+          "track": "Car"
+        },
+        {
+          "artist": "Built to Spill",
+          "track": "I Would Hurt a Fly"
+        },
+        {
+          "artist": "Modest Mouse",
+          "track": "Float On"
+        },
+        {
+          "artist": "Modest Mouse",
+          "track": "Dashboard"
+        },
+        {
+          "artist": "Pulp",
+          "track": "Common People"
+        },
+        {
+          "artist": "Suede",
+          "track": "Animal Nitrate"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Slint",
+          "track": "Good Morning, Captain"
+        },
+        {
+          "artist": "Slint",
+          "track": "Breadcrumb Trail"
+        },
+        {
+          "artist": "Unwound",
+          "track": "Corpse Pose"
+        },
+        {
+          "artist": "Unwound",
+          "track": "Lifetime Achievement Award"
+        },
+        {
+          "artist": "Rodan",
+          "track": "Bible Silver Corner"
+        },
+        {
+          "artist": "June of 44",
+          "track": "Anisette"
+        }
+      ]
+    },
+    "electronic": {
+      "popular": [
+        {
+          "artist": "The Prodigy",
+          "track": "Firestarter"
+        },
+        {
+          "artist": "The Prodigy",
+          "track": "Breathe"
+        },
+        {
+          "artist": "Daft Punk",
+          "track": "Around the World"
+        },
+        {
+          "artist": "Daft Punk",
+          "track": "Da Funk"
+        },
+        {
+          "artist": "The Chemical Brothers",
+          "track": "Block Rockin' Beats"
+        },
+        {
+          "artist": "The Chemical Brothers",
+          "track": "Hey Boy Hey Girl"
+        },
+        {
+          "artist": "Fatboy Slim",
+          "track": "Praise You"
+        },
+        {
+          "artist": "Fatboy Slim",
+          "track": "The Rockafeller Skank"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Aphex Twin",
+          "track": "Windowlicker"
+        },
+        {
+          "artist": "Aphex Twin",
+          "track": "Avril 14th"
+        },
+        {
+          "artist": "Autechre",
+          "track": "Basscadet"
+        },
+        {
+          "artist": "Autechre",
+          "track": "Gantz Graf"
+        },
+        {
+          "artist": "Squarepusher",
+          "track": "Come on My Selector"
+        },
+        {
+          "artist": "Squarepusher",
+          "track": "My Red Hot Car"
+        },
+        {
+          "artist": "Orbital",
+          "track": "Halcyon and On and On"
+        },
+        {
+          "artist": "Underworld",
+          "track": "Born Slippy"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Boards of Canada",
+          "track": "Roygbiv"
+        },
+        {
+          "artist": "Boards of Canada",
+          "track": "Dayvan Cowboy"
+        },
+        {
+          "artist": "Mouse on Mars",
+          "track": "Actionist Respoke"
+        },
+        {
+          "artist": "Mouse on Mars",
+          "track": "Diskdusk"
+        },
+        {
+          "artist": "Autechre",
+          "track": "Cichli"
+        },
+        {
+          "artist": "\u00b5-Ziq",
+          "track": "Hasty Boom Alert"
+        }
+      ]
+    },
+    "r_b": {
+      "popular": [
+        {
+          "artist": "R. Kelly",
+          "track": "I Believe I Can Fly"
+        },
+        {
+          "artist": "R. Kelly",
+          "track": "Ignition (Remix)"
+        },
+        {
+          "artist": "Boyz II Men",
+          "track": "End of the Road"
+        },
+        {
+          "artist": "Boyz II Men",
+          "track": "I'll Make Love to You"
+        },
+        {
+          "artist": "TLC",
+          "track": "Waterfalls"
+        },
+        {
+          "artist": "TLC",
+          "track": "No Scrubs"
+        },
+        {
+          "artist": "TLC",
+          "track": "Creep"
+        },
+        {
+          "artist": "Mariah Carey",
+          "track": "Fantasy"
+        },
+        {
+          "artist": "Mariah Carey",
+          "track": "We Belong Together"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "D'Angelo",
+          "track": "Untitled (How Does It Feel)"
+        },
+        {
+          "artist": "D'Angelo",
+          "track": "Brown Sugar"
+        },
+        {
+          "artist": "Erykah Badu",
+          "track": "On & On"
+        },
+        {
+          "artist": "Erykah Badu",
+          "track": "Tyrone"
+        },
+        {
+          "artist": "Lauryn Hill",
+          "track": "Doo Wop (That Thing)"
+        },
+        {
+          "artist": "Lauryn Hill",
+          "track": "Ex-Factor"
+        },
+        {
+          "artist": "Aaliyah",
+          "track": "Try Again"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Maxwell",
+          "track": "Ascension (Don't Ever Wonder)"
+        },
+        {
+          "artist": "Maxwell",
+          "track": "Fortunate"
+        },
+        {
+          "artist": "Jill Scott",
+          "track": "A Long Walk"
+        },
+        {
+          "artist": "Angie Stone",
+          "track": "Wish I Didn't Miss You"
+        },
+        {
+          "artist": "Musiq Soulchild",
+          "track": "Just Friends (Sunny)"
+        }
+      ]
+    },
+    "pop": {
+      "popular": [
+        {
+          "artist": "Britney Spears",
+          "track": "Baby One More Time"
+        },
+        {
+          "artist": "Britney Spears",
+          "track": "Oops!... I Did It Again"
+        },
+        {
+          "artist": "Britney Spears",
+          "track": "Toxic"
+        },
+        {
+          "artist": "Backstreet Boys",
+          "track": "I Want It That Way"
+        },
+        {
+          "artist": "Backstreet Boys",
+          "track": "Everybody (Backstreet's Back)"
+        },
+        {
+          "artist": "NSYNC",
+          "track": "Bye Bye Bye"
+        },
+        {
+          "artist": "NSYNC",
+          "track": "It's Gonna Be Me"
+        },
+        {
+          "artist": "Spice Girls",
+          "track": "Wannabe"
+        },
+        {
+          "artist": "Spice Girls",
+          "track": "Say You'll Be There"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Spice Girls",
+          "track": "2 Become 1"
+        },
+        {
+          "artist": "Destiny's Child",
+          "track": "Say My Name"
+        },
+        {
+          "artist": "Destiny's Child",
+          "track": "Bills, Bills, Bills"
+        },
+        {
+          "artist": "Destiny's Child",
+          "track": "Survivor"
+        },
+        {
+          "artist": "Hanson",
+          "track": "MMMBop"
+        },
+        {
+          "artist": "Aqua",
+          "track": "Barbie Girl"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Bj\u00f6rk",
+          "track": "Hyperballad"
+        },
+        {
+          "artist": "Bj\u00f6rk",
+          "track": "J\u00f3ga"
+        },
+        {
+          "artist": "Tori Amos",
+          "track": "Cornflake Girl"
+        },
+        {
+          "artist": "Fiona Apple",
+          "track": "Criminal"
+        },
+        {
+          "artist": "Tori Amos",
+          "track": "Silent All These Years"
+        }
+      ]
+    }
+  },
+  "2000s": {
+    "indie_rock": {
+      "popular": [
+        {
+          "artist": "The Strokes",
+          "track": "Last Nite"
+        },
+        {
+          "artist": "The Strokes",
+          "track": "Someday"
+        },
+        {
+          "artist": "The Strokes",
+          "track": "Reptilia"
+        },
+        {
+          "artist": "The White Stripes",
+          "track": "Seven Nation Army"
+        },
+        {
+          "artist": "The White Stripes",
+          "track": "Fell in Love with a Girl"
+        },
+        {
+          "artist": "The White Stripes",
+          "track": "Icky Thump"
+        },
+        {
+          "artist": "Arctic Monkeys",
+          "track": "I Bet You Look Good on the Dancefloor"
+        },
+        {
+          "artist": "Arctic Monkeys",
+          "track": "When the Sun Goes Down"
+        },
+        {
+          "artist": "Interpol",
+          "track": "Obstacle 1"
+        },
+        {
+          "artist": "Interpol",
+          "track": "Slow Hands"
+        },
+        {
+          "artist": "The Killers",
+          "track": "Mr. Brightside"
+        },
+        {
+          "artist": "The Killers",
+          "track": "Somebody Told Me"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Modest Mouse",
+          "track": "Float On"
+        },
+        {
+          "artist": "Modest Mouse",
+          "track": "Dashboard"
+        },
+        {
+          "artist": "Death Cab for Cutie",
+          "track": "I Will Follow You into the Dark"
+        },
+        {
+          "artist": "Death Cab for Cutie",
+          "track": "Soul Meets Body"
+        },
+        {
+          "artist": "The Shins",
+          "track": "New Slang"
+        },
+        {
+          "artist": "The Shins",
+          "track": "Phantom Limb"
+        },
+        {
+          "artist": "Franz Ferdinand",
+          "track": "Take Me Out"
+        },
+        {
+          "artist": "Franz Ferdinand",
+          "track": "Do You Want To"
+        },
+        {
+          "artist": "Yeah Yeah Yeahs",
+          "track": "Maps"
+        },
+        {
+          "artist": "Yeah Yeah Yeahs",
+          "track": "Gold Lion"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "The Microphones",
+          "track": "The Glow Pt. 2"
+        },
+        {
+          "artist": "Neutral Milk Hotel",
+          "track": "In the Aeroplane Over the Sea"
+        },
+        {
+          "artist": "Neutral Milk Hotel",
+          "track": "Holland, 1945"
+        },
+        {
+          "artist": "Sufjan Stevens",
+          "track": "Chicago"
+        },
+        {
+          "artist": "Sufjan Stevens",
+          "track": "John Wayne Gacy, Jr."
+        },
+        {
+          "artist": "Bon Iver",
+          "track": "Skinny Love"
+        }
+      ]
+    },
+    "hip_hop": {
+      "popular": [
+        {
+          "artist": "Eminem",
+          "track": "Lose Yourself"
+        },
+        {
+          "artist": "Eminem",
+          "track": "Stan"
+        },
+        {
+          "artist": "Eminem",
+          "track": "Without Me"
+        },
+        {
+          "artist": "Kanye West",
+          "track": "Gold Digger"
+        },
+        {
+          "artist": "Kanye West",
+          "track": "Stronger"
+        },
+        {
+          "artist": "Kanye West",
+          "track": "Jesus Walks"
+        },
+        {
+          "artist": "50 Cent",
+          "track": "In da Club"
+        },
+        {
+          "artist": "50 Cent",
+          "track": "Candy Shop"
+        },
+        {
+          "artist": "Jay-Z",
+          "track": "99 Problems"
+        },
+        {
+          "artist": "Jay-Z",
+          "track": "Empire State of Mind"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "OutKast",
+          "track": "Hey Ya!"
+        },
+        {
+          "artist": "OutKast",
+          "track": "Ms. Jackson"
+        },
+        {
+          "artist": "The Roots",
+          "track": "The Seed (2.0)"
+        },
+        {
+          "artist": "The Roots",
+          "track": "The Next Movement"
+        },
+        {
+          "artist": "Common",
+          "track": "The Light"
+        },
+        {
+          "artist": "Common",
+          "track": "The People"
+        },
+        {
+          "artist": "Talib Kweli",
+          "track": "Get By"
+        },
+        {
+          "artist": "Mos Def",
+          "track": "Mathematics"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Cannibal Ox",
+          "track": "Pigeon"
+        },
+        {
+          "artist": "El-P",
+          "track": "Deep Space 9mm"
+        },
+        {
+          "artist": "Aesop Rock",
+          "track": "None Shall Pass"
+        },
+        {
+          "artist": "MF DOOM",
+          "track": "All Caps"
+        }
+      ]
+    },
+    "pop": {
+      "popular": [
+        {
+          "artist": "Beyonc\u00e9",
+          "track": "Crazy in Love"
+        },
+        {
+          "artist": "Beyonc\u00e9",
+          "track": "Single Ladies (Put a Ring on It)"
+        },
+        {
+          "artist": "Justin Timberlake",
+          "track": "Cry Me a River"
+        },
+        {
+          "artist": "Justin Timberlake",
+          "track": "SexyBack"
+        },
+        {
+          "artist": "Britney Spears",
+          "track": "Toxic"
+        },
+        {
+          "artist": "Britney Spears",
+          "track": "Gimme More"
+        },
+        {
+          "artist": "Lady Gaga",
+          "track": "Poker Face"
+        },
+        {
+          "artist": "Lady Gaga",
+          "track": "Bad Romance"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Amy Winehouse",
+          "track": "Rehab"
+        },
+        {
+          "artist": "Amy Winehouse",
+          "track": "Back to Black"
+        },
+        {
+          "artist": "Alicia Keys",
+          "track": "Fallin'"
+        },
+        {
+          "artist": "Alicia Keys",
+          "track": "No One"
+        },
+        {
+          "artist": "Christina Aguilera",
+          "track": "Beautiful"
+        },
+        {
+          "artist": "Kelly Clarkson",
+          "track": "Since U Been Gone"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Fiona Apple",
+          "track": "Criminal"
+        },
+        {
+          "artist": "Fiona Apple",
+          "track": "Paper Bag"
+        },
+        {
+          "artist": "Regina Spektor",
+          "track": "Fidelity"
+        }
+      ]
+    },
+    "electronic": {
+      "popular": [
+        {
+          "artist": "Daft Punk",
+          "track": "One More Time"
+        },
+        {
+          "artist": "Daft Punk",
+          "track": "Harder, Better, Faster, Stronger"
+        },
+        {
+          "artist": "Justice",
+          "track": "D.A.N.C.E."
+        },
+        {
+          "artist": "Justice",
+          "track": "We Are Your Friends"
+        },
+        {
+          "artist": "Moby",
+          "track": "Porcelain"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "LCD Soundsystem",
+          "track": "All My Friends"
+        },
+        {
+          "artist": "LCD Soundsystem",
+          "track": "Dance Yrself Clean"
+        },
+        {
+          "artist": "M.I.A.",
+          "track": "Paper Planes"
+        },
+        {
+          "artist": "M.I.A.",
+          "track": "Galang"
+        },
+        {
+          "artist": "The Knife",
+          "track": "Heartbeats"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Burial",
+          "track": "Archangel"
+        },
+        {
+          "artist": "Burial",
+          "track": "Untrue"
+        },
+        {
+          "artist": "Four Tet",
+          "track": "She Moves She"
+        },
+        {
+          "artist": "Four Tet",
+          "track": "Rounds"
+        },
+        {
+          "artist": "Caribou",
+          "track": "Odessa"
+        }
+      ]
+    },
+    "alternative": {
+      "popular": [
+        {
+          "artist": "Radiohead",
+          "track": "Idioteque"
+        },
+        {
+          "artist": "Radiohead",
+          "track": "Everything in Its Right Place"
+        },
+        {
+          "artist": "Radiohead",
+          "track": "Paranoid Android"
+        },
+        {
+          "artist": "Coldplay",
+          "track": "Yellow"
+        },
+        {
+          "artist": "Coldplay",
+          "track": "Clocks"
+        },
+        {
+          "artist": "Coldplay",
+          "track": "The Scientist"
+        },
+        {
+          "artist": "Green Day",
+          "track": "American Idiot"
+        },
+        {
+          "artist": "Green Day",
+          "track": "Boulevard of Broken Dreams"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "The Killers",
+          "track": "Mr. Brightside"
+        },
+        {
+          "artist": "Franz Ferdinand",
+          "track": "Take Me Out"
+        },
+        {
+          "artist": "Bloc Party",
+          "track": "Banquet"
+        },
+        {
+          "artist": "The Libertines",
+          "track": "Can't Stand Me Now"
+        },
+        {
+          "artist": "The White Stripes",
+          "track": "Seven Nation Army"
+        },
+        {
+          "artist": "The Strokes",
+          "track": "Last Nite"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Sufjan Stevens",
+          "track": "Chicago"
+        },
+        {
+          "artist": "Bon Iver",
+          "track": "Skinny Love"
+        },
+        {
+          "artist": "Grizzly Bear",
+          "track": "Two Weeks"
+        },
+        {
+          "artist": "Animal Collective",
+          "track": "My Girls"
+        },
+        {
+          "artist": "Deerhunter",
+          "track": "Helicopter"
+        }
+      ]
+    },
+    "r_b": {
+      "popular": [
+        {
+          "artist": "Usher",
+          "track": "Yeah!"
+        },
+        {
+          "artist": "Usher",
+          "track": "Confessions Part II"
+        },
+        {
+          "artist": "Usher",
+          "track": "Burn"
+        },
+        {
+          "artist": "Alicia Keys",
+          "track": "No One"
+        },
+        {
+          "artist": "Alicia Keys",
+          "track": "If I Ain't Got You"
+        },
+        {
+          "artist": "Rihanna",
+          "track": "Umbrella"
+        },
+        {
+          "artist": "Rihanna",
+          "track": "We Found Love"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "John Legend",
+          "track": "Ordinary People"
+        },
+        {
+          "artist": "John Legend",
+          "track": "All of Me"
+        },
+        {
+          "artist": "D'Angelo",
+          "track": "Left & Right"
+        },
+        {
+          "artist": "D'Angelo",
+          "track": "Untitled (How Does It Feel)"
+        },
+        {
+          "artist": "Ne-Yo",
+          "track": "So Sick"
+        },
+        {
+          "artist": "Chris Brown",
+          "track": "Run It!"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Bilal",
+          "track": "Soul Sista"
+        },
+        {
+          "artist": "Bilal",
+          "track": "Sometimes"
+        },
+        {
+          "artist": "Raphael Saadiq",
+          "track": "100 Yard Dash"
+        },
+        {
+          "artist": "Anthony Hamilton",
+          "track": "Charlene"
+        }
+      ]
+    }
+  },
+  "2010s": {
+    "indie_pop": {
+      "popular": [
+        {
+          "artist": "Vampire Weekend",
+          "track": "A-Punk"
+        },
+        {
+          "artist": "Vampire Weekend",
+          "track": "Cousins"
+        },
+        {
+          "artist": "Vampire Weekend",
+          "track": "Diane Young"
+        },
+        {
+          "artist": "Foster the People",
+          "track": "Pumped Up Kicks"
+        },
+        {
+          "artist": "Tame Impala",
+          "track": "The Less I Know the Better"
+        },
+        {
+          "artist": "Tame Impala",
+          "track": "Elephant"
+        },
+        {
+          "artist": "Tame Impala",
+          "track": "Feels Like We Only Go Backwards"
+        },
+        {
+          "artist": "Arctic Monkeys",
+          "track": "Do I Wanna Know?"
+        },
+        {
+          "artist": "Arctic Monkeys",
+          "track": "R U Mine?"
+        },
+        {
+          "artist": "The 1975",
+          "track": "Chocolate"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "MGMT",
+          "track": "Electric Feel"
+        },
+        {
+          "artist": "MGMT",
+          "track": "Kids"
+        },
+        {
+          "artist": "The xx",
+          "track": "Intro"
+        },
+        {
+          "artist": "The xx",
+          "track": "Crystalised"
+        },
+        {
+          "artist": "Beach House",
+          "track": "Myth"
+        },
+        {
+          "artist": "Beach House",
+          "track": "Space Song"
+        },
+        {
+          "artist": "Mac DeMarco",
+          "track": "Chamber of Reflection"
+        },
+        {
+          "artist": "Real Estate",
+          "track": "It's Real"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Grizzly Bear",
+          "track": "Two Weeks"
+        },
+        {
+          "artist": "Animal Collective",
+          "track": "My Girls"
+        },
+        {
+          "artist": "Deerhunter",
+          "track": "Helicopter"
+        },
+        {
+          "artist": "Washed Out",
+          "track": "Feel It All Around"
+        }
+      ]
+    },
+    "hip_hop": {
+      "popular": [
+        {
+          "artist": "Kendrick Lamar",
+          "track": "HUMBLE."
+        },
+        {
+          "artist": "Kendrick Lamar",
+          "track": "Alright"
+        },
+        {
+          "artist": "Kendrick Lamar",
+          "track": "Swimming Pools (Drank)"
+        },
+        {
+          "artist": "Kendrick Lamar",
+          "track": "DNA."
+        },
+        {
+          "artist": "Drake",
+          "track": "Hotline Bling"
+        },
+        {
+          "artist": "Drake",
+          "track": "God's Plan"
+        },
+        {
+          "artist": "Drake",
+          "track": "One Dance"
+        },
+        {
+          "artist": "Drake",
+          "track": "In My Feelings"
+        },
+        {
+          "artist": "J. Cole",
+          "track": "No Role Modelz"
+        },
+        {
+          "artist": "J. Cole",
+          "track": "Work Out"
+        },
+        {
+          "artist": "Future",
+          "track": "Mask Off"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Childish Gambino",
+          "track": "Redbone"
+        },
+        {
+          "artist": "Childish Gambino",
+          "track": "This Is America"
+        },
+        {
+          "artist": "Tyler, The Creator",
+          "track": "Yonkers"
+        },
+        {
+          "artist": "Tyler, The Creator",
+          "track": "EARFQUAKE"
+        },
+        {
+          "artist": "A$AP Rocky",
+          "track": "F**kin' Problems"
+        },
+        {
+          "artist": "A$AP Rocky",
+          "track": "Goldie"
+        },
+        {
+          "artist": "Travis Scott",
+          "track": "SICKO MODE"
+        },
+        {
+          "artist": "Logic",
+          "track": "1-800-273-8255"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Death Grips",
+          "track": "Guillotine"
+        },
+        {
+          "artist": "Death Grips",
+          "track": "I've Seen Footage"
+        },
+        {
+          "artist": "Open Mike Eagle",
+          "track": "Dark Comedy Late Show"
+        },
+        {
+          "artist": "Danny Brown",
+          "track": "Grown Up"
+        },
+        {
+          "artist": "clipping.",
+          "track": "The Show"
+        }
+      ]
+    },
+    "pop": {
+      "popular": [
+        {
+          "artist": "Taylor Swift",
+          "track": "Shake It Off"
+        },
+        {
+          "artist": "Taylor Swift",
+          "track": "Blank Space"
+        },
+        {
+          "artist": "Taylor Swift",
+          "track": "We Are Never Ever Getting Back Together"
+        },
+        {
+          "artist": "Taylor Swift",
+          "track": "Look What You Made Me Do"
+        },
+        {
+          "artist": "Adele",
+          "track": "Rolling in the Deep"
+        },
+        {
+          "artist": "Adele",
+          "track": "Someone Like You"
+        },
+        {
+          "artist": "Adele",
+          "track": "Hello"
+        },
+        {
+          "artist": "Bruno Mars",
+          "track": "Uptown Funk"
+        },
+        {
+          "artist": "Bruno Mars",
+          "track": "Just the Way You Are"
+        },
+        {
+          "artist": "Bruno Mars",
+          "track": "24K Magic"
+        },
+        {
+          "artist": "Ariana Grande",
+          "track": "Thank U, Next"
+        },
+        {
+          "artist": "Ariana Grande",
+          "track": "7 rings"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Lorde",
+          "track": "Royals"
+        },
+        {
+          "artist": "Lorde",
+          "track": "Green Light"
+        },
+        {
+          "artist": "Billie Eilish",
+          "track": "bad guy"
+        },
+        {
+          "artist": "Billie Eilish",
+          "track": "bury a friend"
+        },
+        {
+          "artist": "Lana Del Rey",
+          "track": "Video Games"
+        },
+        {
+          "artist": "Lana Del Rey",
+          "track": "Summertime Sadness"
+        },
+        {
+          "artist": "Carly Rae Jepsen",
+          "track": "Call Me Maybe"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "FKA twigs",
+          "track": "Two Weeks"
+        },
+        {
+          "artist": "FKA twigs",
+          "track": "Cellophane"
+        },
+        {
+          "artist": "Charli XCX",
+          "track": "Vroom Vroom"
+        },
+        {
+          "artist": "Grimes",
+          "track": "Oblivion"
+        }
+      ]
+    },
+    "electronic": {
+      "popular": [
+        {
+          "artist": "Skrillex",
+          "track": "Bangarang"
+        },
+        {
+          "artist": "Skrillex",
+          "track": "Scary Monsters and Nice Sprites"
+        },
+        {
+          "artist": "Avicii",
+          "track": "Wake Me Up"
+        },
+        {
+          "artist": "Avicii",
+          "track": "Levels"
+        },
+        {
+          "artist": "Calvin Harris",
+          "track": "We Found Love"
+        },
+        {
+          "artist": "Calvin Harris",
+          "track": "Summer"
+        },
+        {
+          "artist": "David Guetta",
+          "track": "Titanium"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Disclosure",
+          "track": "Latch"
+        },
+        {
+          "artist": "Disclosure",
+          "track": "White Noise"
+        },
+        {
+          "artist": "Flume",
+          "track": "Never Be Like You"
+        },
+        {
+          "artist": "Flume",
+          "track": "Holdin On"
+        },
+        {
+          "artist": "ODESZA",
+          "track": "Say My Name"
+        },
+        {
+          "artist": "Porter Robinson",
+          "track": "Language"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Oneohtrix Point Never",
+          "track": "Boring Angel"
+        },
+        {
+          "artist": "Tim Hecker",
+          "track": "Virgins"
+        },
+        {
+          "artist": "James Blake",
+          "track": "Retrograde"
+        },
+        {
+          "artist": "Arca",
+          "track": "Piel"
+        }
+      ]
+    },
+    "r_b": {
+      "popular": [
+        {
+          "artist": "Frank Ocean",
+          "track": "Thinkin Bout You"
+        },
+        {
+          "artist": "Frank Ocean",
+          "track": "Pyramids"
+        },
+        {
+          "artist": "Frank Ocean",
+          "track": "Nights"
+        },
+        {
+          "artist": "The Weeknd",
+          "track": "Blinding Lights"
+        },
+        {
+          "artist": "The Weeknd",
+          "track": "The Hills"
+        },
+        {
+          "artist": "The Weeknd",
+          "track": "Can't Feel My Face"
+        },
+        {
+          "artist": "The Weeknd",
+          "track": "Starboy"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Solange",
+          "track": "Cranes in the Sky"
+        },
+        {
+          "artist": "SZA",
+          "track": "The Weekend"
+        },
+        {
+          "artist": "SZA",
+          "track": "Love Galore"
+        },
+        {
+          "artist": "Miguel",
+          "track": "Adorn"
+        },
+        {
+          "artist": "Miguel",
+          "track": "Sky Walker"
+        },
+        {
+          "artist": "Daniel Caesar",
+          "track": "Get You"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Kelela",
+          "track": "Rewind"
+        },
+        {
+          "artist": "Kelela",
+          "track": "LMK"
+        },
+        {
+          "artist": "Kali Uchis",
+          "track": "After the Storm"
+        },
+        {
+          "artist": "Ravyn Lenae",
+          "track": "Sticky"
+        }
+      ]
+    },
+    "rock": {
+      "popular": [
+        {
+          "artist": "Foo Fighters",
+          "track": "The Pretender"
+        },
+        {
+          "artist": "Foo Fighters",
+          "track": "Everlong"
+        },
+        {
+          "artist": "Arctic Monkeys",
+          "track": "R U Mine?"
+        },
+        {
+          "artist": "Muse",
+          "track": "Uprising"
+        },
+        {
+          "artist": "Muse",
+          "track": "Knights of Cydonia"
+        },
+        {
+          "artist": "Imagine Dragons",
+          "track": "Radioactive"
+        },
+        {
+          "artist": "Linkin Park",
+          "track": "In the End"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Queens of the Stone Age",
+          "track": "The Way You Used to Do"
+        },
+        {
+          "artist": "Tame Impala",
+          "track": "Let It Happen"
+        },
+        {
+          "artist": "Cage the Elephant",
+          "track": "Ain't No Rest for the Wicked"
+        },
+        {
+          "artist": "The Black Keys",
+          "track": "Lonely Boy"
+        },
+        {
+          "artist": "The Black Keys",
+          "track": "Tighten Up"
+        },
+        {
+          "artist": "Portugal. The Man",
+          "track": "Feel It Still"
+        },
+        {
+          "artist": "The War on Drugs",
+          "track": "Red Eyes"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Swans",
+          "track": "Oxygen"
+        },
+        {
+          "artist": "Deafheaven",
+          "track": "Dream House"
+        },
+        {
+          "artist": "Daughters",
+          "track": "Satan in the Wait"
+        },
+        {
+          "artist": "King Gizzard & The Lizard Wizard",
+          "track": "Rattlesnake"
+        },
+        {
+          "artist": "King Gizzard & The Lizard Wizard",
+          "track": "Gamma Knife"
+        }
+      ]
+    },
+    "country": {
+      "popular": [
+        {
+          "artist": "Luke Combs",
+          "track": "Beautiful Crazy"
+        },
+        {
+          "artist": "Luke Combs",
+          "track": "Forever After All"
+        },
+        {
+          "artist": "Chris Stapleton",
+          "track": "Tennessee Whiskey"
+        },
+        {
+          "artist": "Chris Stapleton",
+          "track": "Broken Halos"
+        },
+        {
+          "artist": "Zach Bryan",
+          "track": "Something in the Orange"
+        },
+        {
+          "artist": "Morgan Wallen",
+          "track": "Whiskey Glasses"
+        },
+        {
+          "artist": "Morgan Wallen",
+          "track": "Last Night"
+        },
+        {
+          "artist": "Luke Bryan",
+          "track": "Country Girl (Shake It for Me)"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Sturgill Simpson",
+          "track": "Turtles All the Way Down"
+        },
+        {
+          "artist": "Jason Isbell",
+          "track": "Cover Me Up"
+        },
+        {
+          "artist": "Tyler Childers",
+          "track": "All Your'n"
+        },
+        {
+          "artist": "Colter Wall",
+          "track": "Sleeping on the Blacktop"
+        },
+        {
+          "artist": "Kacey Musgraves",
+          "track": "Follow Your Arrow"
+        },
+        {
+          "artist": "Kacey Musgraves",
+          "track": "High Horse"
+        },
+        {
+          "artist": "Miranda Lambert",
+          "track": "The House That Built Me"
+        },
+        {
+          "artist": "Eric Church",
+          "track": "Springsteen"
+        },
+        {
+          "artist": "Thomas Rhett",
+          "track": "Die a Happy Man"
+        },
+        {
+          "artist": "Blake Shelton",
+          "track": "God's Country"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Tyler Childers",
+          "track": "Feathered Indians"
+        },
+        {
+          "artist": "Orville Peck",
+          "track": "Dead of Night"
+        },
+        {
+          "artist": "Charley Crockett",
+          "track": "I Need Your Love"
+        },
+        {
+          "artist": "Margo Price",
+          "track": "Hands of Time"
+        },
+        {
+          "artist": "Orville Peck",
+          "track": "Turn to Hate"
+        }
+      ]
+    }
+  },
+  "2020s": {
+    "pop": {
+      "popular": [
+        {
+          "artist": "The Weeknd",
+          "track": "Blinding Lights"
+        },
+        {
+          "artist": "The Weeknd",
+          "track": "Save Your Tears"
+        },
+        {
+          "artist": "The Weeknd",
+          "track": "Starboy"
+        },
+        {
+          "artist": "Dua Lipa",
+          "track": "Levitating"
+        },
+        {
+          "artist": "Dua Lipa",
+          "track": "Don't Start Now"
+        },
+        {
+          "artist": "Dua Lipa",
+          "track": "Physical"
+        },
+        {
+          "artist": "Olivia Rodrigo",
+          "track": "drivers license"
+        },
+        {
+          "artist": "Olivia Rodrigo",
+          "track": "good 4 u"
+        },
+        {
+          "artist": "Olivia Rodrigo",
+          "track": "vampire"
+        },
+        {
+          "artist": "Harry Styles",
+          "track": "As It Was"
+        },
+        {
+          "artist": "Harry Styles",
+          "track": "Watermelon Sugar"
+        },
+        {
+          "artist": "The Kid LAROI",
+          "track": "Stay"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Doja Cat",
+          "track": "Say So"
+        },
+        {
+          "artist": "Doja Cat",
+          "track": "Kiss Me More"
+        },
+        {
+          "artist": "Doja Cat",
+          "track": "Need to Know"
+        },
+        {
+          "artist": "Lizzo",
+          "track": "Good as Hell"
+        },
+        {
+          "artist": "Lizzo",
+          "track": "About Damn Time"
+        },
+        {
+          "artist": "Megan Thee Stallion",
+          "track": "Savage"
+        },
+        {
+          "artist": "Megan Thee Stallion",
+          "track": "Body"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Caroline Polachek",
+          "track": "So Hot You're Hurting My Feelings"
+        },
+        {
+          "artist": "Caroline Polachek",
+          "track": "Bunny Is a Rider"
+        },
+        {
+          "artist": "Rina Sawayama",
+          "track": "XS"
+        },
+        {
+          "artist": "Rina Sawayama",
+          "track": "Comme des Gar\u00e7ons"
+        }
+      ]
+    },
+    "hip_hop": {
+      "popular": [
+        {
+          "artist": "Travis Scott",
+          "track": "SICKO MODE"
+        },
+        {
+          "artist": "Post Malone",
+          "track": "Circles"
+        },
+        {
+          "artist": "Post Malone",
+          "track": "Sunflower"
+        },
+        {
+          "artist": "Post Malone",
+          "track": "Rockstar"
+        },
+        {
+          "artist": "Lil Nas X",
+          "track": "Old Town Road"
+        },
+        {
+          "artist": "Cardi B",
+          "track": "WAP"
+        },
+        {
+          "artist": "Cardi B",
+          "track": "Bodak Yellow"
+        },
+        {
+          "artist": "Bad Bunny",
+          "track": "Tit\u00ed Me Pregunt\u00f3"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Playboi Carti",
+          "track": "Magnolia"
+        },
+        {
+          "artist": "Lil Uzi Vert",
+          "track": "XO Tour Llif3"
+        },
+        {
+          "artist": "Roddy Ricch",
+          "track": "The Box"
+        },
+        {
+          "artist": "Jack Harlow",
+          "track": "First Class"
+        },
+        {
+          "artist": "21 Savage",
+          "track": "Bank Account"
+        },
+        {
+          "artist": "Lil Baby",
+          "track": "Drip Too Hard"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Injury Reserve",
+          "track": "Jailbreak the Tesla"
+        },
+        {
+          "artist": "Injury Reserve",
+          "track": "Knees"
+        },
+        {
+          "artist": "JPEGMAFIA",
+          "track": "BALD!"
+        },
+        {
+          "artist": "Earl Sweatshirt",
+          "track": "Chum"
+        }
+      ]
+    },
+    "indie": {
+      "popular": [
+        {
+          "artist": "Phoebe Bridgers",
+          "track": "Kyoto"
+        },
+        {
+          "artist": "Phoebe Bridgers",
+          "track": "Garden Song"
+        },
+        {
+          "artist": "Phoebe Bridgers",
+          "track": "Motion Sickness"
+        },
+        {
+          "artist": "Clairo",
+          "track": "Bags"
+        },
+        {
+          "artist": "Clairo",
+          "track": "Sofia"
+        },
+        {
+          "artist": "Boygenius",
+          "track": "Not Strong Enough"
+        },
+        {
+          "artist": "Lucy Dacus",
+          "track": "Night Shift"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Snail Mail",
+          "track": "Pristine"
+        },
+        {
+          "artist": "Japanese Breakfast",
+          "track": "Be Sweet"
+        },
+        {
+          "artist": "Japanese Breakfast",
+          "track": "Paprika"
+        },
+        {
+          "artist": "Big Thief",
+          "track": "Simulation Swarm"
+        },
+        {
+          "artist": "Big Thief",
+          "track": "Not"
+        },
+        {
+          "artist": "Mitski",
+          "track": "Nobody"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Black Country, New Road",
+          "track": "Concorde"
+        },
+        {
+          "artist": "Black Country, New Road",
+          "track": "The Place Where He Inserted the Blade"
+        },
+        {
+          "artist": "Dry Cleaning",
+          "track": "Scratchcard Lanyard"
+        },
+        {
+          "artist": "Dry Cleaning",
+          "track": "Strong Feelings"
+        },
+        {
+          "artist": "Geese",
+          "track": "Disco"
+        }
+      ]
+    },
+    "electronic": {
+      "popular": [
+        {
+          "artist": "Dua Lipa",
+          "track": "Don't Start Now"
+        },
+        {
+          "artist": "The Weeknd",
+          "track": "Blinding Lights"
+        },
+        {
+          "artist": "The Weeknd",
+          "track": "Take My Breath"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Charli XCX",
+          "track": "Good Ones"
+        },
+        {
+          "artist": "Charli XCX",
+          "track": "Vroom Vroom"
+        },
+        {
+          "artist": "Charli XCX",
+          "track": "Unlock It"
+        },
+        {
+          "artist": "100 gecs",
+          "track": "money machine"
+        },
+        {
+          "artist": "100 gecs",
+          "track": "hand crushed by a mallet"
+        },
+        {
+          "artist": "Porter Robinson",
+          "track": "Good Faith"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "A.G. Cook",
+          "track": "Beautiful Superstar"
+        },
+        {
+          "artist": "A.G. Cook",
+          "track": "Oh Yeah"
+        },
+        {
+          "artist": "SOPHIE",
+          "track": "BIPP"
+        },
+        {
+          "artist": "SOPHIE",
+          "track": "Immaterial"
+        },
+        {
+          "artist": "Dorian Electra",
+          "track": "Flamboyant"
+        }
+      ]
+    },
+    "r_b": {
+      "popular": [
+        {
+          "artist": "SZA",
+          "track": "Kill Bill"
+        },
+        {
+          "artist": "SZA",
+          "track": "Good Days"
+        },
+        {
+          "artist": "SZA",
+          "track": "Snooze"
+        },
+        {
+          "artist": "Summer Walker",
+          "track": "Girls Need Love"
+        },
+        {
+          "artist": "Summer Walker",
+          "track": "Playing Games"
+        },
+        {
+          "artist": "Doja Cat",
+          "track": "Streets"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Jazmine Sullivan",
+          "track": "Pick Up Your Feelings"
+        },
+        {
+          "artist": "Jazmine Sullivan",
+          "track": "Bust Your Windows"
+        },
+        {
+          "artist": "H.E.R.",
+          "track": "Damage"
+        },
+        {
+          "artist": "H.E.R.",
+          "track": "Focus"
+        },
+        {
+          "artist": "Giveon",
+          "track": "Heartbreak Anniversary"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Yves Tumor",
+          "track": "Gospel for a New Century"
+        },
+        {
+          "artist": "Yves Tumor",
+          "track": "Kerosene!"
+        },
+        {
+          "artist": "Eartheater",
+          "track": "Mitosis"
+        },
+        {
+          "artist": "KeiyaA",
+          "track": "Hvnli"
+        }
+      ]
+    },
+    "rock": {
+      "popular": [
+        {
+          "artist": "Wet Leg",
+          "track": "Chaise Longue"
+        },
+        {
+          "artist": "Wet Leg",
+          "track": "Wet Dream"
+        },
+        {
+          "artist": "Maneskin",
+          "track": "Beggin'"
+        },
+        {
+          "artist": "The Killers",
+          "track": "My Own Soul's Warning"
+        },
+        {
+          "artist": "M\u00e5neskin",
+          "track": "I Wanna Be Your Slave"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "IDLES",
+          "track": "Danny Nedelko"
+        },
+        {
+          "artist": "IDLES",
+          "track": "Never Fight a Man With a Perm"
+        },
+        {
+          "artist": "IDLES",
+          "track": "Colossus"
+        },
+        {
+          "artist": "Fontaines D.C.",
+          "track": "Boys in the Better Land"
+        },
+        {
+          "artist": "Fontaines D.C.",
+          "track": "A Hero's Death"
+        },
+        {
+          "artist": "Parquet Courts",
+          "track": "Wide Awake"
+        },
+        {
+          "artist": "Turnstile",
+          "track": "Mystery"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Black Midi",
+          "track": "John L"
+        },
+        {
+          "artist": "Black Midi",
+          "track": "953"
+        },
+        {
+          "artist": "Squid",
+          "track": "Paddling"
+        },
+        {
+          "artist": "Squid",
+          "track": "Narrator"
+        },
+        {
+          "artist": "Black Country, New Road",
+          "track": "Sunglasses"
+        },
+        {
+          "artist": "Black Country, New Road",
+          "track": "Athen's, France"
+        }
+      ]
+    },
+    "country": {
+      "popular": [
+        {
+          "artist": "Morgan Wallen",
+          "track": "Whiskey Glasses"
+        },
+        {
+          "artist": "Morgan Wallen",
+          "track": "Last Night"
+        },
+        {
+          "artist": "Zach Bryan",
+          "track": "Something in the Orange"
+        },
+        {
+          "artist": "Luke Combs",
+          "track": "Beautiful Crazy"
+        }
+      ],
+      "mid_tier": [
+        {
+          "artist": "Tyler Childers",
+          "track": "All Your'n"
+        },
+        {
+          "artist": "Tyler Childers",
+          "track": "Feathered Indians"
+        },
+        {
+          "artist": "Colter Wall",
+          "track": "Sleeping on the Blacktop"
+        },
+        {
+          "artist": "Sturgill Simpson",
+          "track": "Turtles All the Way Down"
+        }
+      ],
+      "obscure": [
+        {
+          "artist": "Orville Peck",
+          "track": "Dead of Night"
+        },
+        {
+          "artist": "Orville Peck",
+          "track": "Turn to Hate"
+        },
+        {
+          "artist": "Charley Crockett",
+          "track": "I Need Your Love"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "config": {
+    "feature_family": [
+      "genre",
+      "mood",
+      "danceable",
+      "voice_instrumental",
+      "timbre",
+      "loudness_bucket",
+      "bias"
+    ],
+    "label_scheme": "playlist+ratings",
+    "model_type": "feature_mean_difference_reranker"
+  },
+  "source": {
+    "kb_snapshot": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/knowledge_base.json",
+    "playlists_file": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/personas/persona_01_college_commuter/user_playlists.json",
+    "ratings_file": "/Users/eleanorbadgett/343-projects/project-2-ai-system-badgett-sledge-ftw/data/personas/persona_01_college_commuter/user_ratings.json"
+  },
+  "trained_at": "2026-04-09T19:47:36+00:00",
+  "version": 1,
+  "weights": {
+    "bias": 0.0,
+    "danceable:danceable": 0.10712530712530699,
+    "danceable:not_danceable": -0.1571171171171174,
+    "genre:alternative": 0.11621621621621603,
+    "genre:ambient": -0.0627311522048366,
+    "genre:blues": 0.11621621621621603,
+    "genre:cla": -0.423783783783784,
+    "genre:dan": -0.18378378378378402,
+    "genre:electronic": 0.05852390852390843,
+    "genre:folkcountry": -0.20378378378378392,
+    "genre:hip": 0.0912162162162159,
+    "genre:house": -0.0004504504504507789,
+    "genre:jaz": -0.030450450450450472,
+    "genre:pop": 0.14954954954954924,
+    "genre:rhy": 0.11621621621621592,
+    "genre:roc": -0.158783783783784,
+    "genre:rock": -0.18378378378378402,
+    "genre:trance": 0.09954954954954931,
+    "loudness_bucket:loud": 0.01621621621621616,
+    "loudness_bucket:medium": -0.017117117117117386,
+    "mood:acoustic": -0.158783783783784,
+    "mood:electronic": 0.05739268680445131,
+    "mood:happy": 0.01621621621621594,
+    "mood:party": 0.08496621621621603,
+    "mood:relaxed": -0.021283783783783816,
+    "mood:sad": -0.065033783783784,
+    "timbre:bright": -0.023783783783783874,
+    "timbre:dark": 0.049549549549549265,
+    "vi:instrumental": 0.05371621621621592,
+    "vi:voice": -0.014818266542404479
+  }
+}
